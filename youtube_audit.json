@@ -1,0 +1,77 @@
+{
+  "total_with_video": 176,
+  "flagged": [
+    {
+      "act": "CEREBELLUM",
+      "title": "Cerebellum | Harmonize Your Voluntary Movements | Promote Fluid Limbs | Cerebellum Healing Binaurals",
+      "url": "https://www.youtube.com/watch?v=GSVSoZuOTSU",
+      "reason": "medical/binaural healing video, not a music performance",
+      "confidence": "high"
+    },
+    {
+      "act": "Casiosa",
+      "title": "Casio tutorial.how to play alankar and aaroh on casioSa-47#casio #beginners #letsplay",
+      "url": "https://www.youtube.com/watch?v=NUetkCsA3mM",
+      "reason": "Casio keyboard tutorial, not the band Casiosa",
+      "confidence": "high"
+    },
+    {
+      "act": "Entheos Enclave",
+      "title": "\u201cOne Reason\u201d at the Caddyshack in Duluth, MN. Www.indyp218.com",
+      "url": "https://www.youtube.com/watch?v=UOB04BElGn0",
+      "reason": "title references different content (\"One Reason\" at Caddyshack); may not be this act",
+      "confidence": "medium"
+    },
+    {
+      "act": "Founder\u2019s Reception",
+      "title": "High Tea & Founder's Award Reception - What's on the Menu",
+      "url": "https://www.youtube.com/watch?v=OPbXedKbG44",
+      "reason": "event reception menu video, not a music performance",
+      "confidence": "high"
+    },
+    {
+      "act": "Lu Starr",
+      "title": "Duluth Dylan Fest 2025 Songwriter Contest - May 23, 2025 - 7PM",
+      "url": "https://www.youtube.com/watch?v=9-c1DGbFcwY",
+      "reason": "title is \"Duluth Dylan Fest Songwriter Contest\" - may feature Lu Starr but unclear",
+      "confidence": "medium"
+    },
+    {
+      "act": "Midnight Kissfight",
+      "title": "A day in Duluth, Minnesota : Lake Superior ( 4K HD )",
+      "url": "https://www.youtube.com/watch?v=eB-Q8vdfFVE",
+      "reason": "tourism/travel video about Duluth, not a music performance",
+      "confidence": "high"
+    },
+    {
+      "act": "Sons of Fogtown",
+      "title": "Todlachen, Loud Fast Rules, and Other Local Bands | Minnesota Hardcore: Episode 3",
+      "url": "https://www.youtube.com/watch?v=Uzs1GHQg6mk",
+      "reason": "Minnesota Hardcore documentary episode, not a performance by this act",
+      "confidence": "medium"
+    },
+    {
+      "act": "The Casualty Company",
+      "title": "Lost Duluth - Full Documentary",
+      "url": "https://www.youtube.com/watch?v=1pWGkZOjYE8",
+      "reason": "documentary film \"Lost Duluth\", not a music performance",
+      "confidence": "high"
+    },
+    {
+      "act": "The Lindula Brothers",
+      "title": "A Cold Day in Duluth",
+      "url": "https://www.youtube.com/watch?v=zT5rLrIdV3c",
+      "reason": "appears to be a Duluth scenery/ambient video, not a music performance",
+      "confidence": "medium"
+    },
+    {
+      "act": "Wes Hadrich",
+      "title": "Old World Duluth Minnesota",
+      "url": "https://www.youtube.com/watch?v=6BEf859jj4U",
+      "reason": "appears to be a Duluth history/scenery video, not a music performance",
+      "confidence": "medium"
+    }
+  ],
+  "clean_count": 166,
+  "flagged_count": 10
+}

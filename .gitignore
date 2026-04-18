@@ -1,0 +1,13 @@
+.DS_Store
+.playwright-mcp/
+*.output
+node_modules/
+tiger/
+dem.tif
+__pycache__/
+/tmp/
+*.png
+!duluth_heightmap.png
+.venv/
+duluth_skyline.jpg
+clips/

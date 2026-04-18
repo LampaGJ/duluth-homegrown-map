@@ -1,0 +1,1688 @@
+{
+  "festival": "Duluth Homegrown Music Festival",
+  "source": {
+    "url": "https://duluthhomegrown.org/schedule/",
+    "cms": "WordPress + Elementor (server-rendered HTML)",
+    "extraction_method": "HTML scrape: day-header / time / @ / venue / act token stream, bounded to by-time view"
+  },
+  "extracted_at": "2026-04-15T15:19:23Z",
+  "record_count": 185,
+  "changes": {
+    "compared_to": "homegrown_2026_schedule.json",
+    "added": [],
+    "removed": [],
+    "moved": [],
+    "summary": {
+      "added": 0,
+      "removed": 0,
+      "moved": 0
+    }
+  },
+  "schedule": [
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "10:20am",
+      "time_start_24h": "10:20",
+      "venue": "Lake Superior Zoo",
+      "act": "218 Dance Project"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "10:45am",
+      "time_start_24h": "10:45",
+      "venue": "Lake Superior Zoo",
+      "act": "Dan the Monkeyman"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "11:20am",
+      "time_start_24h": "11:20",
+      "venue": "Lake Superior Zoo",
+      "act": "The Trinkets"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "12:20pm",
+      "time_start_24h": "12:20",
+      "venue": "Lake Superior Zoo",
+      "act": "Music Resource Center Students"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "12:30pm",
+      "time_start_24h": "12:30",
+      "venue": "Lake Superior Zoo",
+      "act": "Sea Smoke Aerial Arts"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "1:30pm",
+      "time_start_24h": "13:30",
+      "venue": "Lake Superior Zoo",
+      "act": "Brody & the Roadies"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "2:15pm",
+      "time_start_24h": "14:15",
+      "venue": "Lake Superior Zoo",
+      "act": "Two T’s in a Pod"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "2:35pm",
+      "time_start_24h": "14:35",
+      "venue": "Lake Superior Zoo",
+      "act": "Steve Solkela"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "4:00pm",
+      "time_start_24h": "16:00",
+      "venue": "Blacklist Brewing Company",
+      "act": "Founder’s Reception"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "4:15pm",
+      "time_start_24h": "16:15",
+      "venue": "Blacklist Brewing Company",
+      "act": "Ryan Van Slooten"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "5:15pm",
+      "time_start_24h": "17:15",
+      "venue": "Blacklist Brewing Company",
+      "act": "The Gemstones"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Sister Veery"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Blacklist Brewing Company",
+      "act": "The Solicitors"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Thor & The Regulars"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Zeb or Zeke and the Run Away Screamings"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Blacklist Brewing Company",
+      "act": "The Repairmen"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "500 Million Society"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Tim Kaiser"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Pizza Luce",
+      "act": "Hypochondriac"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Blacklist Brewing Company",
+      "act": "WILBUR"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Bellerpuss"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Pizza Luce",
+      "act": "Vena Sera"
+    },
+    {
+      "date": "2026-04-26",
+      "day_of_week": "Sun",
+      "day_label": "Sun Apr 26",
+      "time_start": "11:00pm",
+      "time_start_24h": "23:00",
+      "venue": "Pizza Luce",
+      "act": "Obleek"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "5:30pm",
+      "time_start_24h": "17:30",
+      "venue": "Dovetail Cafe and Marketplace",
+      "act": "Salt and Pine"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "5:45pm",
+      "time_start_24h": "17:45",
+      "venue": "Legacy Cannabis",
+      "act": "The Lindula Brothers"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Wild State Cider",
+      "act": "The Trash Cats"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "6:15pm",
+      "time_start_24h": "18:15",
+      "venue": "Ursa Minor Brewing",
+      "act": "John Louis"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Duluth Cider",
+      "act": "Gnarwals"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Dovetail Cafe and Marketplace",
+      "act": "Wetland Willows"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "6:45pm",
+      "time_start_24h": "18:45",
+      "venue": "Legacy Cannabis",
+      "act": "Stel"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Wild State Cider",
+      "act": "Remote Viewfinder"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "All American Club",
+      "act": "Sugar on the Roof"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:15pm",
+      "time_start_24h": "19:15",
+      "venue": "Ursa Minor Brewing",
+      "act": "Horse Fzce"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Dovetail Cafe and Marketplace",
+      "act": "Jon Edwards"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Duluth Cider",
+      "act": "Lovehouse"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Legacy Cannabis",
+      "act": "EddieDition"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Bent Paddle Brewing Company Taproom",
+      "act": "Winzige Hosen"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "All American Club",
+      "act": "The Jambronies"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Wild State Cider",
+      "act": "WICKIE"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Ursa Minor Brewing",
+      "act": "Casiosa"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Caddy Shack Indoor Golf & Pub",
+      "act": "Sidestreet Detour"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Duluth Cider",
+      "act": "Life Parade"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Bent Paddle Brewing Company Taproom",
+      "act": "Stardust Collective"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "All American Club",
+      "act": "Big Wave Dave and the Ripples"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Duluth Cider",
+      "act": "Spin Collective"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "Caddy Shack Indoor Golf & Pub",
+      "act": "C U Next Tuesday"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Bent Paddle Brewing Company Taproom",
+      "act": "So What"
+    },
+    {
+      "date": "2026-04-27",
+      "day_of_week": "Mon",
+      "day_label": "Mon Apr 27",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "Caddy Shack Indoor Golf & Pub",
+      "act": "Boxcar"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Vikre Distillery",
+      "act": "Water Cat"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "6:45pm",
+      "time_start_24h": "18:45",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Gavin Glen"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Amsoil Arena",
+      "act": "Dre AKA Jamaican"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Vikre Distillery",
+      "act": "Idle Rose"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Ashe Berton"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Amsoil Arena",
+      "act": "Berserk Blondes!"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Vikre Distillery",
+      "act": "Lu Starr"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Dirtbike Boyfriend"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "John Agacki"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Amsoil Arena",
+      "act": "The Leave Alones"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Amsoil Arena",
+      "act": "Baharat"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "Mitchell Kane"
+    },
+    {
+      "date": "2026-04-28",
+      "day_of_week": "Tue",
+      "day_label": "Tue Apr 28",
+      "time_start": "11:00pm",
+      "time_start_24h": "23:00",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "porb"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Wussow’s Concert Cafe",
+      "act": "Cigarette Picnic"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "7:15pm",
+      "time_start_24h": "19:15",
+      "venue": "West Theatre",
+      "act": "Owls Club Big Band"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Wussow’s Concert Cafe",
+      "act": "¡Radical Fun Time!"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Gopher Restaurant & Lounge",
+      "act": "Ricky Carl"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "West Theatre",
+      "act": "#theindianheadband"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Kom-on-Inn",
+      "act": "MINNESOTA VICE"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Wussow’s Concert Cafe",
+      "act": "Theory of Light"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Gopher Restaurant & Lounge",
+      "act": "Sometime, Maybe"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Mr. D’s Bar & Grill",
+      "act": "A Band Called Truman!"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "West Theatre",
+      "act": "Woodblind"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "Kom-on-Inn",
+      "act": "Dirt Magnet"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Gopher Restaurant & Lounge",
+      "act": "Willem Dafoe Fan Club"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Mr. D’s Bar & Grill",
+      "act": "Chasm"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "10:30pm",
+      "time_start_24h": "22:30",
+      "venue": "Kom-on-Inn",
+      "act": "Midnight Kissfight"
+    },
+    {
+      "date": "2026-04-29",
+      "day_of_week": "Wed",
+      "day_label": "Wed Apr 29",
+      "time_start": "11:00pm",
+      "time_start_24h": "23:00",
+      "venue": "Mr. D’s Bar & Grill",
+      "act": "Father Hennepin"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Superior Tavern",
+      "act": "Mayor’s Proclamation"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "6:15pm",
+      "time_start_24h": "18:15",
+      "venue": "Superior Tavern",
+      "act": "Gavin St. Clair Quartet"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "6:45pm",
+      "time_start_24h": "18:45",
+      "venue": "Ritual Marketplace",
+      "act": "Dead Guy in a Swamp"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Average Joe’s Pub",
+      "act": "Nikki Lemire"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "7:15pm",
+      "time_start_24h": "19:15",
+      "venue": "Superior Tavern",
+      "act": "The Casualty Company"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Havana’s",
+      "act": "Israel Malachi Orchestra"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Ritual Marketplace",
+      "act": "C-Silence"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Average Joe’s Pub",
+      "act": "Teague Alexy & The Common Thread"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Superior Tavern",
+      "act": "Darren Sipity"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Tower Avenue Tavern",
+      "act": "Rory Van James"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Havana’s",
+      "act": "The Crunchy Bunch"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Ritual Marketplace",
+      "act": "Four Mile Portage"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "The Main Club",
+      "act": "The Lonely Loons"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Average Joe’s Pub",
+      "act": "Babie Eyes"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "Tower Avenue Tavern",
+      "act": "Joy and Melancholy"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "Havana’s",
+      "act": "Born too Late"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "The Main Club",
+      "act": "Brinn Major"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "Tower Avenue Tavern",
+      "act": "Mr. Kickass"
+    },
+    {
+      "date": "2026-04-30",
+      "day_of_week": "Thu",
+      "day_label": "Thu Apr 30",
+      "time_start": "10:45pm",
+      "time_start_24h": "22:45",
+      "venue": "The Main Club",
+      "act": "The Brothers Burn Mountain"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "5:45pm",
+      "time_start_24h": "17:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "Old Love"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Prøve Gallery",
+      "act": "BRAINWASHED"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "Foosball Ruckus"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "6:15pm",
+      "time_start_24h": "18:15",
+      "venue": "Owls Club",
+      "act": "Bill Berguson Band"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Indecent Proposal"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "6:45pm",
+      "time_start_24h": "18:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "Flight of Stares"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "BOOG3YM3N"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Prøve Gallery",
+      "act": "Peat Boggs"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Taylor James Donskey"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:15pm",
+      "time_start_24h": "19:15",
+      "venue": "Owls Club",
+      "act": "Ditchbird"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Hot Tamale Cosmos"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "Lake Effect String Band"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Lee Clark Allen"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Mae and Justine"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Prøve Gallery",
+      "act": "Throw Me The Remote"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "Underground ‘til Sundown"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Gochujang"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Owls Club",
+      "act": "Wes Hadrich"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Homegrown Tomatoes"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Hardaybra"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Alex Heil"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Ross Thorn"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Dog Talk"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Entheos Enclave"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "The Moorish Room",
+      "act": "Breanne Marie & The Front Porch Sinners"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "Squid City Slingers"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Jen West"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "The Old Smugglers"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Pizza Luce",
+      "act": "Grand Holler"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Nate J Mattson"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Galleon"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Rick McLean Band"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:30pm",
+      "time_start_24h": "22:30",
+      "venue": "The Moorish Room",
+      "act": "Climes"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:30pm",
+      "time_start_24h": "22:30",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "Polari"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:45pm",
+      "time_start_24h": "22:45",
+      "venue": "Carmody Irish Pub",
+      "act": "CEREBELLUM"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "10:45pm",
+      "time_start_24h": "22:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "Discord At Dawn"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "11:00pm",
+      "time_start_24h": "23:00",
+      "venue": "Pizza Luce",
+      "act": "Beauty Mountain Rd"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "11:15pm",
+      "time_start_24h": "23:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Sorrows Never Die"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "11:30pm",
+      "time_start_24h": "23:30",
+      "venue": "The Moorish Room",
+      "act": "Grant Glad & the Soo Line Loons"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "11:30pm",
+      "time_start_24h": "23:30",
+      "venue": "Dubh Linn Irish Pub",
+      "act": "INF3RNO"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "11:45pm",
+      "time_start_24h": "23:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "DJ ADUB"
+    },
+    {
+      "date": "2026-05-01",
+      "day_of_week": "Fri",
+      "day_label": "Fri May 01",
+      "time_start": "12:00am",
+      "time_start_24h": "00:00",
+      "venue": "Pizza Luce",
+      "act": "Shadows of Me"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "12:00pm",
+      "time_start_24h": "12:00",
+      "venue": "Chester Bowl Park",
+      "act": "Homegrown Kickball Classic"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "2:00pm",
+      "time_start_24h": "14:00",
+      "venue": "Duluth Depot: Great Hall",
+      "act": "Homegrown Artists Merch Fair hosted by Twin Ports Artists Collective"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "5:45pm",
+      "time_start_24h": "17:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "Rocking Rodents"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Prøve Gallery",
+      "act": "Crimson Soul"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:00pm",
+      "time_start_24h": "18:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "Sons of Fogtown"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:15pm",
+      "time_start_24h": "18:15",
+      "venue": "Owls Club",
+      "act": "Forseer"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Janie and The Spokes"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:30pm",
+      "time_start_24h": "18:30",
+      "venue": "Studio Four",
+      "act": "Zenith City Dance Collective"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "6:45pm",
+      "time_start_24h": "18:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "Mud Puppies"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "All Sea Monsters Are Girls"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Misisipi Mike Wolf and The Plain High Drifters"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:00pm",
+      "time_start_24h": "19:00",
+      "venue": "Prøve Gallery",
+      "act": "Slape"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:15pm",
+      "time_start_24h": "19:15",
+      "venue": "Owls Club",
+      "act": "P.B&J"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Studio Four",
+      "act": "Haus of Queer"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:30pm",
+      "time_start_24h": "19:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "The Roadside Lupines"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "7:45pm",
+      "time_start_24h": "19:45",
+      "venue": "Spirit of the Lake Community Arts",
+      "act": "The Mad Violin Scientist"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Cyr and the Cosmonauts"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Duluth Flame Nightclub",
+      "act": "DJ Nola"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Prøve Gallery",
+      "act": "The Draco Volans"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:00pm",
+      "time_start_24h": "20:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Isa Morin"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Owls Club",
+      "act": "Kroma"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:15pm",
+      "time_start_24h": "20:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Southpaw"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Studio Four",
+      "act": "The Body Electric Cabaret"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:30pm",
+      "time_start_24h": "20:30",
+      "venue": "Zeitgeist Teatro",
+      "act": "Nevins"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "8:45pm",
+      "time_start_24h": "20:45",
+      "venue": "Carmody Irish Pub",
+      "act": "The Adjustments"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Death Valley Yacht Club"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:00pm",
+      "time_start_24h": "21:00",
+      "venue": "Sacred Heart Music Center",
+      "act": "Witchfarm"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Flip Arkulary"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:15pm",
+      "time_start_24h": "21:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Halfsleeper"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "Studio Four",
+      "act": "Duluth Dolls"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:30pm",
+      "time_start_24h": "21:30",
+      "venue": "The Moorish Room",
+      "act": "Greg Cougar Conley"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Possessed to Restored"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "9:45pm",
+      "time_start_24h": "21:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "Pronoya"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Sir Benedict’s Tavern on the Lake",
+      "act": "Jesse Jaze"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:00pm",
+      "time_start_24h": "22:00",
+      "venue": "Pizza Luce",
+      "act": "Jumpsuit"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Danny Frank & the Smoky Gold"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:15pm",
+      "time_start_24h": "22:15",
+      "venue": "Norway Hall Event Center",
+      "act": "Emily Haavik & the 35s"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:30pm",
+      "time_start_24h": "22:30",
+      "venue": "The Moorish Room",
+      "act": "Eldri Snow"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:45pm",
+      "time_start_24h": "22:45",
+      "venue": "Carmody Irish Pub",
+      "act": "Iron Range Outlaw Brigade"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "10:45pm",
+      "time_start_24h": "22:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "Portrait of a Drowned Man"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "11:00pm",
+      "time_start_24h": "23:00",
+      "venue": "Pizza Luce",
+      "act": "Innerstellar Overdrive"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "11:15pm",
+      "time_start_24h": "23:15",
+      "venue": "R.T. Quinlan’s Saloon",
+      "act": "Bratwurst"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "11:30pm",
+      "time_start_24h": "23:30",
+      "venue": "The Moorish Room",
+      "act": "The Shane Nelson Band"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "11:45pm",
+      "time_start_24h": "23:45",
+      "venue": "Blacklist Brewing Company",
+      "act": "Mid Dream"
+    },
+    {
+      "date": "2026-05-02",
+      "day_of_week": "Sat",
+      "day_label": "Sat May 02",
+      "time_start": "12:00am",
+      "time_start_24h": "00:00",
+      "venue": "Pizza Luce",
+      "act": "Venus de Mars and All The Pretty Horses"
+    },
+    {
+      "date": "2026-05-03",
+      "day_of_week": "Sun",
+      "day_label": "Sun May 03",
+      "time_start": "1:30pm",
+      "time_start_24h": "13:30",
+      "venue": "Canal Park Brewing Company",
+      "act": "Skarlett Woods"
+    },
+    {
+      "date": "2026-05-03",
+      "day_of_week": "Sun",
+      "day_label": "Sun May 03",
+      "time_start": "2:30pm",
+      "time_start_24h": "14:30",
+      "venue": "Canal Park Brewing Company",
+      "act": "Shakin’ Not Stirred (SNS)"
+    },
+    {
+      "date": "2026-05-03",
+      "day_of_week": "Sun",
+      "day_label": "Sun May 03",
+      "time_start": "3:30pm",
+      "time_start_24h": "15:30",
+      "venue": "Canal Park Brewing Company",
+      "act": "Austin Castle"
+    }
+  ]
+}

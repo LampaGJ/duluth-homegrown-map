@@ -1,0 +1,70 @@
+{
+  "platforms": {
+    "tiktok": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "maxDuration": 600,
+      "codec": "H.264",
+      "format": "MP4",
+      "maxSizeMB": 287.6,
+      "fps": 30,
+      "notes": "Max 1080p. Platform favors 21-34 seconds. 287MB on iOS, 72MB on Android."
+    },
+    "instagram_reels": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "maxDuration": 180,
+      "codec": "H.264",
+      "format": "MP4",
+      "maxSizeMB": 250,
+      "fps": 30,
+      "notes": "Up to 3 minutes. 3500-5000 kbps recommended bitrate."
+    },
+    "instagram_stories": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "maxDuration": 15,
+      "codec": "H.264",
+      "format": "MP4",
+      "maxSizeMB": 250,
+      "fps": 30,
+      "notes": "3-15 sec segments, up to 60s per segment."
+    },
+    "youtube_shorts": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "maxDuration": 180,
+      "codec": "H.264",
+      "format": "MP4",
+      "fps": 30,
+      "notes": "Algorithm favors <60s. Safe zone: 180px top, 390px bottom, 60px sides."
+    },
+    "bluesky": {
+      "resolution": "1920x1080",
+      "aspect": "16:9",
+      "maxDuration": 180,
+      "codec": "H.264",
+      "format": "MP4",
+      "maxSizeMB": 100,
+      "fps": 30,
+      "notes": "Horizontal 16:9 default. Also supports 9:16 vertical. Autoplay muted — captions recommended."
+    },
+    "facebook_reels": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "maxDuration": null,
+      "codec": "H.264",
+      "format": "MP4",
+      "fps": 30,
+      "notes": "No duration cap as of 2025. Min 720x1280. 15-30s videos see highest engagement."
+    }
+  },
+  "universal_vertical": {
+    "resolution": "1080x1920",
+    "aspect": "9:16",
+    "codec": "H.264",
+    "fps": 30,
+    "targetDuration": 15,
+    "notes": "Single render at 1080x1920 works for TikTok, IG Reels, IG Stories, YouTube Shorts, and Facebook Reels. Bluesky prefers 16:9 but accepts 9:16."
+  }
+}
