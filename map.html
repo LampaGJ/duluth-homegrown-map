@@ -203,7 +203,7 @@
   #sparkline-wrap {
     position: relative; height: 78px; margin-bottom: 2px;
   }
-  #sparkline { display: block; width: 100%; height: 100%; }
+  #sparkline { display: block; width: 100%; height: 100%; cursor: pointer; }
   #sparkline-playhead {
     position: absolute; top: 0; bottom: 0; width: 2px; background: var(--hotter);
     pointer-events: none; box-shadow: 0 0 8px var(--hot); transform: translateX(0px);
@@ -289,16 +289,17 @@
   #yt-wrap .yt-footer .yt-date { text-align: left; }
   #yt-wrap .yt-footer .yt-time { text-align: center; color: var(--spring); font-family: "JetBrains Mono", monospace; font-size: 11px; }
   #yt-wrap .yt-footer .yt-venue { text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  /* Custom mini controls overlay */
-  #yt-controls {
-    position: absolute; bottom: 40px; left: 0; right: 0;
-    display: flex; align-items: center; gap: 6px;
-    padding: 5px 8px; z-index: 3;
-    background: linear-gradient(rgba(10,8,6,0.7), transparent);
-    opacity: 0; transition: opacity 150ms;
+  /* Transparent overlay blocks YouTube's hover UI (title bar, pause icon, end-screen) */
+  #yt-overlay {
+    position: absolute; inset: 0; z-index: 2; cursor: default;
   }
-  #yt-wrap:hover #yt-controls,
-  #yt-controls:focus-within { opacity: 1; }
+  /* Custom controls bar below video */
+  #yt-controls {
+    display: flex; align-items: center; gap: 6px;
+    padding: 5px 8px;
+    background: rgba(10,8,6,0.95);
+    flex-shrink: 0;
+  }
   #yt-controls button {
     background: none; border: 0; color: var(--bone); font-size: 14px;
     cursor: pointer; padding: 2px 4px; line-height: 1;
@@ -846,13 +847,14 @@
       <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
-        <div id="yt-controls">
-          <button id="yt-pp" title="Play/Pause">▶</button>
-          <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:18px;">volume_off</span></button>
-          <input type="range" class="yt-scrub" id="yt-scrub" min="0" max="100" value="0" />
-          <a id="yt-open" href="#" target="_blank" title="Open in YouTube">↗ YT</a>
-        </div>
+        <div id="yt-overlay"></div>
         <button id="yt-mute-float" title="Mute/Unmute"><span class="material-icons">volume_off</span></button>
+      </div>
+      <div id="yt-controls">
+        <button id="yt-pp" title="Play/Pause">▶</button>
+        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:18px;">volume_off</span></button>
+        <input type="range" class="yt-scrub" id="yt-scrub" min="0" max="100" value="0" />
+        <a id="yt-open" href="#" target="_blank" title="Open in YouTube">↗ YT</a>
       </div>
       <div id="yt-mobile-nav">
         <button id="yt-prev" title="Previous">←</button>
@@ -1966,15 +1968,19 @@ function ytPreloadUpcoming(currentIdx) {
   }
 }
 
-function updateYtPlayer(t) {
-  // Find the act closest to (but not after) current time
+function updateYtPlayer(t, forceIdx) {
   let best = null;
-  for (const s of ytPlaylist) {
-    if (s.dt <= t) best = s;
-    else break;
+  if (forceIdx != null && forceIdx >= 0 && forceIdx < ytPlaylist.length) {
+    // Direct index jump (next/prev) — skip time-based search
+    best = ytPlaylist[forceIdx];
+  } else {
+    // Find the act closest to (but not after) current time
+    for (const s of ytPlaylist) {
+      if (s.dt <= t) best = s;
+      else break;
+    }
+    if (!best && ytPlaylist.length) best = ytPlaylist[0];
   }
-  // If no act has started yet, use the first upcoming act with a video
-  if (!best && ytPlaylist.length) best = ytPlaylist[0];
   if (!best) {
     ytWrap.style.display = "none";
     return;
@@ -1991,7 +1997,7 @@ function updateYtPlayer(t) {
   ytWrap.style.left = `${left}px`;
 
   // Update video if changed
-  ytCurrentIdx = ytPlaylist.indexOf(best);
+  ytCurrentIdx = forceIdx != null ? forceIdx : ytPlaylist.indexOf(best);
   if (best.vidUrl !== ytCurrentVideoUrl) {
     ytCurrentVideoUrl = best.vidUrl;
     const m = best.vidUrl.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
@@ -2021,6 +2027,8 @@ function updateYtPlayer(t) {
               controls: 0,          // hide all YT chrome
               modestbranding: 1,
               rel: 0,
+              iv_load_policy: 3,    // hide annotations
+              disablekb: 1,         // prevent YT keyboard conflicts
               showinfo: 0,
               iv_load_policy: 3,    // hide annotations
               disablekb: 1,
@@ -2117,8 +2125,8 @@ const ytOpenLink = document.getElementById("yt-open");
 // Drag-to-resize the YouTube player
 const ytResize = document.getElementById("yt-resize");
 let ytResizing = false, ytResizeStart = null, ytResizeDragged = false;
-const YT_MIN = { w: 280 };
-const YT_MAX = { w: 700 };
+const YT_MIN = { w: 280, h: 200 };
+const YT_MAX = { w: 700, h: 800 };
 let ytSizeState = "normal"; // "small" | "normal" | "large"
 
 ytResize.addEventListener("pointerdown", (e) => {
@@ -2133,9 +2141,11 @@ document.addEventListener("pointermove", (e) => {
   if (Math.abs(e.clientX - ytResizeStart.x) > 4 || Math.abs(e.clientY - ytResizeStart.y) > 4) ytResizeDragged = true;
   if (ytResizeDragged) {
     const dx = (e.clientX - ytResizeStart.x) * 2;
+    const dy = -(e.clientY - ytResizeStart.y);  // drag up = taller
     const newW = Math.max(YT_MIN.w, Math.min(YT_MAX.w, ytResizeStart.w + dx));
+    const newH = Math.max(YT_MIN.h, Math.min(YT_MAX.h, ytResizeStart.h + dy));
     ytWrap.style.width = newW + "px";
-    // Height auto-computes from 16:9 video + header + footer
+    ytWrap.style.height = newH + "px";
     ytSizeState = "normal";
     updatePlayhead();
   }
@@ -2144,9 +2154,9 @@ document.addEventListener("pointerup", () => {
   if (ytResizing && !ytResizeDragged) {
     // Click without drag → toggle between smallest and largest
     if (ytSizeState === "large") {
-      ytWrap.style.width = YT_MIN.w + "px"; ytSizeState = "small";
+      ytWrap.style.width = YT_MIN.w + "px"; ytWrap.style.height = YT_MIN.h + "px"; ytSizeState = "small";
     } else {
-      ytWrap.style.width = YT_MAX.w + "px"; ytSizeState = "large";
+      ytWrap.style.width = YT_MAX.w + "px"; ytWrap.style.height = YT_MAX.h + "px"; ytSizeState = "large";
     }
   }
   ytResizing = false;
@@ -2462,12 +2472,15 @@ document.getElementById("sl-share-sms").addEventListener("click", (e) => {
   });
 });
 
-ytPP.addEventListener("click", () => {
+function ytTogglePlayPause() {
   if (!ytPlayer) return;
   const state = ytPlayer.getPlayerState();
   if (state === YT.PlayerState.PLAYING) { ytPlayer.pauseVideo(); ytPP.textContent = "▶"; }
   else { ytPlayer.playVideo(); ytPP.textContent = "❚❚"; }
-});
+}
+ytPP.addEventListener("click", ytTogglePlayPause);
+// Click on overlay toggles play/pause (since overlay blocks iframe interaction)
+document.getElementById("yt-overlay").addEventListener("click", ytTogglePlayPause);
 const ytMuteFloat = document.getElementById("yt-mute-float");
 function syncMuteUI() {
   const iconName = ytUserMuted ? "volume_off" : "volume_up";
@@ -2636,7 +2649,7 @@ if (window.innerWidth <= 768) {
     if (prevIdx !== ytCurrentIdx) {
       const act = ytPlaylist[prevIdx];
       slider.value = realToCompressed(act.dt);
-      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt);
+      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
     }
   });
   document.getElementById("yt-next").addEventListener("click", () => {
@@ -2644,7 +2657,7 @@ if (window.innerWidth <= 768) {
     if (nextIdx !== ytCurrentIdx) {
       const act = ytPlaylist[nextIdx];
       slider.value = realToCompressed(act.dt);
-      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt);
+      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
     }
   });
   document.getElementById("yt-close").addEventListener("click", () => {

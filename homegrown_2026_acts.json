@@ -216,7 +216,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "search exhausted across all known platforms (2026-04-15 final pass): checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, Facebook, Instagram (@allseamonstersaregirls handle not found), TikTok (no index hit), Reddit (r/duluth, r/minnesotamusic), Linktree (no hit), Tidal, Deezer, Amazon Music, Discogs, Eventbrite, duluthhomegrown.org/bands/all-sea-monsters-are-girls/ (no external links), perfectduluthday.com, flameduluth.com \u2014 no recorded music found on any platform. Member searches for Kaitlyn Owens, Stephanie Vex, Neil Vaidyanathan, Ned Netzel, Kara Warren returned no music links. Band described as Midwest slime pop group (ska, rockabilly, country, disco blend)."
+        "note": "search exhausted across all known platforms (2026-04-15 final pass): checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, Facebook, Instagram (@allseamonstersaregirls handle not found), TikTok (no index hit), Reddit (r/duluth, r/minnesotamusic), Linktree (no hit), Tidal, Deezer, Amazon Music, Discogs, Eventbrite, duluthhomegrown.org/bands/all-sea-monsters-are-girls/ (no external links), perfectduluthday.com, flameduluth.com — no recorded music found on any platform. Member searches for Kaitlyn Owens, Stephanie Vex, Neil Vaidyanathan, Ned Netzel, Kara Warren returned no music links. Band described as Midwest slime pop group (ska, rockabilly, country, disco blend)."
       },
       "type": "band_set"
     },
@@ -385,7 +385,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Tom MacDonald song, not the Duluth band"
+        "note": "removed — Tom MacDonald song, not the Duluth band"
       },
       "type": "band_set"
     },
@@ -471,19 +471,13 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=srgQNw-7qfE",
-        "title": "Baharat - Baharat - [Full EP] - Batov Records",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "label"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Baharat-61555593565703/",
       "soundcloud": "https://soundcloud.com/baharat-music",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Baharat - Baharat - Baharat - [Full EP] - Batov Records - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Beauty Mountain Rd",
@@ -715,7 +709,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 The Poni-Tails 1958 song, not the Duluth band"
+        "note": "removed — The Poni-Tails 1958 song, not the Duluth band"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/officialborntoolate/"
@@ -769,7 +763,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Boxcar Willie train medley, not the Duluth act"
+        "note": "removed — Boxcar Willie train medley, not the Duluth act"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/AllAboardDuluth/"
@@ -798,16 +792,16 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=-1GiqjueT7w",
-        "title": "Mein Lieblingstier ist die Bratwurst - Das offizielle Musik-Video",
+        "url": "https://www.youtube.com/watch?v=1jQhch6j5JM",
+        "title": "Bratwurst | Duluth Homegrown Music Festival 2015",
         "confidence": "high",
         "note": null,
-        "sourceType": "band"
+        "sourceType": "media"
       },
       "type": "band_set",
-      "refrain_start": 50.1,
-      "refrain_end": 65.1,
-      "clip_file": "clips/Bratwurst - Mein Lieblingstier ist die Bratwurst - Das offizielle Musik-Video - 00:50.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "facebook": "https://www.facebook.com/bratwurst69/"
     },
     {
@@ -856,7 +850,7 @@
       },
       "youtube_video": {
         "url": "https://youtu.be/rpO6fpOuxTA",
-        "title": "Central Hillside '91 \u2013 Breanne Marie",
+        "title": "Central Hillside '91 – Breanne Marie",
         "confidence": "high",
         "note": "URL confirmed in Adventures in Americana interview with Breanne Tepler",
         "sourceType": "band"
@@ -866,7 +860,7 @@
       "website": "https://www.breannemarie.com/",
       "refrain_start": 108.6,
       "refrain_end": 123.6,
-      "clip_file": "clips/Breanne Marie & The Front Porch Sinners - Central Hillside '91 \u2013 Breanne Marie - 01:48.mp3"
+      "clip_file": "clips/Breanne Marie & The Front Porch Sinners - Central Hillside '91 – Breanne Marie - 01:48.mp3"
     },
     {
       "name": "Brinn Major",
@@ -949,7 +943,7 @@
         "url": "https://music.apple.com/us/artist/the-c-u-next-tuesdays/1327646120",
         "id": "1327646120",
         "confidence": "medium",
-        "note": "iTunes returned \"The C U Next Tuesdays\" \u2014 likely same local act"
+        "note": "iTunes returned \"The C U Next Tuesdays\" — likely same local act"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -1062,7 +1056,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "removed \u2014 wrong video match"
+        "note": "removed — wrong video match"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/CerebellumOfficial/"
@@ -1098,7 +1092,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "deep search exhausted: experimental rock/shoegaze band from Duluth; debut EP 'Casiosa Garage' released Dec 2025 (6 tracks: Fall Apart, Longing, Friend of Thorns, Gone Again, Overtime, Garage); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org \u2014 no playable video or public streaming found beyond iTunes preview. First Homegrown appearance."
+        "note": "deep search exhausted: experimental rock/shoegaze band from Duluth; debut EP 'Casiosa Garage' released Dec 2025 (6 tracks: Fall Apart, Longing, Friend of Thorns, Gone Again, Overtime, Garage); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org — no playable video or public streaming found beyond iTunes preview. First Homegrown appearance."
       },
       "type": "band_set"
     },
@@ -1134,7 +1128,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Genshin Impact game soundtrack"
+        "note": "removed — Genshin Impact game soundtrack"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/chasmofczar"
@@ -1167,7 +1161,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=aBsoq1jq7B0",
-        "title": "\u2018Molehill\u2019 Live Recorded Session by Cigarette Picnic ",
+        "title": "‘Molehill’ Live Recorded Session by Cigarette Picnic ",
         "confidence": "high",
         "note": null,
         "sourceType": "media"
@@ -1175,7 +1169,7 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Cigarette Picnic - \u2018Molehill\u2019 Live Recorded Session by Cigarette Picnic - 00:30.mp3",
+      "clip_file": "clips/Cigarette Picnic - ‘Molehill’ Live Recorded Session by Cigarette Picnic - 00:30.mp3",
       "facebook": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/"
     },
     {
@@ -1256,18 +1250,12 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=AjTJCLPS9Bo",
-        "title": "\u300c ES! \u300dCrimson Soul - Kuro Kiryu [KAN/ROM/ENG]",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Crimson-Soul-61568142261830/",
-      "refrain_start": 200.4,
-      "refrain_end": 215.4,
-      "clip_file": "clips/Crimson Soul - \u300c ES! \u300dCrimson Soul - Kuro Kiryu [KANROMENG] - 03:20.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Cyr and the Cosmonauts",
@@ -1594,7 +1582,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=cco4PCNAlRE",
-        "title": "\u201cBroken Lies\u201d by Death Valley Yacht Club",
+        "title": "“Broken Lies” by Death Valley Yacht Club",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -1603,7 +1591,7 @@
       "soundcloud": "https://soundcloud.com/dvyachtclub",
       "refrain_start": 141.7,
       "refrain_end": 156.7,
-      "clip_file": "clips/Death Valley Yacht Club - \u201cBroken Lies\u201d by Death Valley Yacht Club - 02:21.mp3",
+      "clip_file": "clips/Death Valley Yacht Club - “Broken Lies” by Death Valley Yacht Club - 02:21.mp3",
       "facebook": "https://www.facebook.com/thedvyc/"
     },
     {
@@ -1629,17 +1617,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=rwanKmBDh5A",
-        "title": "SUPERBOOTH 2024: Finegear - Dirt Magnet - Modmix Tape Delay And Experimental Mixer",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 124.0,
-      "refrain_end": 139.0,
-      "clip_file": "clips/Dirt Magnet - SUPERBOOTH 2024 Finegear - Dirt Magnet - Modmix Tape Delay And Experimental Mixe - 02:04.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Dirtbike Boyfriend",
@@ -1674,7 +1656,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=InfbdTFgAEw",
-        "title": "\u201canother song for blush\u201d - Dirtbike Boyfriend @ Wussow\u2019s Concert Caf\u00e9, Duluth, MN",
+        "title": "“another song for blush” - Dirtbike Boyfriend @ Wussow’s Concert Café, Duluth, MN",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -1682,7 +1664,7 @@
       "type": "band_set",
       "refrain_start": 76.5,
       "refrain_end": 91.5,
-      "clip_file": "clips/Dirtbike Boyfriend - \u201canother song for blush\u201d - Dirtbike Boyfriend @ Wussow\u2019s Concert Caf\u00e9, Duluth, M - 01:16.mp3",
+      "clip_file": "clips/Dirtbike Boyfriend - “another song for blush” - Dirtbike Boyfriend @ Wussow’s Concert Café, Duluth, M - 01:16.mp3",
       "facebook": "https://www.facebook.com/dirtbikeboyfriend/",
       "website": "https://www.dirtbikeboyfriend.com/"
     },
@@ -1796,7 +1778,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Ot7QUANNY song, not the Duluth act"
+        "note": "removed — Ot7QUANNY song, not the Duluth act"
       },
       "type": "band_set",
       "refrain_start": 30.0,
@@ -1875,7 +1857,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "community event \u2014 no music video needed"
+        "note": "community event — no music video needed"
       },
       "type": "community_event",
       "facebook": "https://www.facebook.com/duluthdolls/"
@@ -2049,7 +2031,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=UOB04BElGn0",
-        "title": "\u201cOne Reason\u201d at the Caddyshack in Duluth, MN. Www.indyp218.com",
+        "title": "“One Reason” at the Caddyshack in Duluth, MN. Www.indyp218.com",
         "confidence": "low",
         "note": null,
         "sourceType": "fan"
@@ -2059,7 +2041,7 @@
       "website": "https://entheosenclave.com/",
       "refrain_start": 174.3,
       "refrain_end": 189.3,
-      "clip_file": "clips/Entheos Enclave - \u201cOne Reason\u201d at the Caddyshack in Duluth, MN. Www.indyp218.com - 02:54.mp3"
+      "clip_file": "clips/Entheos Enclave - “One Reason” at the Caddyshack in Duluth, MN. Www.indyp218.com - 02:54.mp3"
     },
     {
       "name": "Father Hennepin",
@@ -2269,7 +2251,7 @@
       "clip_file": "clips/Forseer - Forseer - 01:32.mp3"
     },
     {
-      "name": "Founder\u2019s Reception",
+      "name": "Founder’s Reception",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -2293,7 +2275,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "removed \u2014 wrong video match"
+        "note": "removed — wrong video match"
       },
       "type": "community_event"
     },
@@ -2371,17 +2353,17 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=lGfK2IjnMBg",
-        "title": "Galleon - One Sign [Radio Edit]",
+        "url": "https://www.youtube.com/watch?v=riQFT1p4zZM",
+        "title": "The Impact of Music: Featuring the Duluth Band, \"Galleon\"",
         "confidence": "high",
         "note": null,
         "sourceType": "media"
       },
       "type": "band_set",
       "website": "https://galleonband.com/",
-      "refrain_start": 99.9,
-      "refrain_end": 114.9,
-      "clip_file": "clips/Galleon - Galleon - One Sign [Radio Edit] - 01:39.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "facebook": "https://www.facebook.com/GalleonBandOfficial/"
     },
     {
@@ -2437,7 +2419,7 @@
         "last_played": "2025-11-26",
         "top_songs": [
           {
-            "song": "Who\u2019s That?",
+            "song": "Who’s That?",
             "plays": 2
           },
           {
@@ -2501,7 +2483,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=vye5IfWVnv4",
-        "title": "G'narwals - Pr\u00f8ve Gallery - 4/30/2019",
+        "title": "G'narwals - Prøve Gallery - 4/30/2019",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -2510,7 +2492,7 @@
       "facebook": "https://www.facebook.com/Gnarwals.Duluth/",
       "refrain_start": 158.9,
       "refrain_end": 173.9,
-      "clip_file": "clips/Gnarwals - G'narwals - Pr\u00f8ve Gallery - 4302019 - 02:38.mp3"
+      "clip_file": "clips/Gnarwals - G'narwals - Prøve Gallery - 4302019 - 02:38.mp3"
     },
     {
       "name": "Gochujang",
@@ -2533,17 +2515,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=vC43S35AbO0",
-        "title": "Twin.3XP & ProdbyShway - Gochujang (I've been whipping) (Official Music Video)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 120.0,
-      "refrain_end": 135.0,
-      "clip_file": "clips/Gochujang - Twin.3XP & ProdbyShway - Gochujang (I've been whipping) (Official Music Video) - 02:00.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Grand Holler",
@@ -2587,7 +2563,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=M5dojLiCKeE",
-        "title": "Grand Holler \u2013 KTWH-LP Featured Focus Artist",
+        "title": "Grand Holler – KTWH-LP Featured Focus Artist",
         "confidence": "high",
         "note": "Radio interview/performance segment from KTWH-LP Two Harbors community radio, linked from grandhollerband.com",
         "sourceType": "media"
@@ -2597,7 +2573,7 @@
       "website": "https://www.grandhollerband.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Grand Holler - Grand Holler \u2013 KTWH-LP Featured Focus Artist - 00:30.mp3"
+      "clip_file": "clips/Grand Holler - Grand Holler – KTWH-LP Featured Focus Artist - 00:30.mp3"
     },
     {
       "name": "Grant Glad & the Soo Line Loons",
@@ -2729,18 +2705,12 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=oGIT_QhTmys",
-        "title": "Chelsea Wolfe - Halfsleeper",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/thehalfsleepers/",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Halfsleeper - Chelsea Wolfe - Halfsleeper - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Hardaybra",
@@ -2806,7 +2776,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "community event \u2014 no music video needed"
+        "note": "community event — no music video needed"
       },
       "type": "community_event",
       "facebook": "https://www.facebook.com/p/Haus-of-Queer-61575633820059/"
@@ -2896,17 +2866,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=OwRn7A-TWrQ",
-        "title": "Homegrown Tomatoes",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "venue"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Homegrown Tomatoes - Homegrown Tomatoes - 00:30.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "website": "https://saltandpinemusic.com/",
       "facebook": "https://www.facebook.com/saltandpinemusic"
     },
@@ -3019,17 +2983,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=XSDxaNmMRnc",
-        "title": "Sasha Alex Sloan - Hypochondriac (Lyric Video)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Hypochondriac - Sasha Alex Sloan - Hypochondriac (Lyric Video) - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "INF3RNO",
@@ -3146,7 +3104,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=7DW8VOYn97A",
-        "title": "Feeling Good \u2013 Indecent Proposal",
+        "title": "Feeling Good – Indecent Proposal",
         "confidence": "high",
         "note": "Official music video filmed at Spirit Valley's Gopher Bar in Duluth; URL confirmed in Duluth News Tribune article",
         "sourceType": "band"
@@ -3156,7 +3114,7 @@
       "website": "https://indyp218.com",
       "refrain_start": 58.4,
       "refrain_end": 73.4,
-      "clip_file": "clips/Indecent Proposal - Feeling Good \u2013 Indecent Proposal - 00:58.mp3"
+      "clip_file": "clips/Indecent Proposal - Feeling Good – Indecent Proposal - 00:58.mp3"
     },
     {
       "name": "Innerstellar Overdrive",
@@ -3183,7 +3141,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "search exhausted across all known platforms (2026-04-15 final pass): 'mindfulness metal' trio formed 2023 \u2014 Erik Schnackenberg (guitar/vocals, Full Circle Yoga owner), Bryce Kastning (drums, sound healer), Erin Kathleen (bass); occasional feature: Austin Washenesky (trombone). Facebook page exists (facebook.com/p/Innerstellar-Overdrive-61553786158399/) but page body is blank with no music links. duluthhomegrown.org/bands/innerstellar-overdrive/ confirmed members and bio but provides zero external links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram \u2014 no recorded music found on any platform. Note: correct spelling is 'Innerstellar' not 'Interstellar'; multiple unrelated Interstellar Overdrive bands on Bandcamp/SoundCloud are Pink Floyd cover acts and not this band."
+        "note": "search exhausted across all known platforms (2026-04-15 final pass): 'mindfulness metal' trio formed 2023 — Erik Schnackenberg (guitar/vocals, Full Circle Yoga owner), Bryce Kastning (drums, sound healer), Erin Kathleen (bass); occasional feature: Austin Washenesky (trombone). Facebook page exists (facebook.com/p/Innerstellar-Overdrive-61553786158399/) but page body is blank with no music links. duluthhomegrown.org/bands/innerstellar-overdrive/ confirmed members and bio but provides zero external links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram — no recorded music found on any platform. Note: correct spelling is 'Innerstellar' not 'Interstellar'; multiple unrelated Interstellar Overdrive bands on Bandcamp/SoundCloud are Pink Floyd cover acts and not this band."
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Innerstellar-Overdrive-61553786158399/"
@@ -3259,7 +3217,7 @@
       },
       "preview": {
         "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/08/7a/41/087a419a-c370-640b-1eec-4c083c22fb81/mzaf_6247569204311328541.plus.aac.p.m4a",
-        "track": "Il est \u00e0 toi Jolene (feat. Chapel Hart)",
+        "track": "Il est à toi Jolene (feat. Chapel Hart)",
         "source": "itunes"
       },
       "youtube_video": {
@@ -3467,7 +3425,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=V6gWrLrQ9ng",
-        "title": "You\u2019re Helping Me and I\u2019m Helping You  by John Agacki - performed by John Agacki and Cheryl Haworth",
+        "title": "You’re Helping Me and I’m Helping You  by John Agacki - performed by John Agacki and Cheryl Haworth",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -3477,7 +3435,7 @@
       "website": "https://johnagackimusic.com/",
       "refrain_start": 48.5,
       "refrain_end": 63.5,
-      "clip_file": "clips/John Agacki - You\u2019re Helping Me and I\u2019m Helping You  by John Agacki - performed by John Agacki - 00:48.mp3"
+      "clip_file": "clips/John Agacki - You’re Helping Me and I’m Helping You  by John Agacki - performed by John Agacki - 00:48.mp3"
     },
     {
       "name": "John Louis",
@@ -3640,7 +3598,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 twenty one pilots song, not the Duluth band"
+        "note": "removed — twenty one pilots song, not the Duluth band"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Jumpsuit-Funk-61566392902886/"
@@ -3677,7 +3635,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 SAINT JHN remix, not the Duluth artist"
+        "note": "removed — SAINT JHN remix, not the Duluth artist"
       },
       "type": "band_set",
       "soundcloud": "https://soundcloud.com/kromamusic",
@@ -3856,7 +3814,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 DJ mix compilation, not local act"
+        "note": "removed — DJ mix compilation, not local act"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/lovehousetheband/"
@@ -3929,7 +3887,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=6wRQo-pJqIU",
-        "title": "MINNESOTA VICE - \u201cBURBERRY BONDS\u201d (Official Lyric Video)",
+        "title": "MINNESOTA VICE - “BURBERRY BONDS” (Official Lyric Video)",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -3937,7 +3895,7 @@
       "type": "band_set",
       "refrain_start": 111.2,
       "refrain_end": 126.2,
-      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - \u201cBURBERRY BONDS\u201d (Official Lyric Video) - 01:51.mp3"
+      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - “BURBERRY BONDS” (Official Lyric Video) - 01:51.mp3"
     },
     {
       "name": "Mae and Justine",
@@ -3962,20 +3920,14 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=UL4FAn2W-oc",
-        "title": "gwiyomi (jonna mae and justine)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Mae and Justine - gwiyomi (jonna mae and justine) - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
-      "name": "Mayor\u2019s Proclamation",
+      "name": "Mayor’s Proclamation",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -4011,7 +3963,7 @@
         "url": "https://music.apple.com/us/artist/middream/1441489562",
         "id": "1441489562",
         "confidence": "medium",
-        "note": "iTunes returned \"MidDream\" \u2014 likely same local act, spacing variant"
+        "note": "iTunes returned \"MidDream\" — likely same local act, spacing variant"
       },
       "bandcamp": "https://middreammusic.bandcamp.com/",
       "the_north_plays": {
@@ -4031,18 +3983,12 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=R0MW74o9sRg",
-        "title": "Bleach Rebirth Of Souls OST: Mid Dream",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Mid-Dream-61568971135097/",
-      "refrain_start": 198.0,
-      "refrain_end": 213.0,
-      "clip_file": "clips/Mid Dream - Bleach Rebirth Of Souls OST Mid Dream - 03:18.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Midnight Kissfight",
@@ -4052,7 +3998,7 @@
         "url": null,
         "id": null,
         "confidence": null,
-        "note": "removed \u2014 Midnight Fistfight (different band)"
+        "note": "removed — Midnight Fistfight (different band)"
       },
       "bandcamp": "https://midnightkissfight.bandcamp.com/",
       "the_north_plays": {
@@ -4077,7 +4023,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "removed \u2014 wrong video match"
+        "note": "removed — wrong video match"
       },
       "type": "band_set",
       "refrain_start": 30.0,
@@ -4207,7 +4153,7 @@
         "url": "https://music.apple.com/us/artist/mud-puppies/1873373950",
         "id": "1873373950",
         "confidence": "high",
-        "note": "tracklist includes \"Lake Superior Blues\" \u2014 strong Duluth geographic signal"
+        "note": "tracklist includes \"Lake Superior Blues\" — strong Duluth geographic signal"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -4232,7 +4178,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "deep search exhausted: Duluth folk grunge band confirmed via Apple Music album (self-titled, Feb 10 2026, 9 tracks including 'Lake Superior Blues'); described as blending folk storytelling with 90s alt rock (Townes Van Zandt, Nirvana, Jeff Buckley); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org \u2014 no playable video or public streaming found beyond iTunes preview."
+        "note": "deep search exhausted: Duluth folk grunge band confirmed via Apple Music album (self-titled, Feb 10 2026, 9 tracks including 'Lake Superior Blues'); described as blending folk storytelling with 90s alt rock (Townes Van Zandt, Nirvana, Jeff Buckley); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org — no playable video or public streaming found beyond iTunes preview."
       },
       "type": "band_set"
     },
@@ -4273,7 +4219,7 @@
         "url": "https://music.apple.com/us/artist/nate-j-mattson/1084227689",
         "id": "1084227689",
         "confidence": "medium",
-        "note": "iTunes returned \"Nate J. Mattson\" \u2014 same act, punctuation variant"
+        "note": "iTunes returned \"Nate J. Mattson\" — same act, punctuation variant"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -4336,7 +4282,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Run DMC/Jason Nevins, not the Duluth act"
+        "note": "removed — Run DMC/Jason Nevins, not the Duluth act"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Nevins-100066101610846/"
@@ -4383,7 +4329,7 @@
       },
       "youtube_video": {
         "url": "https://youtu.be/uayGOsSJX6Y",
-        "title": "Paris \u2013 Nikki Lemire",
+        "title": "Paris – Nikki Lemire",
         "confidence": "high",
         "note": "URL confirmed in Adventures in Americana interview with Nikki Lemire",
         "sourceType": "band"
@@ -4394,7 +4340,7 @@
       "website": "https://nikkilemiremusic.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Nikki Lemire - Paris \u2013 Nikki Lemire - 00:30.mp3"
+      "clip_file": "clips/Nikki Lemire - Paris – Nikki Lemire - 00:30.mp3"
     },
     {
       "name": "Obleek",
@@ -4435,7 +4381,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 different artist (Riverfenix)"
+        "note": "removed — different artist (Riverfenix)"
       },
       "type": "band_set",
       "linktree": "https://linktr.ee/obleek",
@@ -4468,18 +4414,12 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=ColyIqkuDpA",
-        "title": "Old Love Songs - Playlist",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/oldlovemusic/",
-      "refrain_start": 84.7,
-      "refrain_end": 99.7,
-      "clip_file": "clips/Old Love - Old Love Songs - Playlist - 01:24.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Owls Club Big Band",
@@ -4525,7 +4465,7 @@
         "url": "https://music.apple.com/us/artist/p-b-j/1599758931",
         "id": "1599758931",
         "confidence": "medium",
-        "note": "iTunes returned \"P B & J\" \u2014 likely same act, punctuation variant"
+        "note": "iTunes returned \"P B & J\" — likely same act, punctuation variant"
       },
       "bandcamp": "https://pbjmusic1.bandcamp.com/",
       "the_north_plays": {
@@ -4637,7 +4577,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Olly Alexander song, not the Duluth band"
+        "note": "removed — Olly Alexander song, not the Duluth band"
       },
       "type": "band_set"
     },
@@ -4919,7 +4859,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "two live tracks on dbbf/Lake Inferior compilation: 'Bug Abandonment (Live)' and 'People Pleaser (Live)' at https://dbbf.bandcamp.com/album/lake-inferior-presents-live-from-london-vol-1 \u2014 playable on Bandcamp. Debut album 'People/Fate' slated for release before Homegrown 2026. Members: Calliope Opal (vocals), Corduroy Jompson (guitar), Xander Ripley-Jaakola (bass), Alec Williams (drums). Instagram: @rocking.rodents. Submitted NPR Tiny Desk Concert video ('The More'). No standalone YouTube/Spotify/SoundCloud found."
+        "note": "two live tracks on dbbf/Lake Inferior compilation: 'Bug Abandonment (Live)' and 'People Pleaser (Live)' at https://dbbf.bandcamp.com/album/lake-inferior-presents-live-from-london-vol-1 — playable on Bandcamp. Debut album 'People/Fate' slated for release before Homegrown 2026. Members: Calliope Opal (vocals), Corduroy Jompson (guitar), Xander Ripley-Jaakola (bass), Alec Williams (drums). Instagram: @rocking.rodents. Submitted NPR Tiny Desk Concert video ('The More'). No standalone YouTube/Spotify/SoundCloud found."
       },
       "type": "band_set",
       "refrain_start": 30.0,
@@ -5140,7 +5080,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "community event \u2014 no music video needed"
+        "note": "community event — no music video needed"
       },
       "type": "community_event"
     },
@@ -5185,7 +5125,7 @@
       "clip_file": "clips/Shadows of Me - Shadows of Me #metalcore   #music   #metal  #spotify     #breakdown   #newmusic  - 02:38.mp3"
     },
     {
-      "name": "Shakin\u2019 Not Stirred (SNS)",
+      "name": "Shakin’ Not Stirred (SNS)",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -5216,7 +5156,7 @@
       "facebook": "https://www.facebook.com/Shakinnotstirred4/",
       "refrain_start": 126.0,
       "refrain_end": 141.0,
-      "clip_file": "clips/Shakin\u2019 Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3"
+      "clip_file": "clips/Shakin’ Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3"
     },
     {
       "name": "Sidestreet Detour",
@@ -5403,17 +5343,11 @@
         "track": "Wild (Live)",
         "source": "itunes"
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=Yj5uQzvmmrc",
-        "title": "Slape - Sound Effect",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Slape - Slape - Sound Effect - 00:30.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "website": "https://slapemusic.com/",
       "facebook": "https://www.facebook.com/slape.music/"
     },
@@ -5451,7 +5385,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 P!NK song with karaoke lyrics"
+        "note": "removed — P!NK song with karaoke lyrics"
       },
       "type": "band_set"
     },
@@ -5463,7 +5397,7 @@
         "url": null,
         "id": null,
         "confidence": null,
-        "note": "removed \u2014 Maybe Sometime (different artist)"
+        "note": "removed — Maybe Sometime (different artist)"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -5524,7 +5458,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "search exhausted across all known platforms (2026-04-15 final pass): 5-piece Duluth band rooted in rock/blues/grunge (Tristan Beaster, Karl Beaster, Nate Stumme, Darin Steenerson, Ryan Bauers); perform originals plus covers (Tom Petty, Radiohead, RHCP, Pink Floyd, White Stripes, Weezer, Santana, Billie Eilish). perfectduluthday.com event listing links to a Facebook event (facebook.com/events/1378519316490975/) only. duluthhomegrown.org/bands/sons-of-fogtown/ confirms members and bio but provides zero external links. visitduluth.com event listing has no music links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram, Facebook \u2014 no recorded music found on any platform."
+        "note": "search exhausted across all known platforms (2026-04-15 final pass): 5-piece Duluth band rooted in rock/blues/grunge (Tristan Beaster, Karl Beaster, Nate Stumme, Darin Steenerson, Ryan Bauers); perform originals plus covers (Tom Petty, Radiohead, RHCP, Pink Floyd, White Stripes, Weezer, Santana, Billie Eilish). perfectduluthday.com event listing links to a Facebook event (facebook.com/events/1378519316490975/) only. duluthhomegrown.org/bands/sons-of-fogtown/ confirms members and bio but provides zero external links. visitduluth.com event listing has no music links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram, Facebook — no recorded music found on any platform."
       },
       "type": "band_set"
     },
@@ -5604,7 +5538,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Eminem movie soundtrack"
+        "note": "removed — Eminem movie soundtrack"
       },
       "type": "band_set",
       "refrain_start": 30.0,
@@ -5685,7 +5619,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=e9AcTQOGpWo",
-        "title": "Squid City Slingers - \u201cLike A Dog\u201d (Original) Live at Midway Saloon | St. Paul, MN (3/21/2025)",
+        "title": "Squid City Slingers - “Like A Dog” (Original) Live at Midway Saloon | St. Paul, MN (3/21/2025)",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -5694,7 +5628,7 @@
       "linktree": "https://linktr.ee/squidcityslingers",
       "refrain_start": 121.8,
       "refrain_end": 136.8,
-      "clip_file": "clips/Squid City Slingers - Squid City Slingers - \u201cLike A Dog\u201d (Original) Live at Midway Saloon  St. Paul, M - 02:01.mp3",
+      "clip_file": "clips/Squid City Slingers - Squid City Slingers - “Like A Dog” (Original) Live at Midway Saloon  St. Paul, M - 02:01.mp3",
       "facebook": "https://www.facebook.com/squidcityslingers"
     },
     {
@@ -5765,16 +5699,16 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=GemyGj1_Lkk",
-        "title": "Sophia Stel - Object Permanence (Radio Edit) - Full Length Nature Walk - Official Visualizer",
+        "url": "https://www.youtube.com/watch?v=rvB1Jm-sa00",
+        "title": "Stel and Lefty Whipping Post",
         "confidence": "high",
-        "note": null,
-        "sourceType": "media"
+        "note": "Homegrown 2002 at Sir Ben's, Duluth MN; Gregg Allman cover with Dan Skorich on harmonica",
+        "sourceType": "fan"
       },
       "type": "band_set",
-      "refrain_start": 123.4,
-      "refrain_end": 138.4,
-      "clip_file": "clips/Stel - Sophia Stel - Object Permanence (Radio Edit) - Full Length Nature Walk - Officia - 02:03.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "facebook": "https://www.facebook.com/musicstel/",
       "website": "https://www.stelmusic.com/"
     },
@@ -6044,7 +5978,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "community event \u2014 no music video needed"
+        "note": "community event — no music video needed"
       },
       "type": "community_event"
     },
@@ -6133,7 +6067,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "removed \u2014 wrong video match"
+        "note": "removed — wrong video match"
       },
       "type": "band_set"
     },
@@ -6176,7 +6110,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 different act (Barky Bark - WSHH)"
+        "note": "removed — different act (Barky Bark - WSHH)"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/TheCrunchyBunch",
@@ -6278,7 +6212,7 @@
         "url": "https://music.apple.com/us/artist/the-jambrones/367276203",
         "id": "367276203",
         "confidence": "medium",
-        "note": "iTunes returned \"The Jambrones\" \u2014 likely same local Duluth act, minor spelling variant"
+        "note": "iTunes returned \"The Jambrones\" — likely same local Duluth act, minor spelling variant"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -6362,7 +6296,7 @@
         "url": "https://music.apple.com/us/artist/lindula-brothers/1515193194",
         "id": "1515193194",
         "confidence": "medium",
-        "note": "iTunes returned \"Lindula Brothers\" \u2014 same act, dropped \"The\""
+        "note": "iTunes returned \"Lindula Brothers\" — same act, dropped \"The\""
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -6688,7 +6622,7 @@
         "url": "https://music.apple.com/us/artist/trash-cats/1408282587",
         "id": "1408282587",
         "confidence": "medium",
-        "note": "iTunes returned \"Trash Cats\" \u2014 same act, dropped \"The\""
+        "note": "iTunes returned \"Trash Cats\" — same act, dropped \"The\""
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -6714,7 +6648,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=t6SC_vaj5KM",
-        "title": "The Trash Cats \u2013 Full Show at the Superior Tavern (Duluth Homegrown 2024)",
+        "title": "The Trash Cats – Full Show at the Superior Tavern (Duluth Homegrown 2024)",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -6724,7 +6658,7 @@
       "website": "https://trashcatsduluth.com/",
       "refrain_start": 152.2,
       "refrain_end": 167.2,
-      "clip_file": "clips/The Trash Cats - The Trash Cats \u2013 Full Show at the Superior Tavern (Duluth Homegrown 2024) - 02:32.mp3"
+      "clip_file": "clips/The Trash Cats - The Trash Cats – Full Show at the Superior Tavern (Duluth Homegrown 2024) - 02:32.mp3"
     },
     {
       "name": "The Trinkets",
@@ -6793,7 +6727,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Eternal Eclipse neoclassical, not the Duluth act"
+        "note": "removed — Eternal Eclipse neoclassical, not the Duluth act"
       },
       "type": "band_set"
     },
@@ -6829,7 +6763,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 The Regulars from Athens GA, not Duluth"
+        "note": "removed — The Regulars from Athens GA, not Duluth"
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/ha.thor.n1998"
@@ -6921,7 +6855,7 @@
       "clip_file": "clips/Tim Kaiser - Tim Kaiser - 00:30.mp3"
     },
     {
-      "name": "Two T\u2019s in a Pod",
+      "name": "Two T’s in a Pod",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -6943,7 +6877,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=4XPWkl6SIoE",
-        "title": "Two T\u2019s in a Pod \u201cJoulu on Taas\u201d",
+        "title": "Two T’s in a Pod “Joulu on Taas”",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -6951,17 +6885,17 @@
       "type": "band_set",
       "refrain_start": 34.7,
       "refrain_end": 49.7,
-      "clip_file": "clips/Two T\u2019s in a Pod - Two T\u2019s in a Pod \u201cJoulu on Taas\u201d - 00:34.mp3"
+      "clip_file": "clips/Two T’s in a Pod - Two T’s in a Pod “Joulu on Taas” - 00:34.mp3"
     },
     {
-      "name": "Underground \u2018til Sundown",
+      "name": "Underground ‘til Sundown",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
         "url": "https://music.apple.com/us/artist/underground-til-sundown/975351460",
         "id": "975351460",
         "confidence": "medium",
-        "note": "iTunes name matches exactly \u2014 apostrophe encoding variant of same act"
+        "note": "iTunes name matches exactly — apostrophe encoding variant of same act"
       },
       "bandcamp": "https://undergroundtilsundown.bandcamp.com/",
       "the_north_plays": {
@@ -6983,7 +6917,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=qyzDhm_zBFE",
-        "title": "Underground \u2018Til Sundown were added to this years Punk Rock Flea Market@undergroundtilsundown736",
+        "title": "Underground ‘Til Sundown were added to this years Punk Rock Flea Market@undergroundtilsundown736",
         "confidence": "high",
         "note": null,
         "sourceType": "media"
@@ -6992,7 +6926,7 @@
       "facebook": "https://www.facebook.com/Undergroundtilsundown/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Underground \u2018til Sundown - Underground \u2018Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3"
+      "clip_file": "clips/Underground ‘til Sundown - Underground ‘Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3"
     },
     {
       "name": "Vena Sera",
@@ -7039,7 +6973,7 @@
         "url": "https://music.apple.com/us/artist/venus-de-mars-all-the-pretty-horses/375297780",
         "id": "375297780",
         "confidence": "medium",
-        "note": "iTunes returned \"Venus de Mars & All the Pretty Horses\" \u2014 same act"
+        "note": "iTunes returned \"Venus de Mars & All the Pretty Horses\" — same act"
       },
       "bandcamp": "https://venusdemars.bandcamp.com/",
       "the_north_plays": {
@@ -7070,7 +7004,7 @@
       },
       "youtube_video": {
         "url": "https://youtu.be/NEaXFAln9E4",
-        "title": "Mother Fucker \u2013 Venus de Mars & All The Pretty Horses",
+        "title": "Mother Fucker – Venus de Mars & All The Pretty Horses",
         "confidence": "high",
         "note": "Official music video; URL confirmed on venusdemars.bandcamp.com/video page",
         "sourceType": "band"
@@ -7109,17 +7043,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=HRdsFbMg9Wo",
-        "title": "Wickie Song",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 240.4,
-      "refrain_end": 255.4,
-      "clip_file": "clips/WICKIE - Wickie Song - 04:00.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "WILBUR",
@@ -7155,7 +7083,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "removed \u2014 Wilbur Soot (UK YouTuber), not the Duluth act"
+        "note": "removed — Wilbur Soot (UK YouTuber), not the Duluth act"
       },
       "type": "band_set"
     },
@@ -7228,7 +7156,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "search exhausted across all known platforms (2026-04-15 final pass): alt-country storyteller in Duluth scene since ~2007; recorded 4 albums 2007-2014 including 'Naturally Blue' (2014, with Greg Tiburzi, Steve Isakson, Mike Randoph, recorded at Sparta Sounds by Rich Mattson); performs 'gritty heartfelt Americana-esque' songs influenced by Springsteen, Gram Parsons, Jayhawks, Dwight Yoakam; reviewed in Duluth Reader (duluthreader.com/articles/2014/10/16/103785, Oct 2014) but no streaming links in review; duluthhomegrown.org/bands/wes-hadrich/ confirmed bio and album details but provides zero external links. Checked YouTube ('Rich Mattson Wes Hadrich' search: no results), Bandcamp, SoundCloud, Spotify, Apple Music, Amazon Music (no hit), CDBaby, Discogs, TikTok, Reddit, Linktree, Tidal, Deezer, Eventbrite, Facebook, Instagram \u2014 no recorded music found on any platform. Albums appear to be physical/CD-only releases with no digital distribution."
+        "note": "search exhausted across all known platforms (2026-04-15 final pass): alt-country storyteller in Duluth scene since ~2007; recorded 4 albums 2007-2014 including 'Naturally Blue' (2014, with Greg Tiburzi, Steve Isakson, Mike Randoph, recorded at Sparta Sounds by Rich Mattson); performs 'gritty heartfelt Americana-esque' songs influenced by Springsteen, Gram Parsons, Jayhawks, Dwight Yoakam; reviewed in Duluth Reader (duluthreader.com/articles/2014/10/16/103785, Oct 2014) but no streaming links in review; duluthhomegrown.org/bands/wes-hadrich/ confirmed bio and album details but provides zero external links. Checked YouTube ('Rich Mattson Wes Hadrich' search: no results), Bandcamp, SoundCloud, Spotify, Apple Music, Amazon Music (no hit), CDBaby, Discogs, TikTok, Reddit, Linktree, Tidal, Deezer, Eventbrite, Facebook, Instagram — no recorded music found on any platform. Albums appear to be physical/CD-only releases with no digital distribution."
       },
       "type": "band_set"
     },
@@ -7262,7 +7190,7 @@
         "title": null,
         "confidence": null,
         "sourceType": null,
-        "note": "search exhausted across all known platforms (2026-04-15 final pass): wife-and-husband duo Brooke (n\u00e9e Chaffee) and Caleb Anderson from Duluth; 'fun Americana sound with gospel undertones and New Orleans influences'; performed at Bent Paddle Brewing (Aug 2025, opening for Saltydog), Wussow's Concert Cafe, Dovetail Cafe for Homegrown 2026. Instagram account @wetlandwillows confirmed to exist but bio/links not accessible via fetch. duluthhomegrown.org/bands/wetland-willows/ confirmed duo identity and bio but provides zero external links. visitduluth.com event listing (saltydog-with-wetland-willows) has no music links. SoundCloud account soundcloud.com/caleb-anderson-44 exists but returned error page \u2014 unconfirmed identity. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Facebook, gottabesuperior.com \u2014 no recorded music found on any platform."
+        "note": "search exhausted across all known platforms (2026-04-15 final pass): wife-and-husband duo Brooke (née Chaffee) and Caleb Anderson from Duluth; 'fun Americana sound with gospel undertones and New Orleans influences'; performed at Bent Paddle Brewing (Aug 2025, opening for Saltydog), Wussow's Concert Cafe, Dovetail Cafe for Homegrown 2026. Instagram account @wetlandwillows confirmed to exist but bio/links not accessible via fetch. duluthhomegrown.org/bands/wetland-willows/ confirmed duo identity and bio but provides zero external links. visitduluth.com event listing (saltydog-with-wetland-willows) has no music links. SoundCloud account soundcloud.com/caleb-anderson-44 exists but returned error page — unconfirmed identity. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Facebook, gottabesuperior.com — no recorded music found on any platform."
       },
       "type": "band_set"
     },
@@ -7359,17 +7287,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=oZbzM00wkzg",
-        "title": "WitchFarm V2 Bugfix Proof",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Witchfarm - WitchFarm V2 Bugfix Proof - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Woodblind",
@@ -7404,7 +7326,7 @@
       },
       "preview": {
         "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/73/0e/ea/730eea34-0363-889b-bf92-1d91bc8ef8eb/mzaf_16596224673354823204.plus.aac.p.m4a",
-        "track": "You\u2019re the One for Me",
+        "track": "You’re the One for Me",
         "source": "itunes"
       },
       "youtube_video": {
@@ -7480,7 +7402,7 @@
         "url": null,
         "title": null,
         "confidence": null,
-        "note": "community event \u2014 no music video needed"
+        "note": "community event — no music video needed"
       },
       "type": "community_event"
     },
@@ -7511,27 +7433,21 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=Qm0bEtSWdHA",
-        "title": "bagshisha sohrai porb hathi nikan porb dhayna new santhali 2025",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/porb - bagshisha sohrai porb hathi nikan porb dhayna new santhali 2025 - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
-      "name": "\u00a1Radical Fun Time!",
+      "name": "¡Radical Fun Time!",
       "sets_at_festival": 1,
       "spotify": "https://open.spotify.com/artist/6KFybrOWEcQMoHRMqQttRP",
       "apple_music": {
         "url": "https://music.apple.com/us/artist/radical-fun-time/1502584231",
         "id": "1502584231",
         "confidence": "medium",
-        "note": "iTunes returned \"Radical Fun Time\" \u2014 same act, dropped punctuation"
+        "note": "iTunes returned \"Radical Fun Time\" — same act, dropped punctuation"
       },
       "bandcamp": "https://radicalfuntime.bandcamp.com/",
       "the_north_plays": {
@@ -7562,7 +7478,7 @@
       "facebook": "https://www.facebook.com/radicalfuntime/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/\u00a1Radical Fun Time! - Radical Fun Time - Water is Life  Together we will stop the pipeline - 00:30.mp3"
+      "clip_file": "clips/¡Radical Fun Time! - Radical Fun Time - Water is Life  Together we will stop the pipeline - 00:30.mp3"
     }
   ]
 }
