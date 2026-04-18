@@ -471,7 +471,13 @@
         "track": null,
         "source": null
       },
-      "youtube_video": null,
+      "youtube_video": {
+        "url": "https://www.youtube.com/watch?v=0-l2ZNM158U",
+        "title": "Lyla Abukhodair - Duluth Songwriter Showcase 2023",
+        "confidence": "high",
+        "note": null,
+        "sourceType": "duluth_songwriter_showcase"
+      },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Baharat-61555593565703/",
       "soundcloud": "https://soundcloud.com/baharat-music",
@@ -7043,7 +7049,13 @@
         "track": null,
         "source": null
       },
-      "youtube_video": null,
+      "youtube_video": {
+        "url": "https://www.youtube.com/watch?v=30kBLtwOoXk",
+        "title": "Wickie : EDM Thursday @ Aces on First",
+        "confidence": "high",
+        "note": null,
+        "sourceType": "live_set"
+      },
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
@@ -7271,7 +7283,7 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
-      "bandcamp": "https://witchfarm.bandcamp.com/",
+      "bandcamp": null,
       "the_north_plays": {
         "play_count": 0,
         "matched_as": null,
@@ -7433,7 +7445,13 @@
         "track": null,
         "source": null
       },
-      "youtube_video": null,
+      "youtube_video": {
+        "url": "https://www.youtube.com/watch?v=7fLLmA5F3AY",
+        "title": "Porb Full set from Hype: Duluth",
+        "confidence": "high",
+        "note": null,
+        "sourceType": "live_set"
+      },
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
