@@ -261,6 +261,23 @@
   #yt-wrap .yt-header .yt-act {
     display: flex; align-items: center;
   }
+  /* Platform links bar */
+  #yt-wrap .yt-links {
+    display: flex; justify-content: center; gap: 0;
+    padding: 2px 10px 3px; font-size: 11px;
+    font-family: "Space Grotesk", sans-serif;
+    background: rgba(10,8,6,0.92);
+    flex-shrink: 0; min-height: 0; overflow: hidden;
+    border-top: 1px solid rgba(111,168,98,0.15);
+  }
+  #yt-wrap .yt-links:empty { display: none; }
+  #yt-wrap .yt-links a {
+    color: var(--bone-dim); text-decoration: none;
+    padding: 1px 7px; white-space: nowrap;
+    transition: color 150ms;
+  }
+  #yt-wrap .yt-links a:hover { color: var(--spring); }
+  #yt-wrap .yt-links a + a { border-left: 1px solid rgba(111,168,98,0.2); }
   /* Footer: day/date | time | venue — space-between */
   #yt-wrap .yt-footer {
     padding: 5px 10px; font-size: 12px;
@@ -826,6 +843,7 @@
     <div id="yt-wrap" style="display:none;">
       <div id="yt-resize" title="Resize">⤡</div>
       <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span></div>
+      <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
         <div id="yt-controls">
@@ -2039,6 +2057,27 @@ function updateYtPlayer(t) {
     ytLabelTime.textContent = ytFmtTime(best.dt);
     ytLabelVenue.textContent = best.venue;
     ytOpenLink.href = best.vidUrl;
+    // Populate platform links bar
+    const linksBar = document.getElementById("yt-links");
+    linksBar.innerHTML = "";
+    const ad = best.actData || {};
+    const platforms = [
+      ["YouTube", ad.youtube_video?.url],
+      ["Spotify", ad.spotify],
+      ["Apple Music", ad.apple_music],
+      ["Bandcamp", ad.bandcamp],
+      ["SoundCloud", ad.soundcloud],
+      ["Instagram", ad.instagram],
+      ["Facebook", ad.facebook],
+      ["Website", ad.website],
+    ];
+    for (const [label, url] of platforms) {
+      if (!url) continue;
+      const a = document.createElement("a");
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = label;
+      linksBar.appendChild(a);
+    }
     updateStarBtn();
   }
 }
