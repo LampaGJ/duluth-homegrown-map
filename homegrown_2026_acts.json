@@ -700,17 +700,14 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=h3mfPDSbl-4",
-        "title": "The Poni-Tails - Born Too Late (1958)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — The Poni-Tails 1958 song, not the Duluth band"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/officialborntoolate/",
-      "refrain_start": 78.9,
-      "refrain_end": 93.9,
-      "clip_file": "clips/Born too Late - The Poni-Tails - Born Too Late (1958) - 01:18.mp3"
+      "facebook": "https://www.facebook.com/officialborntoolate/"
     },
     {
       "name": "Boxcar",
@@ -757,17 +754,14 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=C-ALUAa2fkw",
-        "title": "Boxcar Willie - Train song Medley",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — Boxcar Willie train medley, not the Duluth act"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/AllAboardDuluth/",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Boxcar - Boxcar Willie - Train song Medley - 00:30.mp3"
+      "facebook": "https://www.facebook.com/AllAboardDuluth/"
     },
     {
       "name": "Bratwurst",
@@ -3598,18 +3592,15 @@
         "source": "itunes"
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=dwE0MXwPSjw",
-        "title": "SAINT JHN x Imanbek   Roses KROMA x Amero Remix",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — SAINT JHN remix, not the Duluth artist"
       },
       "type": "band_set",
       "soundcloud": "https://soundcloud.com/kromamusic",
-      "facebook": "https://www.facebook.com/KROMAandFriends/",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Kroma - SAINT JHN x Imanbek   Roses KROMA x Amero Remix - 00:30.mp3"
+      "facebook": "https://www.facebook.com/KROMAandFriends/"
     },
     {
       "name": "Lake Effect String Band",
@@ -3972,10 +3963,10 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
-        "url": "https://music.apple.com/us/artist/midnight-fistfight/1819623691",
-        "id": "1819623691",
-        "confidence": "low",
-        "note": "iTunes returned \"Midnight Fistfight\" — close but not identical; may be same act or different"
+        "url": null,
+        "id": null,
+        "confidence": null,
+        "note": "removed — Midnight Fistfight (different band)"
       },
       "bandcamp": "https://midnightkissfight.bandcamp.com/",
       "the_north_plays": {
@@ -4254,17 +4245,14 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=TLGWQfK-6DY",
-        "title": "RUN DMC, Jason Nevins - It's Like That (Official HD Video)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — Run DMC/Jason Nevins, not the Duluth act"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/p/Nevins-100066101610846/",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Nevins - RUN DMC, Jason Nevins - It's Like That (Official HD Video) - 00:30.mp3"
+      "facebook": "https://www.facebook.com/p/Nevins-100066101610846/"
     },
     {
       "name": "Nikki Lemire",
@@ -4556,16 +4544,13 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=It9LxE4tbEk",
-        "title": "Olly Alexander - Polari (Official Video)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — Olly Alexander song, not the Duluth band"
       },
-      "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Polari - Olly Alexander - Polari (Official Video) - 00:30.mp3"
+      "type": "band_set"
     },
     {
       "name": "Portrait of a Drowned Man",
@@ -5358,10 +5343,10 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
-        "url": "https://music.apple.com/us/artist/maybe-sometime/1836329790",
-        "id": "1836329790",
-        "confidence": "low",
-        "note": "iTunes returned \"Maybe Sometime\" — inverted name; possibly same act"
+        "url": null,
+        "id": null,
+        "confidence": null,
+        "note": "removed — Maybe Sometime (different artist)"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -6658,16 +6643,13 @@
         "source": null
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=3JqG9WiOoz8",
-        "title": "'Theory of Light' - Eternal Eclipse | Beautiful Neoclassical Music | Thomas-Adam Habuda",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — Eternal Eclipse neoclassical, not the Duluth act"
       },
-      "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Theory of Light - 'Theory of Light' - Eternal Eclipse  Beautiful Neoclassical Music  Thomas-Adam H - 00:30.mp3"
+      "type": "band_set"
     },
     {
       "name": "Thor & The Regulars",
@@ -7010,16 +6992,13 @@
         "source": "itunes"
       },
       "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=Xa0Swz3X1cQ",
-        "title": "Wilbur Soot - Your New Boyfriend (OFFICIAL VIDEO)",
-        "confidence": "high",
-        "note": null,
-        "sourceType": "band"
+        "url": null,
+        "title": null,
+        "confidence": null,
+        "sourceType": null,
+        "note": "removed — Wilbur Soot (UK YouTuber), not the Duluth act"
       },
-      "type": "band_set",
-      "refrain_start": 149.4,
-      "refrain_end": 164.4,
-      "clip_file": "clips/WILBUR - Wilbur Soot - Your New Boyfriend (OFFICIAL VIDEO) - 02:29.mp3"
+      "type": "band_set"
     },
     {
       "name": "Water Cat",
