@@ -31,7 +31,10 @@
         "note": null,
         "sourceType": "fan"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/#theindianheadband - #theindianheadband BWCA DHGMF22 - 00:30.mp3"
     },
     {
       "name": "218 Dance Project",
@@ -180,7 +183,10 @@
         "confidence": null,
         "note": "no match found"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Alex Heil - bandcamp - 00:30.mp3"
     },
     {
       "name": "All Sea Monsters Are Girls",
@@ -622,7 +628,10 @@
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Big-Wave-Dave-and-the-Ripples-100063533648505/",
-      "website": "https://www.bigwavedaveandtheripples.com"
+      "website": "https://www.bigwavedaveandtheripples.com",
+      "refrain_start": 151.2,
+      "refrain_end": 166.2,
+      "clip_file": "clips/Big Wave Dave and the Ripples - Chuck Leavell and Big Wave Dave and the Ripples perform Like A Rolling Stone - 02:31.mp3"
     },
     {
       "name": "Bill Berguson Band",
@@ -654,7 +663,10 @@
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/The-Bill-Berguson-Band-100062921964770/",
-      "website": "https://www.billbergusonband.com/"
+      "website": "https://www.billbergusonband.com/",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Bill Berguson Band - Bill Berguson Band - Long Time Comin' - 00:30.mp3"
     },
     {
       "name": "Born too Late",
@@ -1752,7 +1764,10 @@
         "sourceType": null,
         "note": "removed — Ot7QUANNY song, not the Duluth act"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Dog Talk - bandcamp - 00:30.mp3"
     },
     {
       "name": "Dre AKA Jamaican",
@@ -3030,7 +3045,10 @@
         "note": null,
         "sourceType": "fan"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 27.8,
+      "refrain_end": 42.8,
+      "clip_file": "clips/Idle Rose - Idle Rose at Oak Center November 8, 2025 - 00:27.mp3"
     },
     {
       "name": "Indecent Proposal",
@@ -3259,7 +3277,10 @@
         "sourceType": "band"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/Janie.Spokes.1/"
+      "facebook": "https://www.facebook.com/Janie.Spokes.1/",
+      "refrain_start": 201.1,
+      "refrain_end": 216.1,
+      "clip_file": "clips/Janie and The Spokes - Big Yellow Taxi by Janie and The Spokes - 03:21.mp3"
     },
     {
       "name": "Jen West",
@@ -3981,7 +4002,10 @@
         "confidence": null,
         "note": "removed — wrong video match"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Midnight Kissfight - bandcamp - 00:30.mp3"
     },
     {
       "name": "Misisipi Mike Wolf and The Plain High Drifters",
@@ -4817,7 +4841,10 @@
         "sourceType": null,
         "note": "two live tracks on dbbf/Lake Inferior compilation: 'Bug Abandonment (Live)' and 'People Pleaser (Live)' at https://dbbf.bandcamp.com/album/lake-inferior-presents-live-from-london-vol-1 — playable on Bandcamp. Debut album 'People/Fate' slated for release before Homegrown 2026. Members: Calliope Opal (vocals), Corduroy Jompson (guitar), Xander Ripley-Jaakola (bass), Alec Williams (drums). Instagram: @rocking.rodents. Submitted NPR Tiny Desk Concert video ('The More'). No standalone YouTube/Spotify/SoundCloud found."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Rocking Rodents - bandcamp - 00:30.mp3"
     },
     {
       "name": "Rory Van James",
@@ -4855,7 +4882,10 @@
       },
       "type": "band_set",
       "soundcloud": "https://soundcloud.com/user-82666367",
-      "website": "http://www.roryvanjames.org/"
+      "website": "http://www.roryvanjames.org/",
+      "refrain_start": 131.9,
+      "refrain_end": 146.9,
+      "clip_file": "clips/Rory Van James - Rory Van James  Tiny Desk Contest 2020 - 02:11.mp3"
     },
     {
       "name": "Ross Thorn",
@@ -5136,7 +5166,10 @@
         "sourceType": "fan"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/p/Sidestreet-Detour-100084443725200/"
+      "facebook": "https://www.facebook.com/p/Sidestreet-Detour-100084443725200/",
+      "refrain_start": 175.8,
+      "refrain_end": 190.8,
+      "clip_file": "clips/Sidestreet Detour - Sidestreet Detour I'll Be Around (orignal music), Rival House at Grand Casino-Hi - 02:55.mp3"
     },
     {
       "name": "Sister Veery",
@@ -5172,7 +5205,10 @@
         "confidence": null,
         "note": "no match found"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Sister Veery - bandcamp - 00:30.mp3"
     },
     {
       "name": "Skarlett Woods",
@@ -5468,7 +5504,10 @@
         "sourceType": null,
         "note": "removed — Eminem movie soundtrack"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Southpaw - bandcamp - 00:30.mp3"
     },
     {
       "name": "Spin Collective",
@@ -5723,7 +5762,10 @@
         "sourceType": "venue"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/sugarontheroof/"
+      "facebook": "https://www.facebook.com/sugarontheroof/",
+      "refrain_start": 68.3,
+      "refrain_end": 83.3,
+      "clip_file": "clips/Sugar on the Roof - Sugar On The Roof Homegrown 2019 - 01:08.mp3"
     },
     {
       "name": "Taylor James Donskey",
@@ -6025,7 +6067,10 @@
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/TheCrunchyBunch",
-      "website": "https://www.thecrunchybunch.info/"
+      "website": "https://www.thecrunchybunch.info/",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/The Crunchy Bunch - bandcamp - 00:30.mp3"
     },
     {
       "name": "The Draco Volans",
@@ -6106,7 +6151,10 @@
         "sourceType": "fan"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/thegemstonesband/"
+      "facebook": "https://www.facebook.com/thegemstonesband/",
+      "refrain_start": 103.7,
+      "refrain_end": 118.7,
+      "clip_file": "clips/The Gemstones - The Gemstones LIVE at the Cedar Lounge 10012025 - 01:43.mp3"
     },
     {
       "name": "The Jambronies",
@@ -6380,7 +6428,10 @@
         "note": null,
         "sourceType": "band"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/The Repairmen - bandcamp - 00:30.mp3"
     },
     {
       "name": "The Roadside Lupines",
@@ -6885,7 +6936,10 @@
       },
       "type": "band_set",
       "facebook": "https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/",
-      "website": "https://venusdemars.com/"
+      "website": "https://venusdemars.com/",
+      "refrain_start": 30.0,
+      "refrain_end": 45.0,
+      "clip_file": "clips/Venus de Mars and All The Pretty Horses - bandcamp - 00:30.mp3"
     },
     {
       "name": "WICKIE",
@@ -7103,7 +7157,10 @@
         "sourceType": "band"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/groups/528240343893184/"
+      "facebook": "https://www.facebook.com/groups/528240343893184/",
+      "refrain_start": 109.9,
+      "refrain_end": 124.9,
+      "clip_file": "clips/Willem Dafoe Fan Club - Just Like Christmas by Low, performed by Willem Dafoe Fan Club - 01:49.mp3"
     },
     {
       "name": "Winzige Hosen",
