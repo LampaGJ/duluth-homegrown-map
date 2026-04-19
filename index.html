@@ -1118,7 +1118,9 @@ const scene = new THREE.Scene();
 scene.background = null;   // transparent canvas so backdrop type shows through
 scene.fog = new THREE.Fog(0x0b1410, 180, 380);
 
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 800);
+const _cw = canvas.clientWidth || window.innerWidth;
+const _ch = canvas.clientHeight || window.innerHeight;
+const camera = new THREE.PerspectiveCamera(45, _cw / _ch, 0.1, 800);
 camera.position.set(0, 85, 130);
 camera.lookAt(0, 0, -20);
 
