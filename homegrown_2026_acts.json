@@ -1425,18 +1425,12 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=Dc1Fm0WtsXc",
-        "title": "Brody + Macy Eldien | Pike Lake Golf & Beach Club | Duluth, MN",
-        "confidence": "low",
-        "note": null,
-        "sourceType": "fan"
-      },
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/p/Brody-The-Roadies-61563045035871/",
-      "refrain_start": 232.6,
-      "refrain_end": 247.6,
-      "clip_file": "clips/Brody & the Roadies - Brody + Macy Eldien  Pike Lake Golf & Beach Club  Duluth, MN - 03:52.mp3",
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null,
       "members": [
         {
           "name": "Brody Heisick-Thole",

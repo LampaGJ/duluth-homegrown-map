@@ -259,8 +259,14 @@
   }
   #yt-wrap .yt-header .yt-act {
     display: flex; align-items: center;
+    line-height: 1; flex: 1; overflow: hidden;
+  }
+  #yt-header-close {
+    display: none; background: none; border: 0; color: var(--bone-dim);
+    font-size: 20px; cursor: pointer; padding: 0 2px 0 8px; flex-shrink: 0;
     line-height: 1;
   }
+  #yt-header-close:hover { color: #fff; }
   /* Platform links bar */
   #yt-wrap .yt-links {
     display: flex; justify-content: center; gap: 0;
@@ -526,6 +532,7 @@
     }
     #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
     #yt-resize { display: none; }
+    #yt-header-close { display: block; }
     #yt-mobile-nav { display: flex; }
   }
   /* Chrome-fader slider, like a mixing-console volume knob */
@@ -620,7 +627,7 @@
     html, body { overflow: auto; height: auto; }
     #app { position: relative; height: auto; }
     #map-wrap {
-      position: relative; height: 40vh; min-height: 240px; margin-top: 44px;
+      position: relative; height: 50vh; min-height: 280px; margin-top: 44px;
     }
     #panel {
       position: static; width: auto; max-height: none;
@@ -839,7 +846,7 @@
   <div id="scrubber">
     <div id="yt-wrap" style="display:none;">
       <div id="yt-resize" title="Resize">⋯</div>
-      <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span></div>
+      <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span><button id="yt-header-close" title="Close">✕</button></div>
       <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
@@ -2724,12 +2731,13 @@ if (window.innerWidth <= 768) {
       render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
     }
   });
-  document.getElementById("yt-close").addEventListener("click", () => {
-    // Close video, show schedule again
+  function ytClosePlayer() {
     ytWrap.style.display = "none";
     mobileSchedule.style.display = "";
     if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
-  });
+  }
+  document.getElementById("yt-close").addEventListener("click", ytClosePlayer);
+  document.getElementById("yt-header-close").addEventListener("click", ytClosePlayer);
 }
 
 render(tMin);
