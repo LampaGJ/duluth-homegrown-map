@@ -3099,16 +3099,17 @@ function esc(s) {
     let fs, yBaseline, scaleY;
     if (isMobileMask) {
       // Mobile: text spans full width, pinned to top of map area
-      fs = Math.round(w * 0.18);
-      yBaseline = fs;  // SVG text y = baseline, so this puts cap-top near y=0
-      scaleY = 1.0;    // no vertical stretch on mobile — keep it simple
+      // Larger font needed because curved textPath doesn't stretch to textLength
+      fs = Math.round(w * 0.205);
+      yBaseline = Math.round(fs * 0.95);
+      scaleY = 1.0;
     } else {
       fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
       const yPct = (T.txYPct || 72) / 100;
       yBaseline = Math.round(fs * yPct);
       scaleY = T.txSy || 2.07;
     }
-    const spacing = T.txSpacing !== undefined ? T.txSpacing : -8;
+    const spacing = isMobileMask ? -4 : (T.txSpacing !== undefined ? T.txSpacing : -8);
     // Mobile: gentle upward bow (negative = concave/cylinder inside)
     const curve = isMobileMask ? -30 : (T.txCurve || 0);
     const bearingFix = 6;
