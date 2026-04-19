@@ -3096,13 +3096,21 @@ function esc(s) {
     const marginR = (T.txMarginR || 0);
     const margin = marginL;
     const fsPct = T.txFs || 38;
-    // Cap font-size so text fits viewport width on narrow screens (mobile)
-    const fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
-    const yPct = isMobileMask ? 0.35 : ((T.txYPct || 72) / 100);
-    const yBaseline = Math.round(fs * yPct);
-    const scaleY = isMobileMask ? 1.2 : (T.txSy || 2.07);
+    let fs, yBaseline, scaleY;
+    if (isMobileMask) {
+      // Mobile: text spans full width, pinned to top of map area
+      fs = Math.round(w * 0.18);
+      yBaseline = fs;  // SVG text y = baseline, so this puts cap-top near y=0
+      scaleY = 1.0;    // no vertical stretch on mobile — keep it simple
+    } else {
+      fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
+      const yPct = (T.txYPct || 72) / 100;
+      yBaseline = Math.round(fs * yPct);
+      scaleY = T.txSy || 2.07;
+    }
     const spacing = T.txSpacing !== undefined ? T.txSpacing : -8;
-    const curve = T.txCurve || 0;
+    // Mobile: gentle upward bow (negative = concave/cylinder inside)
+    const curve = isMobileMask ? -30 : (T.txCurve || 0);
     const bearingFix = 6;
     const textW = w - marginL - marginR + bearingFix * 2;
     const startX = marginL - bearingFix;
