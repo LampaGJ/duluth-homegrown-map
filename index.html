@@ -3101,8 +3101,8 @@ function esc(s) {
       // Mobile: text spans full width, pinned to top of map area
       // Larger font needed because curved textPath doesn't stretch to textLength
       fs = Math.round(w * 0.205);
-      yBaseline = Math.round(fs * 0.95);
-      scaleY = 1.0;
+      yBaseline = Math.round(fs * 0.45);
+      scaleY = 2.0;
     } else {
       fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
       const yPct = (T.txYPct || 72) / 100;
