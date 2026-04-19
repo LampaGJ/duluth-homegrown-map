@@ -542,7 +542,7 @@
   @media (max-width: 768px) {
     #yt-wrap {
       position: fixed; bottom: 0; left: 0; right: 0;
-      top: calc(30vh + 57px - 7.5vh); /* below set list + map - timeline overlap */
+      top: calc(30vh + 57px - 3vh); /* below set list + map - timeline overlap */
       width: 100% !important; height: auto;
       border-radius: 0; border: 0;
     }
@@ -644,8 +644,8 @@
   @media (max-width: 768px) {
     .day-ticks { height: 26px; margin-top: 2px; }
     .day-ticks .day-pill { font-size: 11px; padding: 2px 4px; }
-    #sparkline-wrap { height: 70px !important; }
-    #slider { height: 30px !important; }
+    #sparkline-wrap { height: 46px !important; }
+    #slider { height: 26px !important; }
   }
 
   /* ---- Mobile layout: map top ~45%, scrubber fixed middle, schedule bottom ~45% ---- */
@@ -662,8 +662,8 @@
       border-radius: 0;
       z-index: 22;
       order: 2;
-      min-height: 18vh;
-      margin-top: -7.5vh;
+      min-height: 12vh;
+      margin-top: -3vh;
     }
     body { padding-bottom: 0; }
     header { position: relative; }
