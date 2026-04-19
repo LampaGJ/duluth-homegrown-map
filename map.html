@@ -229,7 +229,7 @@
   /* YouTube mini-player — resizable */
   #yt-wrap {
     position: absolute; bottom: calc(100% + 8px);
-    width: 420px; height: 320px;
+    width: 420px; height: 370px;
     background: rgba(10,8,6,0.88); backdrop-filter: blur(12px);
     border: 1px solid rgba(111,168,98,0.2); border-radius: 8px;
     overflow: visible; z-index: 12;
@@ -2122,8 +2122,11 @@ const ytOpenLink = document.getElementById("yt-open");
 // Drag-to-resize the YouTube player
 const ytResize = document.getElementById("yt-resize");
 let ytResizing = false, ytResizeStart = null, ytResizeDragged = false;
-const YT_MIN = { w: 280, h: 200 };
-const YT_MAX = { w: 700, h: 800 };
+const YT_MIN = { w: 280 };
+const YT_MAX = { w: 700 };
+// Compute player height from width: 16:9 video + chrome (header ~46 + links ~20 + controls ~38 + footer ~30)
+const YT_CHROME_H = 134;
+function ytHeightForWidth(w) { return Math.round(w * 9 / 16 + YT_CHROME_H); }
 let ytSizeState = "normal"; // "small" | "normal" | "large"
 
 ytResize.addEventListener("pointerdown", (e) => {
@@ -2138,11 +2141,9 @@ document.addEventListener("pointermove", (e) => {
   if (Math.abs(e.clientX - ytResizeStart.x) > 4 || Math.abs(e.clientY - ytResizeStart.y) > 4) ytResizeDragged = true;
   if (ytResizeDragged) {
     const dx = (e.clientX - ytResizeStart.x) * 2;
-    const dy = -(e.clientY - ytResizeStart.y);  // drag up = taller
     const newW = Math.max(YT_MIN.w, Math.min(YT_MAX.w, ytResizeStart.w + dx));
-    const newH = Math.max(YT_MIN.h, Math.min(YT_MAX.h, ytResizeStart.h + dy));
     ytWrap.style.width = newW + "px";
-    ytWrap.style.height = newH + "px";
+    ytWrap.style.height = ytHeightForWidth(newW) + "px";
     ytSizeState = "normal";
     updatePlayhead();
   }
@@ -2151,9 +2152,9 @@ document.addEventListener("pointerup", () => {
   if (ytResizing && !ytResizeDragged) {
     // Click without drag → toggle between smallest and largest
     if (ytSizeState === "large") {
-      ytWrap.style.width = YT_MIN.w + "px"; ytWrap.style.height = YT_MIN.h + "px"; ytSizeState = "small";
+      ytWrap.style.width = YT_MIN.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MIN.w) + "px"; ytSizeState = "small";
     } else {
-      ytWrap.style.width = YT_MAX.w + "px"; ytWrap.style.height = YT_MAX.h + "px"; ytSizeState = "large";
+      ytWrap.style.width = YT_MAX.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MAX.w) + "px"; ytSizeState = "large";
     }
   }
   ytResizing = false;
