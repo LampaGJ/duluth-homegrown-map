@@ -664,7 +664,12 @@
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
     /* HOMEGROWN bg + SVG mask text, constrained to map area on mobile */
-    #sky-bg { top: 57px; height: 30vh; width: 100vw; background-size: 100vw auto; background-position: center top; }
+    #sky-bg {
+      top: 57px; height: 30vh; width: 100vw;
+      background-size: 100vw auto; background-position: center -20px;
+      -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    }
     #sky-overlay {
       position: fixed; top: 57px; left: 0; right: 0; height: 30vh;
       width: 100vw; z-index: 1; pointer-events: none;
