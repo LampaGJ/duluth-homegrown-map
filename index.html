@@ -646,7 +646,7 @@
     html, body { overflow: hidden; height: 100%; margin: 0; padding: 0; }
     #app { position: relative; height: 100%; display: flex; flex-direction: column; margin: 0; padding: 0; }
     #scene {
-      flex: 0 0 auto; height: 36vh !important; min-height: 160px;
+      flex: 0 0 auto; height: 30vh !important; min-height: 140px;
       order: 1; width: 100% !important;
     }
     #panel { display: none; }
@@ -664,9 +664,9 @@
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
     /* HOMEGROWN bg + SVG mask text, constrained to map area on mobile */
-    #sky-bg { top: 57px; height: 36vh; width: 100vw; background-size: 100vw auto; background-position: center top; }
+    #sky-bg { top: 57px; height: 30vh; width: 100vw; background-size: 100vw auto; background-position: center top; }
     #sky-overlay {
-      position: fixed; top: 57px; left: 0; right: 0; height: 36vh;
+      position: fixed; top: 57px; left: 0; right: 0; height: 30vh;
       width: 100vw; z-index: 1; pointer-events: none;
     }
     .tooltip { position: fixed; }
@@ -2248,9 +2248,20 @@ function togglePlay() {
   playing = !playing;
   playBtn.textContent = playing ? "❚❚" : "▶";
   playBtn.style.paddingLeft = playing ? "0" : "3px";
+  playBtn.style.paddingBottom = playing ? "1px" : "0";
   render(currentTime);
   if (playing) {
-    updateYtPlayer(currentTime);
+    // If no video loaded yet, jump to first act in playlist
+    if (ytCurrentIdx < 0 && ytPlaylist.length) {
+      const first = ytPlaylist[0];
+      const cTime = realToCompressed(first.dt);
+      slider.value = cTime;
+      render(first.dt);
+      updatePlayhead();
+      updateYtPlayer(first.dt, 0);
+    } else {
+      updateYtPlayer(currentTime);
+    }
     // Resume or start the YT video
     if (ytPlayer && ytPlayer.playVideo) ytPlayer.playVideo();
   } else {
@@ -3090,7 +3101,7 @@ function esc(s) {
     try {
     const isMobileMask = window.innerWidth <= 768;
     const w = window.innerWidth;
-    const h = isMobileMask ? (window.innerHeight * 0.36) : window.innerHeight;
+    const h = isMobileMask ? (window.innerHeight * 0.30) : window.innerHeight;
     const T = window.__tweak || {};
     const marginL = (T.txMarginL || 0);
     const marginR = (T.txMarginR || 0);
@@ -3101,7 +3112,7 @@ function esc(s) {
       // Mobile: text spans full width, pinned to top of map area
       // Larger font needed because curved textPath doesn't stretch to textLength
       fs = Math.round(w * 0.205);
-      yBaseline = Math.round(fs * 0.45);
+      yBaseline = Math.round(fs * 0.65);
       scaleY = 2.0;
     } else {
       fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
