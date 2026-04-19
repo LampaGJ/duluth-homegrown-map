@@ -527,9 +527,10 @@
   @media (max-width: 768px) {
     #yt-wrap {
       position: fixed; bottom: 0; left: 0; right: 0; top: auto;
-      width: 100%; height: 50vh;
+      width: 100% !important; height: 55vh;
       border-radius: 12px 12px 0 0; border-bottom: 0;
     }
+    #yt-wrap .yt-header { font-size: 22px; min-height: 36px; padding: 6px 10px; }
     #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
     #yt-resize { display: none; }
     #yt-header-close { display: block; }
@@ -619,32 +620,40 @@
     .day-ticks .day-pill { white-space: normal; word-spacing: 100vw; font-size: 16px; line-height: 1.1; }
   }
   @media (max-width: 768px) {
-    .day-ticks .day-pill { font-size: 13px; padding: 3px 4px; }
+    .day-ticks { height: 26px; margin-top: 2px; }
+    .day-ticks .day-pill { font-size: 11px; padding: 2px 4px; }
+    #sparkline-wrap { height: 50px !important; }
+    #slider { height: 28px !important; }
   }
 
-  /* ---- Mobile layout: panel below map, stacked ---- */
+  /* ---- Mobile layout: map top ~45%, scrubber fixed middle, schedule bottom ~45% ---- */
   @media (max-width: 768px) {
-    html, body { overflow: auto; height: auto; }
-    #app { position: relative; height: auto; }
-    #map-wrap {
-      position: relative; height: 50vh; min-height: 280px; margin-top: 44px;
+    html, body { overflow: hidden; height: 100%; margin: 0; }
+    #app { position: relative; height: 100%; display: flex; flex-direction: column; }
+    #scene {
+      flex: 0 0 auto; height: 42vh !important; min-height: 180px; margin-top: 44px;
+      order: 1; width: 100% !important;
     }
-    #panel {
-      position: static; width: auto; max-height: none;
-      top: auto; right: auto;
-      margin: 0; border-radius: 0;
-      border-left: 0; border-right: 0;
-    }
+    #panel { display: none; }
     #scrubber {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      border-radius: 14px 14px 0 0;
+      position: relative; flex-shrink: 0;
+      border-radius: 0;
+      z-index: 22;
+      order: 2;
     }
-    body { padding-bottom: 180px; }
+    body { padding-bottom: 0; }
     header { position: relative; }
     h1 { font-size: 26px; }
     .day-ticks { font-size: 11px; }
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
+    /* HOMEGROWN text — hide on mobile to save space */
+    #sky-bg { display: none; }
+    /* Hide desktop-only elements from flex flow on mobile */
+    #sky-overlay, .tooltip { position: fixed; }
+    #setlist-panel { position: fixed; z-index: 27; }
+    #sl-share-dialog { position: fixed; }
+    #yt-wrap { z-index: 25; }
     /* Set list: full-width collapsible bar at top on mobile */
     #setlist-btn {
       position: fixed; top: 0; left: 0; right: 0;
@@ -659,10 +668,11 @@
       border-top: 0;
     }
     #mobile-schedule {
-      display: block; position: fixed; bottom: 0; left: 0; right: 0; height: 50vh;
+      display: block; flex: 1 1 auto; min-height: 0;
       overflow-y: auto; -webkit-overflow-scrolling: touch;
       background: rgba(10,8,6,0.95); border-top: 1px solid rgba(111,168,98,0.2);
-      padding: 8px 12px 80px; z-index: 20;
+      padding: 8px 12px 20px;
+      order: 3;
     }
     #mobile-schedule .ms-day {
       font-family: "Bebas Neue", sans-serif; font-size: 20px; color: var(--spring);
@@ -1067,7 +1077,7 @@ const canvas = document.getElementById("scene");
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 renderer.setClearColor(0x000000, 0);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
-renderer.setSize(window.innerWidth, window.innerHeight, false);
+renderer.setSize(canvas.clientWidth || window.innerWidth, canvas.clientHeight || window.innerHeight, false);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 const scene = new THREE.Scene();
@@ -1299,7 +1309,7 @@ let playing = false;
 
 // Each act at a venue = one cube stacked on top of the previous.
 // Sized proportional to the disc radius so venues don't dwarf the map.
-const CUBE_SIZE = DISC_RADIUS * 0.022;
+const CUBE_SIZE = DISC_RADIUS * (window.innerWidth <= 768 ? 0.016 : 0.022);
 const CUBE_GAP = CUBE_SIZE * 0.08;
 const cubeGeo = new THREE.BoxGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
 const sphereGeo = new THREE.SphereGeometry(CUBE_SIZE * 0.6, 16, 12);
@@ -1413,7 +1423,7 @@ for (const p of venuePlacements) {
 
 // Flag fabric — PlaneGeometry mesh (not a Sprite) so we can wave the vertices.
 // Billboards toward camera each frame via Y rotation in the tick loop.
-const FABRIC_H = 1.4;
+const FABRIC_H = window.innerWidth <= 768 ? 0.9 : 1.4;
 const FABRIC_SEGS = 20;
 
 function makeFabricMesh(text) {
@@ -1631,8 +1641,9 @@ controls.minPolarAngle = 0.15;
 controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
 // Frame the disc so it fills the viewport width — this is the max zoom-out.
 (() => {
-  const r = DISC_RADIUS * 1.5;        // 10% closer
-  const elev = 8 * Math.PI / 180;    // ~8° from horizon — more on-edge
+  const isMobile = window.innerWidth <= 768;
+  const r = DISC_RADIUS * (isMobile ? 1.8 : 1.5);  // zoom out more on mobile
+  const elev = (isMobile ? 18 : 8) * Math.PI / 180; // steeper angle on mobile for overview
   const zoo = venuePlacements.find(p => p.v.name.includes("Zoo"));
   const zooAngle = zoo
     ? Math.atan2(zoo.x - DISC_CENTER.x, zoo.z - DISC_CENTER.y)
@@ -1650,8 +1661,9 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
 })();
 
 window.addEventListener("resize", () => {
-  renderer.setSize(window.innerWidth, window.innerHeight, false);
-  camera.aspect = window.innerWidth / window.innerHeight;
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
   camera.updateProjectionMatrix();
 });
 
@@ -2636,7 +2648,8 @@ playBtn.addEventListener("pointerup", (e) => {
 const ticksEl = document.getElementById("day-ticks");
 const dayFmtLong = d3.timeFormat("%A %-m/%-d");
 const dayFmtShort = d3.timeFormat("%a %-m/%-d");
-const dayFmt = window.innerWidth < 1200 ? dayFmtShort : dayFmtLong;
+const dayFmtMobile = d3.timeFormat("%a");
+const dayFmt = window.innerWidth <= 768 ? dayFmtMobile : (window.innerWidth < 1200 ? dayFmtShort : dayFmtLong);
 // Build day pills sized proportionally to their compressed slot width,
 // with gaps matching the pad zones between days in the equalizer.
 // Slider track channel aligns to the first/last day label edges (no extra padding)
