@@ -2168,7 +2168,7 @@
       "genre": "children's music",
       "description": "A children's music performer who plays songs for kids using toy musical instruments and stuffed animals, engaging young audiences through interactive musical experiences.",
       "established": 2009,
-      "genre_category": "Other"
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Danny Frank & the Smoky Gold",
@@ -8190,7 +8190,7 @@
         "note": null,
         "sourceType": "venue"
       },
-      "type": "band_set",
+      "type": "community_event",
       "facebook": "https://www.facebook.com/p/the-Spin-Collective-100046370025743/",
       "refrain_start": 22.8,
       "refrain_end": 37.8,
@@ -8236,7 +8236,7 @@
       "genre": "fire spinning, flow performance",
       "established": 2010,
       "description": "A fire spinning and flow troupe that choreographs pieces with flaming staff, poi, hula hoops, fans, and innovative props synced to various music genres.",
-      "genre_category": "Other"
+      "genre_category": null
     },
     {
       "name": "Squid City Slingers",
@@ -8476,7 +8476,7 @@
       "genre": "comedic musical, multi-genre",
       "established": null,
       "description": "A one-man performer who plays numerous instruments while singing in multiple languages. His energetic shows blend music with humor and theatrical elements.",
-      "genre_category": "Other"
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Sugar on the Roof",
@@ -10133,7 +10133,7 @@
       "genre": "children's, pop",
       "established": null,
       "description": "A mother-daughter duo performing charming children's songs, pop covers, and originals on guitar and harmonica.",
-      "genre_category": "Other"
+      "genre_category": "Pop"
     },
     {
       "name": "Underground 'til Sundown",
@@ -10511,7 +10511,7 @@
       "genre": "world music",
       "established": null,
       "description": "A duo blending instruments and influences from French, Spanish, Portuguese, and English traditions with African and global elements.",
-      "genre_category": "Other"
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Wes Hadrich",
