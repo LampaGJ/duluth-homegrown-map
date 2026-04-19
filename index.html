@@ -1678,15 +1678,15 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
 // Frame the disc so it fills the viewport width — this is the max zoom-out.
 (() => {
   const isMobile = window.innerWidth <= 768;
-  const r = DISC_RADIUS * (isMobile ? 2.07 : 1.5);  // zoom out more on mobile
-  const elev = (isMobile ? 20 : 8) * Math.PI / 180; // steeper angle on mobile for overview
+  const r = DISC_RADIUS * (isMobile ? 1.5 : 1.5);  // same distance, aspect ratio fix handles sizing
+  const elev = (isMobile ? 10 : 8) * Math.PI / 180; // closer to horizon on mobile
   const zoo = venuePlacements.find(p => p.v.name.includes("Zoo"));
   const zooAngle = zoo
     ? Math.atan2(zoo.x - DISC_CENTER.x, zoo.z - DISC_CENTER.y)
     : 0;
   camera.position.set(
     controls.target.x + r * Math.cos(elev) * Math.sin(zooAngle),
-    controls.target.y + r * Math.sin(elev) + (isMobile ? 20 : 8),    // push disc lower on mobile
+    controls.target.y + r * Math.sin(elev) + (isMobile ? 12 : 8),    // push disc lower on mobile
     controls.target.z + r * Math.cos(elev) * Math.cos(zooAngle)
   );
   controls.update();
