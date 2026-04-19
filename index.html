@@ -1,2 +1,3057 @@
-<!DOCTYPE html>
-<html><head><meta http-equiv="refresh" content="0;url=map.html"><title>Duluth Homegrown 2026</title></head><body></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="color-scheme" content="only light" />
+<title>HOMEGROWN 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0b1410;           /* forest floor at dusk */
+    --bone: #f2ead5;          /* birch paper */
+    --bone-dim: #b8b19a;      /* dried grass */
+    --smoke: #6a6f5f;          /* lichen */
+    --hot: #e15a3b;           /* wild tomato (venue) */
+    --hotter: #f2c94c;         /* dandelion */
+    --blood: #8a2d22;         /* rust berry */
+    --lake: #2f6077;          /* cold spring lake */
+    --moss: #2a4a33;           /* moss */
+    --leaf: #6fa862;           /* fresh leaf */
+    --spring: #9fd06a;         /* spring green */
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--ink); }
+  html, body { margin: 0; padding: 0; height: 100%; color: var(--bone); font-family: "Space Grotesk", -apple-system, sans-serif; overflow: hidden; }
+  /* Dimmed skyline covers the whole viewport; the HOMEGROWN text below will
+     reveal the same image at full brightness inside its letterforms. */
+  /* Skyline: low-res placeholder loads instantly, full-res lazy-swaps in */
+  #sky-bg {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-color: var(--ink);
+    background-image: url("duluth_skyline_sm.jpg");
+    background-size: 100vw auto;
+    background-position: calc(50% + var(--bg-x, 0px)) calc(0% + var(--bg-y, 0px));
+    background-repeat: no-repeat;
+    filter: brightness(var(--bg-b, 0.9)) saturate(var(--bg-s, 0.95)) contrast(var(--bg-c, 1.0)) blur(8px);
+    transition: filter 0.8s ease-out;
+  }
+  #sky-bg.loaded {
+    background-image: url("duluth_skyline_med.jpg");
+    filter: brightness(var(--bg-b, 0.9)) saturate(var(--bg-s, 0.95)) contrast(var(--bg-c, 1.0)) blur(0px);
+  }
+  /* Dim overlay is now an inline SVG with its own <mask> — cross-browser safe.
+     SVG masks use luminance by default per the SVG spec (no CSS mask-mode needed). */
+  #sky-overlay {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100; opacity: 0.06;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' seed='5'/><feColorMatrix values='0 0 0 0 0.9  0 0 0 0 0.85  0 0 0 0 0.7  0 0 0 0.8 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    mix-blend-mode: overlay;
+  }
+
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+    padding: 10px 22px 8px; display: flex; align-items: baseline; gap: 14px;
+    background: linear-gradient(to bottom, rgba(10,8,6,0.95), rgba(10,8,6,0.55) 70%, rgba(10,8,6,0));
+  }
+  h1 { font-family: "Bebas Neue", sans-serif; font-size: 34px; margin: 0; letter-spacing: 0.04em; color: var(--bone); line-height: 0.95; }
+  h1 em { font-style: normal; color: var(--hot); }
+  header .sub { font-family: "JetBrains Mono", monospace; font-size: 10px; color: var(--bone-dim); letter-spacing: 0.14em; text-transform: uppercase; }
+
+  #app { position: fixed; inset: 0; }
+  #scene { position: relative; z-index: 2; display: block; width: 100%; height: 100%; background: transparent; touch-action: none; }
+
+  /* Live-tweak control panel */
+  #tweak {
+    position: fixed; top: 14px; left: 14px; z-index: 30;
+    background: rgba(10,8,6,0.88); backdrop-filter: blur(14px) saturate(1.3);
+    border: 1px solid rgba(111,168,98,0.2); border-radius: 10px;
+    padding: 12px 16px 10px 14px; font-family: "JetBrains Mono", monospace; font-size: 10px;
+    color: var(--bone-dim); letter-spacing: 0.06em; text-transform: uppercase;
+    display: grid; grid-template-columns: 70px 1fr 38px; gap: 3px 8px;
+    align-items: center; width: 270px; max-height: calc(100vh - 140px);
+    overflow-y: auto; overflow-x: hidden; user-select: none;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+    scrollbar-width: thin; scrollbar-color: rgba(111,168,98,0.3) transparent;
+  }
+  #tweak::-webkit-scrollbar { width: 5px; }
+  #tweak::-webkit-scrollbar-thumb { background: rgba(111,168,98,0.3); border-radius: 3px; }
+  #tweak::-webkit-scrollbar-track { background: transparent; }
+  /* tweak panel hidden by default via JS (showTweaks=false) */
+  #tweak.collapsed > :not(.tweak-head) { display: none; }
+  #tweak.collapsed { padding: 12px 16px 10px 14px; grid-template-columns: auto; }
+  #tweak .tweak-head {
+    grid-column: 1 / -1; display: flex; justify-content: space-between;
+    font-weight: 700; color: var(--spring); cursor: pointer; margin-bottom: 4px;
+  }
+  #tweak .section { cursor: pointer; user-select: none; }
+  #tweak .section::before { content: "▾ "; font-size: 9px; }
+  #tweak .section.closed::before { content: "▸ "; }
+  #tweak .section.closed ~ span,
+  #tweak .section.closed ~ input,
+  #tweak .section.closed ~ .val { display: none; }
+  /* Stop hiding at next section */
+  #tweak .section.closed ~ .section,
+  #tweak .section.closed ~ .section ~ span,
+  #tweak .section.closed ~ .section ~ input,
+  #tweak .section.closed ~ .section ~ .val { display: unset; }
+  #tweak input[type=range] {
+    width: 100%; accent-color: var(--leaf); margin: 0;
+    height: 16px; cursor: pointer;
+  }
+  #tweak .val { font-variant-numeric: tabular-nums; color: var(--spring); text-align: right; font-size: 10px; min-width: 38px; }
+  #tweak .section {
+    grid-column: 1 / -1; color: var(--leaf); margin-top: 8px; font-weight: 700;
+    font-size: 11px; letter-spacing: 0.12em; padding-bottom: 3px;
+    border-bottom: 1px solid rgba(111,168,98,0.15);
+  }
+  /* Giant knockout type filling the entire background */
+  #backdrop-type {
+    position: absolute; inset: 0; z-index: 0;
+    display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch;
+    pointer-events: none; user-select: none; overflow: hidden;
+  }
+  #backdrop-type .line {
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0.9; letter-spacing: -0.03em;
+    width: 100%; white-space: nowrap; text-align: center;
+    color: transparent;
+    background-image: url("duluth_skyline.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter:
+      brightness(var(--tx-b, 1.1)) saturate(var(--tx-s, 1.2)) contrast(var(--tx-c, 1.05))
+      drop-shadow(0 var(--tx-do, 2px) 1.5px rgba(0,0,0,var(--tx-d, 0.45)))
+      drop-shadow(0 var(--tx-ho, -1px) 0.5px rgba(255,255,255,var(--tx-h, 0.2)));
+  }
+  #backdrop-type .line {
+    font-size: min(80vh, 21vw);
+    background-position: center center;
+    transform: scaleY(1.5);
+    transform-origin: top center;
+  }
+
+  /* ------- PANEL ------- */
+  #panel {
+    position: absolute; top: 60px; right: 18px; width: 340px;
+    max-height: calc(100vh - 60px - 110px - 18px);
+    background: rgba(10,8,6,0.82); backdrop-filter: blur(10px) saturate(1.2);
+    border: 1px solid rgba(111,168,98,0.12);
+    padding: 14px 18px 18px; overflow-y: auto; z-index: 10;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+  }
+  #now-time { font-family: "Bebas Neue", sans-serif; font-size: 54px; line-height: 0.9; color: var(--bone); letter-spacing: 0.02em; }
+  #now-time em { font-style: normal; color: var(--hot); }
+  #now-date { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--bone-dim); text-transform: uppercase; letter-spacing: 0.18em; margin-top: 4px; padding-bottom: 14px; border-bottom: 1px solid rgba(111,168,98,0.12); }
+  #panel h2 {
+    font-family: "Bebas Neue", sans-serif; font-size: 14px; margin: 16px 0 6px;
+    color: var(--leaf); letter-spacing: 0.2em; font-weight: 400;
+  }
+  .set {
+    display: flex; gap: 14px; align-items: baseline;
+    padding: 11px 0; border-bottom: 1px dashed rgba(242,234,213,0.1);
+  }
+  .set:last-child { border-bottom: none; }
+  .set .time {
+    font-family: "Bebas Neue", sans-serif; font-size: 28px; line-height: 1;
+    color: var(--hotter); letter-spacing: 0.02em; min-width: 62px; flex-shrink: 0;
+    font-variant-numeric: tabular-nums; text-shadow: 0 0 12px rgba(255,205,56,0.35);
+  }
+  .set .body { flex: 1; min-width: 0; }
+  .set .act {
+    font-family: "Bebas Neue", sans-serif; font-size: 22px; line-height: 1.05;
+    color: var(--bone); letter-spacing: 0.015em;
+  }
+  .set .plays { font-family: "JetBrains Mono", monospace; font-size: 10px; color: var(--hot); margin-left: 8px; letter-spacing: 0.08em; }
+  .set .venue-name {
+    font-family: "Space Grotesk", sans-serif; font-size: 11px; color: var(--bone-dim);
+    margin-top: 3px; letter-spacing: 0.04em;
+  }
+  .set .links { margin-top: 5px; display: flex; gap: 10px; }
+  .set .links a {
+    font-family: "JetBrains Mono", monospace; font-size: 9px; text-transform: uppercase;
+    letter-spacing: 0.14em; text-decoration: none; padding: 2px 6px;
+    border: 1px solid currentColor; border-radius: 2px;
+  }
+  .set .links a:hover { background: currentColor; color: var(--ink); }
+  .empty { color: var(--smoke); font-size: 12px; font-family: "JetBrains Mono", monospace; padding: 16px 0; }
+
+  /* ------- SCRUBBER ------- */
+  #scrubber {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 10;
+    background: rgba(10,8,6,0.22); backdrop-filter: blur(22px) saturate(1.4);
+    -webkit-backdrop-filter: blur(22px) saturate(1.4);
+    border: 0; border-radius: 0; padding: 10px 18px 12px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
+  }
+  /* Slider thumb is 30px wide → center travels from +15px to (W-15px).
+     Inset the sparkline & day-ticks by 15px on each side so their 0..100%
+     width corresponds exactly to the slider thumb's reach and playhead aligns. */
+  #timeline-stack > #sparkline-wrap,
+  #timeline-stack > .day-ticks { margin: 0 15px; }
+  #sparkline-wrap {
+    position: relative; height: 78px; margin-bottom: 2px;
+  }
+  #sparkline { display: block; width: 100%; height: 100%; cursor: pointer; }
+  #sparkline-playhead {
+    position: absolute; top: 0; bottom: 0; width: 2px; background: var(--hotter);
+    pointer-events: none; box-shadow: 0 0 8px var(--hot); transform: translateX(0px);
+  }
+  #scrubber .row #slider { margin: 0; padding: 0; }
+  #scrubber .row { display: flex; gap: 14px; align-items: center; }
+  #play-btn {
+    position: absolute;
+    width: 30px; height: 30px;
+    padding: 0;  /* centered via flexbox — padding adjusted per glyph below */
+    background: transparent;
+    color: #111; border: 0; outline: 0;
+    border-radius: 50%; font-size: 14px; line-height: 1;
+    cursor: pointer; z-index: 3;
+    transition: color 120ms;
+    display: flex; align-items: center; justify-content: center;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+  }
+  #play-btn:hover { color: #000; }
+  #play-btn:focus { outline: 0; }
+
+  /* YouTube mini-player — resizable */
+  #yt-wrap {
+    position: absolute; bottom: calc(100% + 8px);
+    width: 420px; height: 370px;
+    background: rgba(10,8,6,0.88); backdrop-filter: blur(12px);
+    border: 1px solid rgba(111,168,98,0.2); border-radius: 8px;
+    overflow: visible; z-index: 12;
+    display: flex; flex-direction: column;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+    transition: left 80ms ease-out;
+  }
+  #yt-resize {
+    position: absolute; top: -18px; right: -18px;
+    width: 36px; height: 36px; cursor: nesw-resize;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 700; color: var(--bone-dim); z-index: 14;
+    background: rgba(10,8,6,0.8); border-radius: 50%;
+    border: 1px solid rgba(111,168,98,0.3);
+    user-select: none; touch-action: none;
+    transform: rotate(90deg);
+  }
+  #yt-resize:hover { color: var(--spring); }
+  /* Header: band name spans full width */
+  #yt-wrap .yt-header {
+    padding: 8px 10px; font-family: "Bebas Neue", sans-serif;
+    color: var(--bone); letter-spacing: 0.04em;
+    background: rgba(10,8,6,0.95); border-radius: 8px 8px 0 0;
+    line-height: 1.1; overflow: hidden; white-space: nowrap;
+    text-align: center; font-size: 28px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; min-height: 40px;
+  }
+  #yt-wrap .yt-header .yt-act {
+    display: flex; align-items: center;
+    line-height: 1;
+  }
+  /* Platform links bar */
+  #yt-wrap .yt-links {
+    display: flex; justify-content: center; gap: 0;
+    padding: 2px 10px 3px; font-size: 11px;
+    font-family: "Space Grotesk", sans-serif;
+    background: rgba(10,8,6,0.92);
+    flex-shrink: 0; min-height: 0; overflow: hidden;
+    border-top: 1px solid rgba(111,168,98,0.15);
+  }
+  #yt-wrap .yt-links:empty { display: none; }
+  #yt-wrap .yt-links a {
+    color: var(--bone-dim); text-decoration: none;
+    padding: 1px 7px; white-space: nowrap;
+    transition: color 150ms;
+  }
+  #yt-wrap .yt-links a:hover { color: var(--spring); }
+  #yt-wrap .yt-links a + a { border-left: 1px solid rgba(111,168,98,0.2); }
+  /* Footer: day/date | time | venue — space-between */
+  #yt-wrap .yt-footer {
+    padding: 5px 10px; font-size: 12px;
+    font-family: "Space Grotesk", sans-serif;
+    background: rgba(10,8,6,0.95); border-radius: 0 0 8px 8px;
+    color: var(--bone-dim); display: flex; justify-content: space-between; align-items: baseline;
+    flex-shrink: 0; min-height: 24px;
+  }
+  #yt-wrap .yt-footer .yt-date { text-align: left; }
+  #yt-wrap .yt-footer .yt-time { text-align: center; color: var(--spring); font-family: "JetBrains Mono", monospace; font-size: 11px; }
+  #yt-wrap .yt-footer .yt-venue { text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* Transparent overlay blocks YouTube's hover UI (title bar, pause icon, end-screen) */
+  #yt-overlay {
+    position: absolute; inset: 0; z-index: 2; cursor: default;
+  }
+  /* Custom controls bar below video */
+  #yt-controls {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px;
+    background: rgba(10,8,6,0.95);
+    flex-shrink: 0;
+  }
+  #yt-controls button {
+    background: none; border: 0; color: var(--bone); font-size: 20px;
+    cursor: pointer; padding: 4px 6px; line-height: 1;
+  }
+  #yt-controls button:hover { color: #fff; }
+  #yt-controls .yt-scrub {
+    flex: 1; height: 5px; appearance: none; background: rgba(255,255,255,0.25);
+    border-radius: 3px; accent-color: var(--spring); cursor: pointer;
+  }
+  #yt-controls .yt-scrub::-webkit-slider-thumb {
+    appearance: none; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--spring); margin-top: -5px;
+  }
+  #yt-controls a {
+    color: var(--bone-dim); font-size: 11px; text-decoration: none; font-weight: 600;
+    font-family: "JetBrains Mono", monospace; letter-spacing: 0.08em;
+  }
+  #yt-controls a:hover { color: #fff; }
+  /* Star button — sits left of band name; negative margin keeps name centered */
+  #yt-star {
+    background: none; border: 0; font-size: 22px; cursor: pointer;
+    color: var(--bone-dim); transition: color 150ms, transform 150ms;
+    line-height: 1; padding: 0 6px 0 0; flex-shrink: 0;
+    margin: 0; vertical-align: middle;
+    display: flex; align-items: center; align-self: center;
+  }
+  #yt-star:hover { color: var(--hotter); transform: scale(1.2); }
+  #yt-star.starred { color: var(--hotter); }
+  /* Set List panel */
+  /* Set list header — red underline only when panel is open */
+  #setlist-header { background: none; }
+  .open #setlist-header {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='4' viewBox='0 0 300 4'><path d='M0,2 Q15,0 30,2 T60,2 T90,1.5 T120,2.5 T150,2 T180,1.8 T210,2.2 T240,2 T270,1.5 T300,2' stroke='%23c44b4b' stroke-width='2' fill='none'/></svg>");
+    background-repeat: repeat-x; background-position: bottom left; background-size: 300px 4px;
+  }
+  /* Share button + dialog */
+  #sl-share-btn {
+    display: none; width: calc(100% - 32px); margin: 10px 16px 12px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.15); border-radius: 6px;
+    padding: 9px 0; border: 1px solid rgba(180,160,80,0.3); border-radius: 6px;
+    background: rgba(0,0,0,0.04); cursor: pointer;
+    font-family: "Permanent Marker", cursive; font-size: 22px; font-weight: 700; color: #666;
+    text-align: center; transition: all 200ms ease;
+    position: relative; overflow: hidden;
+  }
+  #sl-share-btn::before {
+    content: ""; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,215,0,0.35), rgba(255,235,80,0.5), rgba(255,215,0,0.35), transparent);
+    transition: none;
+  }
+  #sl-share-btn:hover {
+    color: #3a3000; border-color: rgba(200,170,50,0.6);
+    background: linear-gradient(90deg, #f5e6a0, #ffe066, #ffd633, #ffe066, #f5e6a0);
+    background-size: 200% 100%;
+    animation: goldShimmer 1.5s ease infinite, bounceShare 0.5s ease;
+    box-shadow: 0 0 12px rgba(255,215,0,0.4), 0 0 24px rgba(255,215,0,0.2);
+  }
+  @keyframes goldShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  @keyframes bounceShare {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.06); }
+    50% { transform: scale(0.97); }
+    70% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  .open #sl-share-btn { display: block; }
+  #sl-share-dialog {
+    display: none; position: fixed; inset: 0; z-index: 100;
+    background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    align-items: center; justify-content: center;
+  }
+  #sl-share-dialog.open { display: flex; }
+  #sl-share-dialog .sd-box {
+    background: rgba(255,252,240,0.98); border-radius: 12px; padding: 20px 24px;
+    width: 340px; max-width: 90vw; box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  }
+  #sl-share-dialog h3 {
+    font-family: "Permanent Marker", cursive; font-size: 28px; font-weight: 700;
+    color: #2a2420; margin: 0 0 14px; text-align: center;
+  }
+  #sl-share-dialog .sd-ics {
+    display: block; width: 100%; padding: 12px; margin-bottom: 10px;
+    border-radius: 6px; border: 1px solid rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.05); cursor: pointer;
+    font-family: "Space Grotesk", sans-serif; font-size: 14px; font-weight: 600;
+    color: #333; text-align: center; transition: background 100ms;
+  }
+  #sl-share-dialog .sd-ics:hover { background: rgba(0,0,0,0.1); }
+  #sl-share-dialog .sd-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+  }
+  #sl-share-dialog .sd-grid a, #sl-share-dialog .sd-grid button {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.03); cursor: pointer; text-decoration: none;
+    font-family: "Space Grotesk", sans-serif; font-size: 13px; color: #333;
+    transition: background 100ms;
+  }
+  #sl-share-dialog .sd-grid a:hover, #sl-share-dialog .sd-grid button:hover { background: rgba(0,0,0,0.08); }
+  #sl-share-dialog .sd-grid .sd-icon { font-size: 20px; }
+  #sl-share-dialog .sd-close {
+    display: block; width: 100%; margin-top: 12px; padding: 8px;
+    background: none; border: 1px solid #ccc; border-radius: 6px; cursor: pointer;
+    font-family: "Permanent Marker", cursive; font-size: 18px; color: #888;
+  }
+  #sl-share-dialog .sd-close:hover { background: rgba(0,0,0,0.04); }
+  #sl-toggle { cursor: pointer; transition: transform 150ms; }
+  #sl-toggle:hover { transform: scale(1.15); }
+  #setlist-panel {
+    position: fixed; top: 14px; right: 14px; width: 360px; z-index: 25;
+    max-height: calc(100vh - 140px);
+    background: rgba(255,252,240,0.95); border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5); overflow-y: auto;
+    padding: 0;
+    /* Notebook ruled lines — only in the content area, not the header.
+       Applied via the content div instead so alignment stays correct. */
+  }
+  /* Collapsed: only header visible. Open: content expands */
+  #setlist-panel #sl-content {
+    display: none; padding: 8px 20px 16px;
+    background-image: repeating-linear-gradient(transparent, transparent 31px, rgba(180,180,220,0.3) 31px, rgba(180,180,220,0.3) 32px);
+    background-position: 0 0;
+    background-attachment: local;
+    overflow-y: auto; flex: 1;
+  }
+  #setlist-panel.open { display: flex; flex-direction: column; }
+  #setlist-panel #sl-emoji-picker { display: none; }
+  #setlist-panel.open #sl-content { display: block; }
+  #setlist-panel.open { overflow-y: auto; }
+  /* Set list — notebook ruled paper, 32px line height throughout */
+  #setlist-panel .sl-day {
+    font-family: "Permanent Marker", cursive; font-size: 28px; font-weight: 700;
+    margin: 0; padding: 0;
+    line-height: 32px;
+    padding-top: 32px; /* one empty ruled line of space before each day */
+  }
+  #setlist-panel .sl-day:first-of-type { padding-top: 0; }
+  #setlist-panel .sl-entry {
+    display: flex; gap: 8px; align-items: flex-start;
+    padding: 0; min-height: 32px; /* one ruled line */
+    line-height: 32px;
+    animation: scribbleIn 0.4s ease-out;
+  }
+  @keyframes scribbleIn {
+    0% { opacity: 0; transform: translateX(-8px) rotate(-1deg); }
+    60% { opacity: 1; transform: translateX(2px) rotate(0.5deg); }
+    100% { opacity: 1; transform: translateX(0) rotate(0deg); }
+  }
+  /* Handwriting stroke animation */
+  .stroke-draw path {
+    fill: none; stroke: #1a1a1a; stroke-width: 1.5;
+    stroke-dasharray: var(--path-len);
+    stroke-dashoffset: var(--path-len);
+    animation: drawStroke 1.2s ease forwards;
+  }
+  .stroke-draw.done path {
+    fill: #1a1a1a; stroke: none;
+    animation: none;
+  }
+  @keyframes drawStroke {
+    0% { stroke-dashoffset: var(--path-len); fill: none; }
+    80% { stroke-dashoffset: 0; fill: none; }
+    100% { stroke-dashoffset: 0; fill: #1a1a1a; }
+  }
+  #setlist-panel .sl-time {
+    font-family: "Permanent Marker", cursive; font-size: 22px; font-weight: 700;
+    color: #555; min-width: 55px; flex-shrink: 0;
+    line-height: 32px;
+  }
+  #setlist-panel .sl-info { flex: 1; min-width: 0; }
+  #setlist-panel .sl-act {
+    font-family: "Permanent Marker", cursive; font-size: 24px; font-weight: 700;
+    color: #1a1a1a; line-height: 32px;
+  }
+  #setlist-panel .sl-venue {
+    font-family: "Permanent Marker", cursive; font-size: 15px; color: #666;
+    line-height: 16px; /* two lines fit within one 32px ruled line */
+    max-height: 32px; overflow: hidden;
+  }
+  #setlist-panel .sl-wristband {
+    font-family: "Permanent Marker", cursive; font-size: 14px; color: #c44b4b; font-style: italic;
+    line-height: 16px;
+  }
+  #setlist-panel .sl-remove {
+    background: none; border: 0; color: #bbb; font-size: 16px; cursor: pointer;
+    line-height: 32px; /* aligns with band name row */
+    flex-shrink: 0;
+  }
+  #setlist-panel .sl-remove:hover { color: #c44b4b; }
+  #setlist-panel .sl-empty {
+    font-family: "Permanent Marker", cursive; font-size: 22px; color: #999;
+    text-align: center; padding: 32px 0; line-height: 32px;
+  }
+  /* Mobile video nav: ← ✕ → */
+  #yt-mobile-nav {
+    display: none; justify-content: space-between; align-items: center;
+    padding: 6px 12px; background: rgba(10,8,6,0.95);
+  }
+  #yt-mobile-nav button {
+    background: none; border: 0; color: var(--bone); font-size: 22px;
+    cursor: pointer; padding: 4px 12px;
+  }
+  #yt-mobile-nav button:hover { color: var(--spring); }
+  #yt-mobile-nav .yt-close { color: var(--bone-dim); font-size: 18px; }
+  #yt-video-area iframe, #yt-video-area #yt-player-div {
+    width: 100% !important; height: 100% !important; border: 0; display: block;
+    position: absolute; top: 0; left: 0;
+  }
+  #yt-wrap .yt-empty {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 100%; color: var(--smoke);
+    font-family: "JetBrains Mono", monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.12em;
+  }
+  @media (max-width: 768px) {
+    #yt-wrap {
+      position: fixed; bottom: 0; left: 0; right: 0; top: auto;
+      width: 100%; height: 50vh;
+      border-radius: 12px 12px 0 0; border-bottom: 0;
+    }
+    #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
+    #yt-resize { display: none; }
+    #yt-mobile-nav { display: flex; }
+  }
+  /* Chrome-fader slider, like a mixing-console volume knob */
+  #slider {
+    flex: 1; appearance: none; background: transparent; height: 34px; cursor: pointer;
+  }
+  #slider::-webkit-slider-runnable-track {
+    height: 8px;
+    background:
+      linear-gradient(to right,
+        transparent 0%, transparent var(--track-pad-l, 0%),
+        #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
+        transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
+    border-radius: 4px;
+    box-shadow:
+      inset 0 1px 2px rgba(0,0,0,0.9),
+      inset 0 -1px 0 rgba(242,234,213,0.1),
+      0 1px 0 rgba(242,234,213,0.08);
+  }
+  /* Brushed-aluminum stereo knob — conic gradient fakes spun metal,
+     bevel via layered inset shadows, inner groove ring for the volume-knob vibe. */
+  #slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px; height: 30px; margin-top: -11px;
+    border-radius: 50%; border: 0;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 38%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0) 44%),
+      conic-gradient(from -45deg,
+        #ede8dc 0deg, #b8b3a5 25deg, #5a5750 55deg, #2b2924 90deg,
+        #5a5750 125deg, #b8b3a5 155deg, #ede8dc 180deg,
+        #b8b3a5 205deg, #5a5750 235deg, #2b2924 270deg,
+        #5a5750 305deg, #b8b3a5 335deg, #ede8dc 360deg);
+    background-blend-mode: multiply, normal;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,0.2),
+      inset 0 2px 3px rgba(255,255,255,0.3),
+      inset 0 -2px 3px rgba(0,0,0,0.5),
+      inset 0 0 0 4px rgba(0,0,0,0),
+      0 0 0 1px rgba(0,0,0,0.85),
+      0 3px 7px rgba(0,0,0,0.75),
+      0 8px 14px rgba(0,0,0,0.5);
+    cursor: grab;
+  }
+  #slider::-webkit-slider-thumb:active { cursor: grabbing; }
+  #slider::-moz-range-track {
+    height: 8px; border-radius: 4px;
+    background: linear-gradient(to right,
+      transparent 0%, transparent var(--track-pad-l, 0%),
+      #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
+      transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.9);
+  }
+  #slider::-moz-range-thumb {
+    width: 30px; height: 30px; border-radius: 50%; border: 0;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 38%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0) 44%),
+      conic-gradient(from -45deg,
+        #ede8dc 0deg, #b8b3a5 25deg, #5a5750 55deg, #2b2924 90deg,
+        #5a5750 125deg, #b8b3a5 155deg, #ede8dc 180deg,
+        #b8b3a5 205deg, #5a5750 235deg, #2b2924 270deg,
+        #5a5750 305deg, #b8b3a5 335deg, #ede8dc 360deg);
+    box-shadow:
+      inset 0 2px 3px rgba(255,255,255,0.3), inset 0 -2px 3px rgba(0,0,0,0.5),
+      0 0 0 1px rgba(0,0,0,0.85), 0 3px 7px rgba(0,0,0,0.75);
+  }
+  #window-label { display: none; }
+  .day-ticks {
+    display: flex; align-items: center; justify-content: center;
+    height: 34px; margin-top: 6px;
+    font-family: "Space Grotesk", sans-serif; font-size: 22px; letter-spacing: 0.03em;
+    gap: 0;
+  }
+  .day-ticks .day-pill {
+    flex: none; text-align: center;
+    padding: 4px 3px; border-radius: 3px;
+    font-weight: 700; color: var(--ink);
+    overflow: hidden; text-overflow: ellipsis;
+    white-space: nowrap; font-size: min(22px, 1.3vw);
+  }
+  .day-ticks .day-gap {
+    flex: none;
+  }
+  @media (max-width: 1200px) {
+    .day-ticks .day-pill { white-space: normal; word-spacing: 100vw; font-size: 16px; line-height: 1.1; }
+  }
+  @media (max-width: 768px) {
+    .day-ticks .day-pill { font-size: 13px; padding: 3px 4px; }
+  }
+
+  /* ---- Mobile layout: panel below map, stacked ---- */
+  @media (max-width: 768px) {
+    html, body { overflow: auto; height: auto; }
+    #app { position: relative; height: auto; }
+    #map-wrap {
+      position: relative; height: 40vh; min-height: 240px; margin-top: 44px;
+    }
+    #panel {
+      position: static; width: auto; max-height: none;
+      top: auto; right: auto;
+      margin: 0; border-radius: 0;
+      border-left: 0; border-right: 0;
+    }
+    #scrubber {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      border-radius: 14px 14px 0 0;
+    }
+    body { padding-bottom: 180px; }
+    header { position: relative; }
+    h1 { font-size: 26px; }
+    .day-ticks { font-size: 11px; }
+    .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
+    #tweak { display: none; }
+    /* Set list: full-width collapsible bar at top on mobile */
+    #setlist-btn {
+      position: fixed; top: 0; left: 0; right: 0;
+      border-radius: 0; padding: 10px 16px; font-size: 18px;
+      text-align: center; z-index: 26;
+      background: rgba(10,8,6,0.92); backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(111,168,98,0.25);
+    }
+    #setlist-panel {
+      position: fixed; top: 44px; left: 0; right: 0; bottom: auto;
+      width: 100%; max-height: 40vh; border-radius: 0;
+      border-top: 0;
+    }
+    #mobile-schedule {
+      display: block; position: fixed; bottom: 0; left: 0; right: 0; height: 50vh;
+      overflow-y: auto; -webkit-overflow-scrolling: touch;
+      background: rgba(10,8,6,0.95); border-top: 1px solid rgba(111,168,98,0.2);
+      padding: 8px 12px 80px; z-index: 20;
+    }
+    #mobile-schedule .ms-day {
+      font-family: "Bebas Neue", sans-serif; font-size: 20px; color: var(--spring);
+      margin: 14px 0 6px; letter-spacing: 0.04em;
+    }
+    #mobile-schedule .ms-day:first-child { margin-top: 4px; }
+    #mobile-schedule .ms-set {
+      display: flex; gap: 10px; align-items: baseline;
+      padding: 8px 0; border-bottom: 1px solid rgba(242,234,213,0.08);
+    }
+    #mobile-schedule .ms-set.ms-live { background: rgba(111,168,98,0.12); margin: 0 -12px; padding: 8px 12px; border-radius: 4px; }
+    #mobile-schedule .ms-time {
+      font-family: "JetBrains Mono", monospace; font-size: 12px;
+      color: var(--bone-dim); min-width: 50px; flex-shrink: 0;
+    }
+    #mobile-schedule .ms-set.ms-live .ms-time { color: var(--spring); }
+    #mobile-schedule .ms-info { flex: 1; min-width: 0; }
+    #mobile-schedule .ms-act { font-weight: 600; font-size: 14px; color: var(--bone); }
+    #mobile-schedule .ms-venue { font-size: 11px; color: var(--bone-dim); margin-top: 1px; }
+    #mobile-schedule .ms-set.ms-past .ms-act,
+    #mobile-schedule .ms-set.ms-past .ms-time { opacity: 0.4; }
+  }
+
+
+  /* ------- TOOLTIP ------- */
+  .tooltip {
+    position: absolute; background: rgba(10,8,6,0.96); border: 1px solid var(--leaf);
+    padding: 16px 18px; font-size: 14px; pointer-events: none; opacity: 0;
+    transition: opacity 80ms; z-index: 15; font-family: "Space Grotesk", sans-serif;
+    max-width: 460px; min-width: 300px; max-height: 60vh; overflow-y: auto;
+  }
+  .tooltip .t-name { font-family: "Bebas Neue", sans-serif; font-size: 26px; color: var(--bone); letter-spacing: 0.04em; line-height: 1.05; }
+  .tooltip .t-meta { color: var(--bone-dim); font-size: 10px; margin-top: 2px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .tooltip hr { border: 0; border-top: 1px dashed rgba(242,234,213,0.15); margin: 8px 0 6px; }
+  .tooltip .t-day { font-family: "Bebas Neue", sans-serif; font-size: 22px; letter-spacing: 0.04em; color: var(--spring); margin-top: 12px; line-height: 1; }
+  .tooltip .t-day:first-of-type { margin-top: 0; }
+  .tooltip .t-set { display: flex; gap: 10px; align-items: baseline; padding: 4px 6px; margin: 0 -6px; }
+  .tooltip .t-set.hovered {
+    color: var(--spring); background: rgba(111,168,98,0.15);
+    margin: 0 -6px; padding: 4px 6px; border-radius: 3px;
+  }
+  .tooltip .t-set .t-time { font-family: "JetBrains Mono", monospace; font-size: 13px; min-width: 58px; color: var(--bone-dim); }
+  .tooltip .t-set.hovered .t-time { color: var(--spring); }
+  .tooltip .t-set.hovered .t-act { color: var(--bone); font-weight: 700; }
+  .tooltip .t-set .t-act { font-size: 15px; color: var(--bone); }
+</style>
+</head>
+<body>
+<svg style="position:absolute;width:0;height:0;" aria-hidden="true">
+  <defs>
+    <filter id="bg-filter" color-interpolation-filters="sRGB">
+      <feComponentTransfer>
+        <feFuncR type="linear" slope="0.9" intercept="0"/>
+        <feFuncG type="linear" slope="0.9" intercept="0"/>
+        <feFuncB type="linear" slope="0.9" intercept="0"/>
+      </feComponentTransfer>
+      <feColorMatrix type="saturate" values="0.95"/>
+    </filter>
+  </defs>
+</svg>
+<div id="app">
+<div id="sky-bg"></div>
+<svg id="sky-overlay" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="txt-mask">
+      <rect width="100%" height="100%" fill="white"/>
+      <path id="mask-arc" d="M 0,200 L 1580,200" fill="none" stroke="none" />
+      <!-- Flat text (default) -->
+      <text id="mask-text-flat" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900">HOMEGROWN</text>
+      <!-- Curved text (when curve > 0) -->
+      <text id="mask-text-curved" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900" style="display:none;">
+        <textPath id="mask-textpath" href="#mask-arc" startOffset="50%" text-anchor="middle">HOMEGROWN</textPath>
+      </text>
+    </mask>
+    <!-- Inset shadow: blur a dark stroke around the MERGED letter outlines -->
+    <filter id="inset-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <!-- Merge overlapping letter shapes into one unified outline (no internal intersections) -->
+    <filter id="merge-letters" x="-5%" y="-5%" width="110%" height="110%">
+      <feMorphology operator="dilate" radius="0" />
+      <feComposite in="SourceGraphic" operator="over" />
+    </filter>
+  </defs>
+  <rect id="dim-rect" width="100%" height="100%" fill="rgba(10,8,6,0.88)" mask="url(#txt-mask)"/>
+  <!-- Visible shadow layer — unified outline around merged letter shapes.
+       paint-order:stroke renders stroke BEHIND fill, so fill covers internal intersections
+       where overlapping letters cross. Result: one clean outer outline, no visible internal edges. -->
+  <path id="shadow-arc" d="M 0,200 L 1580,200" fill="none" stroke="none" />
+  <text id="shadow-text-flat" fill="rgba(0,0,0,0.25)" stroke="rgba(0,0,0,0.5)" stroke-width="6"
+        paint-order="stroke" stroke-linejoin="round"
+        font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900"
+        filter="url(#inset-blur)">HOMEGROWN</text>
+  <text id="shadow-text-curved" fill="rgba(0,0,0,0.25)" stroke="rgba(0,0,0,0.5)" stroke-width="6"
+        paint-order="stroke" stroke-linejoin="round"
+        font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900"
+        filter="url(#inset-blur)" style="display:none;">
+    <textPath id="shadow-textpath" href="#shadow-arc" startOffset="50%" text-anchor="middle">HOMEGROWN</textPath>
+  </text>
+</svg>
+  <canvas id="scene"></canvas>
+  <div id="tweak" class="collapsed">
+    <div class="tweak-head"><span>TWEAK</span><span id="tweak-toggle">[+]</span></div>
+    <div class="section">LIVE WIND</div>
+    <span>Strength</span><input type="range" min="0" max="1" step="0.01" value="0.5" data-js="dynWindStr" disabled><span class="val"></span>
+    <span>Eff. Amp</span><input type="range" min="0" max="1" step="0.01" value="0.35" data-js="dynWindAmp" disabled><span class="val"></span>
+    <span>Eff. Speed</span><input type="range" min="0" max="10" step="0.1" value="3.8" data-js="dynWindSpd" disabled><span class="val"></span>
+    <span>Eff. Freq</span><input type="range" min="0" max="12" step="0.1" value="5.5" data-js="dynWindFreq" disabled><span class="val"></span>
+    <div class="section">FLAGS</div>
+    <span>Wave Amp</span><input type="range" min="0" max="1.5" step="0.02" value="0.35" data-js="waveAmp"><span class="val"></span>
+    <span>Wave Speed</span><input type="range" min="0" max="10" step="0.1" value="3.8" data-js="waveSpeed"><span class="val"></span>
+    <span>Wave Freq</span><input type="range" min="1" max="12" step="0.2" value="5.5" data-js="waveFreq"><span class="val"></span>
+    <div class="section">RECORD</div>
+    <span>Spin RPM</span><input type="range" min="0" max="45" step="0.5" value="0.5" data-js="spinRpm"><span class="val"></span>
+    <div class="section">HOMEGROWN TEXT</div>
+    <span>Font %</span><input type="range" min="20" max="60" step="1" value="38" data-v="--tx-fs" data-js="txFs"><span class="val"></span>
+    <span>Stretch Y</span><input type="range" min="1" max="3" step="0.05" value="2.07" data-v="--tx-sy" data-js="txSy"><span class="val"></span>
+    <span>Spacing</span><input type="range" min="-80" max="10" step="1" value="-8" data-js="txSpacing"><span class="val"></span>
+    <span>Y Pos %</span><input type="range" min="50" max="90" step="1" value="72" data-js="txYPct"><span class="val"></span>
+    <span>Curve</span><input type="range" min="-200" max="200" step="2" value="40" data-js="txCurve"><span class="val"></span>
+    <span>L Margin</span><input type="range" min="-200" max="200" step="5" value="0" data-js="txMarginL"><span class="val"></span>
+    <span>R Margin</span><input type="range" min="-200" max="200" step="5" value="0" data-js="txMarginR"><span class="val"></span>
+    <span>Brightness</span><input type="range" min="0.3" max="2" step="0.02" value="1.1" data-v="--tx-b"><span class="val"></span>
+    <span>Saturation</span><input type="range" min="0" max="2" step="0.02" value="1.2" data-v="--tx-s"><span class="val"></span>
+    <span>Contrast</span><input type="range" min="0.5" max="2" step="0.02" value="1.05" data-v="--tx-c"><span class="val"></span>
+    <span>Shadow α</span><input type="range" min="0" max="1" step="0.02" value="0.45" data-v="--tx-d"><span class="val"></span>
+    <span>Shadow Y</span><input type="range" min="0" max="8" step="0.5" value="2" data-v="--tx-do" data-unit="px"><span class="val"></span>
+    <span>Hilite α</span><input type="range" min="0" max="1" step="0.02" value="0.2" data-v="--tx-h"><span class="val"></span>
+    <span>Hilite Y</span><input type="range" min="-8" max="0" step="0.5" value="-1" data-v="--tx-ho" data-unit="px"><span class="val"></span>
+    <div class="section">SKYLINE BG</div>
+    <span>Brightness</span><input type="range" min="0" max="2" step="0.02" value="0.9" data-v="--bg-b"><span class="val"></span>
+    <span>Saturation</span><input type="range" min="0" max="2" step="0.02" value="0.95" data-v="--bg-s"><span class="val"></span>
+    <span>Contrast</span><input type="range" min="0.5" max="2" step="0.02" value="1.0" data-v="--bg-c"><span class="val"></span>
+    <span>Dim Amt</span><input type="range" min="0" max="1" step="0.02" value="0.88" data-v="--bg-dim"><span class="val"></span>
+    <span>Image X</span><input type="range" min="-500" max="500" step="5" value="0" data-v="--bg-x" data-unit="px"><span class="val"></span>
+    <span>Image Y</span><input type="range" min="-500" max="500" step="5" value="-195" data-v="--bg-y" data-unit="px"><span class="val"></span>
+    <div class="section">EXPORT</div>
+    <button id="tweak-export" style="grid-column:1/-1;background:rgba(111,168,98,0.2);color:var(--leaf);border:1px solid rgba(111,168,98,0.3);padding:5px 8px;border-radius:4px;cursor:pointer;font-family:inherit;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;margin-top:6px;">💾 Save config.json</button>
+    <button id="tweak-reset" style="grid-column:1/-1;background:rgba(242,234,213,0.08);color:var(--bone-dim);border:1px solid rgba(242,234,213,0.1);padding:5px 8px;border-radius:4px;cursor:pointer;font-family:inherit;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:2px;">↺ Reset to defaults</button>
+  </div>
+  <div class="tooltip" id="tip"></div>
+  <aside id="panel" style="display:none">
+    <div id="now-time">—</div>
+    <div id="now-date">—</div>
+    <div id="now-list"></div>
+  </aside>
+  <div id="setlist-panel">
+    <div id="setlist-header" style="display:flex;align-items:center;gap:6px;padding:8px 16px;line-height:32px;cursor:pointer;" title="Click to expand/collapse">
+      <span id="sl-emoji" title="Click to change emoji" style="cursor:pointer;font-size:28px;flex-shrink:0;">🎸</span>
+      <div style="flex:1;min-width:0;overflow:visible;max-height:64px;position:relative;">
+        <input id="sl-title-input" type="text" value="My Set List" maxlength="512"
+          style="font-family:Caveat,cursive;font-size:28px;font-weight:700;color:#2a2420;background:none;border:0;outline:none;width:100%;padding:0 24px 0 4px;line-height:32px;transform:rotate(-0.5deg);text-overflow:clip;"
+          title="Click to rename your set list" />
+        <button id="sl-title-clear" style="position:absolute;right:2px;top:50%;transform:translateY(-50%);background:none;border:0;font-size:14px;color:#bbb;cursor:pointer;padding:2px 4px;display:none;" title="Clear">✕</button>
+      </div>
+      <span class="sl-count" style="color:#c44b4b;font-family:'JetBrains Mono',monospace;font-size:16px;flex-shrink:0;">0</span>
+    </div>
+    <div id="sl-emoji-picker" style="display:none;grid-template-columns:repeat(10,1fr);gap:2px;padding:4px 16px 8px;border-bottom:1px solid #ddd;"></div>
+    <div id="sl-content"><div class="sl-empty">Tap ☆ on any act to add it here!</div></div>
+    <button id="sl-share-btn">Share ⤴</button>
+  </div>
+  <div id="sl-share-dialog">
+    <div class="sd-box">
+      <h3>Share Your Set List</h3>
+      <button id="sl-share-ics" class="sd-ics">📅 Add to Calendar (.ics)</button>
+      <div class="sd-grid">
+        <a id="sl-share-bsky" href="#"><span class="sd-icon">🦋</span> Bluesky</a>
+        <a id="sl-share-fb" href="#"><span class="sd-icon">📘</span> Facebook</a>
+        <a id="sl-share-threads" href="#"><span class="sd-icon">🧵</span> Threads</a>
+        <a id="sl-share-ig" href="#"><span class="sd-icon">📷</span> Instagram</a>
+        <a id="sl-share-tiktok" href="#"><span class="sd-icon">🎬</span> TikTok</a>
+        <a id="sl-share-email" href="#"><span class="sd-icon">✉️</span> Email</a>
+        <button id="sl-share-copy"><span class="sd-icon">📋</span> Copy</button>
+        <a id="sl-share-sms" href="#"><span class="sd-icon">💬</span> iMessage/Text</a>
+        <button id="sl-share-native"><span class="sd-icon">↗</span> More...</button>
+      </div>
+      <button class="sd-close" onclick="document.getElementById('sl-share-dialog').classList.remove('open')">Close</button>
+    </div>
+  </div>
+  <div id="mobile-schedule" style="display:none;"></div>
+  <div id="scrubber">
+    <div id="yt-wrap" style="display:none;">
+      <div id="yt-resize" title="Resize">⤡</div>
+      <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span></div>
+      <div class="yt-links" id="yt-links"></div>
+      <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
+        <div class="yt-empty">Select a time</div>
+        <div id="yt-overlay"></div>
+      </div>
+      <div id="yt-controls">
+        <button id="yt-pp" title="Play/Pause">▶</button>
+        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:22px;">volume_up</span></button>
+        <input type="range" class="yt-scrub" id="yt-scrub" min="0" max="100" value="0" />
+        <a id="yt-open" href="#" target="_blank" title="Open in YouTube">↗ YT</a>
+      </div>
+      <div id="yt-mobile-nav">
+        <button id="yt-prev" title="Previous">←</button>
+        <button id="yt-close" class="yt-close" title="Close">✕</button>
+        <button id="yt-next" title="Next">→</button>
+      </div>
+      <div class="yt-footer">
+        <span class="yt-date"></span>
+        <span class="yt-time"></span>
+        <span class="yt-venue"></span>
+      </div>
+    </div>
+    <div id="timeline-stack" style="width:100%;">
+      <div id="sparkline-wrap">
+        <canvas id="sparkline"></canvas>
+        <div id="sparkline-playhead"></div>
+      </div>
+      <div style="position:relative;">
+        <input type="range" id="slider" min="0" max="1" step="1" value="0" style="width:100%;" />
+        <button id="play-btn" aria-label="Play/Pause">▶</button>
+      </div>
+      <div class="day-ticks" id="day-ticks"></div>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fitty@2/dist/fitty.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/opentype.js@1/dist/opentype.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { Line2 } from 'three/addons/lines/Line2.js';
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
+
+const BBOX = [-92.45, 46.58, -91.80, 47.00];         // basemap extent
+const VENUE_BBOX = [-92.22, 46.70, -91.98, 46.87];   // initial camera focus
+const HM_W = 1024, HM_H = 660;                       // DEM raster dims (sampled for elevation)
+const TEX_W = 4096, TEX_H = 2640;                    // basemap canvas at 4x DEM res — sharp detail on slopes
+const PLANE_W = 200;                                 // world units
+const PLANE_H = PLANE_W * (HM_H / HM_W);             // keep aspect
+// Real Duluth relief: 301m over ~50km bbox. Plane is 200 units wide, so 1 unit ≈ 250m
+// → true relief is ~1.2 units. Exaggerate ~4× for legibility without caricature.
+const TERRAIN_HEIGHT = 5;
+const WINDOW_MIN = 30;
+
+// Geo ↔ plane helpers
+const lonToX = lon => ((lon - BBOX[0]) / (BBOX[2] - BBOX[0]) - 0.5) * PLANE_W;
+const latToZ = lat => (0.5 - (lat - BBOX[1]) / (BBOX[3] - BBOX[1])) * PLANE_H; // north is -Z
+
+// ---- Load all data ----
+const [topo, venuesData, scheduleData, actsData, hmImg] = await Promise.all([
+  fetch("duluth_basemap.topojson").then(r => r.json()),
+  fetch("homegrown_2026_venues.json").then(r => r.json()),
+  fetch("homegrown_2026_schedule.json").then(r => r.json()),
+  fetch("homegrown_2026_acts.json").then(r => r.json()).catch(() => null),
+  loadImage("duluth_heightmap.png"),
+]);
+
+function loadImage(src) {
+  return new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = src; });
+}
+
+const venuesByName = new Map(venuesData.venues.map(v => [v.name, v]));
+const actsByName = new Map((actsData?.acts || []).map(a => [a.name, a]));
+
+// ---- Build sets with datetime + xz position ----
+const sets = scheduleData.schedule.map(r => {
+  let dt = null;
+  if (r.date && r.time_start_24h) {
+    dt = new Date(`${r.date}T${r.time_start_24h}:00-05:00`);
+    const h = parseInt(r.time_start_24h.split(":")[0], 10);
+    if (h < 6) dt = new Date(dt.getTime() + 24 * 3600 * 1000);
+  }
+  const v = venuesByName.get(r.venue);
+  return { ...r, dt, lat: v?.lat, lon: v?.lon };
+}).filter(s => s.dt && s.lat != null);
+
+const tMin = d3.min(sets, s => s.dt);
+const tMax = d3.max(sets, s => s.dt);
+
+// ---- Compressed timeline: equal-width per festival day ----
+// Each day with shows gets the same amount of slider real-estate. Within a
+// day, slider position linearly maps to that day's active window (first set
+// to last set + pad). Late-night 12:00am–2:00am slots are attributed to the
+// prior calendar day (matches how Homegrown lists them).
+const PAD_MIN = 30;
+const sortedSets = [...sets].sort((a, b) => a.dt - b.dt);
+const dayKey = (s) => s.date;  // schedule-authored date (rolls late-night to prior day)
+const blocks = [];
+(() => {
+  const byDay = new Map();
+  for (const s of sortedSets) {
+    if (!byDay.has(dayKey(s))) byDay.set(dayKey(s), []);
+    byDay.get(dayKey(s)).push(s);
+  }
+  // Force all days to the same compressed duration.
+  // Each slot has SLOT_PAD on each side to give visual breathing room between days.
+  const SLOT_MIN = 300;   // total compressed minutes per day slot
+  const SLOT_PAD = 30;    // dead zone on each side
+  let cum = 0;
+  for (const [date, daySets] of [...byDay.entries()].sort()) {
+    const start = daySets[0].dt;
+    const end = new Date(+daySets[daySets.length - 1].dt + PAD_MIN * 60000);
+    blocks.push({
+      date,
+      start, end,
+      realMin: Math.max(1, (end - start) / 60000),
+      compressedMin: SLOT_MIN,
+      activeMin: SLOT_MIN - SLOT_PAD * 2,
+      padMin: SLOT_PAD,
+      cumStart: cum,
+    });
+    cum += SLOT_MIN;
+  }
+})();
+const minutesTotal = blocks.reduce((s, b) => s + b.compressedMin, 0);
+
+function compressedToReal(m) {
+  for (const b of blocks) {
+    if (m < b.cumStart + b.compressedMin) {
+      const localM = Math.max(0, Math.min(b.activeMin, (m - b.cumStart) - b.padMin));
+      const frac = localM / b.activeMin;
+      return new Date(+b.start + frac * b.realMin * 60000);
+    }
+  }
+  return blocks[blocks.length - 1].end;
+}
+function realToCompressed(dt) {
+  const t = +dt;
+  for (const b of blocks) {
+    if (t <= +b.end) {
+      const frac = Math.max(0, Math.min(1, (t - +b.start) / (b.realMin * 60000)));
+      return b.cumStart + b.padMin + frac * b.activeMin;
+    }
+  }
+  return minutesTotal;
+}
+function isPadCompressedMin(m) {
+  for (const b of blocks) {
+    if (m < b.cumStart + b.compressedMin) {
+      const localM = m - b.cumStart;
+      return localM < b.padMin || localM >= (b.compressedMin - b.padMin);
+    }
+  }
+  return false;
+}
+
+// ---- Render basemap to a canvas (used as terrain diffuse texture) ----
+const mapCanvas = document.createElement("canvas");
+mapCanvas.width = TEX_W; mapCanvas.height = TEX_H;
+const mctx = mapCanvas.getContext("2d");
+
+// Land — warm mossy green; lighting + slope shading will carve it
+mctx.fillStyle = "#2a4a33";
+mctx.fillRect(0, 0, TEX_W, TEX_H);
+
+// Equirectangular projection — linear lon/lat → pixel mapping so the canvas
+// aligns exactly with the USGS DEM raster (which is also equirectangular).
+const mapProjection = {
+  stream: (s) => ({
+    point(lon, lat) {
+      const x = (lon - BBOX[0]) / (BBOX[2] - BBOX[0]) * TEX_W;
+      const y = (BBOX[3] - lat) / (BBOX[3] - BBOX[1]) * TEX_H;
+      s.point(x, y);
+    },
+    lineStart() { s.lineStart(); },
+    lineEnd() { s.lineEnd(); },
+    polygonStart() { s.polygonStart(); },
+    polygonEnd() { s.polygonEnd(); },
+    sphere() {},
+  }),
+};
+const pathGen = d3.geoPath(mapProjection, mctx);
+
+// Water — cool spring lake with a faint cream edge
+const waterFC = topojson.feature(topo, topo.objects.water);
+mctx.fillStyle = "#183448";
+mctx.beginPath(); pathGen(waterFC); mctx.fill();
+
+// Water edge intentionally unstroked — stroking TIGER county-level polygons
+// draws a visible seam across Lake Superior at the MN/WI boundary. Relying on
+// the fill color contrast alone keeps the harbor islands + Canal Park sand bar
+// visible without the seam.
+
+// Roads — thick enough to survive outer-zone warp compression (~3×)
+const roadsFC = topojson.feature(topo, topo.objects.roads);
+roadsFC.features.forEach(f => {
+  const mtfcc = f.properties.MTFCC;
+  mctx.strokeStyle = mtfcc === "S1100" ? "rgba(155,183,158,0.6)" : "rgba(127,156,132,0.32)";
+  mctx.lineWidth = mtfcc === "S1100" ? 8 : 4;
+  mctx.lineCap = "round";
+  mctx.beginPath(); pathGen(f); mctx.stroke();
+});
+
+// ---- Three.js scene ----
+const canvas = document.getElementById("scene");
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+renderer.setClearColor(0x000000, 0);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
+renderer.setSize(window.innerWidth, window.innerHeight, false);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene = new THREE.Scene();
+scene.background = null;   // transparent canvas so backdrop type shows through
+scene.fog = new THREE.Fog(0x0b1410, 180, 380);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 800);
+camera.position.set(0, 85, 130);
+camera.lookAt(0, 0, -20);
+
+// Lights — golden-hour key with cool sky fill; makes moss look alive
+scene.add(new THREE.AmbientLight(0xffffff, 0.32));
+scene.add(new THREE.HemisphereLight(0x7ea07a, 0x0b1410, 0.55));
+const key = new THREE.DirectionalLight(0xffe8b8, 1.25);
+key.position.set(-80, 100, 60);
+scene.add(key);
+
+// ---- Terrain ----
+const texLoader = new THREE.TextureLoader();
+const displacement = new THREE.CanvasTexture(hmImg);
+displacement.colorSpace = THREE.NoColorSpace;
+const diffuse = new THREE.CanvasTexture(mapCanvas);
+diffuse.colorSpace = THREE.SRGBColorSpace;
+diffuse.anisotropy = renderer.capabilities.getMaxAnisotropy();
+diffuse.minFilter = THREE.LinearMipmapLinearFilter;
+diffuse.magFilter = THREE.LinearFilter;
+diffuse.generateMipmaps = true;
+diffuse.needsUpdate = true;
+
+// Heightmap sampling — needed by terrain patches AND venue placement
+const hmCanvas = document.createElement("canvas");
+hmCanvas.width = HM_W; hmCanvas.height = HM_H;
+const hctx = hmCanvas.getContext("2d");
+hctx.drawImage(hmImg, 0, 0);
+const hmData = hctx.getImageData(0, 0, HM_W, HM_H).data;
+function elevAt(x, z) {
+  const u = (x / PLANE_W + 0.5);
+  const v = (0.5 - z / PLANE_H);
+  const px = Math.max(0, Math.min(HM_W - 1, Math.floor(u * HM_W)));
+  const py = Math.max(0, Math.min(HM_H - 1, Math.floor((1 - v) * HM_H)));
+  return (hmData[(py * HM_W + px) * 4] / 255) * TERRAIN_HEIGHT;
+}
+
+// Single high-res terrain mesh matching the DEM resolution — no patch seams
+const geo = new THREE.PlaneGeometry(PLANE_W, PLANE_H, HM_W, HM_H);
+geo.rotateX(-Math.PI / 2);
+const mat = new THREE.MeshStandardMaterial({
+  map: diffuse,
+  displacementMap: displacement,
+  displacementScale: TERRAIN_HEIGHT,
+  roughness: 0.95,
+  metalness: 0.0,
+  side: THREE.DoubleSide,   // visible from below — no see-through from any angle
+});
+const terrain = new THREE.Mesh(geo, mat);
+
+// Slope-based blend: derive true surface normal from screen-space derivatives
+// of world position (displacementMap doesn't recompute vertex normals), then
+// fade smeared texture toward shaded rock on steep faces.
+// LP-disc circular crop — fit tightly to the actual venue extent (outermost pin ≈ disc edge)
+const DISC_CENTER = (() => {
+  const xs = venuesData.venues.filter(v => v.lat != null).map(v => lonToX(v.lon));
+  const zs = venuesData.venues.filter(v => v.lat != null).map(v => latToZ(v.lat));
+  return new THREE.Vector2(
+    (Math.min(...xs) + Math.max(...xs)) / 2,
+    (Math.min(...zs) + Math.max(...zs)) / 2
+  );
+})();
+// Piecewise radial scale:
+//   inner  [0 → WARP_T] of real radius  →  [0 → WARP_O] of disc radius  (uniform magnification)
+//   outer  [WARP_T → 1] of real radius  →  [WARP_O → 1] of disc radius  (compressed rim)
+// This gives the downtown cluster a clean, un-distorted enlargement; the
+// empty fringe just gets squished into the outer ring.
+const WARP_T = 0.55;    // inner 55% of real radius = "downtown" zone
+const WARP_O = 0.85;    // occupies 85% of disc
+const WARP_BLEND = 0.15; // transition eases over ±15% of radius
+const DISC_RADIUS = (() => {
+  // Max horizontal distance from DISC_CENTER to any venue, +6% margin.
+  let maxR = 0;
+  for (const v of venuesData.venues) {
+    if (v.lat == null) continue;
+    const dx = lonToX(v.lon) - DISC_CENTER.x;
+    const dz = latToZ(v.lat) - DISC_CENTER.y;
+    maxR = Math.max(maxR, Math.sqrt(dx * dx + dz * dz));
+  }
+  return maxR * 1.06;
+})();
+
+mat.onBeforeCompile = (shader) => {
+  // VERTEX: warp + pass world pos + flatten outer 10% (undo displacement in vinyl band)
+  shader.vertexShader = shader.vertexShader
+    .replace('#include <common>', '#include <common>\nvarying vec3 vWPos;\nuniform vec2 uDiscCenter;\nuniform float uDiscRadius;\nuniform float uWarpT;\nuniform float uWarpO;\nuniform float uWarpBlend;')
+    .replace('#include <displacementmap_vertex>', `
+      #ifdef USE_DISPLACEMENTMAP
+        vec3 beforeDisp = transformed;
+        transformed += normalize(objectNormal) * (texture2D(displacementMap, vDisplacementMapUv).x * displacementScale + displacementBias);
+        // Flatten the outer 15% toward the un-displaced plane — eliminates jagged spikes at disc edge
+        vec3 wpBefore = (modelMatrix * vec4(beforeDisp, 1.0)).xyz;
+        float vr = length(wpBefore.xz - uDiscCenter);
+        float flatten = smoothstep(uDiscRadius * 0.82, uDiscRadius * 0.92, vr);
+        transformed = mix(transformed, beforeDisp, flatten);
+        // Smooth radial warp — eases between inner magnification and outer compression
+        vec2 fc = transformed.xz - uDiscCenter;
+        float rr = length(fc);
+        if (rr > 0.001 && rr < uDiscRadius) {
+          float rn = rr / uDiscRadius;
+          float innerRate = uWarpO / uWarpT;
+          float outerRate = (1.0 - uWarpO) / (1.0 - uWarpT);
+          float t = clamp((rn - (uWarpT - uWarpBlend)) / (2.0 * uWarpBlend), 0.0, 1.0);
+          float s = t * t * (3.0 - 2.0 * t);  // smoothstep
+          float rwInner = rn * innerRate;
+          float rwOuter = uWarpO + (rn - uWarpT) * outerRate;
+          float rw = mix(rwInner, rwOuter, s);
+          transformed.xz = uDiscCenter + (fc / rr) * rw * uDiscRadius;
+          // Local warp rate for elevation smoothing
+          float warpScale = mix(innerRate, outerRate, s);
+          // Approximate local mean elevation by sampling 4 neighbors
+          float localDisp = texture2D(displacementMap, vDisplacementMapUv).x * displacementScale;
+          float meanDisp = (
+            texture2D(displacementMap, vDisplacementMapUv + vec2(0.04, 0.0)).x +
+            texture2D(displacementMap, vDisplacementMapUv - vec2(0.04, 0.0)).x +
+            texture2D(displacementMap, vDisplacementMapUv + vec2(0.0, 0.04)).x +
+            texture2D(displacementMap, vDisplacementMapUv - vec2(0.0, 0.04)).x
+          ) * 0.25 * displacementScale;
+          float localVar = localDisp - meanDisp;
+          // Keep the mean, scale down only the local bumpiness
+          float smoothed = meanDisp + localVar * clamp(warpScale, 0.25, 1.3);
+          transformed.y = max(beforeDisp.y + 0.05, beforeDisp.y + smoothed); // never dip below base
+        }
+      #endif
+    `)
+    .replace('#include <project_vertex>', '#include <project_vertex>\nvWPos = (modelMatrix * vec4(transformed, 1.0)).xyz;');
+
+  // FRAGMENT: disc crop + slope blend + vinyl band (shiny black, grooved, metallic)
+  shader.fragmentShader = shader.fragmentShader
+    .replace('#include <common>', '#include <common>\nvarying vec3 vWPos;\nuniform vec3 uCliffColor;\nuniform vec2 uDiscCenter;\nuniform float uDiscRadius;')
+    .replace(
+      '#include <map_fragment>',
+      `
+      vec2 d2 = vWPos.xz - uDiscCenter;
+      float rr = length(d2);
+      // Soft anti-aliased disc edge — fade over ~1 world-unit band instead of hard cut
+      // Wide anti-alias fade at disc edge — eliminates jaggy triangle artifacts
+      float edgeFade = 1.0 - smoothstep(uDiscRadius - 3.0, uDiscRadius, rr);
+      if (edgeFade <= 0.001) discard;
+
+      #ifdef USE_MAP
+        vec4 sampledDiffuseColor = texture2D( map, vMapUv );
+        vec3 surfN = normalize(cross(dFdx(vWPos), dFdy(vWPos)));
+        float upness = clamp(abs(surfN.y), 0.0, 1.0);
+        float slopeBlend = smoothstep(0.95, 0.65, upness) * 0.4;
+        sampledDiffuseColor.rgb = mix(sampledDiffuseColor.rgb, uCliffColor, slopeBlend);
+
+        // Subtle groove hint on the terrain itself
+        float rings = sin(rr * 4.5) * 0.5 + 0.5;
+        sampledDiffuseColor.rgb *= (0.95 + 0.05 * rings);
+
+        // Vinyl band (outer 10%): dense grooves + shiny black
+        float vinyl = smoothstep(uDiscRadius * 0.88, uDiscRadius * 0.96, rr);
+        if (vinyl > 0.0) {
+          float grooves = sin(rr * 180.0) * 0.5 + 0.5;
+          vec3 vinylColor = vec3(0.015, 0.015, 0.02) + vec3(0.04) * pow(grooves, 2.5);
+          sampledDiffuseColor.rgb = mix(sampledDiffuseColor.rgb, vinylColor, vinyl);
+        }
+
+        // Very dark outer lip
+        float lip = smoothstep(uDiscRadius * 0.985, uDiscRadius * 0.998, rr);
+        sampledDiffuseColor.rgb = mix(sampledDiffuseColor.rgb, vec3(0.005), lip);
+
+        diffuseColor *= sampledDiffuseColor;
+      #endif
+      `
+    )
+    // Make the vinyl band shinier via PBR controls
+    .replace('#include <roughnessmap_fragment>', `
+      #include <roughnessmap_fragment>
+      float vR = smoothstep(uDiscRadius * 0.88, uDiscRadius * 0.96, length(vWPos.xz - uDiscCenter));
+      roughnessFactor = mix(roughnessFactor, 0.18, vR);
+    `)
+    .replace('#include <metalnessmap_fragment>', `
+      #include <metalnessmap_fragment>
+      float vM = smoothstep(uDiscRadius * 0.88, uDiscRadius * 0.96, length(vWPos.xz - uDiscCenter));
+      metalnessFactor = mix(metalnessFactor, 0.85, vM);
+    `);
+
+  shader.uniforms.uCliffColor = { value: new THREE.Color(0x23362a) };   // mossy shadowed rock
+  shader.uniforms.uDiscCenter = { value: DISC_CENTER };
+  shader.uniforms.uDiscRadius = { value: DISC_RADIUS };
+  shader.uniforms.uWarpT = { value: WARP_T };
+  shader.uniforms.uWarpO = { value: WARP_O };
+  shader.uniforms.uWarpBlend = { value: WARP_BLEND };
+};
+// Rotating parent — terrain patches + venue cubes + flags all spin as one record.
+const recordGroup = new THREE.Group();
+recordGroup.position.set(DISC_CENTER.x, 0, DISC_CENTER.y);
+scene.add(recordGroup);
+terrain.position.set(-DISC_CENTER.x, 0, -DISC_CENTER.y);
+recordGroup.add(terrain);
+
+// LP disc body — solid cylinder that forms the physical record.
+// Top overlaps the terrain base slightly (no gaps), sides form the LP edge,
+// bottom is the flat underside. Visible from every angle as a real object.
+const discThickness = 3.0;
+const baseGeo = new THREE.CylinderGeometry(DISC_RADIUS, DISC_RADIUS, discThickness, 96);
+const baseMat = new THREE.MeshStandardMaterial({
+  color: 0x080808, roughness: 0.75, metalness: 0.2,
+});
+const discBase = new THREE.Mesh(baseGeo, baseMat);
+discBase.position.set(0, -discThickness / 2 - 0.15, 0); // top face just below terrain base — solid from sides/below
+recordGroup.add(discBase);
+
+// Groove rings on the LP edge — a slightly shinier ring around the side
+const rimGeo = new THREE.TorusGeometry(DISC_RADIUS, 0.15, 8, 96);
+const rimMat = new THREE.MeshStandardMaterial({ color: 0x111111, roughness: 0.3, metalness: 0.5 });
+const rim = new THREE.Mesh(rimGeo, rimMat);
+rim.rotation.x = Math.PI / 2;
+rim.position.set(0, -discThickness / 2 + 0.05, 0); // at the edge, bottom of LP
+recordGroup.add(rim);
+
+// (heightmap sampling moved above terrain patches)
+
+// ---- Venue markers ----
+const venueGroup = new THREE.Group();
+venueGroup.position.set(-DISC_CENTER.x, 0, -DISC_CENTER.y);
+recordGroup.add(venueGroup);
+const activeVenues = new Set();
+const futureVenues = new Set();
+let playing = false;
+
+// Each act at a venue = one cube stacked on top of the previous.
+// Sized proportional to the disc radius so venues don't dwarf the map.
+const CUBE_SIZE = DISC_RADIUS * 0.022;
+const CUBE_GAP = CUBE_SIZE * 0.08;
+const cubeGeo = new THREE.BoxGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
+const sphereGeo = new THREE.SphereGeometry(CUBE_SIZE * 0.6, 16, 12);
+// Day-of-week palette — week unfolds through the spectrum.
+const DAY_COLORS = {
+  Sun: 0x9f7dc7, // lilac / crocus
+  Mon: 0x6fb0d0, // robin egg
+  Tue: 0x8cc878, // fresh leaf
+  Wed: 0xeed35a, // sunflower
+  Thu: 0xf0a35e, // peach
+  Fri: 0xe06b5a, // poppy
+  Sat: 0xd070b5, // violet pink
+};
+function makeDayMats(hex) {
+  const col = new THREE.Color(hex);
+  const dark = col.clone().multiplyScalar(0.22);
+  return {
+    past:   new THREE.MeshStandardMaterial({ color: dark, roughness: 0.95, transparent: true, opacity: 0.42, depthWrite: false }),
+    future: new THREE.MeshStandardMaterial({ color: hex, emissive: hex, emissiveIntensity: 0.18, roughness: 0.55 }),
+    live:   new THREE.MeshStandardMaterial({ color: hex, emissive: hex, emissiveIntensity: 1.45, roughness: 0.2 }),
+  };
+}
+const dayMats = Object.fromEntries(Object.entries(DAY_COLORS).map(([d, h]) => [d, makeDayMats(h)]));
+const defaultMats = makeDayMats(0x8fa088); // fallback sage
+
+const venueSet = new Map();
+sets.forEach(s => { if (!venueSet.has(s.venue)) venueSet.set(s.venue, venuesByName.get(s.venue)); });
+const venues = [...venueSet.values()].filter(v => v.lat != null);
+
+// Apply the same radial warp to venue XZ as the terrain shader does — keeps them visually aligned.
+function smoothWarp(rn) {
+  const innerRate = WARP_O / WARP_T;
+  const outerRate = (1 - WARP_O) / (1 - WARP_T);
+  const t = Math.max(0, Math.min(1, (rn - (WARP_T - WARP_BLEND)) / (2 * WARP_BLEND)));
+  const s = t * t * (3 - 2 * t); // smoothstep
+  const rwInner = rn * innerRate;
+  const rwOuter = WARP_O + (rn - WARP_T) * outerRate;
+  return rwInner * (1 - s) + rwOuter * s;
+}
+function warpXZ(x, z) {
+  const dx = x - DISC_CENTER.x, dz = z - DISC_CENTER.y;
+  const r = Math.hypot(dx, dz);
+  if (r < 1e-6 || r >= DISC_RADIUS) return [x, z];
+  const rw = smoothWarp(r / DISC_RADIUS);
+  return [DISC_CENTER.x + (dx / r) * rw * DISC_RADIUS, DISC_CENTER.y + (dz / r) * rw * DISC_RADIUS];
+}
+function inverseWarpXZ(x, z) {
+  const dx = x - DISC_CENTER.x, dz = z - DISC_CENTER.y;
+  const r = Math.hypot(dx, dz);
+  if (r < 1e-6) return [x, z];
+  const rn = r / DISC_RADIUS;
+  // Numerical inverse: binary search for input that warps to rn
+  let lo = 0, hi = 1;
+  for (let i = 0; i < 20; i++) {
+    const mid = (lo + hi) / 2;
+    if (smoothWarp(mid) < rn) lo = mid; else hi = mid;
+  }
+  const ro = (lo + hi) / 2;
+  return [DISC_CENTER.x + (dx / r) * ro * DISC_RADIUS, DISC_CENTER.y + (dz / r) * ro * DISC_RADIUS];
+}
+
+const venuePlacements = venues.map(v => {
+  const x0 = lonToX(v.lon), z0 = latToZ(v.lat);
+  const dx = x0 - DISC_CENTER.x, dz = z0 - DISC_CENTER.y;
+  if (Math.sqrt(dx * dx + dz * dz) > DISC_RADIUS * 0.98) return null;
+  const venueSets = sortedSets.filter(s => s.venue === v.name);
+  if (!venueSets.length) return null;
+  const [wx, wz] = warpXZ(x0, z0);
+  // Anchor the collision-relaxation pull to the WARPED position so the warp
+  // stays in force. (Previously anchored to raw geo — which undid the warp
+  // and dragged Superior WI venues back into the river.)
+  return { v, x: wx, z: wz, origX: wx, origZ: wz, venueSets };
+}).filter(Boolean);
+
+// Simple iterative relaxation so cube stacks don't collide.
+const MIN_SEP = CUBE_SIZE * 2.1;
+for (let iter = 0; iter < 40; iter++) {
+  let moved = 0;
+  for (let i = 0; i < venuePlacements.length; i++) {
+    for (let j = i + 1; j < venuePlacements.length; j++) {
+      const a = venuePlacements[i], b = venuePlacements[j];
+      const dx = b.x - a.x, dz = b.z - a.z;
+      let d = Math.hypot(dx, dz);
+      if (d === 0) { a.x -= MIN_SEP * 0.25; b.x += MIN_SEP * 0.25; moved++; continue; }
+      if (d < MIN_SEP) {
+        const push = (MIN_SEP - d) * 0.5;
+        const ux = dx / d, uz = dz / d;
+        a.x -= ux * push; a.z -= uz * push;
+        b.x += ux * push; b.z += uz * push;
+        moved++;
+      }
+    }
+  }
+  // Anchor pull so venues don't drift far from real position
+  for (const p of venuePlacements) {
+    p.x += (p.origX - p.x) * 0.18;
+    p.z += (p.origZ - p.z) * 0.18;
+  }
+  if (!moved) break;
+}
+// Clamp any venue nudged outside the disc back inside the rim
+for (const p of venuePlacements) {
+  const dx = p.x - DISC_CENTER.x, dz = p.z - DISC_CENTER.y;
+  const r = Math.hypot(dx, dz);
+  if (r > DISC_RADIUS * 0.94) {
+    const k = (DISC_RADIUS * 0.94) / r;
+    p.x = DISC_CENTER.x + dx * k;
+    p.z = DISC_CENTER.y + dz * k;
+  }
+}
+
+// Flag fabric — PlaneGeometry mesh (not a Sprite) so we can wave the vertices.
+// Billboards toward camera each frame via Y rotation in the tick loop.
+const FABRIC_H = 1.4;
+const FABRIC_SEGS = 20;
+
+function makeFabricMesh(text) {
+  const probe = document.createElement("canvas").getContext("2d");
+  probe.font = "600 24px 'Space Grotesk', sans-serif";
+  const textW = Math.ceil(probe.measureText(text).width);
+  const padL = 28, padR = 18, tail = 14, fh = 54;
+  const fw = textW + padL + padR + tail;
+  const cw = fw + 12, ch = fh + 8;
+
+  const DPR = Math.min(window.devicePixelRatio || 1, 3);
+  const cv = document.createElement("canvas");
+  cv.width = Math.ceil(cw * DPR);
+  cv.height = Math.ceil(ch * DPR);
+  const ctx = cv.getContext("2d");
+  ctx.scale(DPR, DPR);
+
+  const fx = 2, fy = 4;
+  const stripW = 12;  // narrow — just wide enough for eyelets
+  // Main fabric
+  ctx.fillStyle = "#c4b8a4";
+  ctx.beginPath();
+  ctx.moveTo(fx, fy);
+  ctx.lineTo(fx + fw - tail, fy);
+  ctx.lineTo(fx + fw, fy + fh / 2);
+  ctx.lineTo(fx + fw - tail, fy + fh);
+  ctx.lineTo(fx, fy + fh);
+  ctx.closePath();
+  ctx.fill();
+  // White outline on top, right (pennant), and bottom edges — NOT the left (hoist) edge
+  ctx.strokeStyle = "#f0ece4";
+  ctx.lineWidth = 8;
+  ctx.lineJoin = "round";
+  ctx.beginPath();
+  ctx.moveTo(fx, fy);
+  ctx.lineTo(fx + fw - tail, fy);
+  ctx.lineTo(fx + fw, fy + fh / 2);
+  ctx.lineTo(fx + fw - tail, fy + fh);
+  ctx.lineTo(fx, fy + fh);
+  ctx.stroke();
+  // White canvas strip on left edge (eyelet reinforcement)
+  ctx.fillStyle = "#f0ece4";
+  ctx.fillRect(fx, fy, stripW, fh);
+  // Stitching — subtle, darker shade of flag background, tight to edges
+  ctx.strokeStyle = "#8a7e6e";
+  ctx.lineWidth = 0.8;
+  ctx.setLineDash([2.5, 2.5]);
+  ctx.beginPath();
+  ctx.moveTo(fx + 1.5, fy); ctx.lineTo(fx + 1.5, fy + fh);
+  ctx.moveTo(fx + stripW - 1.5, fy); ctx.lineTo(fx + stripW - 1.5, fy + fh);
+  ctx.moveTo(fx, fy + 0.3); ctx.lineTo(fx + stripW, fy + 0.3);
+  ctx.moveTo(fx, fy + fh - 0.3); ctx.lineTo(fx + stripW, fy + fh - 0.3);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle = "#2a2420";
+  ctx.font = "600 24px 'Space Grotesk', sans-serif";
+  ctx.textAlign = "left";
+  // Center using actual glyph metrics (textBaseline "middle" miscenters condensed fonts)
+  const m = ctx.measureText(text);
+  const glyphH = m.actualBoundingBoxAscent + m.actualBoundingBoxDescent;
+  ctx.textBaseline = "alphabetic";
+  ctx.fillText(text, fx + padL, fy + fh / 2 + m.actualBoundingBoxAscent - glyphH / 2);
+
+  // Smaller brass eyelets
+  const eyX = fx + stripW / 2;  // centered in the strip
+  ctx.save();
+  ctx.globalCompositeOperation = "destination-out";
+  [fy + fh * 0.2, fy + fh * 0.8].forEach(eyY => {
+    ctx.beginPath(); ctx.arc(eyX, eyY, 2, 0, Math.PI * 2); ctx.fill();
+  });
+  ctx.restore();
+  [fy + fh * 0.2, fy + fh * 0.8].forEach(eyY => {
+    ctx.strokeStyle = "#c4a44a";
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(eyX, eyY, 2.5, 0, Math.PI * 2); ctx.stroke();
+  });
+
+  // Store eyelet positions in local geometry coords for precise ring alignment
+  const eyUV_x = (eyX + 0.5) / cw;  // fraction across canvas width
+  const eyUV_yTop = 1 - ((fy + fh * 0.2) / ch);   // UV v (bottom=0, top=1)
+  const eyUV_yBot = 1 - ((fy + fh * 0.8) / ch);
+
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 4;
+
+  const fabricW = (cw / ch) * FABRIC_H;
+  const geo = new THREE.PlaneGeometry(fabricW, FABRIC_H, FABRIC_SEGS, 1);
+  // Shift geometry so left edge is at x=0 (pole attachment point)
+  geo.translate(fabricW / 2, 0, 0);
+  // Store original Y and Z positions for wave + vertical displacement
+  const posAttr = geo.attributes.position;
+  geo.userData = {
+    baseY: new Float32Array(posAttr.count),
+    baseZ: new Float32Array(posAttr.count),
+    fabricW
+  };
+  for (let i = 0; i < posAttr.count; i++) geo.userData.baseY[i] = posAttr.getY(i);
+  for (let i = 0; i < posAttr.count; i++) geo.userData.baseZ[i] = posAttr.getZ(i);
+
+  const mat = new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide, transparent: true, depthWrite: false });
+  const mesh = new THREE.Mesh(geo, mat);
+  // Eyelet Y offsets in local flag coords (for precise ring positioning)
+  mesh.userData.eyeletTopY = (eyUV_yTop - 0.5) * FABRIC_H;
+  mesh.userData.eyeletBotY = (eyUV_yBot - 0.5) * FABRIC_H;
+  return mesh;
+}
+// Thin vertical pole mesh — renders with true 3D perspective like the cubes
+const poleMat = new THREE.MeshStandardMaterial({ color: 0xe0e0e0, roughness: 0.15, metalness: 0.95 });
+const RING_OFFSET_GLOBAL = 0.19;  // pole(0.05) + ring_major(0.12) + gap(0.02)
+function makePole(height) {
+  const geo = new THREE.CylinderGeometry(0.05, 0.05, height, 4);
+  const m = new THREE.Mesh(geo, poleMat);
+  return m;
+}
+
+const venueMeshes = venuePlacements.map(p => {
+  const { v, x, z, venueSets } = p;
+  // Sample elevation at the grid position that the terrain shader actually
+  // warps ONTO this venue's final (x, z). Handles relaxation + clamp cleanly.
+  const [gx, gz] = inverseWarpXZ(x, z);
+  const y = elevAt(gx, gz);
+  const group = new THREE.Group();
+  const useGeo = v.markerType === "sphere" ? sphereGeo : cubeGeo;
+  const cubes = venueSets.map((set, i) => {
+    const mats = dayMats[set.day_of_week] || defaultMats;
+    const c = new THREE.Mesh(useGeo, mats.future);
+    c.position.set(x, y + CUBE_SIZE / 2 + i * (CUBE_SIZE + CUBE_GAP), z);
+    c.userData = { set, mats };
+    group.add(c);
+    return c;
+  });
+  // Dominant day for the flag tab
+  const dayCount = {};
+  for (const s of venueSets) dayCount[s.day_of_week] = (dayCount[s.day_of_week] || 0) + 1;
+  const dominantDay = Object.entries(dayCount).sort((a, b) => b[1] - a[1])[0][0];
+  const dayHex = "#" + (DAY_COLORS[dominantDay] || 0x8fa088).toString(16).padStart(6, "0");
+  // Flag pole height: venue with most acts gets tallest pole, staggered to avoid collisions
+  const idx = venuePlacements.indexOf(p);
+  const maxSets = Math.max(...venuePlacements.map(pp => pp.venueSets.length));
+  const actRatio = venueSets.length / maxSets;   // 0..1 based on act count
+  // Count nearby venues to determine if we need more height spread
+  const nearCount = venuePlacements.filter(pp => {
+    const ddx = pp.x - p.x, ddz = pp.z - p.z;
+    return Math.sqrt(ddx*ddx + ddz*ddz) < CUBE_SIZE * 5 && pp !== p;
+  }).length;
+  const crowdBoost = Math.min(nearCount, 6) * 0.4;  // up to 2.4 extra for dense clusters
+  const jitter = ((idx * 3.17) % 11) * 0.35;         // 11 levels, prime scatter
+  const flagLift = 1.2 + actRatio * 4.5 + jitter + crowdBoost; // ~1.2 to ~8 (was ~2 to ~12+)
+  const topY = y + CUBE_SIZE + (venueSets.length - 1) * (CUBE_SIZE + CUBE_GAP);
+  // 3D pole extends from stack top past the fabric top
+  const FABRIC_H = 1.4;
+  const fullPoleH = flagLift + FABRIC_H * 0.5 + 0.2;
+  const pole = makePole(fullPoleH);
+  pole.position.set(x, topY + fullPoleH / 2, z);
+  group.add(pole);
+  // Ball cap at pole top
+  const capGeo = new THREE.SphereGeometry(0.22, 12, 12);
+  const cap = new THREE.Mesh(capGeo, new THREE.MeshStandardMaterial({ color: 0xe0e0e0, roughness: 0.15, metalness: 0.95 }));
+  cap.position.set(x, topY + fullPoleH, z);
+  group.add(cap);
+  // Waving fabric mesh (billboards in tick loop)
+  const flag = makeFabricMesh(v.name);
+  flag.position.set(x, topY + flagLift, z);
+  flag.userData.baseX = x;
+  flag.userData.baseZ = z;
+  // Two torus rings loosely hanging on the pole — offset so the near edge just grazes the pole surface
+  const ringGeo = new THREE.TorusGeometry(0.12, 0.025, 10, 18);
+  const ringMat = new THREE.MeshStandardMaterial({ color: 0xe0e0e0, roughness: 0.15, metalness: 0.95 });
+  const ringTopGrp = new THREE.Group();
+  const ringTop = new THREE.Mesh(ringGeo, ringMat);
+  ringTop.rotation.x = Math.PI / 2;
+  ringTopGrp.add(ringTop);
+  ringTopGrp.position.set(x, topY + flagLift + FABRIC_H * 0.32, z);
+  ringTopGrp.userData = { baseX: x, baseZ: z };
+  group.add(ringTopGrp);
+  const ringBotGrp = new THREE.Group();
+  const ringBot = new THREE.Mesh(ringGeo, ringMat);
+  ringBot.rotation.x = Math.PI / 2;
+  ringBotGrp.add(ringBot);
+  ringBotGrp.position.set(x, topY + flagLift - FABRIC_H * 0.32, z);
+  ringBotGrp.userData = { baseX: x, baseZ: z };
+  group.add(ringBotGrp);
+  // Rope (halyard): cap → top ring → bottom ring → pole base — fat line for visibility
+  const ropeGeo = new LineGeometry();
+  ropeGeo.setPositions([0,0,0, 0,0,0, 0,0,0, 0,0,0]); // placeholder
+  const ropeMat = new LineMaterial({ color: 0x111111, linewidth: 2 });
+  ropeMat.resolution.set(window.innerWidth, window.innerHeight);
+  const rope = new Line2(ropeGeo, ropeMat);
+  group.add(rope);
+
+  group.add(flag);
+  group.userData = {
+    venue: v, cubes, flag, pole, flagLift,
+    rings: [ringTopGrp, ringBotGrp],
+    rope,
+    capY: topY + fullPoleH,
+    poleBaseY: topY,
+    poleX: x, poleZ: z,
+    flagBaseY: topY + flagLift,
+    ringTopBaseY: ringTopGrp.position.y,
+    ringBotBaseY: ringBotGrp.position.y,
+  };
+  venueGroup.add(group);
+  return group;
+});
+
+// ---- Controls ----
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.maxPolarAngle = Math.PI / 2 - 0.08;
+controls.minPolarAngle = 0.15;
+controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
+// Frame the disc so it fills the viewport width — this is the max zoom-out.
+(() => {
+  const r = DISC_RADIUS * 1.5;        // 10% closer
+  const elev = 8 * Math.PI / 180;    // ~8° from horizon — more on-edge
+  const zoo = venuePlacements.find(p => p.v.name.includes("Zoo"));
+  const zooAngle = zoo
+    ? Math.atan2(zoo.x - DISC_CENTER.x, zoo.z - DISC_CENTER.y)
+    : 0;
+  camera.position.set(
+    controls.target.x + r * Math.cos(elev) * Math.sin(zooAngle),
+    controls.target.y + r * Math.sin(elev) + 8,    // +8 pushes disc into lower portion
+    controls.target.z + r * Math.cos(elev) * Math.cos(zooAngle)
+  );
+  controls.update();
+  // Lock: can zoom in but never out past this starting distance
+  const startDist = camera.position.distanceTo(controls.target);
+  controls.maxDistance = startDist;
+  controls.minDistance = 8;
+})();
+
+window.addEventListener("resize", () => {
+  renderer.setSize(window.innerWidth, window.innerHeight, false);
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+});
+
+// ---- Raycasting for venue hover ----
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+const tip = document.getElementById("tip");
+let hoverVenue = null;
+canvas.addEventListener("pointermove", (ev) => {
+  const rect = canvas.getBoundingClientRect();
+  mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  const meshes = venueMeshes.flatMap(g => g.userData.cubes);
+  const hit = raycaster.intersectObjects(meshes, false)[0];
+  if (hit) {
+    const g = hit.object.parent;
+    const v = g.userData.venue;
+    hoverVenue = v.name;
+    // Which specific act/cube is being hovered?
+    const hoveredSet = hit.object.userData?.set || null;
+    // Full venue schedule, grouped by day
+    const venueSets = sets.filter(s => s.venue === v.name).sort((a, b) => a.dt - b.dt);
+    const fmtSet = d3.timeFormat("%-I:%M");
+    const fmtDay = d3.timeFormat("%A, %B %-d");
+    const grouped = d3.group(venueSets, s => s.date);
+    const parts = [`<div class="t-name">${esc(v.name)}</div>`];
+    const metaBits = [];
+    if (v.neighborhood) metaBits.push(v.neighborhood);
+    if (v.capacity) metaBits.push("cap " + v.capacity);
+    metaBits.push(venueSets.length + (venueSets.length === 1 ? " set" : " sets"));
+    parts.push(`<div class="t-meta">${esc(metaBits.join(" · "))}</div>`);
+    parts.push("<hr/>");
+    for (const [date, daySets] of grouped) {
+      const dayHex = "#" + (DAY_COLORS[daySets[0].day_of_week] || 0x8fa088).toString(16).padStart(6,"0");
+      parts.push(`<div class="t-day" style="color:${dayHex}">${fmtDay(daySets[0].dt)}</div>`);
+      daySets.forEach(s => {
+        const isHovered = hoveredSet && s.act === hoveredSet.act && s.date === hoveredSet.date;
+        const cls = isHovered ? " hovered" : "";
+        const rowDayHex = "#" + (DAY_COLORS[s.day_of_week] || 0x8fa088).toString(16).padStart(6,"0");
+        const rowStyle = isHovered ? `background:${rowDayHex}22;` : "";
+        parts.push(`<div class="t-set${cls}" style="${rowStyle}"><span class="t-time" ${isHovered ? `style="color:${rowDayHex}"` : ""}>${fmtSet(s.dt).toUpperCase()}</span><span class="t-act">${esc(s.act)}</span></div>`);
+      });
+    }
+    tip.innerHTML = parts.join("");
+    // Flip-to-keep-onscreen positioning
+    const rect = tip.getBoundingClientRect();
+    const vw = window.innerWidth, vh = window.innerHeight;
+    const tw = tip.offsetWidth || 260, th = tip.offsetHeight || 120;
+    let left = ev.clientX + 16, top = ev.clientY + 16;
+    if (left + tw > vw - 8) left = ev.clientX - tw - 16;
+    if (top + th > vh - 8) top = Math.max(8, vh - th - 8);
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+    tip.style.opacity = 1;
+    canvas.style.cursor = "pointer";
+  } else {
+    hoverVenue = null;
+    tip.style.opacity = 0;
+    canvas.style.cursor = "grab";
+  }
+});
+
+// Click a cube → jump timeline to that act's time + play its video
+canvas.addEventListener("click", (ev) => {
+  const rect = canvas.getBoundingClientRect();
+  mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  const meshes = venueMeshes.flatMap(g => g.userData.cubes);
+  const hit = raycaster.intersectObjects(meshes, false)[0];
+  if (hit && hit.object.userData.set) {
+    const s = hit.object.userData.set;
+    // Jump slider to this act's compressed time
+    const cTime = realToCompressed(s.dt);
+    slider.value = cTime;
+    render(s.dt);
+    updatePlayhead();
+    updateYtPlayer(s.dt);
+  }
+});
+
+// ---- Compass ----
+
+// ---- Panel / scrubber ----
+const slider = document.getElementById("slider");
+slider.max = minutesTotal; slider.step = 5;
+let currentTime = tMin;
+const nowTimeEl = document.getElementById("now-time");
+const nowDateEl = document.getElementById("now-date");
+const nowListEl = document.getElementById("now-list");
+
+const fmt = d3.timeFormat("%-I:%M");
+const fmtAP = d3.timeFormat("%-I:%M %p");
+const dfmt = d3.timeFormat("%A · %b %-d");
+const hourAP = d => d3.timeFormat("%p")(d).toLowerCase();
+
+function render(t) {
+  currentTime = t;
+  const activeSets = sets.filter(s => Math.abs(s.dt - t) <= WINDOW_MIN * 60000).sort((a, b) => a.dt - b.dt);
+  activeVenues.clear(); futureVenues.clear();
+  activeSets.forEach(s => activeVenues.add(s.venue));
+  sets.forEach(s => { if (s.dt >= t && !activeVenues.has(s.venue)) futureVenues.add(s.venue); });
+
+  venueMeshes.forEach(g => {
+    g.userData.cubes.forEach(c => {
+      const s = c.userData.set;
+      const isLive = Math.abs(s.dt - t) <= WINDOW_MIN * 60000;
+      const isPast = s.dt < t && !isLive;
+      const mats = c.userData.mats;
+      c.material = isLive ? mats.live : (isPast ? mats.past : mats.future);
+      // Past cubes stay as transparent supports so upper cubes don't float.
+      c.visible = true;
+    });
+  });
+  drawSparkline();   // re-tint past bars
+
+  // Header clock — hour:minute huge, am/pm small
+  const timeStr = fmt(t);
+  const ap = hourAP(t);
+  nowTimeEl.innerHTML = `${timeStr}<em> ${ap}</em>`;
+  nowDateEl.textContent = dfmt(t);
+
+  nowListEl.innerHTML = activeSets.length
+    ? activeSets.map(s => {
+        const a = actsByName.get(s.act);
+        const links = [];
+        if (a?.spotify?.url) links.push(`<a href="${a.spotify.url}" target="_blank" style="color:#1db954">SPOTIFY</a>`);
+        if (a?.apple_music?.url) links.push(`<a href="${a.apple_music.url}" target="_blank" style="color:#fa586a">APPLE</a>`);
+        if (a?.instagram?.url) links.push(`<a href="${a.instagram.url}" target="_blank" style="color:#e1306c">IG</a>`);
+        if (a?.youtube?.url) links.push(`<a href="${a.youtube.url}" target="_blank" style="color:#ff4444">YT</a>`);
+        const plays = a?.the_north_plays?.play_count;
+        const playBadge = plays ? `<span class="plays">${plays}× ON THE NORTH</span>` : "";
+        return `<div class="set"><span class="time">${fmt(s.dt)}</span><div class="body"><div class="act">${esc(s.act)}${playBadge}</div><div class="venue-name">${esc(s.venue)}</div>${links.length ? `<div class="links">${links.join("")}</div>` : ""}</div></div>`;
+      }).join("")
+    : `<div class="empty">— silence —<br/>next set at ${fmtAP(d3.min(sets.filter(s => s.dt > t), s => s.dt))}</div>`;
+}
+
+// ---- Sparkline: density of sets over time (YouTube-heatmap-style) ----
+const sparkCanvas = document.getElementById("sparkline");
+const sparkPlayhead = document.getElementById("sparkline-playhead");
+const BIN_MIN = 30;   // 30 compressed min per bar
+// Each bin holds the actual set objects — we draw day-colored cubes *and* use
+// them to resolve hover-tooltips on the sparkline.
+const bins = [];
+for (let m = 0; m < minutesTotal; m += BIN_MIN) {
+  if (isPadCompressedMin(m) || isPadCompressedMin(m + BIN_MIN - 1)) { bins.push([]); continue; }
+  const t0 = +compressedToReal(m);
+  const t1 = +compressedToReal(Math.min(minutesTotal, m + BIN_MIN));
+  bins.push(sortedSets.filter(s => +s.dt >= t0 && +s.dt < t1).sort((a, b) => a.dt - b.dt));
+}
+const binMax = Math.max(...bins.map(b => b.length), 1);
+let sparkCubeW = 0, sparkCubeH = 0, sparkBarW = 0;   // captured during draw for hit-testing
+
+function drawSparkline() {
+  const dpr = window.devicePixelRatio || 1;
+  const w = sparkCanvas.clientWidth, h = sparkCanvas.clientHeight;
+  sparkCanvas.width = w * dpr; sparkCanvas.height = h * dpr;
+  const ctx = sparkCanvas.getContext("2d");
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, w, h);
+
+  const barW = w / bins.length;
+  const cubeW = Math.max(3, barW * 0.78);
+  // Always fit the tallest stack inside the canvas — no min height that causes clipping
+  const cubeH = Math.max(2, (h - 4) / Math.max(binMax, 1));
+  const gap = Math.min(1.2, cubeH * 0.08);
+  sparkBarW = barW; sparkCubeW = cubeW; sparkCubeH = cubeH;
+  bins.forEach((binSets, i) => {
+    if (!binSets.length) return;
+    const x = i * barW + (barW - cubeW) / 2;
+    binSets.forEach((s, k) => {
+      const hex = DAY_COLORS[s.day_of_week] || 0x8fa088;
+      const y = h - 2 - (k + 1) * cubeH + gap / 2;
+      const isPast = s.dt < currentTime - WINDOW_MIN * 60000;
+      const alpha = isPast ? 0.22 : 1.0;
+      const r = ((hex >> 16) & 0xff), g = ((hex >> 8) & 0xff), b = hex & 0xff;
+      ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
+      ctx.fillRect(x, y, cubeW, cubeH - gap);
+      ctx.fillStyle = `rgba(255,255,255,${isPast ? 0.08 : 0.22})`;
+      ctx.fillRect(x, y, cubeW, Math.min(2, (cubeH - gap) * 0.2));
+      ctx.fillStyle = `rgba(0,0,0,${isPast ? 0.12 : 0.25})`;
+      ctx.fillRect(x, y + cubeH - gap - 1, cubeW, 1);
+    });
+  });
+
+  // No dashed seams — day pills carry the separation visually
+}
+drawSparkline();
+window.addEventListener("resize", drawSparkline);
+
+const playBtn = document.getElementById("play-btn");
+function updatePlayhead() {
+  const frac = slider.value / slider.max;
+  const w = sparkCanvas.clientWidth;
+  sparkPlayhead.style.left = `${frac * w}px`;
+  // Center play button exactly on slider thumb
+  const sliderW = slider.offsetWidth;
+  const sliderH = slider.offsetHeight;
+  const thumbCenterX = 15 + frac * (sliderW - 30) + 2;  // +2px empirical correction
+  playBtn.style.left = `${thumbCenterX}px`;
+  playBtn.style.top = `${sliderH / 2 + 2}px`;           // +2px empirical correction
+}
+updatePlayhead();
+
+// Per-cube hover on the sparkline — shows band / venue / time
+sparkCanvas.addEventListener("mousemove", (ev) => {
+  const rect = sparkCanvas.getBoundingClientRect();
+  const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
+  const h = rect.height;
+  const i = Math.floor(mx / sparkBarW);
+  const binSets = bins[i];
+  if (!binSets || !binSets.length) { tip.style.opacity = 0; return; }
+  // x hit-test within the cube's horizontal span
+  const cubeLeft = i * sparkBarW + (sparkBarW - sparkCubeW) / 2;
+  if (mx < cubeLeft || mx > cubeLeft + sparkCubeW) { tip.style.opacity = 0; return; }
+  // Stack goes bottom-up
+  const fromBottom = h - 2 - my;
+  const k = Math.floor(fromBottom / sparkCubeH);
+  if (k < 0 || k >= binSets.length) { tip.style.opacity = 0; return; }
+  const s = binSets[k];
+  const a = actsByName.get(s.act);
+  const fmtSet = d3.timeFormat("%A, %b %-d · %-I:%M %p");
+  const parts = [
+    `<div class="t-name">${esc(s.act)}</div>`,
+    `<div class="t-meta">${esc(s.venue)}</div>`,
+    `<hr/>`,
+    `<div class="t-set"><span class="t-time">${esc(fmtSet(s.dt).toUpperCase())}</span></div>`,
+  ];
+  if (a?.the_north_plays?.play_count) {
+    parts.push(`<div class="t-day">${a.the_north_plays.play_count}× ON THE NORTH</div>`);
+  }
+  tip.innerHTML = parts.join("");
+  const tw = tip.offsetWidth || 240, th = tip.offsetHeight || 90;
+  const vw = window.innerWidth, vh = window.innerHeight;
+  let left = ev.clientX + 14, top = ev.clientY - th - 14;
+  if (left + tw > vw - 8) left = ev.clientX - tw - 14;
+  if (top < 8) top = ev.clientY + 14;
+  tip.style.left = left + "px";
+  tip.style.top = top + "px";
+  tip.style.opacity = 1;
+});
+sparkCanvas.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
+// Click a sparkline cube → jump timeline to that act
+sparkCanvas.addEventListener("click", (ev) => {
+  const rect = sparkCanvas.getBoundingClientRect();
+  const mx = ev.clientX - rect.left;
+  const i = Math.floor(mx / sparkBarW);
+  const binSets = bins[i];
+  if (!binSets || !binSets.length) return;
+  const fromBottom = rect.height - (ev.clientY - rect.top) - 2;
+  const k = Math.floor(fromBottom / sparkCubeH);
+  if (k < 0 || k >= binSets.length) return;
+  const s = binSets[k];
+  const cTime = realToCompressed(s.dt);
+  slider.value = cTime;
+  render(s.dt);
+  updatePlayhead();
+  updateYtPlayer(s.dt);
+});
+
+// Load YouTube IFrame API for video-end detection
+const ytApiReady = new Promise(resolve => {
+  window.onYouTubeIframeAPIReady = resolve;
+  const tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+});
+let ytPlayer = null;
+
+// ---- YouTube Mini-Player ----
+const ytWrap = document.getElementById("yt-wrap");
+const ytLabelAct = ytWrap.querySelector(".yt-header .yt-act");
+const ytLabelDate = ytWrap.querySelector(".yt-footer .yt-date");
+const ytLabelTime = ytWrap.querySelector(".yt-footer .yt-time");
+const ytLabelVenue = ytWrap.querySelector(".yt-footer .yt-venue");
+const ytEmpty = ytWrap.querySelector(".yt-empty");
+const ytFmtDate = d3.timeFormat("%A, %B %-d");
+const ytFmtTime = d3.timeFormat("%-I:%M %p");
+const ytFmtDay = d3.timeFormat("%a %-m/%-d");
+
+// Build sorted playlist: chronological order, ties broken alphabetically
+const ytPlaylist = sortedSets
+  .map(s => {
+    const a = actsByName.get(s.act);
+    const vidUrl = (a && a.youtube_video && a.youtube_video.url) || null;
+    return { ...s, vidUrl, actData: a };
+  })
+  .filter(s => s.vidUrl);
+
+let ytCurrentVideoUrl = null;
+let ytUserMuted = false;   // start unmuted — user can mute via the prominent button
+let ytCurrentIdx = -1;    // current position in ytPlaylist
+const YT_PLAYER_W = 300;
+
+// Preload cache: hidden iframes for upcoming videos so they start instantly
+const YT_PRELOAD_COUNT = 3;
+const ytPreloadCache = new Map(); // videoId → iframe element
+function ytPreloadUpcoming(currentIdx) {
+  for (let i = 1; i <= YT_PRELOAD_COUNT; i++) {
+    const next = ytPlaylist[currentIdx + i];
+    if (!next || !next.vidUrl) continue;
+    const m = next.vidUrl.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (!m || ytPreloadCache.has(m[1])) continue;
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${m[1]}?autoplay=0&mute=1&controls=0`;
+    iframe.style.cssText = "position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;";
+    iframe.allow = "autoplay; encrypted-media";
+    document.body.appendChild(iframe);
+    ytPreloadCache.set(m[1], iframe);
+    // Evict old entries beyond cache size
+    if (ytPreloadCache.size > YT_PRELOAD_COUNT * 2) {
+      const oldest = ytPreloadCache.keys().next().value;
+      ytPreloadCache.get(oldest).remove();
+      ytPreloadCache.delete(oldest);
+    }
+  }
+}
+
+function updateYtPlayer(t, forceIdx) {
+  let best = null;
+  if (forceIdx != null && forceIdx >= 0 && forceIdx < ytPlaylist.length) {
+    // Direct index jump (next/prev) — skip time-based search
+    best = ytPlaylist[forceIdx];
+  } else {
+    // Find the act closest to (but not after) current time
+    for (const s of ytPlaylist) {
+      if (s.dt <= t) best = s;
+      else break;
+    }
+    if (!best && ytPlaylist.length) best = ytPlaylist[0];
+  }
+  if (!best) {
+    ytWrap.style.display = "none";
+    return;
+  }
+  ytWrap.style.display = "";
+
+  // Position: track the slider thumb, clamped to scrubber bounds
+  const stackEl = document.getElementById("timeline-stack");
+  const stackW = stackEl.offsetWidth;
+  const playerW = ytWrap.offsetWidth;
+  const frac = slider.value / slider.max;
+  const thumbX = 15 + frac * (stackW - 30);
+  const left = Math.max(0, Math.min(thumbX - playerW / 2, stackW - playerW));
+  ytWrap.style.left = `${left}px`;
+
+  // Update video if changed
+  ytCurrentIdx = forceIdx != null ? forceIdx : ytPlaylist.indexOf(best);
+  if (best.vidUrl !== ytCurrentVideoUrl) {
+    ytCurrentVideoUrl = best.vidUrl;
+    const m = best.vidUrl.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (m) {
+      ytEmpty.style.display = "none";
+      const videoId = m[1];
+
+      // Use YT Player API if loaded, otherwise fallback to iframe
+      if (ytPlayer) {
+        ytPlayer.loadVideoById(videoId);
+        if (ytUserMuted) ytPlayer.mute(); else ytPlayer.unMute();
+      } else {
+        const videoArea = document.getElementById("yt-video-area");
+        let playerDiv = document.getElementById("yt-player-div");
+        if (!playerDiv) {
+          playerDiv = document.createElement("div");
+          playerDiv.id = "yt-player-div";
+          playerDiv.style.cssText = "position:absolute;top:0;left:0;width:100%;height:100%;";
+          videoArea.appendChild(playerDiv);
+        }
+        ytApiReady.then(() => {
+          ytPlayer = new YT.Player("yt-player-div", {
+            videoId: videoId,
+            playerVars: {
+              autoplay: 1,
+              mute: 0,
+              controls: 0,          // hide all YT chrome
+              modestbranding: 1,
+              rel: 0,
+              iv_load_policy: 3,    // hide annotations
+              disablekb: 1,         // prevent YT keyboard conflicts
+              showinfo: 0,
+              iv_load_policy: 3,    // hide annotations
+              disablekb: 1,
+              fs: 0,                // no fullscreen button
+              playsinline: 1,
+            },
+            events: {
+              onStateChange: (e) => {
+                if (e.data === YT.PlayerState.ENDED && playing) {
+                  // Advance to next act in playlist + move timeline
+                  const nextIdx = ytCurrentIdx + 1;
+                  if (nextIdx < ytPlaylist.length) {
+                    const nextAct = ytPlaylist[nextIdx];
+                    const cTime = realToCompressed(nextAct.dt);
+                    slider.value = cTime;
+                    render(nextAct.dt);
+                    updatePlayhead();
+                    updateYtPlayer(nextAct.dt);
+                  } else {
+                    playing = false;
+                    playBtn.textContent = "▶";
+                    playBtn.style.paddingLeft = "3px";
+                  }
+                }
+              }
+            }
+          });
+        });
+      }
+      ytPreloadUpcoming(ytCurrentIdx);
+    }
+    ytLabelAct.textContent = best.act;
+    ytLabelDate.textContent = ytFmtDate(best.dt);
+    ytLabelTime.textContent = ytFmtTime(best.dt);
+    ytLabelVenue.textContent = best.venue;
+    ytOpenLink.href = best.vidUrl;
+    // Populate platform links bar
+    const linksBar = document.getElementById("yt-links");
+    linksBar.innerHTML = "";
+    const ad = best.actData || {};
+    const platforms = [
+      ["YouTube", ad.youtube_video?.url],
+      ["Spotify", ad.spotify],
+      ["Apple Music", ad.apple_music],
+      ["Bandcamp", ad.bandcamp],
+      ["SoundCloud", ad.soundcloud],
+      ["Instagram", ad.instagram],
+      ["Facebook", ad.facebook],
+      ["Website", ad.website],
+    ];
+    for (const [label, url] of platforms) {
+      if (!url) continue;
+      const a = document.createElement("a");
+      a.href = url; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = label;
+      linksBar.appendChild(a);
+    }
+    updateStarBtn();
+  }
+}
+
+slider.addEventListener("input", () => {
+  const t = compressedToReal(+slider.value);
+  render(t);
+  updatePlayhead();
+  updateYtPlayer(t);
+});
+
+// Play/pause: controls the YouTube video. Timeline stays put — only advances
+// when the video ends (auto-advance) or user manually scrubs/clicks.
+function togglePlay() {
+  playing = !playing;
+  playBtn.textContent = playing ? "❚❚" : "▶";
+  playBtn.style.paddingLeft = playing ? "0" : "3px";
+  render(currentTime);
+  if (playing) {
+    updateYtPlayer(currentTime);
+    // Resume or start the YT video
+    if (ytPlayer && ytPlayer.playVideo) ytPlayer.playVideo();
+  } else {
+    // Pause the YT video
+    if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
+  }
+}
+// Play button: click = play/pause, drag = scrub the slider
+let btnDragStart = null;
+let btnDragged = false;
+// ---- Custom YT player controls ----
+const ytPP = document.getElementById("yt-pp");
+const ytMuteBtn = document.getElementById("yt-mute");
+const ytScrub = document.getElementById("yt-scrub");
+const ytOpenLink = document.getElementById("yt-open");
+
+// Drag-to-resize the YouTube player
+const ytResize = document.getElementById("yt-resize");
+let ytResizing = false, ytResizeStart = null, ytResizeDragged = false;
+const YT_MIN = { w: 280 };
+const YT_MAX = { w: 700 };
+// Compute player height from width: 16:9 video + chrome (header ~46 + links ~20 + controls ~38 + footer ~30)
+const YT_CHROME_H = 134;
+function ytHeightForWidth(w) { return Math.round(w * 9 / 16 + YT_CHROME_H); }
+let ytSizeState = "normal"; // "small" | "normal" | "large"
+
+ytResize.addEventListener("pointerdown", (e) => {
+  ytResizing = true;
+  ytResizeDragged = false;
+  ytResizeStart = { x: e.clientX, y: e.clientY, w: ytWrap.offsetWidth, h: ytWrap.offsetHeight };
+  ytResize.setPointerCapture(e.pointerId);
+  e.stopPropagation();
+});
+document.addEventListener("pointermove", (e) => {
+  if (!ytResizing) return;
+  if (Math.abs(e.clientX - ytResizeStart.x) > 4 || Math.abs(e.clientY - ytResizeStart.y) > 4) ytResizeDragged = true;
+  if (ytResizeDragged) {
+    const dx = (e.clientX - ytResizeStart.x) * 2;
+    const newW = Math.max(YT_MIN.w, Math.min(YT_MAX.w, ytResizeStart.w + dx));
+    ytWrap.style.width = newW + "px";
+    ytWrap.style.height = ytHeightForWidth(newW) + "px";
+    ytSizeState = "normal";
+    updatePlayhead();
+  }
+});
+document.addEventListener("pointerup", () => {
+  if (ytResizing && !ytResizeDragged) {
+    // Click without drag → toggle between smallest and largest
+    if (ytSizeState === "large") {
+      ytWrap.style.width = YT_MIN.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MIN.w) + "px"; ytSizeState = "small";
+    } else {
+      ytWrap.style.width = YT_MAX.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MAX.w) + "px"; ytSizeState = "large";
+    }
+  }
+  ytResizing = false;
+});
+
+// ---- Set List (favorites) ----
+const SETLIST_KEY = "homegrown_setlist";
+let setList = JSON.parse(localStorage.getItem(SETLIST_KEY) || "[]"); // array of {act, venue, date, time_start}
+const ytStarBtn = document.getElementById("yt-star");
+const slContent = document.getElementById("sl-content");
+const slCount = document.querySelector(".sl-count");
+
+function isInSetList(act, date) {
+  return setList.some(s => s.act === act && s.date === date);
+}
+function toggleSetList(setData) {
+  const idx = setList.findIndex(s => s.act === setData.act && s.date === setData.date);
+  if (idx >= 0) setList.splice(idx, 1);
+  else setList.push(setData);
+  localStorage.setItem(SETLIST_KEY, JSON.stringify(setList));
+  renderSetList();
+  updateStarBtn();
+}
+function updateStarBtn() {
+  if (!ytCurrentVideoUrl) return;
+  // Find current act
+  const best = ytPlaylist[ytCurrentIdx];
+  if (!best) return;
+  const starred = isInSetList(best.act, best.date);
+  ytStarBtn.textContent = starred ? "★" : "☆";
+  ytStarBtn.classList.toggle("starred", starred);
+}
+function renderSetList() {
+  slCount.textContent = setList.length;
+  if (!setList.length) {
+    slContent.innerHTML = '<div class="sl-empty">Tap ☆ on any act to add it here!</div>';
+    return;
+  }
+  const sorted = [...setList].sort((a, b) => a.date.localeCompare(b.date) || a.time_start.localeCompare(b.time_start));
+  const grouped = d3.group(sorted, s => s.date);
+  const slDayFmt = d3.timeFormat("%A, %B %-d");
+  const slTimeFmt = d3.timeFormat("%-I:%M");
+  let html = "";
+  for (const [date, entries] of [...grouped.entries()].sort()) {
+    const dt = new Date(date + "T12:00:00");
+    const dow = dt.toLocaleDateString("en-US", { weekday: "short" });
+    const dayHex = "#" + (DAY_COLORS[dow] || 0x8fa088).toString(16).padStart(6, "0");
+    html += `<div class="sl-day" style="color:${dayHex}">${slDayFmt(dt)}</div>`;
+    entries.forEach(e => {
+      const v = venuesByName.get(e.venue);
+      const addr = v && v.address ? v.address.replace(/,\s*(MN|WI)\s*\d{5}(-\d{4})?$/, "") : "";
+      const wristband = v && v.wristband_required ? '<div class="sl-wristband">(Wristband req.)</div>' : "";
+      const tDt = new Date(e.date + "T" + e.time_start + ":00");
+      html += `<div class="sl-entry"><span class="sl-time">${slTimeFmt(tDt)}</span><div class="sl-info"><div class="sl-act">${esc(e.act)}</div><div class="sl-venue">${esc(e.venue)}${addr ? " · " + esc(addr) : ""}${wristband}</div></div><button class="sl-remove" data-act="${esc(e.act)}" data-date="${e.date}" title="Remove">✕</button></div>`;
+    });
+  }
+  slContent.innerHTML = html;
+  // Replace act text with stroke-animated SVG if font is loaded
+  if (pmFont) {
+    slContent.querySelectorAll(".sl-act").forEach(el => {
+      const svg = createStrokeText(el.textContent, 22, "#1a1a1a");
+      if (svg) {
+        svg.style.display = "block";
+        svg.style.maxWidth = "100%";
+        svg.style.height = "auto";
+        el.textContent = "";
+        el.appendChild(svg);
+      }
+    });
+  }
+  // Wire remove buttons
+  slContent.querySelectorAll(".sl-remove").forEach(btn => {
+    btn.addEventListener("click", () => {
+      toggleSetList({ act: btn.dataset.act, date: btn.dataset.date });
+    });
+  });
+}
+
+ytStarBtn.addEventListener("click", () => {
+  const best = ytPlaylist[ytCurrentIdx];
+  if (!best) return;
+  toggleSetList({
+    act: best.act, venue: best.venue, date: best.date,
+    time_start: best.time_start_24h || best.time_start,
+  });
+});
+
+// Load Permanent Marker font for stroke animation
+let pmFont = null;
+const PM_FONT_URL = "https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004HaqI.woff2";
+fetch(PM_FONT_URL).then(r => r.arrayBuffer()).then(buf => {
+  pmFont = opentype.parse(buf);
+}).catch(() => {});
+
+// Convert text to animated SVG with per-character jitter
+function createStrokeText(text, fontSize, color) {
+  if (!pmFont) return null;
+  const container = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  container.style.overflow = "visible";
+  container.classList.add("stroke-draw");
+  let xOff = 0;
+  const charGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+  // Render each character separately for individual jitter
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    const charPath = pmFont.getPath(ch, 0, fontSize * 0.8, fontSize);
+    const bbox = charPath.getBoundingBox();
+    const svgStr = charPath.toSVG();
+    const dMatch = svgStr.match(/d="([^"]+)"/);
+    if (!dMatch || bbox.x2 - bbox.x1 < 0.1) { xOff += fontSize * 0.3; continue; }
+    const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", dMatch[1]);
+    p.style.stroke = color || "#1a1a1a";
+    // Per-character jitter: ±5° rotation, ±2% size
+    const rot = (Math.random() - 0.5) * 10;
+    const scale = 0.98 + Math.random() * 0.04;
+    const cy = fontSize * 0.4;
+    p.setAttribute("transform", `translate(${xOff},0) rotate(${rot.toFixed(1)} ${(bbox.x1+bbox.x2)/2} ${cy}) scale(${scale.toFixed(3)})`);
+    // Staggered animation delay per character
+    p.style.animationDelay = `${i * 0.06}s`;
+    charGroup.appendChild(p);
+    xOff += (bbox.x2 - bbox.x1) * scale + fontSize * 0.02;
+  }
+  // Set viewBox to fit all characters
+  container.setAttribute("viewBox", `0 -2 ${xOff + 4} ${fontSize + 4}`);
+  container.setAttribute("width", xOff + 4);
+  container.setAttribute("height", fontSize + 4);
+  container.appendChild(charGroup);
+  // Measure path lengths + set dasharray
+  document.body.appendChild(container);
+  charGroup.querySelectorAll("path").forEach(p => {
+    const len = p.getTotalLength();
+    p.style.setProperty("--path-len", len);
+  });
+  document.body.removeChild(container);
+  setTimeout(() => container.classList.add("done"), 1300 + text.length * 60);
+  return container;
+}
+
+renderSetList();
+
+// Set list: emoji + editable title input
+const slEmojiEl = document.getElementById("sl-emoji");
+const slTitleInput = document.getElementById("sl-title-input");
+const slEmojiPicker = document.getElementById("sl-emoji-picker");
+const slHeader = document.getElementById("setlist-header");
+const SL_EMOJI_KEY = "homegrown_sl_emoji";
+const SL_TITLE_KEY = "homegrown_sl_title";
+const emojiChoices = [
+  // row 1: instruments
+  "🎸","🎵","🎶","🎤","🎹","🥁","🎷","🎺","🪕","🎻",
+  // row 2: audio + drinks
+  "🎧","🎼","🪗","🪘","📻","🎙️","🍺","🍻","🥃","🍷",
+  // row 3: drinks + vibes
+  "🍹","🥂","🧊","🤘","✌️","🙌","👏","💃","🕺","🪩",
+  // row 4: energy + nature
+  "🔥","⚡","💥","🎆","🌲","🏔️","⛵","🦌","🐻","🌊",
+  // row 5: duluth + fun
+  "❄️","🐺","🦅","🎪","🎭","🎵","🏕️","🌅","🛶","⭐",
+];
+
+// Random emoji for new users, restore for returning
+const savedEmoji = localStorage.getItem(SL_EMOJI_KEY);
+slEmojiEl.textContent = savedEmoji || emojiChoices[Math.floor(Math.random() * emojiChoices.length)];
+slTitleInput.value = localStorage.getItem(SL_TITLE_KEY) || "My Set List";
+
+// Fitty auto-sizes the input text to fit
+let slFitty;
+try { slFitty = fitty(slTitleInput, { minSize: 14, maxSize: 28, multiLine: false }); } catch(e) {}
+
+// Click header = toggle open/close (but not when clicking inside the input or emoji)
+slHeader.addEventListener("click", (e) => {
+  if (e.target === slEmojiEl || e.target === slTitleInput) return;
+  document.getElementById("setlist-panel").classList.toggle("open");
+});
+
+// Save title on change
+slTitleInput.addEventListener("blur", () => {
+  let v = slTitleInput.value.trim();
+  if (!v) v = "My Set List";
+  if (v.length < 20 && !v.toLowerCase().includes("set list") && !v.toLowerCase().includes("list") && !v.toLowerCase().includes("watch")) v += " Set List";
+  slTitleInput.value = v;
+  localStorage.setItem(SL_TITLE_KEY, v);
+  if (slFitty && slFitty[0]) slFitty[0].fit();
+});
+// Auto-shrink font to fit container — no cropped text
+function fitTitleInput() {
+  const maxFs = 28, minFs = 13;
+  const container = slTitleInput.parentElement;
+  const availW = container.offsetWidth - 28; // account for clear button + padding
+  // Measure text width at current font size using a hidden span
+  const probe = document.createElement("span");
+  probe.style.cssText = `font-family:Caveat,cursive;font-weight:700;font-size:${maxFs}px;visibility:hidden;position:absolute;white-space:nowrap;`;
+  probe.textContent = slTitleInput.value || "My Set List";
+  document.body.appendChild(probe);
+  let fs = maxFs;
+  while (probe.offsetWidth > availW && fs > minFs) {
+    fs -= 1;
+    probe.style.fontSize = fs + "px";
+  }
+  document.body.removeChild(probe);
+  slTitleInput.style.fontSize = fs + "px";
+}
+slTitleInput.addEventListener("input", fitTitleInput);
+fitTitleInput();
+slTitleInput.addEventListener("keydown", (e) => { if (e.key === "Enter") slTitleInput.blur(); });
+slTitleInput.addEventListener("click", (e) => e.stopPropagation());
+// Clear button — show when input has text, hide when empty
+const slTitleClear = document.getElementById("sl-title-clear");
+slTitleInput.addEventListener("focus", () => { if (slTitleInput.value) slTitleClear.style.display = ""; });
+slTitleInput.addEventListener("blur", () => { setTimeout(() => slTitleClear.style.display = "none", 150); });
+slTitleInput.addEventListener("input", () => { slTitleClear.style.display = slTitleInput.value ? "" : "none"; });
+slTitleClear.addEventListener("click", (e) => {
+  e.stopPropagation();
+  slTitleInput.value = "";
+  slTitleInput.focus();
+  slTitleClear.style.display = "none";
+  if (slFitty && slFitty[0]) slFitty[0].fit();
+});
+
+// Emoji picker
+slEmojiEl.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const open = slEmojiPicker.style.display !== "grid";
+  slEmojiPicker.style.display = open ? "grid" : "none";
+  if (open && !slEmojiPicker.children.length) {
+    emojiChoices.forEach(em => {
+      const btn = document.createElement("button");
+      btn.textContent = em;
+      btn.style.cssText = "font-size:24px;background:none;border:0;cursor:pointer;padding:4px;border-radius:4px;line-height:32px;";
+      btn.addEventListener("mouseenter", () => btn.style.background = "rgba(0,0,0,0.1)");
+      btn.addEventListener("mouseleave", () => btn.style.background = "none");
+      btn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        slEmojiEl.textContent = em;
+        localStorage.setItem(SL_EMOJI_KEY, em);
+        slEmojiPicker.style.display = "none";
+      });
+      slEmojiPicker.appendChild(btn);
+    });
+  }
+});
+
+// ---- Share dialog ----
+document.getElementById("sl-share-btn").addEventListener("click", (e) => {
+  e.stopPropagation();
+  document.getElementById("sl-share-dialog").classList.add("open");
+});
+document.getElementById("sl-share-dialog").addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) e.currentTarget.classList.remove("open");
+});
+// Native Web Share API (mobile)
+document.getElementById("sl-share-native").addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: slTitleInput.value, text: buildShareText(), url: "https://lampagj.github.io/duluth-homegrown-map/" });
+    } catch {}
+  } else { alert("Web Share not supported — use Copy instead."); }
+  document.getElementById("sl-share-dialog").classList.remove("open");
+});
+function buildShareText() {
+  const title = slTitleInput.value;
+  const emoji = slEmojiEl.textContent;
+  if (!setList.length) return `${emoji} ${title}\nNo acts starred yet! Check out Duluth Homegrown 2026.`;
+  const byDay = d3.group(setList, s => s.date);
+  let text = `${emoji} ${title}\n\n`;
+  const dayFmt = d3.timeFormat("%A, %B %-d");
+  for (const [date, entries] of [...byDay.entries()].sort()) {
+    text += `📅 ${dayFmt(new Date(date + "T12:00:00"))}\n`;
+    entries.sort((a, b) => (a.time_start || "").localeCompare(b.time_start || ""));
+    entries.forEach(e => { text += `  ${e.time_start || ""} ${e.act} @ ${e.venue}\n`; });
+    text += "\n";
+  }
+  text += "🎸 Duluth Homegrown Music Festival 2026\nMake your own Homegrown setlist at https://lampagj.github.io/duluth-homegrown-map/";
+  return text;
+}
+
+document.getElementById("sl-share-copy").addEventListener("click", async () => {
+  await navigator.clipboard.writeText(buildShareText());
+  const btn = document.getElementById("sl-share-copy");
+  btn.textContent = "✓ Copied!";
+  setTimeout(() => btn.textContent = "📋 Copy", 1500);
+});
+
+document.getElementById("sl-share-email").addEventListener("click", (e) => {
+  e.preventDefault();
+  const text = buildShareText();
+  const title = slTitleInput.value;
+  window.location.href = `mailto:?subject=${encodeURIComponent(title + " — Homegrown 2026")}&body=${encodeURIComponent(text)}`;
+});
+
+// Social links — generate on click with current set list text
+document.getElementById("sl-share-sms").addEventListener("click", (e) => {
+  e.preventDefault();
+  const text = buildShareText().slice(0, 500);
+  window.location.href = `sms:?&body=${encodeURIComponent(text)}`;
+  document.getElementById("sl-share-dialog").classList.remove("open");
+});
+
+["sl-share-bsky", "sl-share-fb", "sl-share-threads", "sl-share-tiktok", "sl-share-ig"].forEach(id => {
+  document.getElementById(id).addEventListener("click", (e) => {
+    const text = encodeURIComponent(buildShareText().slice(0, 300));
+    const url = encodeURIComponent("https://lampagj.github.io/duluth-homegrown-map/");
+    const urls = {
+      "sl-share-bsky": `https://bsky.app/intent/compose?text=${text}`,
+      "sl-share-fb": `https://www.facebook.com/sharer/sharer.php?quote=${text}&u=${url}`,
+      "sl-share-threads": `https://threads.net/intent/post?text=${text}`,
+      "sl-share-tiktok": `https://www.tiktok.com/`, // TikTok has no share URL scheme
+      "sl-share-ig": `https://www.instagram.com/`, // IG has no share URL scheme
+    };
+    e.preventDefault();
+    window.open(urls[id], "_blank", "width=600,height=500");
+  });
+});
+
+// ICS calendar export — one event per starred act
+document.getElementById("sl-share-ics").addEventListener("click", () => {
+  if (!setList.length) { alert("Star some acts first!"); return; }
+  const pad2 = n => String(n).padStart(2, "0");
+  function icsDate(dateStr, time24) {
+    // dateStr: "2026-04-26", time24: "19:00"
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const [h, mn] = (time24 || "12:00").split(":").map(Number);
+    return `${y}${pad2(m)}${pad2(d)}T${pad2(h)}${pad2(mn)}00`;
+  }
+  function icsEscape(s) { return (s || "").replace(/[\\;,\n]/g, c => "\\" + c); }
+  const now = new Date();
+  const stamp = `${now.getUTCFullYear()}${pad2(now.getUTCMonth()+1)}${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}${pad2(now.getUTCMinutes())}${pad2(now.getUTCSeconds())}Z`;
+
+  let ics = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Homegrown2026//SetList//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n";
+  ics += `X-WR-CALNAME:${icsEscape(slTitleInput.value)}\r\n`;
+
+  for (const entry of setList) {
+    const schedEntry = scheduleData.schedule.find(s => s.act === entry.act && s.date === entry.date);
+    const time24 = schedEntry?.time_start_24h || "12:00";
+    const dtStart = icsDate(entry.date, time24);
+    // Assume 1 hour per set
+    const [h, mn] = time24.split(":").map(Number);
+    const endH = h + 1;
+    const dtEnd = icsDate(entry.date, `${pad2(endH % 24)}:${pad2(mn)}`);
+    const venue = entry.venue || "";
+    const actData = actsByName.get(entry.act);
+    const genre = actData?.genre || "";
+    const desc = actData?.description || "";
+
+    ics += "BEGIN:VEVENT\r\n";
+    ics += `DTSTART;TZID=America/Chicago:${dtStart}\r\n`;
+    ics += `DTEND;TZID=America/Chicago:${dtEnd}\r\n`;
+    ics += `SUMMARY:${icsEscape(entry.act)}\r\n`;
+    ics += `LOCATION:${icsEscape(venue + ", Duluth MN")}\r\n`;
+    ics += `DESCRIPTION:${icsEscape(genre ? genre + " — " + desc : desc)}\r\n`;
+    ics += `DTSTAMP:${stamp}\r\n`;
+    ics += `UID:hg2026-${entry.act.replace(/\W/g,"")}-${entry.date}@homegrown\r\n`;
+    ics += "END:VEVENT\r\n";
+  }
+  ics += "END:VCALENDAR\r\n";
+
+  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "homegrown-2026-setlist.ics";
+  a.click();
+  URL.revokeObjectURL(a.href);
+  document.getElementById("sl-share-dialog").classList.remove("open");
+});
+
+function ytTogglePlayPause() {
+  if (!ytPlayer) return;
+  const state = ytPlayer.getPlayerState();
+  if (state === YT.PlayerState.PLAYING) { ytPlayer.pauseVideo(); ytPP.textContent = "▶"; }
+  else { ytPlayer.playVideo(); ytPP.textContent = "❚❚"; }
+}
+ytPP.addEventListener("click", ytTogglePlayPause);
+// Click on overlay toggles play/pause (since overlay blocks iframe interaction)
+document.getElementById("yt-overlay").addEventListener("click", ytTogglePlayPause);
+function syncMuteUI() {
+  const iconName = ytUserMuted ? "volume_off" : "volume_up";
+  ytMuteBtn.querySelector(".material-icons").textContent = iconName;
+}
+function doMuteToggle() {
+  if (!ytPlayer) return;
+  ytUserMuted = !ytUserMuted;
+  if (ytUserMuted) ytPlayer.mute(); else ytPlayer.unMute();
+  syncMuteUI();
+}
+ytMuteBtn.addEventListener("click", doMuteToggle);
+syncMuteUI(); // set icons to match initial unmuted state
+ytScrub.addEventListener("input", () => {
+  if (!ytPlayer || !ytPlayer.getDuration) return;
+  const dur = ytPlayer.getDuration();
+  ytPlayer.seekTo(dur * ytScrub.value / 100, true);
+});
+// Update scrub position periodically
+setInterval(() => {
+  if (ytPlayer && ytPlayer.getDuration && ytPlayer.getCurrentTime) {
+    const dur = ytPlayer.getDuration();
+    if (dur > 0) ytScrub.value = (ytPlayer.getCurrentTime() / dur) * 100;
+    ytPP.textContent = ytPlayer.getPlayerState() === YT.PlayerState.PLAYING ? "❚❚" : "▶";
+  }
+}, 500);
+
+// ---- Keyboard shortcuts ----
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "INPUT" && e.target.type !== "range") return;
+  switch (e.code) {
+    case "Space":
+      e.preventDefault();
+      togglePlay();
+      break;
+    case "ArrowRight": {
+      e.preventDefault();
+      const nextIdx = Math.min(ytPlaylist.length - 1, ytCurrentIdx + 1);
+      if (nextIdx !== ytCurrentIdx && nextIdx >= 0) {
+        const act = ytPlaylist[nextIdx];
+        slider.value = realToCompressed(act.dt);
+        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
+      }
+      break;
+    }
+    case "ArrowLeft": {
+      e.preventDefault();
+      const prevIdx = Math.max(0, ytCurrentIdx - 1);
+      if (prevIdx !== ytCurrentIdx) {
+        const act = ytPlaylist[prevIdx];
+        slider.value = realToCompressed(act.dt);
+        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
+      }
+      break;
+    }
+  }
+});
+
+playBtn.addEventListener("pointerdown", (e) => {
+  btnDragStart = e.clientX;
+  btnDragged = false;
+  playBtn.setPointerCapture(e.pointerId);
+  e.stopPropagation();
+});
+playBtn.addEventListener("pointermove", (e) => {
+  if (btnDragStart === null) return;
+  if (Math.abs(e.clientX - btnDragStart) > 4) btnDragged = true;
+  if (btnDragged) {
+    const stackEl = document.getElementById("timeline-stack");
+    const stackRect = stackEl.getBoundingClientRect();
+    const frac = Math.max(0, Math.min(1, (e.clientX - stackRect.left - 15) / (stackRect.width - 30)));
+    slider.value = Math.round(frac * slider.max);
+    const t = compressedToReal(+slider.value);
+    render(t);
+    updatePlayhead();
+    updateYtPlayer(t);
+  }
+});
+playBtn.addEventListener("pointerup", (e) => {
+  if (!btnDragged) togglePlay();
+  btnDragStart = null;
+  btnDragged = false;
+});
+// (keyboard shortcuts consolidated in the block above)
+
+// Day pills — one per festival day, centered on that day's compressed slot,
+// filled with the day-color so the timeline legend is the label itself.
+const ticksEl = document.getElementById("day-ticks");
+const dayFmtLong = d3.timeFormat("%A %-m/%-d");
+const dayFmtShort = d3.timeFormat("%a %-m/%-d");
+const dayFmt = window.innerWidth < 1200 ? dayFmtShort : dayFmtLong;
+// Build day pills sized proportionally to their compressed slot width,
+// with gaps matching the pad zones between days in the equalizer.
+// Slider track channel aligns to the first/last day label edges (no extra padding)
+slider.style.setProperty("--track-pad-l", "0%");
+slider.style.setProperty("--track-pad-r", "0%");
+
+const activeFrac = (b) => b.activeMin / minutesTotal;
+const padFrac = (b) => b.padMin / minutesTotal;
+ticksEl.innerHTML = blocks.map((b, i) => {
+  const sampleSet = sortedSets.find(s => s.date === b.date);
+  const dow = sampleSet ? sampleSet.day_of_week : "Sun";
+  const hex = "#" + (DAY_COLORS[dow] || 0x8fa088).toString(16).padStart(6, "0");
+  const label = dayFmt(new Date(b.start));
+  const pillW = (activeFrac(b) * 100).toFixed(2);
+  const gapW = (padFrac(b) * 100).toFixed(2);
+  const gapBefore = i === 0 ? `<span class="day-gap" style="width:${gapW}%"></span>` : "";
+  const gapAfter = `<span class="day-gap" style="width:${(i < blocks.length - 1 ? padFrac(b) + padFrac(blocks[i+1]) : padFrac(b)) * 100}%"></span>`;
+  return `${gapBefore}<span class="day-pill" style="background:${hex};width:${pillW}%">${label}</span>${gapAfter}`;
+}).join("");
+
+// ---- Mobile scrollable schedule ----
+const mobileSchedule = document.getElementById("mobile-schedule");
+if (window.innerWidth <= 768) {
+  mobileSchedule.style.display = "";
+  const msFmt = d3.timeFormat("%-I:%M");
+  const msDayFmt = d3.timeFormat("%A, %B %-d");
+  const grouped = d3.group(sortedSets, s => s.date);
+  let msHtml = "";
+  for (const [date, daySets] of [...grouped.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
+    const dow = daySets[0].day_of_week;
+    const hex = "#" + (DAY_COLORS[dow] || 0x8fa088).toString(16).padStart(6, "0");
+    msHtml += `<div class="ms-day" style="color:${hex}">${msDayFmt(daySets[0].dt)}</div>`;
+    daySets.forEach(s => {
+      msHtml += `<div class="ms-set" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div></div>`;
+    });
+  }
+  mobileSchedule.innerHTML = msHtml;
+
+  // Scroll drives the timeline
+  let msScrolling = false;
+  mobileSchedule.addEventListener("scroll", () => {
+    if (msScrolling) return;
+    msScrolling = true;
+    requestAnimationFrame(() => {
+      // Find which set row is at the top of the visible area
+      const rows = mobileSchedule.querySelectorAll(".ms-set");
+      const scrollTop = mobileSchedule.scrollTop + mobileSchedule.offsetTop + 40;
+      let closest = null;
+      for (const row of rows) {
+        if (row.offsetTop >= scrollTop - 20) { closest = row; break; }
+      }
+      if (closest) {
+        const dt = new Date(+closest.dataset.dt);
+        const cTime = realToCompressed(dt);
+        slider.value = cTime;
+        render(dt);
+        updatePlayhead();
+      }
+      msScrolling = false;
+    });
+  });
+
+  // Click a schedule row → show video player over the schedule
+  mobileSchedule.addEventListener("click", (e) => {
+    const row = e.target.closest(".ms-set");
+    if (!row) return;
+    const dt = new Date(+row.dataset.dt);
+    const cTime = realToCompressed(dt);
+    slider.value = cTime;
+    render(dt);
+    updatePlayhead();
+    updateYtPlayer(dt);
+    // Show player over schedule on mobile
+    ytWrap.style.display = "";
+    mobileSchedule.style.display = "none";
+  });
+
+  // Mobile nav: prev / close / next
+  document.getElementById("yt-prev").addEventListener("click", () => {
+    const prevIdx = Math.max(0, ytCurrentIdx - 1);
+    if (prevIdx !== ytCurrentIdx) {
+      const act = ytPlaylist[prevIdx];
+      slider.value = realToCompressed(act.dt);
+      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
+    }
+  });
+  document.getElementById("yt-next").addEventListener("click", () => {
+    const nextIdx = Math.min(ytPlaylist.length - 1, ytCurrentIdx + 1);
+    if (nextIdx !== ytCurrentIdx) {
+      const act = ytPlaylist[nextIdx];
+      slider.value = realToCompressed(act.dt);
+      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
+    }
+  });
+  document.getElementById("yt-close").addEventListener("click", () => {
+    // Close video, show schedule again
+    ytWrap.style.display = "none";
+    mobileSchedule.style.display = "";
+    if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
+  });
+}
+
+render(tMin);
+
+// ---- Animation loop ----
+// Tweakable globals — controlled from the admin panel
+let SPIN_RATE = -(Math.PI * 2) / (120 * 60);
+let WAVE_AMP = 0.35;
+let WAVE_SPEED = 3.8;
+let WAVE_FREQ = 5.5;
+function tick() {
+  controls.update();
+  // Apply tweaked globals
+  const TW = window.__tweak || {};
+  if (TW.spinRpm !== undefined) SPIN_RATE = -(TW.spinRpm * Math.PI * 2) / (60 * 60);
+  if (TW.waveAmp !== undefined) WAVE_AMP = TW.waveAmp;
+  if (TW.waveSpeed !== undefined) WAVE_SPEED = TW.waveSpeed;
+  if (TW.waveFreq !== undefined) WAVE_FREQ = TW.waveFreq;
+  recordGroup.rotation.y += SPIN_RATE;
+  // Global wind — all flags respond in unison, shifting over time
+  const now = performance.now() * 0.001;
+  const windDir = Math.sin(now * 0.08) * Math.PI;                          // slowly rotating direction
+  const windBase = 0.45 + 0.3 * Math.sin(now * 0.15) + 0.15 * Math.sin(now * 0.06); // base speed
+  const windGustGlobal = Math.pow(Math.max(0, Math.sin(now * 0.35)), 4);   // gust pulse
+  const windSpeed = Math.min(1, windBase + windGustGlobal * 0.5);           // combined 0..1
+  const windDirX = Math.cos(windDir), windDirZ = Math.sin(windDir);
+
+  const camWorld = camera.position.clone();
+  const _flagWorldPos = new THREE.Vector3();
+  venueMeshes.forEach(g => {
+    g.userData.flag.getWorldPosition(_flagWorldPos);
+    const flagIdx = venueMeshes.indexOf(g);
+    // Stable renderOrder: distance-based + deterministic tiebreaker so overlapping flags don't flicker
+    g.userData.flag.renderOrder = 1000 - Math.round(camWorld.distanceTo(_flagWorldPos) * 10) + flagIdx * 0.001;
+    const flag = g.userData.flag;
+    const fp = flag.position;
+    // Wind phase: flags downwind of others get the wave slightly later
+    const windPhase = (flag.userData.baseX * windDirX + flag.userData.baseZ * windDirZ) * 0.25;
+    const phase = windPhase;
+    const flagWorld = new THREE.Vector3();
+    flag.getWorldPosition(flagWorld);
+    // Billboard: rotate flag Y so it faces camera
+    const dx = camWorld.x - flagWorld.x, dz = camWorld.z - flagWorld.z;
+    const billboardY = Math.atan2(dx, dz) - recordGroup.rotation.y;
+    // Wind strength at this flag's position — global wind + local turbulence
+    const localTurb = Math.sin(now * 2.5 + phase * 4) * 0.08;
+    const windStrength = Math.max(0, Math.min(1, windSpeed + localTurb));
+    // Flag flutters toward/away from viewer within the slack the rings allow (~±20°)
+    const hoistFlutter = Math.sin(now * 1.3 + phase * 2.1) * 0.35 * windStrength;
+    const targetRotY = billboardY + hoistFlutter;
+    // Smooth follow — lerp instead of snap prevents jitter at high spin speeds
+    const prevY = flag.rotation.y;
+    let deltaY = targetRotY - prevY;
+    // Wrap delta to [-PI, PI] to handle the 2PI discontinuity
+    while (deltaY > Math.PI) deltaY -= Math.PI * 2;
+    while (deltaY < -Math.PI) deltaY += Math.PI * 2;
+    flag.rotation.y = prevY + deltaY * 0.25;
+    const luffing = Math.pow(Math.max(0, 1 - windStrength * 2), 2);  // luff when wind < 0.5
+
+    // Hoist edge: flag slides through rings but clamped to ring inner diameter
+    const RING_PLAY = 0.095;  // ring major(0.12) - tube(0.025)
+    const vertRaw = Math.sin(now * 0.55 + phase * 1.3) * 0.15 - luffing * 0.3;
+    const totalVert = Math.max(-RING_PLAY, Math.min(RING_PLAY, vertRaw));
+    const sway = Math.sin(now * 0.8 + phase * 0.9) * 0.06;
+
+    const FLAG_GAP = 0.22 + sway;
+    const rightX = Math.cos(billboardY);
+    const rightZ = -Math.sin(billboardY);
+    flag.position.x = flag.userData.baseX + rightX * FLAG_GAP;
+    flag.position.z = flag.userData.baseZ + rightZ * FLAG_GAP;
+    flag.position.y = g.userData.flagBaseY + totalVert;
+    // Rings: eyelet side tracks flag, rope side stays toward pole.
+    // Ring pivots freely between the two attachment points — halyard constrains
+    // the pole side, eyelet constrains the flag side. The ring bridges the gap.
+    if (g.userData.rings) {
+      const [rTop, rBot] = g.userData.rings;
+      // Position at precise eyelet locations on the flag fabric
+      const eyTopY = flag.userData.eyeletTopY || FABRIC_H * 0.32;
+      const eyBotY = flag.userData.eyeletBotY || -FABRIC_H * 0.32;
+      // Eyelet is ~10px inward from flag left edge — offset ring rightward to match
+      const eyeletXOff = 0.12;  // approx (10/cw) * fabricW
+      rTop.position.x = flag.position.x + rightX * eyeletXOff;
+      rTop.position.z = flag.position.z + rightZ * eyeletXOff;
+      rTop.position.y = flag.position.y + eyTopY;
+      rBot.position.x = flag.position.x + rightX * eyeletXOff;
+      rBot.position.z = flag.position.z + rightZ * eyeletXOff;
+      rBot.position.y = flag.position.y + eyBotY;
+      // Each ring has its own vertical diff from its rope anchor
+      const topVertDiff = rTop.position.y - g.userData.ringTopBaseY;
+      const botVertDiff = rBot.position.y - g.userData.ringBotBaseY;
+      const hDist = Math.max(0.15, FLAG_GAP);
+      const topTilt = Math.atan2(topVertDiff * 1.5, hDist);
+      const botTilt = Math.atan2(botVertDiff * 1.5, hDist);
+      // Subtle independent jangle — polished, not dramatic
+      const jangleTop = Math.sin(now * 9 + phase * 2.3) * 0.06 * windStrength;
+      const jangleBot = Math.sin(now * 7.5 + phase * 3.1 + 1.7) * 0.05 * windStrength;
+      // Ring lies flat, tilts from flag tension + flutter, and rocks with the hoist flutter
+      const flutterTilt = hoistFlutter * 0.6;  // rings partially follow flag's Y flutter
+      rTop.children[0].rotation.set(Math.PI / 2 + flutterTilt, 0, topTilt + jangleTop);
+      rBot.children[0].rotation.set(Math.PI / 2 + flutterTilt, 0, botTilt + jangleBot);
+    }
+    // Rope threads through the pole-side (inner edge) of each ring
+    if (g.userData.rope) {
+      const [rTop, rBot] = g.userData.rings;
+      const px = g.userData.poleX, pz = g.userData.poleZ;
+      const ringR = 0.12;
+      g.userData.rope.geometry.setPositions([
+        px, g.userData.capY, pz,
+        rTop.position.x - rightX * ringR, rTop.position.y, rTop.position.z - rightZ * ringR,
+        rBot.position.x - rightX * ringR, rBot.position.y, rBot.position.z - rightZ * ringR,
+        px, g.userData.poleBaseY, pz
+      ]);
+    }
+    // Wave: displace vertices from pole (x=0) to tip (x=fabricW)
+    const geo = flag.geometry;
+    const pos = geo.attributes.position;
+    const baseY = geo.userData.baseY;
+    const baseZ = geo.userData.baseZ;
+    const fw = geo.userData.fabricW;
+    for (let i = 0; i < pos.count; i++) {
+      const lx = pos.getX(i);
+      const u = lx / fw;   // 0 at hoist/pole (constrained), 1 at fly/tip (free)
+
+      // Dynamic wind parameters — each independently oscillates over time
+      const dynAmpMul = 0.6 + 0.5 * Math.sin(now * 0.23 + 1.1);
+      const dynSpeedMul = 0.7 + 0.4 * Math.sin(now * 0.17 + 2.3);
+      const dynFreqMul = 0.8 + 0.3 * Math.sin(now * 0.13 + 3.7);
+      const dynAmp = WAVE_AMP * dynAmpMul * windStrength;
+      const dynSpeed = WAVE_SPEED * dynSpeedMul;
+      const dynFreq = WAVE_FREQ * dynFreqMul;
+      const gust = 1.0 + 0.9 * Math.pow(Math.max(0, Math.sin(now * 0.4 + phase * 0.3)), 4);
+
+      // Z wave (billowing toward/away from viewer)
+      const zWave = Math.sin(u * dynFreq - now * dynSpeed + phase) * u * u * dynAmp * gust;
+      pos.setZ(i, baseZ[i] + zWave * (1 - luffing * 0.7));
+
+      // Y displacement: dynamic lift speed + gravity droop when luffing
+      const dynLiftSpeed = 2.1 * (0.7 + 0.4 * Math.sin(now * 0.19 + 0.5));
+      const windLift = Math.sin(u * 3.5 - now * dynLiftSpeed + phase * 0.8) * u * u * 0.4 * gust * windStrength;
+      const gravityDroop = -u * u * luffing * 0.6;
+      pos.setY(i, baseY[i] + windLift + gravityDroop);
+    }
+    pos.needsUpdate = true;
+  });
+  // Feed current dynamic wind values to the tweak UI sliders
+  if (window.__dynWind) {
+    window.__dynWind.amp = WAVE_AMP * (0.6 + 0.5 * Math.sin(now * 0.23 + 1.1)) * windSpeed;
+    window.__dynWind.speed = WAVE_SPEED * (0.7 + 0.4 * Math.sin(now * 0.17 + 2.3));
+    window.__dynWind.freq = WAVE_FREQ * (0.8 + 0.3 * Math.sin(now * 0.13 + 3.7));
+    window.__dynWind.strength = windSpeed;
+  }
+  if (window.__updateTweakSliders) window.__updateTweakSliders();
+  renderer.render(scene, camera);
+  requestAnimationFrame(tick);
+}
+tick();
+
+function esc(s) {
+  return (s || "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+</script>
+<script>
+  // Lazy-load full-res skyline — swap out the blurred placeholder when ready
+  const fullImg = new Image();
+  fullImg.onload = () => document.getElementById("sky-bg").classList.add("loaded");
+  fullImg.src = "duluth_skyline_med.jpg";
+
+  // Size the inline SVG mask text to fill the viewport on load + resize.
+  // Using inline SVG <mask> (not CSS mask-mode) for cross-browser compat.
+  function updateSkyMask() {
+    try {
+    const w = window.innerWidth, h = window.innerHeight;
+    const T = window.__tweak || {};
+    const marginL = (T.txMarginL || 0);
+    const marginR = (T.txMarginR || 0);
+    const margin = marginL;
+    const fsPct = T.txFs || 38;
+    // Cap font-size so text fits viewport width on narrow screens (mobile)
+    const fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
+    const yPct = (T.txYPct || 72) / 100;
+    const yBaseline = Math.round(fs * yPct);
+    const scaleY = T.txSy || 2.07;
+    const spacing = T.txSpacing !== undefined ? T.txSpacing : -8;
+    const curve = T.txCurve || 0;
+    const bearingFix = 6;
+    const textW = w - marginL - marginR + bearingFix * 2;
+    const startX = marginL - bearingFix;
+
+    ["mask", "shadow"].forEach(prefix => {
+      const flatEl = document.getElementById(prefix + "-text-flat");
+      const curvedEl = document.getElementById(prefix + "-text-curved");
+      const arcEl = document.getElementById(prefix + "-arc");
+
+      if (curve !== 0) {
+        // Curved mode: positive = bow down (convex), negative = bow up (concave/cylinder inside)
+        flatEl.style.display = "none";
+        curvedEl.style.display = "";
+        curvedEl.setAttribute("font-size", fs);
+        curvedEl.setAttribute("transform", `scale(1 ${scaleY.toFixed(2)})`);
+        curvedEl.style.letterSpacing = spacing + "px";
+        const midY = yBaseline + curve;
+        arcEl.setAttribute("d", `M ${startX},${yBaseline} Q ${w/2},${midY} ${startX + textW},${yBaseline}`);
+      } else {
+        // Flat mode: show direct text, hide textPath
+        flatEl.style.display = "";
+        curvedEl.style.display = "none";
+        flatEl.setAttribute("font-size", fs);
+        flatEl.setAttribute("transform", `scale(1 ${scaleY.toFixed(2)})`);
+        flatEl.style.letterSpacing = spacing + "px";
+        flatEl.setAttribute("textLength", textW);
+        flatEl.setAttribute("lengthAdjust", "spacingAndGlyphs");
+        flatEl.setAttribute("text-anchor", "start");
+        flatEl.setAttribute("x", startX);
+        flatEl.setAttribute("y", yBaseline);
+      }
+    });
+    } catch(e) { console.error("updateSkyMask error:", e); }
+  }
+  updateSkyMask();
+  window.addEventListener("resize", updateSkyMask);
+
+  // Live tweak bindings — CSS vars + JS globals + localStorage persistence
+  window.__tweak = {};
+  const STORAGE_KEY = "homegrown_tweaks";
+  (function () {
+    const root = document.documentElement;
+    const panel = document.getElementById("tweak");
+    const inputs = panel.querySelectorAll("input[type=range]");
+    // Load saved values
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); } catch {}
+    inputs.forEach((inp) => {
+      const id = inp.dataset.v || inp.dataset.js;
+      if (saved[id] !== undefined) inp.value = saved[id];
+      const out = inp.nextElementSibling?.classList?.contains("val") ? inp.nextElementSibling : null;
+      const unit = inp.dataset.unit || "";
+      const jsKey = inp.dataset.js;
+      const apply = () => {
+        const v = parseFloat(inp.value);
+        if (inp.dataset.v) root.style.setProperty(inp.dataset.v, inp.value + unit);
+        if (jsKey) window.__tweak[jsKey] = v;
+        if (out) out.textContent = v.toFixed(inp.step.includes(".") ? 2 : 0);
+      };
+      inp.addEventListener("input", () => {
+        apply();
+        // Save all values
+        const all = {};
+        inputs.forEach(i => { all[i.dataset.v || i.dataset.js] = parseFloat(i.value); });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(all));
+        if (inp.dataset.v === "--bg-dim") {
+          const r = document.getElementById("dim-rect");
+          if (r) r.setAttribute("fill", `rgba(10,8,6,${inp.value})`);
+        }
+        if (inp.dataset.js && inp.dataset.js.startsWith("tx")) updateSkyMask();
+      });
+      apply();
+    });
+    // Collapse/expand entire panel
+    const toggle = document.getElementById("tweak-toggle");
+    const head = panel.querySelector(".tweak-head");
+    console.log("tweak-head found:", !!head, "panel found:", !!panel);
+    if (head) head.addEventListener("click", () => {
+      panel.classList.toggle("collapsed");
+      toggle.textContent = panel.classList.contains("collapsed") ? "[+]" : "[−]";
+      console.log("tweak collapsed:", panel.classList.contains("collapsed"));
+    });
+    // Collapsible sections
+    panel.querySelectorAll(".section").forEach(sec => {
+      sec.addEventListener("click", () => sec.classList.toggle("closed"));
+    });
+    // Export config.json — downloads current tweak values for production defaults
+    document.getElementById("tweak-export").addEventListener("click", () => {
+      const all = {};
+      inputs.forEach(i => {
+        const key = i.dataset.v || i.dataset.js;
+        if (key && !i.disabled) all[key] = parseFloat(i.value);
+      });
+      const blob = new Blob([JSON.stringify(all, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "homegrown_config.json";
+      a.click();
+    });
+    // Reset to HTML defaults
+    document.getElementById("tweak-reset").addEventListener("click", () => {
+      localStorage.removeItem(STORAGE_KEY);
+      location.reload();
+    });
+    // Three-finger swipe down on mobile shows tweak panel
+    let touchStartY = 0, touchFingers = 0;
+    document.addEventListener("touchstart", (e) => { touchFingers = e.touches.length; touchStartY = e.touches[0].clientY; }, { passive: true });
+    document.addEventListener("touchend", (e) => {
+      if (touchFingers >= 3 && e.changedTouches[0].clientY - touchStartY > 80) {
+        showTweaks = !showTweaks;
+        panel.style.display = showTweaks ? "grid" : "none";
+      }
+    });
+
+    // 🌊 Ahoy, code spelunker! Press F2 to summon the secret wind-tweaking panel.
+    // Crank the sliders to 11 and unleash your own "Gales of April" upon the
+    // flagpoles of Duluth. May your wave amplitude be fierce and your luffing gentle.
+    let showTweaks = false;
+    panel.style.display = showTweaks ? "grid" : "none";
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "F2") {
+        e.preventDefault();
+        showTweaks = !showTweaks;
+        panel.style.display = showTweaks ? "grid" : "none";
+      }
+    });
+    // Live-update sliders to reflect dynamic wind values
+    const dynSliders = {};
+    inputs.forEach(i => { if (i.dataset.js) dynSliders[i.dataset.js] = i; });
+    // Live wind indicators — update disabled sliders with current dynamic values
+    window.__dynWind = { amp: 0, speed: 0, freq: 0, strength: 0 };
+    const windSliders = {
+      dynWindStr: panel.querySelector('[data-js="dynWindStr"]'),
+      dynWindAmp: panel.querySelector('[data-js="dynWindAmp"]'),
+      dynWindSpd: panel.querySelector('[data-js="dynWindSpd"]'),
+      dynWindFreq: panel.querySelector('[data-js="dynWindFreq"]'),
+    };
+    let windUpdateFrame = 0;
+    window.__updateTweakSliders = () => {
+      if (!showTweaks || panel.classList.contains("collapsed")) return;
+      if (++windUpdateFrame % 10 !== 0) return; // throttle to every 10 frames
+      const dw = window.__dynWind;
+      if (windSliders.dynWindStr) { windSliders.dynWindStr.value = dw.strength; windSliders.dynWindStr.nextElementSibling.textContent = dw.strength.toFixed(2); }
+      if (windSliders.dynWindAmp) { windSliders.dynWindAmp.value = dw.amp; windSliders.dynWindAmp.nextElementSibling.textContent = dw.amp.toFixed(2); }
+      if (windSliders.dynWindSpd) { windSliders.dynWindSpd.value = dw.speed; windSliders.dynWindSpd.nextElementSibling.textContent = dw.speed.toFixed(1); }
+      if (windSliders.dynWindFreq) { windSliders.dynWindFreq.value = dw.freq; windSliders.dynWindFreq.nextElementSibling.textContent = dw.freq.toFixed(1); }
+    };
+  })();
+</script>
+</body>
+</html>
