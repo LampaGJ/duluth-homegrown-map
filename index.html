@@ -647,8 +647,8 @@
     .day-ticks { font-size: 11px; }
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
-    /* HOMEGROWN text — hide on mobile to save space */
-    #sky-bg { display: none; }
+    /* HOMEGROWN text — compact on mobile, full width */
+    #sky-bg { height: 42vh; margin-top: 44px; width: 100vw; }
     /* Hide desktop-only elements from flex flow on mobile */
     #sky-overlay, .tooltip { position: fixed; }
     #setlist-panel { position: fixed; z-index: 27; }
@@ -690,10 +690,15 @@
     }
     #mobile-schedule .ms-set.ms-live .ms-time { color: var(--spring); }
     #mobile-schedule .ms-info { flex: 1; min-width: 0; }
-    #mobile-schedule .ms-act { font-weight: 600; font-size: 14px; color: var(--bone); }
-    #mobile-schedule .ms-venue { font-size: 11px; color: var(--bone-dim); margin-top: 1px; }
+    #mobile-schedule .ms-act { font-weight: 600; font-size: 15px; color: #f2ecd5; }
+    #mobile-schedule .ms-time { font-size: 13px; color: #b8b3a0; }
+    #mobile-schedule .ms-venue { font-size: 12px; color: #9a9688; margin-top: 2px; }
     #mobile-schedule .ms-set.ms-past .ms-act,
     #mobile-schedule .ms-set.ms-past .ms-time { opacity: 0.4; }
+    #mobile-schedule .ms-set.ms-highlight {
+      background: rgba(111,168,98,0.18); margin: 0 -12px; padding: 8px 12px;
+      border-radius: 4px; border-left: 3px solid var(--spring);
+    }
   }
 
 
@@ -1672,7 +1677,9 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 const tip = document.getElementById("tip");
 let hoverVenue = null;
+const _isMobile = window.innerWidth <= 768;
 canvas.addEventListener("pointermove", (ev) => {
+  if (_isMobile) return; // no hover tooltips on mobile — use tap instead
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
@@ -1737,6 +1744,17 @@ canvas.addEventListener("click", (ev) => {
   const hit = raycaster.intersectObjects(meshes, false)[0];
   if (hit && hit.object.userData.set) {
     const s = hit.object.userData.set;
+    // On mobile, scroll schedule to this act and highlight it
+    if (_isMobile && mobileSchedule) {
+      const rows = mobileSchedule.querySelectorAll(".ms-set");
+      for (const row of rows) {
+        row.classList.remove("ms-highlight");
+        if (+row.dataset.dt === +s.dt) {
+          row.classList.add("ms-highlight");
+          row.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    }
     // Jump slider to this act's compressed time
     const cTime = realToCompressed(s.dt);
     slider.value = cTime;
