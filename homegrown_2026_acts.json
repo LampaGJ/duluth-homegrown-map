@@ -1613,9 +1613,7 @@
         "last_played": null,
         "top_songs": []
       },
-      "sources": [
-        "https://music.apple.com/us/artist/dirty-sound-magnet/551599979"
-      ],
+      "sources": [],
       "youtube": null,
       "instagram": null,
       "preview": {
@@ -2965,9 +2963,10 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
-        "url": "https://music.apple.com/us/artist/hypochondriac/1505267557",
-        "id": "1505267557",
-        "confidence": "medium"
+        "url": null,
+        "id": null,
+        "confidence": null,
+        "note": "removed - electronic/dance artist, not Duluth rock band"
       },
       "bandcamp": null,
       "the_north_plays": {
@@ -3958,10 +3957,10 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
-        "url": "https://music.apple.com/us/artist/middream/1441489562",
-        "id": "1441489562",
-        "confidence": "medium",
-        "note": "iTunes returned \"MidDream\" — likely same local act, spacing variant"
+        "url": null,
+        "id": null,
+        "confidence": null,
+        "note": "removed - MidDream is different artist (releases since 2020)"
       },
       "bandcamp": "https://middreammusic.bandcamp.com/",
       "the_north_plays": {
@@ -4390,11 +4389,12 @@
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
-        "url": "https://music.apple.com/us/artist/old-love/1000395265",
-        "id": "1000395265",
-        "confidence": "medium"
+        "url": null,
+        "id": null,
+        "confidence": null,
+        "note": "removed - different artist (2015 EP)"
       },
-      "bandcamp": null,
+      "bandcamp": "https://old-love.bandcamp.com/",
       "the_north_plays": {
         "play_count": 0,
         "matched_as": null,
