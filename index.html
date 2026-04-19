@@ -662,11 +662,18 @@
     .day-ticks { font-size: 11px; }
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
-    /* HOMEGROWN bg behind the map section, below setlist bar */
-    #sky-bg { top: 44px; height: 42vh; width: 100vw; }
-    /* Hide desktop-only elements from flex flow on mobile */
-    #sky-overlay, .tooltip { position: fixed; }
-    #sky-overlay { top: 44px; height: 42vh; width: 100vw; }
+    /* HOMEGROWN: show bg image behind map, hide SVG mask (too complex for mobile) */
+    #sky-bg { top: 57px; height: 42vh; width: 100vw; }
+    #sky-overlay { display: none; }
+    .tooltip { position: fixed; }
+    #mobile-hg-text {
+      display: flex; align-items: center; justify-content: center;
+      position: fixed; top: 57px; left: 0; right: 0; height: 42vh;
+      z-index: 3; pointer-events: none; text-align: center;
+      font-family: "Bebas Neue", sans-serif; font-size: 14vw;
+      letter-spacing: -0.03em; line-height: 0.85;
+      color: rgba(242,234,213,0.12);
+    }
     #sl-share-dialog { position: fixed; }
     #yt-wrap { z-index: 25; }
     /* Set list: in normal flow at top, flush to viewport edge */
@@ -675,9 +682,9 @@
       width: 100%; max-height: none; border-radius: 0;
       top: auto; right: auto;
       z-index: 26; margin: 0; padding: 0;
-      background: rgba(10,8,6,0.95);
-      border-bottom: 1px solid rgba(111,168,98,0.25);
       box-shadow: none;
+      border-bottom: 1px solid rgba(111,168,98,0.25);
+      /* keep paper background from desktop styles */
     }
     #setlist-panel.open {
       max-height: 50vh; overflow-y: auto;
@@ -797,6 +804,7 @@
   </text>
 </svg>
   <canvas id="scene"></canvas>
+  <div id="mobile-hg-text" style="display:none;">HOMEGROWN<br>DULUTH</div>
   <div id="tweak" class="collapsed">
     <div class="tweak-head"><span>TWEAK</span><span id="tweak-toggle">[+]</span></div>
     <div class="section">LIVE WIND</div>
