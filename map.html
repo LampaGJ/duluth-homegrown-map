@@ -260,6 +260,7 @@
   }
   #yt-wrap .yt-header .yt-act {
     display: flex; align-items: center;
+    line-height: 1;
   }
   /* Platform links bar */
   #yt-wrap .yt-links {
@@ -333,9 +334,9 @@
   #yt-star {
     background: none; border: 0; font-size: 22px; cursor: pointer;
     color: var(--bone-dim); transition: color 150ms, transform 150ms;
-    line-height: 1; padding: 0 4px 0 0; flex-shrink: 0;
-    margin-left: -16px;
-    display: flex; align-items: center;
+    line-height: 1; padding: 0 6px 0 0; flex-shrink: 0;
+    margin: 0; vertical-align: middle;
+    display: flex; align-items: center; align-self: center;
   }
   #yt-star:hover { color: var(--hotter); transform: scale(1.2); }
   #yt-star.starred { color: var(--hotter); }
@@ -857,11 +858,11 @@
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
         <div id="yt-overlay"></div>
-        <button id="yt-mute-float" title="Mute/Unmute"><span class="material-icons">volume_off</span></button>
+        <button id="yt-mute-float" title="Mute/Unmute"><span class="material-icons">volume_up</span></button>
       </div>
       <div id="yt-controls">
         <button id="yt-pp" title="Play/Pause">▶</button>
-        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:18px;">volume_off</span></button>
+        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:18px;">volume_up</span></button>
         <input type="range" class="yt-scrub" id="yt-scrub" min="0" max="100" value="0" />
         <a id="yt-open" href="#" target="_blank" title="Open in YouTube">↗ YT</a>
       </div>
@@ -2556,6 +2557,7 @@ function doMuteToggle() {
 }
 ytMuteBtn.addEventListener("click", doMuteToggle);
 ytMuteFloat.addEventListener("click", doMuteToggle);
+syncMuteUI(); // set icons to match initial unmuted state
 ytScrub.addEventListener("input", () => {
   if (!ytPlayer || !ytPlayer.getDuration) return;
   const dur = ytPlayer.getDuration();
@@ -2578,16 +2580,26 @@ document.addEventListener("keydown", (e) => {
       e.preventDefault();
       togglePlay();
       break;
-    case "ArrowRight":
+    case "ArrowRight": {
       e.preventDefault();
-      slider.value = Math.min(+slider.max, +slider.value + 30);
-      { const t = compressedToReal(+slider.value); render(t); updatePlayhead(); updateYtPlayer(t); }
+      const nextIdx = Math.min(ytPlaylist.length - 1, ytCurrentIdx + 1);
+      if (nextIdx !== ytCurrentIdx && nextIdx >= 0) {
+        const act = ytPlaylist[nextIdx];
+        slider.value = realToCompressed(act.dt);
+        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
+      }
       break;
-    case "ArrowLeft":
+    }
+    case "ArrowLeft": {
       e.preventDefault();
-      slider.value = Math.max(0, +slider.value - 30);
-      { const t = compressedToReal(+slider.value); render(t); updatePlayhead(); updateYtPlayer(t); }
+      const prevIdx = Math.max(0, ytCurrentIdx - 1);
+      if (prevIdx !== ytCurrentIdx) {
+        const act = ytPlaylist[prevIdx];
+        slider.value = realToCompressed(act.dt);
+        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
+      }
       break;
+    }
   }
 });
 
