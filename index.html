@@ -541,7 +541,8 @@
   }
   @media (max-width: 768px) {
     #yt-wrap {
-      position: fixed; top: 57px; bottom: 0; left: 0; right: 0;
+      position: fixed; bottom: 0; left: 0; right: 0;
+      top: calc(30vh + 57px - 7.5vh); /* below set list + map - timeline overlap */
       width: 100% !important; height: auto;
       border-radius: 0; border: 0;
     }
