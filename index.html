@@ -637,8 +637,8 @@
   @media (max-width: 768px) {
     .day-ticks { height: 26px; margin-top: 2px; }
     .day-ticks .day-pill { font-size: 11px; padding: 2px 4px; }
-    #sparkline-wrap { height: 50px !important; }
-    #slider { height: 28px !important; }
+    #sparkline-wrap { height: 70px !important; }
+    #slider { height: 30px !important; }
   }
 
   /* ---- Mobile layout: map top ~45%, scrubber fixed middle, schedule bottom ~45% ---- */
@@ -646,15 +646,16 @@
     html, body { overflow: hidden; height: 100%; margin: 0; padding: 0; }
     #app { position: relative; height: 100%; display: flex; flex-direction: column; margin: 0; padding: 0; }
     #scene {
-      flex: 0 0 auto; height: 42vh !important; min-height: 180px;
+      flex: 0 0 auto; height: 36vh !important; min-height: 160px;
       order: 1; width: 100% !important;
     }
     #panel { display: none; }
     #scrubber {
-      position: relative; flex-shrink: 0;
+      position: relative; flex: 0 0 auto;
       border-radius: 0;
       z-index: 22;
       order: 2;
+      min-height: 18vh;
     }
     body { padding-bottom: 0; }
     header { position: relative; }
@@ -662,18 +663,14 @@
     .day-ticks { font-size: 11px; }
     .day-ticks .day-pill { padding: 3px 5px; margin: 0 2px; }
     #tweak { display: none; }
-    /* HOMEGROWN: show bg image behind map, hide SVG mask (too complex for mobile) */
-    #sky-bg { top: 57px; height: 42vh; width: 100vw; background-size: 100vw auto; background-position: center top; }
-    #sky-overlay { display: none; }
-    .tooltip { position: fixed; }
-    #mobile-hg-text {
-      display: flex; align-items: center; justify-content: center;
-      position: fixed; top: 57px; left: 0; right: 0; height: 42vh;
-      z-index: 3; pointer-events: none; text-align: center;
-      font-family: "Bebas Neue", sans-serif; font-size: 14vw;
-      letter-spacing: -0.03em; line-height: 0.85;
-      color: rgba(242,234,213,0.12);
+    /* HOMEGROWN bg + SVG mask text, constrained to map area on mobile */
+    #sky-bg { top: 57px; height: 36vh; width: 100vw; background-size: 100vw auto; background-position: center top; }
+    #sky-overlay {
+      position: fixed; top: 57px; left: 0; right: 0; height: 36vh;
+      width: 100vw; z-index: 1; pointer-events: none;
     }
+    .tooltip { position: fixed; }
+    #mobile-hg-text { display: none; }
     #sl-share-dialog { position: fixed; }
     #yt-wrap { z-index: 25; }
     /* Set list: in normal flow at top, flush to viewport edge */
@@ -3091,7 +3088,9 @@ function esc(s) {
   // Using inline SVG <mask> (not CSS mask-mode) for cross-browser compat.
   function updateSkyMask() {
     try {
-    const w = window.innerWidth, h = window.innerHeight;
+    const isMobileMask = window.innerWidth <= 768;
+    const w = window.innerWidth;
+    const h = isMobileMask ? (window.innerHeight * 0.36) : window.innerHeight;
     const T = window.__tweak || {};
     const marginL = (T.txMarginL || 0);
     const marginR = (T.txMarginR || 0);
@@ -3099,9 +3098,9 @@ function esc(s) {
     const fsPct = T.txFs || 38;
     // Cap font-size so text fits viewport width on narrow screens (mobile)
     const fs = Math.round(Math.min(h * fsPct / 100, w * 0.19));
-    const yPct = (T.txYPct || 72) / 100;
+    const yPct = isMobileMask ? 0.35 : ((T.txYPct || 72) / 100);
     const yBaseline = Math.round(fs * yPct);
-    const scaleY = T.txSy || 2.07;
+    const scaleY = isMobileMask ? 1.2 : (T.txSy || 2.07);
     const spacing = T.txSpacing !== undefined ? T.txSpacing : -8;
     const curve = T.txCurve || 0;
     const bearingFix = 6;
