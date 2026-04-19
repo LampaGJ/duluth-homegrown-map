@@ -2588,7 +2588,7 @@ document.getElementById("sl-share-dialog").addEventListener("click", (e) => {
 document.getElementById("sl-share-native").addEventListener("click", async () => {
   if (navigator.share) {
     try {
-      await navigator.share({ title: slTitleInput.value, text: buildShareText(), url: "https://lampagj.github.io/duluth-homegrown-map/" });
+      await navigator.share({ title: slTitleInput.value, text: buildShareText(), url: "https://homegrown.my" });
     } catch {}
   } else { alert("Web Share not supported — use Copy instead."); }
   document.getElementById("sl-share-dialog").classList.remove("open");
@@ -2606,7 +2606,7 @@ function buildShareText() {
     entries.forEach(e => { text += `  ${e.time_start || ""} ${e.act} @ ${e.venue}\n`; });
     text += "\n";
   }
-  text += "🎸 Duluth Homegrown Music Festival 2026\nMake your own Homegrown setlist at https://lampagj.github.io/duluth-homegrown-map/";
+  text += "🎸 Duluth Homegrown Music Festival 2026\nMake your own Homegrown setlist at https://homegrown.my";
   return text;
 }
 
@@ -2635,7 +2635,7 @@ document.getElementById("sl-share-sms").addEventListener("click", (e) => {
 ["sl-share-bsky", "sl-share-fb", "sl-share-threads", "sl-share-tiktok", "sl-share-ig"].forEach(id => {
   document.getElementById(id).addEventListener("click", (e) => {
     const text = encodeURIComponent(buildShareText().slice(0, 300));
-    const url = encodeURIComponent("https://lampagj.github.io/duluth-homegrown-map/");
+    const url = encodeURIComponent("https://homegrown.my");
     const urls = {
       "sl-share-bsky": `https://bsky.app/intent/compose?text=${text}`,
       "sl-share-fb": `https://www.facebook.com/sharer/sharer.php?quote=${text}&u=${url}`,
