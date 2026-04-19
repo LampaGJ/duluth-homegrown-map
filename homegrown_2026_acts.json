@@ -84,7 +84,8 @@
       ],
       "genre": null,
       "description": "An Anishinaabe family ensemble blending contemporary culture with American mythology, performing songs about Indigenous reclamation and humor in challenging circumstances.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "218 Dance Project",
@@ -175,7 +176,8 @@
       ],
       "genre": "art punk",
       "description": "An art punk band that finds ominous joy in gravitas, drawing influences from Joy Division, The Fuzztones, Mudhoney, and The Sonics.",
-      "established": null
+      "established": null,
+      "genre_category": "Punk"
     },
     {
       "name": "A Band Called Truman!",
@@ -248,7 +250,8 @@
       ],
       "genre": "horn rock",
       "description": "A seven-piece band dishing out original horn rock with ska influences and energetic live performances.",
-      "established": 2010
+      "established": 2010,
+      "genre_category": "Rock"
     },
     {
       "name": "Alex Heil",
@@ -312,7 +315,8 @@
       ],
       "genre": "punk rock",
       "description": "A punk-rock guitarist and songwriter whose band delivers music with a sorrowful heart trying to be an uplifting spirit, with socially conscious themes.",
-      "established": null
+      "established": null,
+      "genre_category": "Punk"
     },
     {
       "name": "All Sea Monsters Are Girls",
@@ -375,7 +379,8 @@
       ],
       "genre": "slime pop",
       "description": "A Midwest theater-focused group floating between ska, rockabilly, country, disco, soul, new wave, pop, and rock 'n' roll, centering femme voices.",
-      "established": null
+      "established": null,
+      "genre_category": "Pop"
     },
     {
       "name": "Ashe Berton",
@@ -430,7 +435,8 @@
       ],
       "genre": "solo folk",
       "description": "Drawing from artists like Maggie Rogers and Ingrid Michaelson, solo folk musician Ashe Berton offers a blend of whimsy and sincerity with storytelling themes.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Austin Castle",
@@ -496,7 +502,8 @@
       ],
       "genre": "americana, country",
       "description": "Winner of Duluth Dylan Fest's 2024 singer-songwriter contest, performing original Americana and country tunes exploring core memories and timeless values.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "BOOG3YM3N",
@@ -559,7 +566,8 @@
       ],
       "genre": "hip-hop",
       "description": "A hip-hop collaboration featuring high-energy and intelligent beats and vocals that blend genres from vaporwave to vapor trap.",
-      "established": null
+      "established": null,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "BRAINWASHED",
@@ -616,7 +624,8 @@
       ],
       "genre": "metal-fusion",
       "description": "A politically oriented four-piece incorporating DIY punk influences with anti-capitalist themes and mosh pit catharsis.",
-      "established": null
+      "established": null,
+      "genre_category": "Metal"
     },
     {
       "name": "Babie Eyes",
@@ -694,7 +703,8 @@
       ],
       "genre": "psychedelic-folk-pop",
       "description": "Soulful psychedelic-folk-pop band performing original music about love, loss, and spiritual renewal, recorded live with producer Rich Mattson.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Baharat",
@@ -762,7 +772,8 @@
       ],
       "genre": "post-rock, midwest emo, folk, punk",
       "description": "A multicultural group blending Middle Eastern influences with indie rock, drawing from Midwest emo, folk, and punk.",
-      "established": 2024
+      "established": 2024,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Beauty Mountain Rd",
@@ -816,7 +827,8 @@
       ],
       "genre": "indie rock",
       "description": "An indie rock duo creating energetic, reflective songs that channel heartfelt melodies and powerful rhythms, drawing from their Iron Range heritage.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Bellerpuss",
@@ -877,7 +889,8 @@
       ],
       "genre": "post-hardcore, punk",
       "description": "A heavy-riffing post-hardcore band known for mutual aid shows and caring loud for community as any punk worth their salt should.",
-      "established": 2021
+      "established": 2021,
+      "genre_category": "Punk"
     },
     {
       "name": "Berserk Blondes!",
@@ -931,7 +944,8 @@
       ],
       "genre": "comedic showtune, experimental",
       "description": "A comedic musical spectacle blending singer-songwriter style with theatrical Finnish operetta and unconventional instruments, infused with Minnesota themes.",
-      "established": null
+      "established": null,
+      "genre_category": "Experimental"
     },
     {
       "name": "Big Wave Dave and the Ripples",
@@ -1009,7 +1023,8 @@
       ],
       "genre": "soul, funk",
       "description": "An eight-piece soul and funk ensemble that quickly gained an audience with their long-term residency at the now-closed Rex Bar.",
-      "established": 2011
+      "established": 2011,
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Bill Berguson Band",
@@ -1065,7 +1080,8 @@
       ],
       "genre": "classic rock, jazz fusion, soul, roots",
       "description": "A four-piece band playing clean, tight, original music ranging from classic rock anthems to contemplative instrumentals with soul, roots, and classical influences.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Born too Late",
@@ -1119,7 +1135,8 @@
       ],
       "genre": "classic rock, country",
       "description": "A sibling duo channeling classic rock and country into high-energy shows, covering Fleetwood Mac and Guns N' Roses alongside their own originals.",
-      "established": 2014
+      "established": 2014,
+      "genre_category": "Rock"
     },
     {
       "name": "Boxcar",
@@ -1202,7 +1219,8 @@
       ],
       "genre": "country rock 'n' roll",
       "description": "A rowdy rail-jumping, whiskey-drinking country rock 'n' roll party band that has released two albums including For Madmen Only.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Bratwurst",
@@ -1263,7 +1281,8 @@
       ],
       "genre": "industrial noise, metal",
       "description": "Mangling together meat and music, Bratwurst uses unconventional instruments including metal grinders and tire chains to assault the ears alongside traditional drums and guitars.",
-      "established": 2000
+      "established": 2000,
+      "genre_category": "Metal"
     },
     {
       "name": "Breanne Marie & The Front Porch Sinners",
@@ -1354,7 +1373,8 @@
       ],
       "genre": "alt-country, americana",
       "description": "A Great Lakes country band blending originals ranging from sentimental ballads to 90s indie rock, combining classic country instruments with contemporary styles.",
-      "established": 2013
+      "established": 2013,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Brinn Major",
@@ -1402,7 +1422,8 @@
       ],
       "genre": "hip-hop",
       "description": "A local rapper blending polished, synth-driven hip-hop with affirming messages around identity, mental health, and self-expression.",
-      "established": 2022
+      "established": 2022,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "Brody & the Roadies",
@@ -1447,7 +1468,8 @@
       ],
       "genre": "country, americana",
       "description": "An all-in-the-family band from South Range, Wisconsin that plays mostly covers sprinkled with originals, drawing from Hank Williams, Johnny Cash, and R.E.M.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "C U Next Tuesday",
@@ -1513,7 +1535,8 @@
       ],
       "genre": "punk",
       "description": "An intersectional feminist punk band fronted by Sophie Hiroko that delivers a relentless setlist with high energy performances centered on social activism.",
-      "established": null
+      "established": null,
+      "genre_category": "Punk"
     },
     {
       "name": "C-Silence",
@@ -1565,7 +1588,8 @@
       ],
       "genre": "hip-hop",
       "description": "A Duluth-based hip-hop artist driven by originality and fearless experimentation, blending inventive structures with improvisational skill.",
-      "established": null
+      "established": null,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "CEREBELLUM",
@@ -1620,7 +1644,8 @@
       ],
       "genre": "punk rock, lo-fi sludge-metal",
       "description": "A three-piece punk rock band blending raw punk energy with pop hooks and a lo-fi sludge-metal/doom-rock edge.",
-      "established": null
+      "established": null,
+      "genre_category": "Punk"
     },
     {
       "name": "Casiosa",
@@ -1676,7 +1701,8 @@
       ],
       "genre": "experimental rock, shoegaze, indie pop",
       "description": "Blending textured guitars, hazy atmospheres, and melodic pop sensibilities, Casiosa crafts immersive songs at the intersection of experimental rock, shoegaze, and indie pop.",
-      "established": 2024
+      "established": 2024,
+      "genre_category": "Pop"
     },
     {
       "name": "Chasm",
@@ -1734,7 +1760,8 @@
       ],
       "genre": "instrumental hard rock",
       "description": "A four-member group still defining its genre, delivering harder-hitting tracks that blend heaviness and melody with occasional vocals.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Cigarette Picnic",
@@ -1790,7 +1817,8 @@
       ],
       "genre": "soul, power trio",
       "description": "A sultry, stripped-down female power trio rooted in rich three-part harmonies and minimal instrumentation performing bold, soulful original music.",
-      "established": 2025
+      "established": 2025,
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Climes",
@@ -1864,7 +1892,8 @@
       ],
       "genre": "folk",
       "description": "A Minnesota-based musical project blending folk sensibility with genre-jumping guitar and lute dulcimer, appealing to both dancers and contemplative listeners.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Crimson Soul",
@@ -1918,7 +1947,8 @@
       ],
       "genre": "alternative punk, grunge",
       "description": "A three-piece alternative punk band with 90s-inspired grunge influences, exploring themes of loss, addiction, coping, and longing.",
-      "established": 2023
+      "established": 2023,
+      "genre_category": "Punk"
     },
     {
       "name": "Cyr and the Cosmonauts",
@@ -1992,7 +2022,8 @@
       ],
       "genre": "americana",
       "description": "A five-piece ensemble that began as a sibling duo, delivering original songs with tight vocal harmonies and dynamic musicality exploring themes of finding meaning in chaos.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "DJ ADUB",
@@ -2041,7 +2072,8 @@
       ],
       "genre": "EDM",
       "description": "A DJ and producer from Superior who has produced for multiple Twin Ports artists and toured with national acts, actively supporting the local electronic music community.",
-      "established": null
+      "established": null,
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "DJ Nola",
@@ -2091,7 +2123,8 @@
       ],
       "genre": "house, disco, funk, techno",
       "description": "Nola Wick has been spinning the funkiest, grooviest dance parties for years, recognized for her Freak of the Week parties and playing almost entirely on vinyl.",
-      "established": null
+      "established": null,
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Dan the Monkeyman",
@@ -2134,7 +2167,8 @@
       ],
       "genre": "children's music",
       "description": "A children's music performer who plays songs for kids using toy musical instruments and stuffed animals, engaging young audiences through interactive musical experiences.",
-      "established": 2009
+      "established": 2009,
+      "genre_category": "Other"
     },
     {
       "name": "Danny Frank & the Smoky Gold",
@@ -2203,7 +2237,8 @@
       ],
       "genre": "americana",
       "description": "Singer-songwriter Danny Frank leads a genre-blending, toe-tapping Americana sound featuring seasoned musicians performing originals from his debut album Live From The Heart.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Darren Sipity",
@@ -2253,7 +2288,8 @@
       ],
       "genre": "hip-hop",
       "description": "An Ojibwe rapper creating music exploring his Native American identity and things people don't like to talk about, with political and apocalyptic themes.",
-      "established": null
+      "established": null,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "Dead Guy in a Swamp",
@@ -2309,7 +2345,8 @@
       ],
       "genre": "stoner-doom",
       "description": "A dual-member band performing both background music and cataclysmic riffs, drawing influence from Eyehategod, Bell Witch, and Boris.",
-      "established": null
+      "established": null,
+      "genre_category": "Metal"
     },
     {
       "name": "Death Valley Yacht Club",
@@ -2367,7 +2404,8 @@
       ],
       "genre": "bluegrass, modern folk",
       "description": "A two-piece band featuring vocal harmonies and interplay between tightly arranged acoustic guitars, inspired by the Beatles, Neil Young, and the Avett Brothers.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Dirt Magnet",
@@ -2407,7 +2445,8 @@
       ],
       "genre": "rock 'n' roll",
       "description": "A rock duo emphasizing community building and inclusivity, addressing topics like transportation woes, healthcare, and mediocrity with humor.",
-      "established": 2025
+      "established": 2025,
+      "genre_category": "Rock"
     },
     {
       "name": "Dirtbike Boyfriend",
@@ -2461,7 +2500,8 @@
       ],
       "genre": "folk-punk",
       "description": "A multimedia artist and folk-punk musician whose solo sets bring full-band energy while performing original compositions at local venues.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Discord At Dawn",
@@ -2519,7 +2559,8 @@
       ],
       "genre": "hard rock",
       "description": "A four-piece hard rock band that mixes big riffs with even bigger imagination, combining scientifically and fantastically-inspired lyrics.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Ditchbird",
@@ -2573,7 +2614,8 @@
       ],
       "genre": "rock 'n' roll, acoustic",
       "description": "Tony Petersen performs solo as Ditchbird, featuring newly written material with scaled-back songwriting and acoustic foundations.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Dog Talk",
@@ -2630,7 +2672,8 @@
       ],
       "genre": "groove rock",
       "description": "A local ensemble bringing energetic sets with original tunes, a special Homegrown song, and catchy covers; also performs as an Alanis Morissette tribute act.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Dre AKA Jamaican",
@@ -2680,7 +2723,8 @@
       ],
       "genre": "hip-hop",
       "description": "Known for infectious beats and clever rhymes, Robinson creates music spanning fantastical themes to real-world issues, representing over 20 years in Duluth's hip-hop culture.",
-      "established": null
+      "established": null,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "Duluth Dolls",
@@ -2763,7 +2807,8 @@
       ],
       "genre": "hip-hop",
       "description": "Superior-based hip-hop artist performing for over 20 years with a focus on uplifting music and community fundraising.",
-      "established": null
+      "established": null,
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "Eldri Snow",
@@ -2807,7 +2852,8 @@
       ],
       "genre": "country-folk, indie-folk",
       "description": "Singer-songwriter creating soulful, down-to-earth folk inspired by Nanci Griffith and Gillian Welch, performing solo, as a duo, or with her band The Wintry Mix.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Emily Haavik & the 35s",
@@ -2906,7 +2952,8 @@
       ],
       "genre": "Americana",
       "description": "Lyric-driven, harmony-rich, string-filled Americana with socially conscious songwriting. Their 2024 album Wingspan earned Midwest Country Music Award nominations.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Entheos Enclave",
@@ -2974,7 +3021,8 @@
       ],
       "genre": "Nordic fusion of indie, crossover prog, and world music",
       "description": "Formerly known as Inga Entheos, this ensemble creates music from deep love, grief, and healing with complex melodies. They released their debut album Eschaton in 2025.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Father Hennepin",
@@ -3048,7 +3096,8 @@
       ],
       "genre": "honky-tonk",
       "description": "Led by Homegrown Music Festival founder Starfire, this honky-tonk band holds the record for most festival performances and is known for reviving \"I Like It in Duluth.\"",
-      "established": 2001
+      "established": 2001,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Flight of Stares",
@@ -3118,7 +3167,8 @@
       ],
       "genre": "piano-driven indie rock",
       "description": "Brainerd Lakes area band now based in Duluth, blending influences from Pink Floyd, Supertramp, Ben Folds, Elliott Smith, and Wilco.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Flip Arkulary",
@@ -3187,7 +3237,8 @@
       ],
       "genre": "experimental electronic",
       "description": "Experimental electronic project where synthesizers rule rock and Orwell dances with disco, delivering neo-Weimar, kinetic, and relentlessly danceable performances.",
-      "established": null
+      "established": null,
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Foosball Ruckus",
@@ -3245,7 +3296,8 @@
       ],
       "genre": "rock, blues, ska, funk, alternative, indie, jazz",
       "description": "Five-piece band blending multiple genres with jazz-informed sharp musicality and improvisational qualities in their original material.",
-      "established": 2024
+      "established": 2024,
+      "genre_category": "Rock"
     },
     {
       "name": "Forseer",
@@ -3294,7 +3346,8 @@
       ],
       "genre": "folk and rock",
       "description": "Solo project featuring sultry rhythms and poetic lyrics, blending folk and rock influences with soothing, distinctive vocals.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Founder's Reception",
@@ -3374,7 +3427,8 @@
       ],
       "genre": "Appalachian fiddle/Americana",
       "description": "Married duo performing banjo-fiddle vocal duets inspired by Appalachian traditions with driving rhythms, tight harmonies, and over 20 years of collaborative experience.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Galleon",
@@ -3444,7 +3498,8 @@
       ],
       "genre": "progressive hard rock",
       "description": "Progressive hard rock band known for electrifying performances. They released their self-titled EP in 2024 followed by the single \"The Sword.\"",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Gavin Glen",
@@ -3493,7 +3548,8 @@
       ],
       "genre": "folk-rock",
       "description": "Comedic singer-songwriter blending folk-rock parodies with original tunes using guitar, ukulele, harmonica, and looping pedals.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Gavin St. Clair Quartet",
@@ -3562,7 +3618,8 @@
       ],
       "genre": "Americana and pop",
       "description": "Duluth-based group crafting nostalgic acoustic love songs with a blend of Americana and pop, featuring artful and luminous instrumentation.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Gnarwals",
@@ -3619,7 +3676,8 @@
       ],
       "genre": "distorted indie rock",
       "description": "Power-trio blending distorted indie rock with introspective songwriting layered in reverb, transforming personal reflection into impactful performances.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Gochujang",
@@ -3683,7 +3741,8 @@
       ],
       "genre": "jazz-influenced funk",
       "description": "Eight-piece Duluth ensemble drawing influence from Lettuce and Ghost Note, blending jazz and funk with horn arrangements and energetic original compositions.",
-      "established": null
+      "established": null,
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Grand Holler",
@@ -3758,7 +3817,8 @@
       ],
       "genre": "dirt road rock / blues roots-rock",
       "description": "Gritty, heartfelt bluesy roots-rock reminiscent of Bob Seger and Bruce Springsteen, with thundering vocals ideal for backroad journeys.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Grant Glad & the Soo Line Loons",
@@ -3833,7 +3893,8 @@
       ],
       "genre": "Americana",
       "description": "Americana band performing tunes packed with storytelling that draws attention to life details. Grant Glad also hosts a podcast featuring musical guests.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Greg Cougar Conley",
@@ -3907,7 +3968,8 @@
       ],
       "genre": "outlaw country",
       "description": "Upper-Midwest country music with a loud, electric sound backed by an oversized band, exemplifying outlaw country.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Halfsleeper",
@@ -3978,7 +4040,8 @@
       ],
       "genre": "doom metal / swamp metal",
       "description": "Five-piece doom metal band with slow, crushing music, thick feedback, and dark atmospherics addressing themes of death, abuse, and cosmic dread.",
-      "established": null
+      "established": null,
+      "genre_category": "Metal"
     },
     {
       "name": "Hardaybra",
@@ -4034,7 +4097,8 @@
       ],
       "genre": "alternative rock with post-punk flair",
       "description": "Relaxed yet energetic alternative rock trio with a post-punk aesthetic. Their EP Impetus (2018) features stream-of-consciousness, catchy songs.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Haus of Queer",
@@ -4174,7 +4238,8 @@
       ],
       "genre": "traditional folk",
       "description": "Traditional folk trio bringing an honest approach to each performance with heartfelt melodies and tight harmonies.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Horse Fzce",
@@ -4239,7 +4304,8 @@
       ],
       "genre": "country-rock",
       "description": "Earnest lyrics and uncomplicated instrumentals with folksy sensibilities, led by Heather Surla's storytelling vocals.",
-      "established": 2021
+      "established": 2021,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Hot Tamale Cosmos",
@@ -4302,7 +4368,8 @@
       ],
       "genre": "folk, blues, country, bluegrass",
       "description": "Women-led, vocal-forward quintet blending folk, blues, country, and bluegrass into cosmic gumbo with tight harmonies and original compositions.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Hypochondriac",
@@ -4361,7 +4428,8 @@
       ],
       "genre": "soft and modern rock with 90s alternative influences",
       "description": "Five-piece band performing originals and covers with lyrics centered on love and nonsensical poetry, oscillating between slow/moody and upbeat styles.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "INF3RNO",
@@ -4409,7 +4477,8 @@
       ],
       "genre": "dubstep",
       "description": "Duluth-based DJ and producer who has developed skills in piano accompaniment and singing. Her debut mix Fire and Ice released in early 2026.",
-      "established": null
+      "established": null,
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Idle Rose",
@@ -4465,7 +4534,8 @@
       ],
       "genre": "folk",
       "description": "Folk duo from Northern Wisconsin with soft and sweet harmonies featuring original acoustic arrangements with washboard and stomp box.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Indecent Proposal",
@@ -4535,7 +4605,8 @@
       ],
       "genre": "alt-rock",
       "description": "Duluth-based five-piece known for tight grooves, loud hearts, and melodies that blend reflective alt-rock with engaging sing-alongs.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Innerstellar Overdrive",
@@ -4586,7 +4657,8 @@
       ],
       "genre": "heavy metal / thrashing rock",
       "description": "Three-piece powerhouse blending uplifting messaging with old-school heavy metal, often referred to as a mindfulness metal group.",
-      "established": 2023
+      "established": 2023,
+      "genre_category": "Metal"
     },
     {
       "name": "Iron Range Outlaw Brigade",
@@ -4654,7 +4726,8 @@
       ],
       "genre": "cow-punk",
       "description": "High-octane Northwoods troubadours creating boot-scooting, mosh-inducing country for over 15 years.",
-      "established": 2010
+      "established": 2010,
+      "genre_category": "Punk"
     },
     {
       "name": "Isa Morin",
@@ -4711,7 +4784,8 @@
       ],
       "genre": "country-pop",
       "description": "Country-pop singer-songwriter from Quebec, Canada, now based in Superior, Wisconsin. She has released two French albums and is writing her third in English.",
-      "established": null
+      "established": null,
+      "genre_category": "Pop"
     },
     {
       "name": "Israel Malachi Orchestra",
@@ -4772,7 +4846,8 @@
       ],
       "genre": "rock, blues, and early punk",
       "description": "Led by Israel Malachi, this ensemble has performed in the Duluth-Superior area for two decades, blending rock, blues, and early punk with virtuosic guitar work.",
-      "established": 2000
+      "established": 2000,
+      "genre_category": "Punk"
     },
     {
       "name": "Janie and The Spokes",
@@ -4833,7 +4908,8 @@
       ],
       "genre": "indie rock / Americana-meets-70s janglecore",
       "description": "Upbeat indie rock band with an edgy Americana-meets-70s janglecore sound featuring extended jams and layered harmonies. Three recent albums released.",
-      "established": 2004
+      "established": 2004,
+      "genre_category": "Rock"
     },
     {
       "name": "Jen West",
@@ -4892,7 +4968,8 @@
       ],
       "genre": "indie folk",
       "description": "Performs lyric-driven songs ranging from joyful to introspective melodies, recently incorporating effects and looping into her ukulele and guitar work.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Jesse Jaze",
@@ -4938,7 +5015,8 @@
       ],
       "genre": "EDM/bass music",
       "description": "Pioneer of the Twin Ports hip-hop scene who evolved into electronic music, known for high-energy sets bridging hip-hop roots with bass music.",
-      "established": null
+      "established": null,
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "John Agacki",
@@ -4988,7 +5066,8 @@
       ],
       "genre": "folk, Americana, Celtic, semi-classical",
       "description": "Fingerpicking folk and Americana guitarist rooted in Celtic styles, having studied with Dublin guitarist John Doyl. Has released original and Celtic albums.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "John Louis",
@@ -5042,7 +5121,8 @@
       ],
       "genre": "country-folk",
       "description": "Duluth transplant offering heartworn country-folk that turns small moments into shared Midwestern experiences. Award-winning songwriter honored at Kerrville Folk Festival and Rocky Mountain Folks Fest.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Jon Edwards",
@@ -5093,7 +5173,8 @@
       ],
       "genre": "blues and neo-folk",
       "description": "Blues and neo-folk musician from Duluth blending traditional influences with storytelling inspired by John Prine and Tom Waits, featuring haunting melodies and introspective lyrics.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Joy and Melancholy",
@@ -5150,7 +5231,8 @@
       ],
       "genre": "rock (90s grunge, 2000s pop-punk, modern indie)",
       "description": "Youthful Duluth rock band known for strange, heartfelt takes on the human experience blending anger, sadness, and irony with energetic performances.",
-      "established": null
+      "established": null,
+      "genre_category": "Rock"
     },
     {
       "name": "Jumpsuit",
@@ -5222,7 +5304,8 @@
       ],
       "genre": "funk",
       "description": "Seven-piece funk ensemble that emerged in 2025 and quickly gained traction in the Twin Ports music scene with residencies at local breweries and an original EP.",
-      "established": 2025
+      "established": 2025,
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Kroma",
@@ -5277,7 +5360,8 @@
       ],
       "genre": "instrumental",
       "description": "Instrumental trio crafting original music merging cinematic atmospheres with emotional depth, drawing from Angelo Badalamenti's haunting soundtracks.",
-      "established": 2021
+      "established": 2021,
+      "genre_category": "Rock"
     },
     {
       "name": "Lake Effect String Band",
@@ -5335,7 +5419,8 @@
       ],
       "genre": "bluegrass",
       "description": "Duluth-based bluegrass ensemble with songwriting exploring themes from Viking explorers to gentrification, gigging around the Twin Ports for over two years.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Lee Clark Allen",
@@ -5394,7 +5479,8 @@
       ],
       "genre": "soul, R&B, jazz, blues, rock, funk, gospel, pop, hip-hop",
       "description": "Independent artist merging the warmth of classic soul with contemporary R&B edge, featuring live instrumentation and authentic storytelling.",
-      "established": null
+      "established": null,
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Life Parade",
@@ -5468,7 +5554,8 @@
       ],
       "genre": "pop-rock",
       "description": "Hook-heavy pop-rock blending late-90s indie rock energy with a modern, clean sound that feels like driving with the windows down.",
-      "established": 2014
+      "established": 2014,
+      "genre_category": "Pop"
     },
     {
       "name": "Lovehouse",
@@ -5531,7 +5618,8 @@
       ],
       "genre": "rock",
       "description": "Minneapolis-based band delivering driving, fast-paced rock anthems to atmospheric soundscapes with dynamic live performances and raw energy.",
-      "established": 2019
+      "established": 2019,
+      "genre_category": "Rock"
     },
     {
       "name": "Lu Starr",
@@ -5573,7 +5661,8 @@
       ],
       "genre": "indie-folk",
       "description": "Northern Minnesota singer-songwriter exploring divine femininity, grief, and friendship with smoky vocals drawing comparisons to Norah Jones and Joni Mitchell.",
-      "established": null
+      "established": null,
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "MINNESOTA VICE",
@@ -5625,7 +5714,8 @@
       ],
       "genre": "hip-hop",
       "established": 2016,
-      "description": "A hip-hop duo that challenges Midwestern stereotypes by calling for working-class individuals to \"demand more so we can all survive in this cold world.\" The pair met at Denfeld High School and have performed across the country."
+      "description": "A hip-hop duo that challenges Midwestern stereotypes by calling for working-class individuals to \"demand more so we can all survive in this cold world.\" The pair met at Denfeld High School and have performed across the country.",
+      "genre_category": "Hip-Hop/Rap"
     },
     {
       "name": "Mae and Justine",
@@ -5667,7 +5757,8 @@
       ],
       "genre": null,
       "established": null,
-      "description": "Acoustic singer-songwriters with grit, this Duluth-based duo brings heartfelt harmonies and layered instrumentation to performances, mixing originals with unexpected covers."
+      "description": "Acoustic singer-songwriters with grit, this Duluth-based duo brings heartfelt harmonies and layered instrumentation to performances, mixing originals with unexpected covers.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Mayor's Proclamation",
@@ -5760,7 +5851,8 @@
       ],
       "genre": "synthy pop-punk",
       "established": null,
-      "description": "Mid Dream fuses synthy pop-punk, cathartic ballads, and a smoky-bar spirit with powerful dual vocals. They are recording their debut album, Bodega Wine Glass, in 2026."
+      "description": "Mid Dream fuses synthy pop-punk, cathartic ballads, and a smoky-bar spirit with powerful dual vocals. They are recording their debut album, Bodega Wine Glass, in 2026.",
+      "genre_category": "Punk"
     },
     {
       "name": "Midnight Kissfight",
@@ -5821,7 +5913,8 @@
       ],
       "genre": "post-neo-janglecore indie rock",
       "established": 2026,
-      "description": "The band aims to emulate the aesthetics of popular college radio shows and the 2005 era of World Cafe, performing primarily original compositions alongside occasional covers."
+      "description": "The band aims to emulate the aesthetics of popular college radio shows and the 2005 era of World Cafe, performing primarily original compositions alongside occasional covers.",
+      "genre_category": "Rock"
     },
     {
       "name": "Misisipi Mike Wolf and The Plain High Drifters",
@@ -5892,7 +5985,8 @@
       ],
       "genre": "folk and country punk",
       "established": null,
-      "description": "The group performs heart-on-your-sleeve, tongue-in-cheek, beer-drinkin' music with award-winning originals and covers ranging from John Prine and Willie Nelson to 1980s punk and New Orleans ya-ya."
+      "description": "The group performs heart-on-your-sleeve, tongue-in-cheek, beer-drinkin' music with award-winning originals and covers ranging from John Prine and Willie Nelson to 1980s punk and New Orleans ya-ya.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Mitchell Kane",
@@ -5936,7 +6030,8 @@
       ],
       "genre": "folk, bluegrass, gospel, jazz, punk, blues",
       "established": null,
-      "description": "Mitchell Hancock performs as Mitchell Kane, delivering original compositions with impressive guitar work that tell stories about train rides and cherished places."
+      "description": "Mitchell Hancock performs as Mitchell Kane, delivering original compositions with impressive guitar work that tell stories about train rides and cherished places.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Mr. Kickass",
@@ -5987,7 +6082,8 @@
       ],
       "genre": "punk rock",
       "established": 2006,
-      "description": "A trio producing loud, energetic music where the music is fast, loud, and fun with considerable revelry involved in their performances."
+      "description": "A trio producing loud, energetic music where the music is fast, loud, and fun with considerable revelry involved in their performances.",
+      "genre_category": "Punk"
     },
     {
       "name": "Mud Puppies",
@@ -6028,7 +6124,8 @@
       "members": [],
       "genre": "folk grunge",
       "established": null,
-      "description": "A rising Duluth band blending raw folk storytelling with 90s alternative electric edge, drawing from artists like Townes Van Zandt and Nirvana."
+      "description": "A rising Duluth band blending raw folk storytelling with 90s alternative electric edge, drawing from artists like Townes Van Zandt and Nirvana.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Music Resource Center Students",
@@ -6107,7 +6204,8 @@
       ],
       "genre": "electronica",
       "established": null,
-      "description": "Solo artist performing rhythmic electronic music with synthesizer-heavy compositions, samplers, sequences, modular synths, and layered vocals."
+      "description": "Solo artist performing rhythmic electronic music with synthesizer-heavy compositions, samplers, sequences, modular synths, and layered vocals.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Nevins",
@@ -6155,7 +6253,8 @@
       ],
       "genre": "instrumental 50s-style punk",
       "established": null,
-      "description": "An instrumental punk duo from Duluth delivering surf-sleaze grooves with gritty swagger and relentless energy, combining nostalgic rock 'n' roll attitude with high-voltage stage presence."
+      "description": "An instrumental punk duo from Duluth delivering surf-sleaze grooves with gritty swagger and relentless energy, combining nostalgic rock 'n' roll attitude with high-voltage stage presence.",
+      "genre_category": "Punk"
     },
     {
       "name": "Nikki Lemire",
@@ -6227,7 +6326,8 @@
       ],
       "genre": "jazz, funk, folk",
       "established": null,
-      "description": "A harpist who creates an ethereal modern folk experience by blending jazz, funk, and folk with hypnotic loops and unusual vocal phrasing."
+      "description": "A harpist who creates an ethereal modern folk experience by blending jazz, funk, and folk with hypnotic loops and unusual vocal phrasing.",
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "Obleek",
@@ -6289,7 +6389,8 @@
       ],
       "genre": "punk, grunge, Midwest emo",
       "established": null,
-      "description": "A rock trio that blends punk, grunge, and Midwest emo with a non-conforming attitude. Their emotional songwriting explores identity, addiction, and loss."
+      "description": "A rock trio that blends punk, grunge, and Midwest emo with a non-conforming attitude. Their emotional songwriting explores identity, addiction, and loss.",
+      "genre_category": "Punk"
     },
     {
       "name": "Old Love",
@@ -6345,7 +6446,8 @@
       ],
       "genre": "indie folk",
       "established": null,
-      "description": "A quartet creating music blending upbeat indie folk with emotional compositions, featuring finger-picked guitar storytelling and inventive mandolin work."
+      "description": "A quartet creating music blending upbeat indie folk with emotional compositions, featuring finger-picked guitar storytelling and inventive mandolin work.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Owls Club Big Band",
@@ -6454,7 +6556,8 @@
       ],
       "genre": "big band jazz",
       "established": 2017,
-      "description": "A 17-piece ensemble delivering swinging, horn-driven dance music focused on exploring big band jazz with entertaining appeal."
+      "description": "A 17-piece ensemble delivering swinging, horn-driven dance music focused on exploring big band jazz with entertaining appeal.",
+      "genre_category": "Jazz"
     },
     {
       "name": "P.B&J",
@@ -6519,7 +6622,8 @@
       ],
       "genre": "heavy metal, garage grunge, psychedelic blues",
       "established": null,
-      "description": "P.B&J combines heavy metal with garage grunge and psychedelic blues. Known for theatrical performances including sandwich costumes and audience engagement."
+      "description": "P.B&J combines heavy metal with garage grunge and psychedelic blues. Known for theatrical performances including sandwich costumes and audience engagement.",
+      "genre_category": "Metal"
     },
     {
       "name": "Peat Boggs",
@@ -6588,7 +6692,8 @@
       ],
       "genre": "groove, jazz, folk, doom, surf rock",
       "established": 2024,
-      "description": "An eclectic group blending groove, jazz, and folk with genre-shifting arrangements ranging from smooth melodies to hints of doom and surf rock."
+      "description": "An eclectic group blending groove, jazz, and folk with genre-shifting arrangements ranging from smooth melodies to hints of doom and surf rock.",
+      "genre_category": "Rock"
     },
     {
       "name": "Polari",
@@ -6633,7 +6738,8 @@
       ],
       "genre": "electronic, avant-garde",
       "established": null,
-      "description": "An audio-visual project creating electronic music that echoes horror movie soundscapes rather than pop conventions, pairing experimental sounds with visuals."
+      "description": "An audio-visual project creating electronic music that echoes horror movie soundscapes rather than pop conventions, pairing experimental sounds with visuals.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Portrait of a Drowned Man",
@@ -6694,7 +6800,8 @@
       ],
       "genre": "instrumental post-rock",
       "established": null,
-      "description": "An instrumental post-rock group recognized for powerful, expansive sound performances. The guitar-centric band frequently works with filmmakers and incorporates live improvisation."
+      "description": "An instrumental post-rock group recognized for powerful, expansive sound performances. The guitar-centric band frequently works with filmmakers and incorporates live improvisation.",
+      "genre_category": "Rock"
     },
     {
       "name": "Possessed to Restored",
@@ -6750,7 +6857,8 @@
       ],
       "genre": "instrumental metal (sludge and hardcore)",
       "established": null,
-      "description": "A three-piece instrumental ensemble creating heavy riffs with some light atmosphere blended in, without vocals."
+      "description": "A three-piece instrumental ensemble creating heavy riffs with some light atmosphere blended in, without vocals.",
+      "genre_category": "Metal"
     },
     {
       "name": "Pronoya",
@@ -6821,7 +6929,8 @@
       ],
       "genre": "metalcore",
       "established": 2025,
-      "description": "A Midwest metalcore band that released their debut EP All For The Sun in late 2025, combining lyrical moments with heavy shredding and addressing mental health struggles."
+      "description": "A Midwest metalcore band that released their debut EP All For The Sun in late 2025, combining lyrical moments with heavy shredding and addressing mental health struggles.",
+      "genre_category": "Punk"
     },
     {
       "name": "Remote Viewfinder",
@@ -6867,7 +6976,8 @@
       ],
       "genre": "experimental synth",
       "established": null,
-      "description": "A duo creating moody experimental synth-symphonies featuring drones, electronic sounds, and spoken word elements spanning from unsettling electronica to ambient soundscapes."
+      "description": "A duo creating moody experimental synth-symphonies featuring drones, electronic sounds, and spoken word elements spanning from unsettling electronica to ambient soundscapes.",
+      "genre_category": "Experimental"
     },
     {
       "name": "Rick McLean Band",
@@ -6938,7 +7048,8 @@
       ],
       "genre": "garage rock, punk, psych-rock",
       "established": null,
-      "description": "A three-piece outfit delivering raw garage rock with detours into punk and psych-rock, featuring punchy riffs with an offbeat edge."
+      "description": "A three-piece outfit delivering raw garage rock with detours into punk and psych-rock, featuring punchy riffs with an offbeat edge.",
+      "genre_category": "Rock"
     },
     {
       "name": "Ricky Carl",
@@ -7001,7 +7112,8 @@
       ],
       "genre": "Texas-style country",
       "established": null,
-      "description": "Ricky Carl delivers Texas-style country from the North, blending classic country roots with modern rock influence."
+      "description": "Ricky Carl delivers Texas-style country from the North, blending classic country roots with modern rock influence.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Rocking Rodents",
@@ -7057,7 +7169,8 @@
       ],
       "genre": "rock",
       "established": null,
-      "description": "A four-piece rock ensemble featuring a cool, casual rock sound with mostly original compositions. Their debut album is set for release shortly before the festival."
+      "description": "A four-piece rock ensemble featuring a cool, casual rock sound with mostly original compositions. Their debut album is set for release shortly before the festival.",
+      "genre_category": "Rock"
     },
     {
       "name": "Rory Van James",
@@ -7120,7 +7233,8 @@
       ],
       "genre": "psychedelic country",
       "established": null,
-      "description": "A Duluth-based artist blending psychedelic textures with country storytelling. The former professional baseball player crafts introspective music exploring themes of travel and personal discovery."
+      "description": "A Duluth-based artist blending psychedelic textures with country storytelling. The former professional baseball player crafts introspective music exploring themes of travel and personal discovery.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Ross Thorn",
@@ -7199,7 +7313,8 @@
       ],
       "genre": "folk and country",
       "established": null,
-      "description": "A Duluth-based artist whose work celebrates Midwestern life and working-class resilience with songs blending warmth, humor, and soul."
+      "description": "A Duluth-based artist whose work celebrates Midwestern life and working-class resilience with songs blending warmth, humor, and soul.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Ryan Van Slooten",
@@ -7265,7 +7380,8 @@
       ],
       "genre": "hard rock, singer-songwriter",
       "established": 2000,
-      "description": "Van Slooten's music fuses hard rock energy with singer-songwriter intimacy. A Homegrown veteran since 2000, he released his fifth album in 2023."
+      "description": "Van Slooten's music fuses hard rock energy with singer-songwriter intimacy. A Homegrown veteran since 2000, he released his fifth album in 2023.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Salt and Pine",
@@ -7318,7 +7434,8 @@
       ],
       "genre": "alt-folk, bluegrass, jazz",
       "established": null,
-      "description": "An alt-folk duo from Duluth that delivers honest songs with soulful harmonies and a touch of jazz."
+      "description": "An alt-folk duo from Duluth that delivers honest songs with soulful harmonies and a touch of jazz.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Sea Smoke Aerial Arts",
@@ -7408,7 +7525,8 @@
       ],
       "genre": "hard rock and metal",
       "established": 2004,
-      "description": "Band celebrating two decades of music, drawing from early 2000s post-grunge, nu-metal, and metalcore."
+      "description": "Band celebrating two decades of music, drawing from early 2000s post-grunge, nu-metal, and metalcore.",
+      "genre_category": "Metal"
     },
     {
       "name": "Shakin' Not Stirred (SNS)",
@@ -7463,7 +7581,8 @@
       ],
       "genre": "rock and blues",
       "established": 2018,
-      "description": "A four-piece ensemble deeply rooted in 12-bar blues that performs original compositions and reimagined classic standards with guitar improvisational freedom."
+      "description": "A four-piece ensemble deeply rooted in 12-bar blues that performs original compositions and reimagined classic standards with guitar improvisational freedom.",
+      "genre_category": "Rock"
     },
     {
       "name": "Sidestreet Detour",
@@ -7524,7 +7643,8 @@
       ],
       "genre": "Americana, heartland rock",
       "established": 2022,
-      "description": "A three-piece ensemble performing dynamic rock and country covers alongside original compositions, active across the Upper Midwest since 2022."
+      "description": "A three-piece ensemble performing dynamic rock and country covers alongside original compositions, active across the Upper Midwest since 2022.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Sister Veery",
@@ -7596,7 +7716,8 @@
       ],
       "genre": "space folk, indie rock, pop, country",
       "established": 2021,
-      "description": "Molly Hilgenberg's music project crafts songs exploring nature and inner life. The full band formed in 2025 to release Cosmic Relevance."
+      "description": "Molly Hilgenberg's music project crafts songs exploring nature and inner life. The full band formed in 2025 to release Cosmic Relevance.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Skarlett Woods",
@@ -7667,7 +7788,8 @@
       ],
       "genre": "pop-folk, rock",
       "established": null,
-      "description": "Soulful artist with an unusually wide breadth of tonal styles and inflections. Her 2023 album explores themes of love, adventure, and introspection."
+      "description": "Soulful artist with an unusually wide breadth of tonal styles and inflections. Her 2023 album explores themes of love, adventure, and introspection.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Slape",
@@ -7732,7 +7854,8 @@
       ],
       "genre": "Midwest emo with pop influences",
       "established": null,
-      "description": "Slape merges the emotional depth of Midwest emo with the infectious hooks of pop, creating a sound that's both haunting and anthemic."
+      "description": "Slape merges the emotional depth of Midwest emo with the infectious hooks of pop, creating a sound that's both haunting and anthemic.",
+      "genre_category": "Rock"
     },
     {
       "name": "So What",
@@ -7791,7 +7914,8 @@
       ],
       "genre": "blues rock",
       "established": null,
-      "description": "A four-piece ensemble blending jazz and funk influences, delivering soulful originals with deep yet accessible lyrics."
+      "description": "A four-piece ensemble blending jazz and funk influences, delivering soulful originals with deep yet accessible lyrics.",
+      "genre_category": "Blues"
     },
     {
       "name": "Sometime, Maybe",
@@ -7850,7 +7974,8 @@
       ],
       "genre": "indie alt-rock",
       "established": null,
-      "description": "The band performs a mix of heartfelt originals and covers, with recorded tunes including Leave You Behind and Bittersweet."
+      "description": "The band performs a mix of heartfelt originals and covers, with recorded tunes including Leave You Behind and Bittersweet.",
+      "genre_category": "Rock"
     },
     {
       "name": "Sons of Fogtown",
@@ -7904,7 +8029,8 @@
       ],
       "genre": "rock, blues, grunge",
       "established": null,
-      "description": "A five-piece delivering sounds rooted in rock, blues, and grunge."
+      "description": "A five-piece delivering sounds rooted in rock, blues, and grunge.",
+      "genre_category": "Rock"
     },
     {
       "name": "Sorrows Never Die",
@@ -7955,7 +8081,8 @@
       ],
       "genre": "metalcore",
       "established": null,
-      "description": "A metalcore band characterized by bold aesthetics and heavy instrumentation, with influences from Sleep Token and Korn."
+      "description": "A metalcore band characterized by bold aesthetics and heavy instrumentation, with influences from Sleep Token and Korn.",
+      "genre_category": "Punk"
     },
     {
       "name": "Southpaw",
@@ -8026,7 +8153,8 @@
       ],
       "genre": "post-Midwest mathcore",
       "established": null,
-      "description": "An instrumental four-piece known for energetic metal-adjacent sound featuring dynamic chord changes, rapid tempo changes, and riffs for days."
+      "description": "An instrumental four-piece known for energetic metal-adjacent sound featuring dynamic chord changes, rapid tempo changes, and riffs for days.",
+      "genre_category": "Punk"
     },
     {
       "name": "Spin Collective",
@@ -8107,7 +8235,8 @@
       ],
       "genre": "fire spinning, flow performance",
       "established": 2010,
-      "description": "A fire spinning and flow troupe that choreographs pieces with flaming staff, poi, hula hoops, fans, and innovative props synced to various music genres."
+      "description": "A fire spinning and flow troupe that choreographs pieces with flaming staff, poi, hula hoops, fans, and innovative props synced to various music genres.",
+      "genre_category": "Other"
     },
     {
       "name": "Squid City Slingers",
@@ -8169,7 +8298,8 @@
       ],
       "genre": "bluegrass, folk, country, gypsy jazz",
       "established": null,
-      "description": "A high-energy acoustic trio performing a blend of bluegrass, folk, country, and gypsy jazz, featuring three-part vocal harmonies and appearances on NPR."
+      "description": "A high-energy acoustic trio performing a blend of bluegrass, folk, country, and gypsy jazz, featuring three-part vocal harmonies and appearances on NPR.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Stardust Collective",
@@ -8230,7 +8360,8 @@
       ],
       "genre": "rock",
       "established": null,
-      "description": "Four-piece ensemble performing original compositions that push rock boundaries through soaring harmonies and intricate melodies."
+      "description": "Four-piece ensemble performing original compositions that push rock boundaries through soaring harmonies and intricate melodies.",
+      "genre_category": "Rock"
     },
     {
       "name": "Stel",
@@ -8280,7 +8411,8 @@
       ],
       "genre": "rock, blues, country",
       "established": null,
-      "description": "Solo acoustic performer with nearly three decades of experience, blending rock, blues, and country with a laid-back singer-songwriter style."
+      "description": "Solo acoustic performer with nearly three decades of experience, blending rock, blues, and country with a laid-back singer-songwriter style.",
+      "genre_category": "Rock"
     },
     {
       "name": "Steve Solkela",
@@ -8343,7 +8475,8 @@
       ],
       "genre": "comedic musical, multi-genre",
       "established": null,
-      "description": "A one-man performer who plays numerous instruments while singing in multiple languages. His energetic shows blend music with humor and theatrical elements."
+      "description": "A one-man performer who plays numerous instruments while singing in multiple languages. His energetic shows blend music with humor and theatrical elements.",
+      "genre_category": "Other"
     },
     {
       "name": "Sugar on the Roof",
@@ -8409,7 +8542,8 @@
       ],
       "genre": "1930s-1940s American roots, old-time string band, Western swing",
       "established": null,
-      "description": "A quartet delivering sweet and swanky melodies with honeyed harmonies by blending historical roots music traditions with original compositions."
+      "description": "A quartet delivering sweet and swanky melodies with honeyed harmonies by blending historical roots music traditions with original compositions.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Taylor James Donskey",
@@ -8478,7 +8612,8 @@
       ],
       "genre": "folk, alt-country, rock, indie",
       "established": null,
-      "description": "A songwriter crafting narratives centered on ordinary people, drawing inspiration from Los Lobos, Ry Cooder, and Daniel Lanois."
+      "description": "A songwriter crafting narratives centered on ordinary people, drawing inspiration from Los Lobos, Ry Cooder, and Daniel Lanois.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Teague Alexy & The Common Thread",
@@ -8565,7 +8700,8 @@
       ],
       "genre": "roots-rock with blues, reggae, Irish, bluegrass, hip-hop, country, folk",
       "established": null,
-      "description": "A six-piece ensemble led by award-winning Duluth musician and storyteller Teague Alexy, centered in roots-rock with highlights of blues, reggae, and folk."
+      "description": "A six-piece ensemble led by award-winning Duluth musician and storyteller Teague Alexy, centered in roots-rock with highlights of blues, reggae, and folk.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Adjustments",
@@ -8626,7 +8762,8 @@
       ],
       "genre": "blues-rock",
       "established": null,
-      "description": "A four-piece ensemble that has performed in Northern Minnesota for over a decade, featuring driving rhythms and lyrical stories with harmonized vocals."
+      "description": "A four-piece ensemble that has performed in Northern Minnesota for over a decade, featuring driving rhythms and lyrical stories with harmonized vocals.",
+      "genre_category": "Blues"
     },
     {
       "name": "The Body Electric Cabaret",
@@ -8722,7 +8859,8 @@
       ],
       "genre": "blues, Americana, singer-songwriter",
       "established": 1999,
-      "description": "Real-life brothers who blend Afro-Cuban rhythms with blues, Americana, and spontaneous musical exploration, with performances concluding in extended drum jam sessions."
+      "description": "Real-life brothers who blend Afro-Cuban rhythms with blues, Americana, and spontaneous musical exploration, with performances concluding in extended drum jam sessions.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Casualty Company",
@@ -8766,7 +8904,8 @@
       ],
       "genre": "pop punk, prog rock, alternative acoustic",
       "established": 2023,
-      "description": "A solo project by Tanner Classon that creates a full band sound using guitar, vocals, and production software, drawing heavily from 2005-era emo and alternative music."
+      "description": "A solo project by Tanner Classon that creates a full band sound using guitar, vocals, and production software, drawing heavily from 2005-era emo and alternative music.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Crunchy Bunch",
@@ -8831,7 +8970,8 @@
       ],
       "genre": "hip-hop, house, electro, dance",
       "established": null,
-      "description": "A DJ collective performing for nearly a decade, known for their dance music sets. They host a residency at Bent Paddle Brewery and collaborate on quarterly mixes."
+      "description": "A DJ collective performing for nearly a decade, known for their dance music sets. They host a residency at Bent Paddle Brewery and collaborate on quarterly mixes.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "The Draco Volans",
@@ -8897,7 +9037,8 @@
       ],
       "genre": "indie/surf rock",
       "established": 2024,
-      "description": "A groovy indie/surf rock band creating catchy, danceable guitar-driven songs about escapism and building desired lives."
+      "description": "A groovy indie/surf rock band creating catchy, danceable guitar-driven songs about escapism and building desired lives.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Gemstones",
@@ -8958,7 +9099,8 @@
       ],
       "genre": "soul, R&B, funk, jazz",
       "established": null,
-      "description": "Duluth's most determined purveyors of soul, R&B, funk, and jazz, blending gritty grooves with shared vocal harmonies across all members."
+      "description": "Duluth's most determined purveyors of soul, R&B, funk, and jazz, blending gritty grooves with shared vocal harmonies across all members.",
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "The Jambronies",
@@ -9024,7 +9166,8 @@
       ],
       "genre": "jam band with surf-rock, blues, jazz, folk",
       "established": null,
-      "description": "A four-piece jam band that never plays the same show twice, blending surf-rock energy with blues, rock, jazz, and folk styles for highly danceable original music."
+      "description": "A four-piece jam band that never plays the same show twice, blending surf-rock energy with blues, rock, jazz, and folk styles for highly danceable original music.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Leave Alones",
@@ -9084,7 +9227,8 @@
       ],
       "genre": "alt-garage rock with punk edge",
       "established": null,
-      "description": "The Leave Alones deliver energetic, loud compositions about fractured romances and small-town escape, blending pop-punk emotion with early Midwest alternative influences."
+      "description": "The Leave Alones deliver energetic, loud compositions about fractured romances and small-town escape, blending pop-punk emotion with early Midwest alternative influences.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Lindula Brothers",
@@ -9140,7 +9284,8 @@
       ],
       "genre": "folk and bluegrass",
       "established": null,
-      "description": "A brother duo from Taconite Country performing original compositions alongside modern and traditional covers spanning folk traditions from America, Finland, Ireland, and the UK."
+      "description": "A brother duo from Taconite Country performing original compositions alongside modern and traditional covers spanning folk traditions from America, Finland, Ireland, and the UK.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Lonely Loons",
@@ -9204,7 +9349,8 @@
       ],
       "genre": "rock (indie, psych-blues, lounge-rock)",
       "established": null,
-      "description": "A four-piece rock band with roots in Duluth, Bemidji, and the Twin Cities, blending indie, psych-blues, and lounge-rock influences reminiscent of Kings of Leon and The Strokes."
+      "description": "A four-piece rock band with roots in Duluth, Bemidji, and the Twin Cities, blending indie, psych-blues, and lounge-rock influences reminiscent of Kings of Leon and The Strokes.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Mad Violin Scientist",
@@ -9248,7 +9394,8 @@
       ],
       "genre": "electronic, dance",
       "established": null,
-      "description": "Nick Hyde experiments with new ways to fuse violin and technology through live performances featuring wild violin sound experiments, driving dance beats, and a fully synchronized light show."
+      "description": "Nick Hyde experiments with new ways to fuse violin and technology through live performances featuring wild violin sound experiments, driving dance beats, and a fully synchronized light show.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "The Old Smugglers",
@@ -9318,7 +9465,8 @@
       ],
       "genre": "shanty-rock, jazz-pirate, maritime folk",
       "established": null,
-      "description": "A boisterous ensemble delivering shanty-rock, jazz-pirate sound with maritime-themed compositions and folk pieces about decadent misadventure."
+      "description": "A boisterous ensemble delivering shanty-rock, jazz-pirate sound with maritime-themed compositions and folk pieces about decadent misadventure.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Repairmen",
@@ -9382,7 +9530,8 @@
       ],
       "genre": "Americana",
       "established": 2022,
-      "description": "The Repairmen deliver a rocking fix of Americana with road-worn songs rooted in grit, featuring pedal steel and fiddle elements."
+      "description": "The Repairmen deliver a rocking fix of Americana with road-worn songs rooted in grit, featuring pedal steel and fiddle elements.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Roadside Lupines",
@@ -9447,7 +9596,8 @@
       ],
       "genre": "folk, country, bluegrass",
       "established": null,
-      "description": "A four-piece Duluth-based ensemble that plays folk music as fresh and familiar as the North Shore itself, telling stories rooted in northern Minnesota culture."
+      "description": "A four-piece Duluth-based ensemble that plays folk music as fresh and familiar as the North Shore itself, telling stories rooted in northern Minnesota culture.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "The Shane Nelson Band",
@@ -9507,7 +9657,8 @@
       ],
       "genre": "roots-driven rock and roll",
       "established": null,
-      "description": "The band blends heartfelt songwriting with a soulful, roots-driven sound that transitions between intimate acoustic moments and upbeat rock."
+      "description": "The band blends heartfelt songwriting with a soulful, roots-driven sound that transitions between intimate acoustic moments and upbeat rock.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Solicitors",
@@ -9582,7 +9733,8 @@
       ],
       "genre": "pop and funk",
       "established": null,
-      "description": "A seven-piece horn-infused ensemble delivering favorite pop and funk hits with covers from artists like Stevie Wonder and Earth Wind & Fire."
+      "description": "A seven-piece horn-infused ensemble delivering favorite pop and funk hits with covers from artists like Stevie Wonder and Earth Wind & Fire.",
+      "genre_category": "Funk/Soul/R&B"
     },
     {
       "name": "The Trash Cats",
@@ -9641,7 +9793,8 @@
       ],
       "genre": "acoustic cat-rock",
       "established": null,
-      "description": "A duo delivering a finely tuned mix of catchy originals and tender 90s alt-rock covers with tight harmonies."
+      "description": "A duo delivering a finely tuned mix of catchy originals and tender 90s alt-rock covers with tight harmonies.",
+      "genre_category": "Rock"
     },
     {
       "name": "The Trinkets",
@@ -9693,7 +9846,8 @@
       ],
       "genre": "indie-pop rock",
       "established": null,
-      "description": "A Duluth-based band drawing inspiration from 90s acts like Green Day and Nirvana alongside contemporary artists such as Chapell Roan and Billie Eilish."
+      "description": "A Duluth-based band drawing inspiration from 90s acts like Green Day and Nirvana alongside contemporary artists such as Chapell Roan and Billie Eilish.",
+      "genre_category": "Pop"
     },
     {
       "name": "Theory of Light",
@@ -9750,7 +9904,8 @@
       ],
       "genre": "jazz-rock fusion",
       "established": null,
-      "description": "A funky electric ensemble blending instrumental prowess with a groovy rhythmic foundation, performing both classic jazz standards and original compositions."
+      "description": "A funky electric ensemble blending instrumental prowess with a groovy rhythmic foundation, performing both classic jazz standards and original compositions.",
+      "genre_category": "Jazz"
     },
     {
       "name": "Thor & The Regulars",
@@ -9812,7 +9967,8 @@
       ],
       "genre": "psychobilly, Americana-roots rock",
       "established": 2025,
-      "description": "A psychobilly, Americana-roots rock band fronted by singer-songwriter Thor Leseman, aiming to induce rosy retrospection and crack open listeners' craniums."
+      "description": "A psychobilly, Americana-roots rock band fronted by singer-songwriter Thor Leseman, aiming to induce rosy retrospection and crack open listeners' craniums.",
+      "genre_category": "Rock"
     },
     {
       "name": "Throw Me The Remote",
@@ -9876,7 +10032,8 @@
       ],
       "genre": "metal",
       "established": null,
-      "description": "A metal group featuring screaming, growling vocals layered with thrashing guitar and heavy basslines. They released an album titled God Will See That You Die Pig through Grim Tales Records."
+      "description": "A metal group featuring screaming, growling vocals layered with thrashing guitar and heavy basslines. They released an album titled God Will See That You Die Pig through Grim Tales Records.",
+      "genre_category": "Metal"
     },
     {
       "name": "Tim Kaiser",
@@ -9928,7 +10085,8 @@
       ],
       "genre": "experimental, electronic",
       "established": null,
-      "description": "Tim Kaiser performs atmospheric music using handmade instruments and found objects, creating soundscapes that are both visually and auditorily compelling."
+      "description": "Tim Kaiser performs atmospheric music using handmade instruments and found objects, creating soundscapes that are both visually and auditorily compelling.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "Two T's in a Pod",
@@ -9974,7 +10132,8 @@
       ],
       "genre": "children's, pop",
       "established": null,
-      "description": "A mother-daughter duo performing charming children's songs, pop covers, and originals on guitar and harmonica."
+      "description": "A mother-daughter duo performing charming children's songs, pop covers, and originals on guitar and harmonica.",
+      "genre_category": "Other"
     },
     {
       "name": "Underground 'til Sundown",
@@ -10036,7 +10195,8 @@
       ],
       "genre": "punk rock, melodic hardcore",
       "established": null,
-      "description": "A four-piece band performing loud and fast melodic hardcore music. They released the album An Orchestrated Chaos in 2024."
+      "description": "A four-piece band performing loud and fast melodic hardcore music. They released the album An Orchestrated Chaos in 2024.",
+      "genre_category": "Punk"
     },
     {
       "name": "Vena Sera",
@@ -10094,7 +10254,8 @@
       ],
       "genre": "easycore pop-punk rock",
       "established": null,
-      "description": "A newly formed four-piece easycore pop-punk rock group featuring dual vocalists and guitarists alongside a solid rhythm section."
+      "description": "A newly formed four-piece easycore pop-punk rock group featuring dual vocalists and guitarists alongside a solid rhythm section.",
+      "genre_category": "Punk"
     },
     {
       "name": "Venus de Mars and All The Pretty Horses",
@@ -10178,7 +10339,8 @@
       ],
       "genre": "glam-punk",
       "established": 1993,
-      "description": "A trans-centered and allied band featuring heavy guitar riffs and ballad-inspired vocals, blending life experiences and eclectic visual aesthetics into their music."
+      "description": "A trans-centered and allied band featuring heavy guitar riffs and ballad-inspired vocals, blending life experiences and eclectic visual aesthetics into their music.",
+      "genre_category": "Punk"
     },
     {
       "name": "WICKIE",
@@ -10226,7 +10388,8 @@
       ],
       "genre": "techno, electronic dance music",
       "established": null,
-      "description": "A DJ and founder of UMD Techno Club performing styles ranging from peak dark dancefloor techno to melodic and progressive indie dance music."
+      "description": "A DJ and founder of UMD Techno Club performing styles ranging from peak dark dancefloor techno to melodic and progressive indie dance music.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "WILBUR",
@@ -10289,7 +10452,8 @@
       ],
       "genre": "bummer metal (stoner, doom, sludge)",
       "established": null,
-      "description": "From Duluth and Minneapolis, WILBUR blends stoner, doom, and sludge metal that plunges listeners into the depths of existential despair."
+      "description": "From Duluth and Minneapolis, WILBUR blends stoner, doom, and sludge metal that plunges listeners into the depths of existential despair.",
+      "genre_category": "Metal"
     },
     {
       "name": "Water Cat",
@@ -10346,7 +10510,8 @@
       ],
       "genre": "world music",
       "established": null,
-      "description": "A duo blending instruments and influences from French, Spanish, Portuguese, and English traditions with African and global elements."
+      "description": "A duo blending instruments and influences from French, Spanish, Portuguese, and English traditions with African and global elements.",
+      "genre_category": "Other"
     },
     {
       "name": "Wes Hadrich",
@@ -10384,7 +10549,8 @@
       ],
       "genre": "country-folk, Americana",
       "established": 2007,
-      "description": "A singer-songwriter performing gritty, heartfelt Americana-esque songs influenced by Bruce Springsteen, Gram Parsons, the Jayhawks, and Dwight Yoakam."
+      "description": "A singer-songwriter performing gritty, heartfelt Americana-esque songs influenced by Bruce Springsteen, Gram Parsons, the Jayhawks, and Dwight Yoakam.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Wetland Willows",
@@ -10431,7 +10597,8 @@
       ],
       "genre": "Americana",
       "established": null,
-      "description": "A husband-and-wife duo creating a full sound with rich melodies, gospel undertones, and thoughtful lyrics, influenced by the sounds of New Orleans."
+      "description": "A husband-and-wife duo creating a full sound with rich melodies, gospel undertones, and thoughtful lyrics, influenced by the sounds of New Orleans.",
+      "genre_category": "Folk/Americana"
     },
     {
       "name": "Willem Dafoe Fan Club",
@@ -10490,7 +10657,8 @@
       ],
       "genre": "slowcore, shoegaze",
       "established": 2023,
-      "description": "A band known for its hypnotic and haunting sound that creates ambient, introspective, and comforting songs across diverse venue types."
+      "description": "A band known for its hypnotic and haunting sound that creates ambient, introspective, and comforting songs across diverse venue types.",
+      "genre_category": "Rock"
     },
     {
       "name": "Winzige Hosen",
@@ -10557,7 +10725,8 @@
       ],
       "genre": "punk polka",
       "established": null,
-      "description": "The band blends polka with 90s era-punk featuring fast tempos, heavy guitars, and three-part harmonies celebrating Germanic traditions with contemporary rock energy."
+      "description": "The band blends polka with 90s era-punk featuring fast tempos, heavy guitars, and three-part harmonies celebrating Germanic traditions with contemporary rock energy.",
+      "genre_category": "Punk"
     },
     {
       "name": "Witchfarm",
@@ -10605,7 +10774,8 @@
       ],
       "genre": "experimental, synth",
       "established": null,
-      "description": "A reformed lo-fi cult classic band offering a groove forward, synthy exploration of new material and reimagined pieces from earlier work."
+      "description": "A reformed lo-fi cult classic band offering a groove forward, synthy exploration of new material and reimagined pieces from earlier work.",
+      "genre_category": "Experimental"
     },
     {
       "name": "Woodblind",
@@ -10700,7 +10870,8 @@
       ],
       "genre": "acoustic ska",
       "established": 2013,
-      "description": "The duo has performed stripped-down, acoustic ska since late 2013, expanding into a larger ensemble called the Jubilee Super Big Band for festival performances."
+      "description": "The duo has performed stripped-down, acoustic ska since late 2013, expanding into a larger ensemble called the Jubilee Super Big Band for festival performances.",
+      "genre_category": "Rock"
     },
     {
       "name": "Zeb or Zeke and the Run Away Screamings",
@@ -10743,7 +10914,8 @@
       ],
       "genre": "rock",
       "established": null,
-      "description": "A one-man band inspired by the original Scooby-Doo television series. Luke Moravec simultaneously plays multiple instruments to create a family-friendly rock experience."
+      "description": "A one-man band inspired by the original Scooby-Doo television series. Luke Moravec simultaneously plays multiple instruments to create a family-friendly rock experience.",
+      "genre_category": "Rock"
     },
     {
       "name": "Zenith City Dance Collective",
@@ -10820,7 +10992,8 @@
       ],
       "genre": "techno, EDM",
       "established": null,
-      "description": "Joe Belsito, performing as porb, is a DJ who started with the UMD Techno Club and has built a reputation across the Twin Ports region's electronic music scene."
+      "description": "Joe Belsito, performing as porb, is a DJ who started with the UMD Techno Club and has built a reputation across the Twin Ports region's electronic music scene.",
+      "genre_category": "Electronic/DJ"
     },
     {
       "name": "¡Radical Fun Time!",
@@ -10878,7 +11051,8 @@
       ],
       "genre": "anarcho political crust",
       "established": null,
-      "description": "Radical Fun Time blends punk music with activism, delivering chaotic guitar riffs that address environmentalism, treaty rights, and climate change."
+      "description": "Radical Fun Time blends punk music with activism, delivering chaotic guitar riffs that address environmentalism, treaty rights, and climate change.",
+      "genre_category": "Punk"
     }
   ]
 }
