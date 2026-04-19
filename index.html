@@ -662,6 +662,7 @@
       z-index: 22;
       order: 2;
       min-height: 18vh;
+      margin-top: -7.5vh;
     }
     body { padding-bottom: 0; }
     header { position: relative; }
@@ -1685,7 +1686,7 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
 (() => {
   const isMobile = window.innerWidth <= 768;
   const r = DISC_RADIUS * (isMobile ? 1.5 : 1.5);  // same distance, aspect ratio fix handles sizing
-  const elev = (isMobile ? 5 : 8) * Math.PI / 180; // very low angle on mobile
+  const elev = (isMobile ? 3 : 8) * Math.PI / 180; // nearly edge-on on mobile
   const zoo = venuePlacements.find(p => p.v.name.includes("Zoo"));
   const zooAngle = zoo
     ? Math.atan2(zoo.x - DISC_CENTER.x, zoo.z - DISC_CENTER.y)
