@@ -650,7 +650,7 @@
 
   /* ---- Mobile layout: map top ~45%, scrubber fixed middle, schedule bottom ~45% ---- */
   @media (max-width: 768px) {
-    html, body { overflow: hidden; height: 100%; margin: 0; padding: 0; }
+    html, body { overflow: hidden; height: 100%; margin: 0; padding: 0; touch-action: manipulation; }
     #app { position: relative; height: 100%; display: flex; flex-direction: column; margin: 0; padding: 0; }
     #scene {
       flex: 0 0 auto; height: 30vh !important; min-height: 140px;
@@ -717,9 +717,27 @@
     }
     #mobile-schedule .ms-day:first-child { margin-top: 4px; }
     #mobile-schedule .ms-set {
-      display: flex; gap: 10px; align-items: baseline;
+      display: flex; gap: 10px; align-items: center;
       padding: 8px 0; border-bottom: 1px solid rgba(242,234,213,0.08);
     }
+    #mobile-schedule .ms-genre {
+      flex-shrink: 0; font-size: 9px; font-weight: 600;
+      font-family: "Space Grotesk", sans-serif;
+      padding: 2px 6px; border-radius: 8px;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      white-space: nowrap; align-self: center;
+    }
+    .ms-genre[data-g="Rock"] { background: #3a2520; color: #e88; }
+    .ms-genre[data-g="Folk/Americana"] { background: #2a3020; color: #9c6; }
+    .ms-genre[data-g="Punk"] { background: #3a2030; color: #e6a; }
+    .ms-genre[data-g="Metal"] { background: #2a2030; color: #b8a; }
+    .ms-genre[data-g="Hip-Hop/Rap"] { background: #302820; color: #ea6; }
+    .ms-genre[data-g="Electronic/DJ"] { background: #202838; color: #8be; }
+    .ms-genre[data-g="Funk/Soul/R&B"] { background: #302a20; color: #eb8; }
+    .ms-genre[data-g="Pop"] { background: #303020; color: #cc8; }
+    .ms-genre[data-g="Jazz"] { background: #282830; color: #aae; }
+    .ms-genre[data-g="Blues"] { background: #282028; color: #c8c; }
+    .ms-genre[data-g="Experimental"] { background: #282828; color: #aaa; }
     #mobile-schedule .ms-set.ms-live { background: rgba(111,168,98,0.12); margin: 0 -12px; padding: 8px 12px; border-radius: 4px; }
     #mobile-schedule .ms-time {
       font-family: "JetBrains Mono", monospace; font-size: 12px;
@@ -2887,7 +2905,10 @@ if (window.innerWidth <= 768) {
     const hex = "#" + (DAY_COLORS[dow] || 0x8fa088).toString(16).padStart(6, "0");
     msHtml += `<div class="ms-day" style="color:${hex}">${msDayFmt(daySets[0].dt)}</div>`;
     daySets.forEach(s => {
-      msHtml += `<div class="ms-set" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div></div>`;
+      const ad = actsByName.get(s.act);
+      const gc = ad?.genre_category || "";
+      const gcHtml = gc ? `<span class="ms-genre" data-g="${esc(gc)}">${esc(gc)}</span>` : "";
+      msHtml += `<div class="ms-set" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
     });
   }
   mobileSchedule.innerHTML = msHtml;
