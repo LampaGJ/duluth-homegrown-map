@@ -2007,6 +2007,15 @@ const ytPlaylist = sortedSets
   })
   .filter(s => s.vidUrl || s.bcEmbed || s.spEmbed || s.scEmbed || s.actData);
 
+// Also include community events (no music, but show bio card)
+sortedSets.forEach(s => {
+  const a = actsByName.get(s.act);
+  if (a && a.type === "community_event" && !ytPlaylist.find(p => p.act === s.act && p.date === s.date)) {
+    ytPlaylist.push({ ...s, vidUrl: null, bcEmbed: null, spEmbed: null, scEmbed: null, actData: a });
+  }
+});
+ytPlaylist.sort((a, b) => a.dt - b.dt);
+
 let ytCurrentVideoUrl = null;
 let ytUserMuted = false;   // start unmuted — user can mute via the prominent button
 let ytCurrentIdx = -1;    // current position in ytPlaylist
