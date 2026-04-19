@@ -2449,7 +2449,11 @@
       "genre": "rock 'n' roll",
       "description": "A rock duo emphasizing community building and inclusivity, addressing topics like transportation woes, healthcare, and mediocrity with humor.",
       "established": 2025,
-      "genre_category": "Rock"
+      "genre_category": "Rock",
+      "bandcamp_embed": {
+        "type": "album",
+        "id": 3521832173
+      }
     },
     {
       "name": "Dirtbike Boyfriend",
@@ -2967,7 +2971,7 @@
         "id": "1836126373",
         "confidence": "medium"
       },
-      "bandcamp": "https://ingaentheos.bandcamp.com/",
+      "bandcamp": "https://entheosenclave.bandcamp.com/",
       "the_north_plays": {
         "play_count": 0,
         "matched_as": null,
@@ -3025,7 +3029,11 @@
       "genre": "Nordic fusion of indie, crossover prog, and world music",
       "description": "Formerly known as Inga Entheos, this ensemble creates music from deep love, grief, and healing with complex melodies. They released their debut album Eschaton in 2025.",
       "established": null,
-      "genre_category": "Rock"
+      "genre_category": "Rock",
+      "bandcamp_embed": {
+        "type": "album",
+        "id": 1712108194
+      }
     },
     {
       "name": "Father Hennepin",
@@ -5858,7 +5866,11 @@
       "genre": "synthy pop-punk",
       "established": null,
       "description": "Mid Dream fuses synthy pop-punk, cathartic ballads, and a smoky-bar spirit with powerful dual vocals. They are recording their debut album, Bodega Wine Glass, in 2026.",
-      "genre_category": "Punk"
+      "genre_category": "Punk",
+      "bandcamp_embed": {
+        "type": "album",
+        "id": 618310042
+      }
     },
     {
       "name": "Midnight Kissfight",
@@ -6454,7 +6466,11 @@
       "genre": "indie folk",
       "established": null,
       "description": "A quartet creating music blending upbeat indie folk with emotional compositions, featuring finger-picked guitar storytelling and inventive mandolin work.",
-      "genre_category": "Folk/Americana"
+      "genre_category": "Folk/Americana",
+      "bandcamp_embed": {
+        "type": "track",
+        "id": 12482081
+      }
     },
     {
       "name": "Owls Club Big Band",
@@ -7808,7 +7824,7 @@
         "id": "1811018072",
         "confidence": "high"
       },
-      "bandcamp": "https://slapemusic.bandcamp.com/",
+      "bandcamp": null,
       "the_north_plays": {
         "play_count": 1,
         "matched_as": "Slape",
