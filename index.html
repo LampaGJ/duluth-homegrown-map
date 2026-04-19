@@ -299,6 +299,21 @@
   #yt-overlay {
     position: absolute; inset: 0; z-index: 2; cursor: default;
   }
+  /* Bio overlay — shown on band name click, hides on second click */
+  #bio-overlay {
+    position: absolute; inset: 0; z-index: 3;
+    overflow-y: auto; padding: 20px 16px;
+    font-family: "Space Grotesk", sans-serif; color: var(--bone);
+    background: rgba(10,8,6,0.92); backdrop-filter: blur(6px);
+    opacity: 0; pointer-events: none; transition: opacity 200ms;
+  }
+  #bio-overlay.visible { opacity: 1; pointer-events: auto; }
+  #bio-overlay .bio-genre { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--spring); margin-bottom: 8px; }
+  #bio-overlay .bio-desc { font-size: 14px; line-height: 1.5; color: var(--bone); margin-bottom: 14px; }
+  #bio-overlay .bio-members-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--bone-dim); margin-bottom: 6px; }
+  #bio-overlay .bio-member { font-size: 13px; line-height: 1.6; }
+  #bio-overlay .bio-member-name { color: var(--bone); }
+  #bio-overlay .bio-member-role { color: var(--bone-dim); font-size: 11px; }
   /* Custom controls bar below video */
   #yt-controls {
     display: flex; align-items: center; gap: 8px;
@@ -866,6 +881,7 @@
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
         <div id="yt-overlay"></div>
+        <div id="bio-overlay"></div>
       </div>
       <div id="yt-controls">
         <button id="yt-pp" title="Play/Pause">▶</button>
@@ -2038,6 +2054,8 @@ function updateYtPlayer(t, forceIdx) {
   const contentKey = best.vidUrl || (best.bcEmbed ? `bc:${best.bcEmbed.id}` : best.spEmbed ? `sp:${best.spEmbed.id}` : best.scEmbed ? `sc:${best.scEmbed.url}` : null);
   if (contentKey !== ytCurrentVideoUrl) {
     ytCurrentVideoUrl = contentKey;
+    // Dismiss bio overlay on act change
+    document.getElementById("bio-overlay").classList.remove("visible");
     const videoArea = document.getElementById("yt-video-area");
 
     // Remove any existing embed frame when switching content
@@ -2661,8 +2679,44 @@ function ytTogglePlayPause() {
   else { ytPlayer.playVideo(); ytPP.textContent = "❚❚"; }
 }
 ytPP.addEventListener("click", ytTogglePlayPause);
-// Click on overlay toggles play/pause (since overlay blocks iframe interaction)
-document.getElementById("yt-overlay").addEventListener("click", ytTogglePlayPause);
+
+// Bio overlay — toggle on band name or overlay click
+const bioOverlay = document.getElementById("bio-overlay");
+function updateBioOverlay() {
+  const idx = ytCurrentIdx;
+  if (idx < 0 || idx >= ytPlaylist.length) return;
+  const ad = ytPlaylist[idx].actData || {};
+  const genre = ad.genre || "";
+  const desc = ad.description || "No description available.";
+  const members = (ad.members || []).filter(m => m.name);
+  const established = ad.established ? `Est. ${ad.established}` : "";
+  let html = "";
+  if (genre) html += `<div class="bio-genre">${esc(genre)}${established ? " · " + established : ""}</div>`;
+  html += `<div class="bio-desc">${esc(desc)}</div>`;
+  if (members.length) {
+    html += `<div class="bio-members-label">Members</div>`;
+    members.forEach(m => {
+      html += `<div class="bio-member"><span class="bio-member-name">${esc(m.name)}</span>`;
+      if (m.role) html += ` <span class="bio-member-role">${esc(m.role)}</span>`;
+      html += `</div>`;
+    });
+  }
+  bioOverlay.innerHTML = html;
+}
+function toggleBioOverlay() {
+  if (bioOverlay.classList.contains("visible")) {
+    bioOverlay.classList.remove("visible");
+  } else {
+    updateBioOverlay();
+    bioOverlay.classList.add("visible");
+  }
+}
+// Click overlay → first click shows bio, second hides it (also acts as play/pause area)
+document.getElementById("yt-overlay").addEventListener("click", toggleBioOverlay);
+// Click band name → toggle bio
+ytLabelAct.addEventListener("click", toggleBioOverlay);
+// Click bio overlay itself → dismiss it
+bioOverlay.addEventListener("click", () => bioOverlay.classList.remove("visible"));
 function syncMuteUI() {
   const iconName = ytUserMuted ? "volume_off" : "volume_up";
   ytMuteBtn.querySelector(".material-icons").textContent = iconName;
