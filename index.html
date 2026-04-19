@@ -2256,6 +2256,7 @@ function togglePlay() {
   playBtn.style.paddingBottom = playing ? "1px" : "0";
   render(currentTime);
   if (playing) {
+    ytEmpty.style.display = "none";
     // If no video loaded yet, jump to first act in playlist
     if (ytCurrentIdx < 0 && ytPlaylist.length) {
       const first = ytPlaylist[0];
