@@ -395,6 +395,14 @@
     font-family: "Permanent Marker", cursive; font-size: 28px; font-weight: 700;
     color: #2a2420; margin: 0 0 14px; text-align: center;
   }
+  #sl-share-dialog .sd-ics {
+    display: block; width: 100%; padding: 12px; margin-bottom: 10px;
+    border-radius: 6px; border: 1px solid rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.05); cursor: pointer;
+    font-family: "Space Grotesk", sans-serif; font-size: 14px; font-weight: 600;
+    color: #333; text-align: center; transition: background 100ms;
+  }
+  #sl-share-dialog .sd-ics:hover { background: rgba(0,0,0,0.1); }
   #sl-share-dialog .sd-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
   }
@@ -825,6 +833,7 @@
   <div id="sl-share-dialog">
     <div class="sd-box">
       <h3>Share Your Set List</h3>
+      <button id="sl-share-ics" class="sd-ics">📅 Add to Calendar (.ics)</button>
       <div class="sd-grid">
         <a id="sl-share-bsky" href="#"><span class="sd-icon">🦋</span> Bluesky</a>
         <a id="sl-share-fb" href="#"><span class="sd-icon">📘</span> Facebook</a>
@@ -2470,6 +2479,57 @@ document.getElementById("sl-share-sms").addEventListener("click", (e) => {
     e.preventDefault();
     window.open(urls[id], "_blank", "width=600,height=500");
   });
+});
+
+// ICS calendar export — one event per starred act
+document.getElementById("sl-share-ics").addEventListener("click", () => {
+  if (!setList.length) { alert("Star some acts first!"); return; }
+  const pad2 = n => String(n).padStart(2, "0");
+  function icsDate(dateStr, time24) {
+    // dateStr: "2026-04-26", time24: "19:00"
+    const [y, m, d] = dateStr.split("-").map(Number);
+    const [h, mn] = (time24 || "12:00").split(":").map(Number);
+    return `${y}${pad2(m)}${pad2(d)}T${pad2(h)}${pad2(mn)}00`;
+  }
+  function icsEscape(s) { return (s || "").replace(/[\\;,\n]/g, c => "\\" + c); }
+  const now = new Date();
+  const stamp = `${now.getUTCFullYear()}${pad2(now.getUTCMonth()+1)}${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}${pad2(now.getUTCMinutes())}${pad2(now.getUTCSeconds())}Z`;
+
+  let ics = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Homegrown2026//SetList//EN\r\nCALSCALE:GREGORIAN\r\nMETHOD:PUBLISH\r\n";
+  ics += `X-WR-CALNAME:${icsEscape(slTitleInput.value)}\r\n`;
+
+  for (const entry of setList) {
+    const schedEntry = scheduleData.schedule.find(s => s.act === entry.act && s.date === entry.date);
+    const time24 = schedEntry?.time_start_24h || "12:00";
+    const dtStart = icsDate(entry.date, time24);
+    // Assume 1 hour per set
+    const [h, mn] = time24.split(":").map(Number);
+    const endH = h + 1;
+    const dtEnd = icsDate(entry.date, `${pad2(endH % 24)}:${pad2(mn)}`);
+    const venue = entry.venue || "";
+    const actData = actsByName.get(entry.act);
+    const genre = actData?.genre || "";
+    const desc = actData?.description || "";
+
+    ics += "BEGIN:VEVENT\r\n";
+    ics += `DTSTART;TZID=America/Chicago:${dtStart}\r\n`;
+    ics += `DTEND;TZID=America/Chicago:${dtEnd}\r\n`;
+    ics += `SUMMARY:${icsEscape(entry.act)}\r\n`;
+    ics += `LOCATION:${icsEscape(venue + ", Duluth MN")}\r\n`;
+    ics += `DESCRIPTION:${icsEscape(genre ? genre + " — " + desc : desc)}\r\n`;
+    ics += `DTSTAMP:${stamp}\r\n`;
+    ics += `UID:hg2026-${entry.act.replace(/\W/g,"")}-${entry.date}@homegrown\r\n`;
+    ics += "END:VEVENT\r\n";
+  }
+  ics += "END:VCALENDAR\r\n";
+
+  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "homegrown-2026-setlist.ics";
+  a.click();
+  URL.revokeObjectURL(a.href);
+  document.getElementById("sl-share-dialog").classList.remove("open");
 });
 
 function ytTogglePlayPause() {
