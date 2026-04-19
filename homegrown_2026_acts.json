@@ -4160,7 +4160,8 @@
         "confidence": null,
         "note": "non-musical act"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "Homegrown Kickball Classic",
@@ -4189,7 +4190,8 @@
         "confidence": null,
         "note": "non-musical act"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "Homegrown Tomatoes",
@@ -5790,7 +5792,8 @@
         "confidence": null,
         "note": "non-musical act"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "Mid Dream",
@@ -10952,7 +10955,8 @@
         "confidence": null,
         "note": "community event — no music video needed"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "porb",
