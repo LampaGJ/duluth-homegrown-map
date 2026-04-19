@@ -1679,7 +1679,7 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
 (() => {
   const isMobile = window.innerWidth <= 768;
   const r = DISC_RADIUS * (isMobile ? 1.5 : 1.5);  // same distance, aspect ratio fix handles sizing
-  const elev = (isMobile ? 10 : 8) * Math.PI / 180; // closer to horizon on mobile
+  const elev = (isMobile ? 5 : 8) * Math.PI / 180; // very low angle on mobile
   const zoo = venuePlacements.find(p => p.v.name.includes("Zoo"));
   const zooAngle = zoo
     ? Math.atan2(zoo.x - DISC_CENTER.x, zoo.z - DISC_CENTER.y)
