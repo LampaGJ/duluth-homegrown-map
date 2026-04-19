@@ -1950,7 +1950,10 @@
       "genre": "alternative punk, grunge",
       "description": "A three-piece alternative punk band with 90s-inspired grunge influences, exploring themes of loss, addiction, coping, and longing.",
       "established": 2023,
-      "genre_category": "Punk"
+      "genre_category": "Punk",
+      "soundcloud_embed": {
+        "url": "https://soundcloud.com/crimson-soul-205210146"
+      }
     },
     {
       "name": "Cyr and the Cosmonauts",
@@ -7879,7 +7882,11 @@
       "genre": "Midwest emo with pop influences",
       "established": null,
       "description": "Slape merges the emotional depth of Midwest emo with the infectious hooks of pop, creating a sound that's both haunting and anthemic.",
-      "genre_category": "Rock"
+      "genre_category": "Rock",
+      "spotify_embed": {
+        "type": "artist",
+        "id": "24FXVRpoyRlaElFTOwjHAR"
+      }
     },
     {
       "name": "So What",

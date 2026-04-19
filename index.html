@@ -1964,15 +1964,17 @@ const ytFmtTime = d3.timeFormat("%-I:%M %p");
 const ytFmtDay = d3.timeFormat("%a %-m/%-d");
 
 // Build sorted playlist: chronological order, ties broken alphabetically
-// Includes YouTube videos AND Bandcamp embeds as fallback
+// Includes YouTube videos + Bandcamp/Spotify/SoundCloud embeds as fallback
 const ytPlaylist = sortedSets
   .map(s => {
     const a = actsByName.get(s.act);
     const vidUrl = (a && a.youtube_video && a.youtube_video.url) || null;
     const bcEmbed = (a && a.bandcamp_embed) || null;
-    return { ...s, vidUrl, bcEmbed, actData: a };
+    const spEmbed = (a && a.spotify_embed) || null;
+    const scEmbed = (a && a.soundcloud_embed) || null;
+    return { ...s, vidUrl, bcEmbed, spEmbed, scEmbed, actData: a };
   })
-  .filter(s => s.vidUrl || s.bcEmbed);
+  .filter(s => s.vidUrl || s.bcEmbed || s.spEmbed || s.scEmbed);
 
 let ytCurrentVideoUrl = null;
 let ytUserMuted = false;   // start unmuted — user can mute via the prominent button
@@ -2033,37 +2035,46 @@ function updateYtPlayer(t, forceIdx) {
 
   // Update video/audio if changed
   ytCurrentIdx = forceIdx != null ? forceIdx : ytPlaylist.indexOf(best);
-  const contentKey = best.vidUrl || (best.bcEmbed ? `bc:${best.bcEmbed.id}` : null);
+  const contentKey = best.vidUrl || (best.bcEmbed ? `bc:${best.bcEmbed.id}` : best.spEmbed ? `sp:${best.spEmbed.id}` : best.scEmbed ? `sc:${best.scEmbed.url}` : null);
   if (contentKey !== ytCurrentVideoUrl) {
     ytCurrentVideoUrl = contentKey;
     const videoArea = document.getElementById("yt-video-area");
 
-    // Bandcamp embed fallback — no YouTube video available
-    if (!best.vidUrl && best.bcEmbed) {
+    // Remove any existing embed frame when switching content
+    function clearEmbedFrame() {
+      const f = document.getElementById("embed-frame");
+      if (f) f.remove();
+    }
+    function showEmbedFrame(src) {
       ytEmpty.style.display = "none";
-      // Pause/destroy YouTube player if active
       if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
-      // Remove YouTube player div, insert Bandcamp iframe
       const oldPlayer = document.getElementById("yt-player-div");
-      if (oldPlayer) oldPlayer.remove();
-      let bcFrame = document.getElementById("bc-embed-frame");
-      if (!bcFrame) {
-        bcFrame = document.createElement("iframe");
-        bcFrame.id = "bc-embed-frame";
-        bcFrame.style.cssText = "position:absolute;top:0;left:0;width:100%;height:100%;border:0;";
-        bcFrame.allow = "autoplay";
-        videoArea.appendChild(bcFrame);
-      }
-      const bcType = best.bcEmbed.type; // "album" or "track"
-      const bcId = best.bcEmbed.id;
-      bcFrame.src = `https://bandcamp.com/EmbeddedPlayer/${bcType}=${bcId}/size=large/bgcol=0a0806/linkcol=6fb862/artwork=small/transparent=true/`;
-      // Hide YouTube-specific controls (scrub, play/pause won't work for BC)
+      if (oldPlayer) oldPlayer.style.display = "none";
+      clearEmbedFrame();
+      const frame = document.createElement("iframe");
+      frame.id = "embed-frame";
+      frame.style.cssText = "position:absolute;top:0;left:0;width:100%;height:100%;border:0;";
+      frame.allow = "autoplay; encrypted-media";
+      frame.src = src;
+      videoArea.appendChild(frame);
       document.getElementById("yt-overlay").style.display = "none";
       document.getElementById("yt-controls").style.display = "none";
+    }
+
+    if (!best.vidUrl && (best.bcEmbed || best.spEmbed || best.scEmbed)) {
+      if (best.bcEmbed) {
+        const { type: bcType, id: bcId } = best.bcEmbed;
+        showEmbedFrame(`https://bandcamp.com/EmbeddedPlayer/${bcType}=${bcId}/size=large/bgcol=0a0806/linkcol=6fb862/artwork=small/transparent=true/`);
+      } else if (best.spEmbed) {
+        showEmbedFrame(`https://open.spotify.com/embed/artist/${best.spEmbed.id}?utm_source=generator&theme=0`);
+      } else if (best.scEmbed) {
+        const scUrl = encodeURIComponent(best.scEmbed.url);
+        showEmbedFrame(`https://w.soundcloud.com/player/?url=${scUrl}&color=%236fb862&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true`);
+      }
     } else if (best.vidUrl) {
-      // Remove Bandcamp frame if present
-      const bcFrame = document.getElementById("bc-embed-frame");
-      if (bcFrame) bcFrame.remove();
+      clearEmbedFrame();
+      const oldPlayer = document.getElementById("yt-player-div");
+      if (oldPlayer) oldPlayer.style.display = "";
       document.getElementById("yt-overlay").style.display = "";
       document.getElementById("yt-controls").style.display = "";
     }
