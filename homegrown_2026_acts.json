@@ -115,7 +115,8 @@
         "note": "non-musical act"
       },
       "type": "community_event",
-      "facebook": "https://www.facebook.com/218danceproject/"
+      "facebook": "https://www.facebook.com/218danceproject/",
+      "family_friendly": true
     },
     {
       "name": "500 Million Society",
@@ -1469,7 +1470,8 @@
       "genre": "country, americana",
       "description": "An all-in-the-family band from South Range, Wisconsin that plays mostly covers sprinkled with originals, drawing from Hank Williams, Johnny Cash, and R.E.M.",
       "established": null,
-      "genre_category": "Folk/Americana"
+      "genre_category": "Folk/Americana",
+      "family_friendly": true
     },
     {
       "name": "C U Next Tuesday",
@@ -2168,7 +2170,8 @@
       "genre": "children's music",
       "description": "A children's music performer who plays songs for kids using toy musical instruments and stuffed animals, engaging young audiences through interactive musical experiences.",
       "established": 2009,
-      "genre_category": "Folk/Americana"
+      "genre_category": "Folk/Americana",
+      "family_friendly": true
     },
     {
       "name": "Danny Frank & the Smoky Gold",
@@ -6154,7 +6157,8 @@
         "confidence": null,
         "note": "non-musical act"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "Nate J Mattson",
@@ -7464,7 +7468,8 @@
         "confidence": null,
         "note": "community event — no music video needed"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "family_friendly": true
     },
     {
       "name": "Shadows of Me",
@@ -8476,7 +8481,8 @@
       "genre": "comedic musical, multi-genre",
       "established": null,
       "description": "A one-man performer who plays numerous instruments while singing in multiple languages. His energetic shows blend music with humor and theatrical elements.",
-      "genre_category": "Folk/Americana"
+      "genre_category": "Folk/Americana",
+      "family_friendly": true
     },
     {
       "name": "Sugar on the Roof",
@@ -9847,7 +9853,8 @@
       "genre": "indie-pop rock",
       "established": null,
       "description": "A Duluth-based band drawing inspiration from 90s acts like Green Day and Nirvana alongside contemporary artists such as Chapell Roan and Billie Eilish.",
-      "genre_category": "Pop"
+      "genre_category": "Pop",
+      "family_friendly": true
     },
     {
       "name": "Theory of Light",
@@ -10133,7 +10140,8 @@
       "genre": "children's, pop",
       "established": null,
       "description": "A mother-daughter duo performing charming children's songs, pop covers, and originals on guitar and harmonica.",
-      "genre_category": "Pop"
+      "genre_category": "Pop",
+      "family_friendly": true
     },
     {
       "name": "Underground 'til Sundown",
