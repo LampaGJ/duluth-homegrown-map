@@ -296,37 +296,26 @@
   }
   /* Custom controls bar below video */
   #yt-controls {
-    display: flex; align-items: center; gap: 6px;
-    padding: 5px 8px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px;
     background: rgba(10,8,6,0.95);
     flex-shrink: 0;
   }
   #yt-controls button {
-    background: none; border: 0; color: var(--bone); font-size: 14px;
-    cursor: pointer; padding: 2px 4px; line-height: 1;
+    background: none; border: 0; color: var(--bone); font-size: 20px;
+    cursor: pointer; padding: 4px 6px; line-height: 1;
   }
   #yt-controls button:hover { color: #fff; }
-  /* Mute button always visible — large, bottom-right of video */
-  #yt-mute-float {
-    position: absolute; bottom: 8px; right: 8px; z-index: 4;
-    width: 40px; height: 40px; border-radius: 50%;
-    background: rgba(10,8,6,0.75); border: 2px solid var(--bone-dim);
-    color: var(--bone); font-size: 20px; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    transition: background 120ms, border-color 120ms;
-  }
-  #yt-mute-float:hover { background: rgba(10,8,6,0.95); border-color: var(--spring); }
-  #yt-mute-float.unmuted { border-color: var(--spring); color: var(--spring); }
   #yt-controls .yt-scrub {
-    flex: 1; height: 4px; appearance: none; background: rgba(255,255,255,0.25);
-    border-radius: 2px; accent-color: var(--spring); cursor: pointer;
+    flex: 1; height: 5px; appearance: none; background: rgba(255,255,255,0.25);
+    border-radius: 3px; accent-color: var(--spring); cursor: pointer;
   }
   #yt-controls .yt-scrub::-webkit-slider-thumb {
-    appearance: none; width: 10px; height: 10px; border-radius: 50%;
-    background: var(--spring); margin-top: -3px;
+    appearance: none; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--spring); margin-top: -5px;
   }
   #yt-controls a {
-    color: var(--bone-dim); font-size: 10px; text-decoration: none;
+    color: var(--bone-dim); font-size: 11px; text-decoration: none; font-weight: 600;
     font-family: "JetBrains Mono", monospace; letter-spacing: 0.08em;
   }
   #yt-controls a:hover { color: #fff; }
@@ -858,11 +847,10 @@
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
         <div id="yt-overlay"></div>
-        <button id="yt-mute-float" title="Mute/Unmute"><span class="material-icons">volume_up</span></button>
       </div>
       <div id="yt-controls">
         <button id="yt-pp" title="Play/Pause">▶</button>
-        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:18px;">volume_up</span></button>
+        <button id="yt-mute" title="Mute/Unmute"><span class="material-icons" style="font-size:22px;">volume_up</span></button>
         <input type="range" class="yt-scrub" id="yt-scrub" min="0" max="100" value="0" />
         <a id="yt-open" href="#" target="_blank" title="Open in YouTube">↗ YT</a>
       </div>
@@ -2542,12 +2530,9 @@ function ytTogglePlayPause() {
 ytPP.addEventListener("click", ytTogglePlayPause);
 // Click on overlay toggles play/pause (since overlay blocks iframe interaction)
 document.getElementById("yt-overlay").addEventListener("click", ytTogglePlayPause);
-const ytMuteFloat = document.getElementById("yt-mute-float");
 function syncMuteUI() {
   const iconName = ytUserMuted ? "volume_off" : "volume_up";
   ytMuteBtn.querySelector(".material-icons").textContent = iconName;
-  ytMuteFloat.querySelector(".material-icons").textContent = iconName;
-  ytMuteFloat.classList.toggle("unmuted", !ytUserMuted);
 }
 function doMuteToggle() {
   if (!ytPlayer) return;
@@ -2556,7 +2541,6 @@ function doMuteToggle() {
   syncMuteUI();
 }
 ytMuteBtn.addEventListener("click", doMuteToggle);
-ytMuteFloat.addEventListener("click", doMuteToggle);
 syncMuteUI(); // set icons to match initial unmuted state
 ytScrub.addEventListener("input", () => {
   if (!ytPlayer || !ytPlayer.getDuration) return;
@@ -2638,11 +2622,9 @@ const dayFmtShort = d3.timeFormat("%a %-m/%-d");
 const dayFmt = window.innerWidth < 1200 ? dayFmtShort : dayFmtLong;
 // Build day pills sized proportionally to their compressed slot width,
 // with gaps matching the pad zones between days in the equalizer.
-// Set slider track padding to match the first/last day pad zones
-const trackPadL = (blocks[0].padMin / minutesTotal * 100).toFixed(2);
-const trackPadR = (blocks[blocks.length - 1].padMin / minutesTotal * 100).toFixed(2);
-slider.style.setProperty("--track-pad-l", trackPadL + "%");
-slider.style.setProperty("--track-pad-r", trackPadR + "%");
+// Slider track channel aligns to the first/last day label edges (no extra padding)
+slider.style.setProperty("--track-pad-l", "0%");
+slider.style.setProperty("--track-pad-r", "0%");
 
 const activeFrac = (b) => b.activeMin / minutesTotal;
 const padFrac = (b) => b.padMin / minutesTotal;
