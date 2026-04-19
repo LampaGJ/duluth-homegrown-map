@@ -114,3 +114,11 @@ When a wrong match is confirmed, set these fields to `null`:
 Do NOT remove other valid fields (bandcamp, spotify, instagram, etc.).
 
 Also check and null wrong `apple_music`, `bandcamp`, or `spotify` entries if they belong to a different artist (see Rule 7).
+
+## Sanitization
+
+After any edits, sanitize the JSON:
+- Replace curly/smart quotes (`\u201c \u201d \u2018 \u2019`) with straight quotes in all string values
+- Strip zero-width characters (`\u200b \u200c \u200d \ufeff`)
+- Validate: `python3 -c "import json; json.load(open('homegrown_2026_acts.json'))"`
+- Rewrite via `json.dump(data, f, indent=2, ensure_ascii=False)` to normalize

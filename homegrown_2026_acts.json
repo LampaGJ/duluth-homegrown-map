@@ -1167,7 +1167,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=aBsoq1jq7B0",
-        "title": "‘Molehill’ Live Recorded Session by Cigarette Picnic ",
+        "title": "'Molehill' Live Recorded Session by Cigarette Picnic ",
         "confidence": "high",
         "note": null,
         "sourceType": "media"
@@ -1175,7 +1175,7 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Cigarette Picnic - ‘Molehill’ Live Recorded Session by Cigarette Picnic - 00:30.mp3",
+      "clip_file": "clips/Cigarette Picnic - 'Molehill' Live Recorded Session by Cigarette Picnic - 00:30.mp3",
       "facebook": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/"
     },
     {
@@ -1588,7 +1588,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=cco4PCNAlRE",
-        "title": "“Broken Lies” by Death Valley Yacht Club",
+        "title": "'Broken Lies' by Death Valley Yacht Club",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -1597,7 +1597,7 @@
       "soundcloud": "https://soundcloud.com/dvyachtclub",
       "refrain_start": 141.7,
       "refrain_end": 156.7,
-      "clip_file": "clips/Death Valley Yacht Club - “Broken Lies” by Death Valley Yacht Club - 02:21.mp3",
+      "clip_file": "clips/Death Valley Yacht Club - 'Broken Lies' by Death Valley Yacht Club - 02:21.mp3",
       "facebook": "https://www.facebook.com/thedvyc/"
     },
     {
@@ -1662,7 +1662,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=InfbdTFgAEw",
-        "title": "“another song for blush” - Dirtbike Boyfriend @ Wussow’s Concert Café, Duluth, MN",
+        "title": "'another song for blush' - Dirtbike Boyfriend @ Wussow's Concert Café, Duluth, MN",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -1670,7 +1670,7 @@
       "type": "band_set",
       "refrain_start": 76.5,
       "refrain_end": 91.5,
-      "clip_file": "clips/Dirtbike Boyfriend - “another song for blush” - Dirtbike Boyfriend @ Wussow’s Concert Café, Duluth, M - 01:16.mp3",
+      "clip_file": "clips/Dirtbike Boyfriend - 'another song for blush' - Dirtbike Boyfriend @ Wussow's Concert Café, Duluth, M - 01:16.mp3",
       "facebook": "https://www.facebook.com/dirtbikeboyfriend/",
       "website": "https://www.dirtbikeboyfriend.com/"
     },
@@ -2035,13 +2035,13 @@
         "track": "Vitriol",
         "source": "itunes"
       },
-      “youtube_video”: null,
+      "youtube_video": null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/entheos.enclave/",
       "website": "https://entheosenclave.com/",
-      "refrain_start": 174.3,
-      "refrain_end": 189.3,
-      "clip_file": "clips/Entheos Enclave - “One Reason” at the Caddyshack in Duluth, MN. Www.indyp218.com - 02:54.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Father Hennepin",
@@ -2251,7 +2251,7 @@
       "clip_file": "clips/Forseer - Forseer - 01:32.mp3"
     },
     {
-      "name": "Founder’s Reception",
+      "name": "Founder's Reception",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -2419,7 +2419,7 @@
         "last_played": "2025-11-26",
         "top_songs": [
           {
-            "song": "Who’s That?",
+            "song": "Who's That?",
             "plays": 2
           },
           {
@@ -2705,7 +2705,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": null,
+      "youtube_video": {
+        "id": "iHYHnxHHyTU",
+        "title": "Halfsleeper - \"The Great Repression\" (Official Music Video)",
+        "confirmed": true
+      },
       "type": "band_set",
       "facebook": "https://www.facebook.com/thehalfsleepers/",
       "refrain_start": null,
@@ -3425,7 +3429,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=V6gWrLrQ9ng",
-        "title": "You’re Helping Me and I’m Helping You  by John Agacki - performed by John Agacki and Cheryl Haworth",
+        "title": "You're Helping Me and I'm Helping You  by John Agacki - performed by John Agacki and Cheryl Haworth",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -3435,7 +3439,7 @@
       "website": "https://johnagackimusic.com/",
       "refrain_start": 48.5,
       "refrain_end": 63.5,
-      "clip_file": "clips/John Agacki - You’re Helping Me and I’m Helping You  by John Agacki - performed by John Agacki - 00:48.mp3"
+      "clip_file": "clips/John Agacki - You're Helping Me and I'm Helping You  by John Agacki - performed by John Agacki - 00:48.mp3"
     },
     {
       "name": "John Louis",
@@ -3881,7 +3885,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=6wRQo-pJqIU",
-        "title": "MINNESOTA VICE - “BURBERRY BONDS” (Official Lyric Video)",
+        "title": "MINNESOTA VICE - 'BURBERRY BONDS' (Official Lyric Video)",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -3889,7 +3893,7 @@
       "type": "band_set",
       "refrain_start": 111.2,
       "refrain_end": 126.2,
-      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - “BURBERRY BONDS” (Official Lyric Video) - 01:51.mp3"
+      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - 'BURBERRY BONDS' (Official Lyric Video) - 01:51.mp3"
     },
     {
       "name": "Mae and Justine",
@@ -3921,7 +3925,7 @@
       "clip_file": null
     },
     {
-      "name": "Mayor’s Proclamation",
+      "name": "Mayor's Proclamation",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -5119,7 +5123,7 @@
       "clip_file": "clips/Shadows of Me - Shadows of Me #metalcore   #music   #metal  #spotify     #breakdown   #newmusic  - 02:38.mp3"
     },
     {
-      "name": "Shakin’ Not Stirred (SNS)",
+      "name": "Shakin' Not Stirred (SNS)",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -5150,7 +5154,7 @@
       "facebook": "https://www.facebook.com/Shakinnotstirred4/",
       "refrain_start": 126.0,
       "refrain_end": 141.0,
-      "clip_file": "clips/Shakin’ Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3"
+      "clip_file": "clips/Shakin' Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3"
     },
     {
       "name": "Sidestreet Detour",
@@ -5607,7 +5611,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=e9AcTQOGpWo",
-        "title": "Squid City Slingers - “Like A Dog” (Original) Live at Midway Saloon | St. Paul, MN (3/21/2025)",
+        "title": "Squid City Slingers - 'Like A Dog' (Original) Live at Midway Saloon | St. Paul, MN (3/21/2025)",
         "confidence": "high",
         "note": null,
         "sourceType": "fan"
@@ -5616,7 +5620,7 @@
       "linktree": "https://linktr.ee/squidcityslingers",
       "refrain_start": 121.8,
       "refrain_end": 136.8,
-      "clip_file": "clips/Squid City Slingers - Squid City Slingers - “Like A Dog” (Original) Live at Midway Saloon  St. Paul, M - 02:01.mp3",
+      "clip_file": "clips/Squid City Slingers - Squid City Slingers - 'Like A Dog' (Original) Live at Midway Saloon  St. Paul, M - 02:01.mp3",
       "facebook": "https://www.facebook.com/squidcityslingers"
     },
     {
@@ -6843,7 +6847,7 @@
       "clip_file": "clips/Tim Kaiser - Tim Kaiser - 00:30.mp3"
     },
     {
-      "name": "Two T’s in a Pod",
+      "name": "Two T's in a Pod",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": null,
@@ -6865,7 +6869,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=4XPWkl6SIoE",
-        "title": "Two T’s in a Pod “Joulu on Taas”",
+        "title": "Two T's in a Pod 'Joulu on Taas'",
         "confidence": "high",
         "note": null,
         "sourceType": "band"
@@ -6873,10 +6877,10 @@
       "type": "band_set",
       "refrain_start": 34.7,
       "refrain_end": 49.7,
-      "clip_file": "clips/Two T’s in a Pod - Two T’s in a Pod “Joulu on Taas” - 00:34.mp3"
+      "clip_file": "clips/Two T's in a Pod - Two T's in a Pod 'Joulu on Taas' - 00:34.mp3"
     },
     {
-      "name": "Underground ‘til Sundown",
+      "name": "Underground 'til Sundown",
       "sets_at_festival": 1,
       "spotify": null,
       "apple_music": {
@@ -6905,7 +6909,7 @@
       },
       "youtube_video": {
         "url": "https://www.youtube.com/watch?v=qyzDhm_zBFE",
-        "title": "Underground ‘Til Sundown were added to this years Punk Rock Flea Market@undergroundtilsundown736",
+        "title": "Underground 'Til Sundown were added to this years Punk Rock Flea Market@undergroundtilsundown736",
         "confidence": "high",
         "note": null,
         "sourceType": "media"
@@ -6914,7 +6918,7 @@
       "facebook": "https://www.facebook.com/Undergroundtilsundown/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Underground ‘til Sundown - Underground ‘Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3"
+      "clip_file": "clips/Underground 'til Sundown - Underground 'Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3"
     },
     {
       "name": "Vena Sera",
@@ -7320,7 +7324,7 @@
       },
       "preview": {
         "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/73/0e/ea/730eea34-0363-889b-bf92-1d91bc8ef8eb/mzaf_16596224673354823204.plus.aac.p.m4a",
-        "track": "You’re the One for Me",
+        "track": "You're the One for Me",
         "source": "itunes"
       },
       "youtube_video": {
