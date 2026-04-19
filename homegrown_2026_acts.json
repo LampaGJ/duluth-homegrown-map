@@ -2035,13 +2035,7 @@
         "track": "Vitriol",
         "source": "itunes"
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=UOB04BElGn0",
-        "title": "“One Reason” at the Caddyshack in Duluth, MN. Www.indyp218.com",
-        "confidence": "low",
-        "note": null,
-        "sourceType": "fan"
-      },
+      “youtube_video”: null,
       "type": "band_set",
       "facebook": "https://www.facebook.com/entheos.enclave/",
       "website": "https://entheosenclave.com/",
@@ -3852,17 +3846,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=9-c1DGbFcwY",
-        "title": "Duluth Dylan Fest 2025 Songwriter Contest - May 23, 2025 - 7PM",
-        "confidence": "low",
-        "note": null,
-        "sourceType": "venue"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 30.0,
-      "refrain_end": 45.0,
-      "clip_file": "clips/Lu Starr - Duluth Dylan Fest 2025 Songwriter Contest - May 23, 2025 - 7PM - 00:30.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "MINNESOTA VICE",
@@ -5427,17 +5415,11 @@
         "track": null,
         "source": null
       },
-      "youtube_video": {
-        "url": "https://www.youtube.com/watch?v=AsOtd3WyWDI",
-        "title": "Lucas Bokman Wong - Sometime Maybe | 2025 Global Music Competition",
-        "confidence": "low",
-        "note": null,
-        "sourceType": "venue"
-      },
+      "youtube_video": null,
       "type": "band_set",
-      "refrain_start": 129.0,
-      "refrain_end": 144.0,
-      "clip_file": "clips/Sometime, Maybe - Lucas Bokman Wong - Sometime Maybe  2025 Global Music Competition - 02:09.mp3"
+      "refrain_start": null,
+      "refrain_end": null,
+      "clip_file": null
     },
     {
       "name": "Sons of Fogtown",
