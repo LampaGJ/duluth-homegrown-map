@@ -35,7 +35,56 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/#theindianheadband - #theindianheadband BWCA DHGMF22 - 00:30.mp3",
-      "facebook": "https://www.facebook.com/profile.php?id=100076814893996"
+      "facebook": "https://www.facebook.com/profile.php?id=100076814893996",
+      "members": [
+        {
+          "name": "Lyz Jaakola",
+          "role": "vocals, artistic director"
+        },
+        {
+          "name": "Jackson Ripley",
+          "role": "guitar"
+        },
+        {
+          "name": "Hunter Jaakola",
+          "role": "guitar"
+        },
+        {
+          "name": "Xander Ripley-Jaakola",
+          "role": "multi-instrumentalist"
+        },
+        {
+          "name": "Jagger Ripley-Jaakola",
+          "role": "vocals, percussion"
+        },
+        {
+          "name": "Shelden Misquadace",
+          "role": "bass"
+        },
+        {
+          "name": "Dave Ripley",
+          "role": "bass"
+        },
+        {
+          "name": "Jeremy Gardner",
+          "role": "vocals, drums"
+        },
+        {
+          "name": "Darcey St. John",
+          "role": "vocals, percussion"
+        },
+        {
+          "name": "Suzanne Buan",
+          "role": "vocals, percussion"
+        },
+        {
+          "name": "Becky Gawboy",
+          "role": "vocals, percussion"
+        }
+      ],
+      "genre": null,
+      "description": "An Anishinaabe family ensemble blending contemporary culture with American mythology, performing songs about Indigenous reclamation and humor in challenging circumstances.",
+      "established": null
     },
     {
       "name": "218 Dance Project",
@@ -105,7 +154,28 @@
       "facebook": "https://www.facebook.com/500millionsociety",
       "refrain_start": 79.7,
       "refrain_end": 94.7,
-      "clip_file": "clips/500 Million Society - 500 Million Society - Get Higher - 01:19.mp3"
+      "clip_file": "clips/500 Million Society - 500 Million Society - Get Higher - 01:19.mp3",
+      "members": [
+        {
+          "name": "Dicky Brooks",
+          "role": "vocals, bass"
+        },
+        {
+          "name": "Tim Nelson",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Russel Sacket",
+          "role": "organ, vocals"
+        },
+        {
+          "name": "Jim Hagstrom",
+          "role": "drums"
+        }
+      ],
+      "genre": "art punk",
+      "description": "An art punk band that finds ominous joy in gravitas, drawing influences from Joy Division, The Fuzztones, Mudhoney, and The Sonics.",
+      "established": null
     },
     {
       "name": "A Band Called Truman!",
@@ -145,7 +215,40 @@
       "facebook": "https://www.facebook.com/abc.truman/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/A Band Called Truman! - TCS Presents A Band Called Truman!  102425 - 00:30.mp3"
+      "clip_file": "clips/A Band Called Truman! - TCS Presents A Band Called Truman!  102425 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Leon Rohrbaugh",
+          "role": "guitar, frontman"
+        },
+        {
+          "name": "Ian Connell",
+          "role": "drums"
+        },
+        {
+          "name": "John Erickson",
+          "role": "bass"
+        },
+        {
+          "name": "Jim Pospisil",
+          "role": "keys"
+        },
+        {
+          "name": "Kelli Hallsten Erickson",
+          "role": "saxophone"
+        },
+        {
+          "name": "Dale Shimmin",
+          "role": "trombone"
+        },
+        {
+          "name": "Jessica Lilja Olson",
+          "role": "trumpet"
+        }
+      ],
+      "genre": "horn rock",
+      "description": "A seven-piece band dishing out original horn rock with ska influences and energetic live performances.",
+      "established": 2010
     },
     {
       "name": "Alex Heil",
@@ -188,7 +291,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Alex Heil - bandcamp - 00:30.mp3"
+      "clip_file": "clips/Alex Heil - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Alex Heil",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Joey Steadman",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Jackson Engstrom",
+          "role": "bass"
+        },
+        {
+          "name": "Rob Runnels",
+          "role": "drums"
+        }
+      ],
+      "genre": "punk rock",
+      "description": "A punk-rock guitarist and songwriter whose band delivers music with a sorrowful heart trying to be an uplifting spirit, with socially conscious themes.",
+      "established": null
     },
     {
       "name": "All Sea Monsters Are Girls",
@@ -218,7 +342,40 @@
         "sourceType": null,
         "note": "search exhausted across all known platforms (2026-04-15 final pass): checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, Facebook, Instagram (@allseamonstersaregirls handle not found), TikTok (no index hit), Reddit (r/duluth, r/minnesotamusic), Linktree (no hit), Tidal, Deezer, Amazon Music, Discogs, Eventbrite, duluthhomegrown.org/bands/all-sea-monsters-are-girls/ (no external links), perfectduluthday.com, flameduluth.com — no recorded music found on any platform. Member searches for Kaitlyn Owens, Stephanie Vex, Neil Vaidyanathan, Ned Netzel, Kara Warren returned no music links. Band described as Midwest slime pop group (ska, rockabilly, country, disco blend)."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Kaitlyn Owens",
+          "role": "lead vocals"
+        },
+        {
+          "name": "Stephanie Vex",
+          "role": "percussion, omnichord"
+        },
+        {
+          "name": "Neil Vaidyanathan",
+          "role": "drums"
+        },
+        {
+          "name": "Ned Netzel",
+          "role": "bass"
+        },
+        {
+          "name": "Kara Warren",
+          "role": "guitar"
+        },
+        {
+          "name": "Boot Perkins",
+          "role": "keyboard"
+        },
+        {
+          "name": "SJ Olson",
+          "role": "keyboard"
+        }
+      ],
+      "genre": "slime pop",
+      "description": "A Midwest theater-focused group floating between ska, rockabilly, country, disco, soul, new wave, pop, and rock 'n' roll, centering femme voices.",
+      "established": null
     },
     {
       "name": "Ashe Berton",
@@ -264,7 +421,16 @@
       "website": "https://asheberton.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Ashe Berton - Hello Minnesota - Ashe Berton tells the story about her new song - 00:30.mp3"
+      "clip_file": "clips/Ashe Berton - Hello Minnesota - Ashe Berton tells the story about her new song - 00:30.mp3",
+      "members": [
+        {
+          "name": "Ashe Berton",
+          "role": "vocals, guitar, kick drum, foot tambourine"
+        }
+      ],
+      "genre": "solo folk",
+      "description": "Drawing from artists like Maggie Rogers and Ingrid Michaelson, solo folk musician Ashe Berton offers a blend of whimsy and sincerity with storytelling themes.",
+      "established": null
     },
     {
       "name": "Austin Castle",
@@ -309,7 +475,28 @@
       "refrain_end": 139.6,
       "clip_file": "clips/Austin Castle - Austin Castle (preliminaries) 27th Annual (CGMFC) The Preliminary Round - 02:04.mp3",
       "facebook": "https://www.facebook.com/austincastlemusic/",
-      "website": "https://www.austincastlemusic.com/"
+      "website": "https://www.austincastlemusic.com/",
+      "members": [
+        {
+          "name": "Austin Castle",
+          "role": "vocals, acoustic guitar"
+        },
+        {
+          "name": "Cole Mikel",
+          "role": "electric guitar"
+        },
+        {
+          "name": "Ashe Berton",
+          "role": "bass"
+        },
+        {
+          "name": "Casey Gillard",
+          "role": "percussion"
+        }
+      ],
+      "genre": "americana, country",
+      "description": "Winner of Duluth Dylan Fest's 2024 singer-songwriter contest, performing original Americana and country tunes exploring core memories and timeless values.",
+      "established": null
     },
     {
       "name": "BOOG3YM3N",
@@ -351,7 +538,28 @@
       "refrain_start": 101.7,
       "refrain_end": 116.7,
       "clip_file": "clips/BOOG3YM3N - BOOG3YM3N - Something In My Head Video - 01:41.mp3",
-      "facebook": "https://www.facebook.com/bxxg3ym3n/"
+      "facebook": "https://www.facebook.com/bxxg3ym3n/",
+      "members": [
+        {
+          "name": "Nick Pawlenty",
+          "role": "music producer, beats"
+        },
+        {
+          "name": "Willie Winklesky",
+          "role": "emcee"
+        },
+        {
+          "name": "Chad Brown",
+          "role": "emcee"
+        },
+        {
+          "name": "Scott Vezina",
+          "role": "emcee"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "A hip-hop collaboration featuring high-energy and intelligent beats and vocals that blend genres from vaporwave to vapor trap.",
+      "established": null
     },
     {
       "name": "BRAINWASHED",
@@ -387,7 +595,28 @@
         "sourceType": null,
         "note": "removed — Tom MacDonald song, not the Duluth band"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Artemis Jackson",
+          "role": "guitar"
+        },
+        {
+          "name": "Avery Sorenson",
+          "role": "guitar"
+        },
+        {
+          "name": "Eli Stanley",
+          "role": "drums"
+        },
+        {
+          "name": "Magnum Michonski",
+          "role": "bass"
+        }
+      ],
+      "genre": "metal-fusion",
+      "description": "A politically oriented four-piece incorporating DIY punk influences with anti-capitalist themes and mosh pit catharsis.",
+      "established": null
     },
     {
       "name": "Babie Eyes",
@@ -440,7 +669,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Babie Eyes - SongwritersStorytellers Babie Eyes - 00:30.mp3",
-      "facebook": "https://www.facebook.com/BabieEyesMusic/"
+      "facebook": "https://www.facebook.com/BabieEyesMusic/",
+      "members": [
+        {
+          "name": "Heidi Feroe",
+          "role": "vocals, songwriter"
+        },
+        {
+          "name": "Ian Alexy",
+          "role": "vocals, guitar, bass, songwriter"
+        },
+        {
+          "name": "Curtis Bellows",
+          "role": "drums"
+        },
+        {
+          "name": "Kenny Bressler",
+          "role": "synthesizers"
+        },
+        {
+          "name": "Jacob Mahon",
+          "role": "keys, guitar, vocals"
+        }
+      ],
+      "genre": "psychedelic-folk-pop",
+      "description": "Soulful psychedelic-folk-pop band performing original music about love, loss, and spiritual renewal, recorded live with producer Rich Mattson.",
+      "established": null
     },
     {
       "name": "Baharat",
@@ -483,7 +737,32 @@
       "soundcloud": "https://soundcloud.com/baharat-music",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Lyla Abukhodair",
+          "role": "vocals"
+        },
+        {
+          "name": "Emanuel Eisele",
+          "role": "guitar"
+        },
+        {
+          "name": "Marshall Dillon",
+          "role": "guitar"
+        },
+        {
+          "name": "Jackson Engstrom",
+          "role": "bass"
+        },
+        {
+          "name": "Rob Runnels",
+          "role": "drums"
+        }
+      ],
+      "genre": "post-rock, midwest emo, folk, punk",
+      "description": "A multicultural group blending Middle Eastern influences with indie rock, drawing from Midwest emo, folk, and punk.",
+      "established": 2024
     },
     {
       "name": "Beauty Mountain Rd",
@@ -524,7 +803,20 @@
       "linktree": "https://linktr.ee/beautymountainrd",
       "refrain_start": 191.0,
       "refrain_end": 206.0,
-      "clip_file": "clips/Beauty Mountain Rd - Beauty Mountain Rd - Memory I (Outdoor Session) - 03:11.mp3"
+      "clip_file": "clips/Beauty Mountain Rd - Beauty Mountain Rd - Memory I (Outdoor Session) - 03:11.mp3",
+      "members": [
+        {
+          "name": "Ryan Mulner",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Nate Christian",
+          "role": "drums"
+        }
+      ],
+      "genre": "indie rock",
+      "description": "An indie rock duo creating energetic, reflective songs that channel heartfelt melodies and powerful rhythms, drawing from their Iron Range heritage.",
+      "established": null
     },
     {
       "name": "Bellerpuss",
@@ -568,7 +860,24 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Bellerpuss - Bellerpuss - 522022 - 00:30.mp3",
-      "facebook": "https://www.facebook.com/p/Bellerpuss-100088896853007/"
+      "facebook": "https://www.facebook.com/p/Bellerpuss-100088896853007/",
+      "members": [
+        {
+          "name": "Kyle Barden",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Amy Kozak",
+          "role": "bass"
+        },
+        {
+          "name": "Al Panchyshyn",
+          "role": "drums"
+        }
+      ],
+      "genre": "post-hardcore, punk",
+      "description": "A heavy-riffing post-hardcore band known for mutual aid shows and caring loud for community as any punk worth their salt should.",
+      "established": 2021
     },
     {
       "name": "Berserk Blondes!",
@@ -601,7 +910,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Berserk Blondes! - Berserk Blondes! - Hips Don't Lie - 00:30.mp3"
+      "clip_file": "clips/Berserk Blondes! - Berserk Blondes! - Hips Don't Lie - 00:30.mp3",
+      "members": [
+        {
+          "name": "Kaylee Matuszak",
+          "role": "vocals, singer-songwriter"
+        },
+        {
+          "name": "Steve Solkela",
+          "role": "vocals, multi-instrumentalist"
+        },
+        {
+          "name": "Joe Anderson",
+          "role": "saxophone"
+        },
+        {
+          "name": "Peter Anderson",
+          "role": "drums"
+        }
+      ],
+      "genre": "comedic showtune, experimental",
+      "description": "A comedic musical spectacle blending singer-songwriter style with theatrical Finnish operetta and unconventional instruments, infused with Minnesota themes.",
+      "established": null
     },
     {
       "name": "Big Wave Dave and the Ripples",
@@ -642,7 +972,44 @@
       "website": "https://www.bigwavedaveandtheripples.com",
       "refrain_start": 151.2,
       "refrain_end": 166.2,
-      "clip_file": "clips/Big Wave Dave and the Ripples - Chuck Leavell and Big Wave Dave and the Ripples perform Like A Rolling Stone - 02:31.mp3"
+      "clip_file": "clips/Big Wave Dave and the Ripples - Chuck Leavell and Big Wave Dave and the Ripples perform Like A Rolling Stone - 02:31.mp3",
+      "members": [
+        {
+          "name": "Dave Adams",
+          "role": "vocals"
+        },
+        {
+          "name": "Alex Nordehn",
+          "role": null
+        },
+        {
+          "name": "Alex Piazza",
+          "role": null
+        },
+        {
+          "name": "Peter Knutson",
+          "role": null
+        },
+        {
+          "name": "Brian Wells",
+          "role": null
+        },
+        {
+          "name": "David Rode",
+          "role": null
+        },
+        {
+          "name": "Matt Wasmund",
+          "role": null
+        },
+        {
+          "name": "Scott Millis",
+          "role": null
+        }
+      ],
+      "genre": "soul, funk",
+      "description": "An eight-piece soul and funk ensemble that quickly gained an audience with their long-term residency at the now-closed Rex Bar.",
+      "established": 2011
     },
     {
       "name": "Bill Berguson Band",
@@ -677,7 +1044,28 @@
       "website": "https://www.billbergusonband.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Bill Berguson Band - Bill Berguson Band - Long Time Comin' - 00:30.mp3"
+      "clip_file": "clips/Bill Berguson Band - Bill Berguson Band - Long Time Comin' - 00:30.mp3",
+      "members": [
+        {
+          "name": "Bill Berguson",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Mark Eskola",
+          "role": "cello, guitar, keys"
+        },
+        {
+          "name": "Travis Hilton",
+          "role": "drums"
+        },
+        {
+          "name": "Jeff Ross",
+          "role": "bass"
+        }
+      ],
+      "genre": "classic rock, jazz fusion, soul, roots",
+      "description": "A four-piece band playing clean, tight, original music ranging from classic rock anthems to contemplative instrumentals with soul, roots, and classical influences.",
+      "established": null
     },
     {
       "name": "Born too Late",
@@ -718,7 +1106,20 @@
         "note": "removed — The Poni-Tails 1958 song, not the Duluth band"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/officialborntoolate/"
+      "facebook": "https://www.facebook.com/officialborntoolate/",
+      "members": [
+        {
+          "name": "Traxx Nelson-Kavajecz",
+          "role": "vocals, instruments"
+        },
+        {
+          "name": "Rokkyn Nelson-Kavajecz",
+          "role": "vocals, instruments"
+        }
+      ],
+      "genre": "classic rock, country",
+      "description": "A sibling duo channeling classic rock and country into high-energy shows, covering Fleetwood Mac and Guns N' Roses alongside their own originals.",
+      "established": 2014
     },
     {
       "name": "Boxcar",
@@ -772,7 +1173,36 @@
         "note": "removed — Boxcar Willie train medley, not the Duluth act"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/AllAboardDuluth/"
+      "facebook": "https://www.facebook.com/AllAboardDuluth/",
+      "members": [
+        {
+          "name": "Blake Shippee",
+          "role": "rhythm guitar, vocals"
+        },
+        {
+          "name": "Rick Bruner",
+          "role": "drums"
+        },
+        {
+          "name": "Andy Lipke",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Mississippi Mike Wolf",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Gordon Lewis",
+          "role": "bass"
+        },
+        {
+          "name": "Brian Wells",
+          "role": "keyboard"
+        }
+      ],
+      "genre": "country rock 'n' roll",
+      "description": "A rowdy rail-jumping, whiskey-drinking country rock 'n' roll party band that has released two albums including For Madmen Only.",
+      "established": null
     },
     {
       "name": "Bratwurst",
@@ -808,7 +1238,32 @@
       "refrain_start": null,
       "refrain_end": null,
       "clip_file": null,
-      "facebook": "https://www.facebook.com/bratwurst69/"
+      "facebook": "https://www.facebook.com/bratwurst69/",
+      "members": [
+        {
+          "name": "Tyler Scouton",
+          "role": "frontman, vocals"
+        },
+        {
+          "name": "Jason Ratajek",
+          "role": null
+        },
+        {
+          "name": "Leon Rohrbaugh",
+          "role": null
+        },
+        {
+          "name": "Brennan Atchison",
+          "role": null
+        },
+        {
+          "name": "Jeremy Craig",
+          "role": null
+        }
+      ],
+      "genre": "industrial noise, metal",
+      "description": "Mangling together meat and music, Bratwurst uses unconventional instruments including metal grinders and tire chains to assault the ears alongside traditional drums and guitars.",
+      "established": 2000
     },
     {
       "name": "Breanne Marie & The Front Porch Sinners",
@@ -866,7 +1321,40 @@
       "website": "https://www.breannemarie.com/",
       "refrain_start": 108.6,
       "refrain_end": 123.6,
-      "clip_file": "clips/Breanne Marie & The Front Porch Sinners - Central Hillside '91 – Breanne Marie - 01:48.mp3"
+      "clip_file": "clips/Breanne Marie & The Front Porch Sinners - Central Hillside '91 – Breanne Marie - 01:48.mp3",
+      "members": [
+        {
+          "name": "Breanne Tepler",
+          "role": "vocals, guitar, trumpet"
+        },
+        {
+          "name": "Evan Tepler",
+          "role": "guitar"
+        },
+        {
+          "name": "Kailyn Pelerin",
+          "role": "fiddle, backing vocals"
+        },
+        {
+          "name": "Johnny Peterson",
+          "role": "pedal steel"
+        },
+        {
+          "name": "Matt Groom",
+          "role": "drums"
+        },
+        {
+          "name": "Tarek Makky",
+          "role": "bass"
+        },
+        {
+          "name": "Dicky Brooks",
+          "role": "keys"
+        }
+      ],
+      "genre": "alt-country, americana",
+      "description": "A Great Lakes country band blending originals ranging from sentimental ballads to 90s indie rock, combining classic country instruments with contemporary styles.",
+      "established": 2013
     },
     {
       "name": "Brinn Major",
@@ -905,7 +1393,16 @@
       "type": "band_set",
       "refrain_start": 110.3,
       "refrain_end": 125.3,
-      "clip_file": "clips/Brinn Major - Brinn Major - Grind Mode Feat. Loc Da Realist (Official Audio) - 01:50.mp3"
+      "clip_file": "clips/Brinn Major - Brinn Major - Grind Mode Feat. Loc Da Realist (Official Audio) - 01:50.mp3",
+      "members": [
+        {
+          "name": "Brinn Major",
+          "role": "rapper, DJ, producer, singer-songwriter"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "A local rapper blending polished, synth-driven hip-hop with affirming messages around identity, mental health, and self-expression.",
+      "established": 2022
     },
     {
       "name": "Brody & the Roadies",
@@ -939,7 +1436,24 @@
       "facebook": "https://www.facebook.com/p/Brody-The-Roadies-61563045035871/",
       "refrain_start": 232.6,
       "refrain_end": 247.6,
-      "clip_file": "clips/Brody & the Roadies - Brody + Macy Eldien  Pike Lake Golf & Beach Club  Duluth, MN - 03:52.mp3"
+      "clip_file": "clips/Brody & the Roadies - Brody + Macy Eldien  Pike Lake Golf & Beach Club  Duluth, MN - 03:52.mp3",
+      "members": [
+        {
+          "name": "Brody Heisick-Thole",
+          "role": "baritone vocals, mandolin, harmonica, bass, guitar, banjo"
+        },
+        {
+          "name": "Bryce Heisick-Thole",
+          "role": "drums, ukulele, mandolin"
+        },
+        {
+          "name": "Jim Thole",
+          "role": "guitar, bass"
+        }
+      ],
+      "genre": "country, americana",
+      "description": "An all-in-the-family band from South Range, Wisconsin that plays mostly covers sprinkled with originals, drawing from Hank Williams, Johnny Cash, and R.E.M.",
+      "established": null
     },
     {
       "name": "C U Next Tuesday",
@@ -984,7 +1498,28 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/C U Next Tuesday - c u next tuesday - 00:30.mp3",
-      "facebook": "https://www.facebook.com/CUNextTuesdaysBand/"
+      "facebook": "https://www.facebook.com/CUNextTuesdaysBand/",
+      "members": [
+        {
+          "name": "Sophie Hiroko",
+          "role": "vocals"
+        },
+        {
+          "name": "Kyle Barden",
+          "role": "guitar"
+        },
+        {
+          "name": "Sabrina Wertman",
+          "role": "bass"
+        },
+        {
+          "name": "Al Panchyshyn",
+          "role": "drums"
+        }
+      ],
+      "genre": "punk",
+      "description": "An intersectional feminist punk band fronted by Sophie Hiroko that delivers a relentless setlist with high energy performances centered on social activism.",
+      "established": null
     },
     {
       "name": "C-Silence",
@@ -1027,7 +1562,16 @@
       "type": "band_set",
       "refrain_start": 156.9,
       "refrain_end": 171.9,
-      "clip_file": "clips/C-Silence - C-Silence X NorthWood- Grizzly (Official Music Video) - 02:36.mp3"
+      "clip_file": "clips/C-Silence - C-Silence X NorthWood- Grizzly (Official Music Video) - 02:36.mp3",
+      "members": [
+        {
+          "name": "Chad Brown",
+          "role": "vocals, performer"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "A Duluth-based hip-hop artist driven by originality and fearless experimentation, blending inventive structures with improvisational skill.",
+      "established": null
     },
     {
       "name": "CEREBELLUM",
@@ -1065,7 +1609,24 @@
         "note": "removed — wrong video match"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/CerebellumOfficial/"
+      "facebook": "https://www.facebook.com/CerebellumOfficial/",
+      "members": [
+        {
+          "name": "Nick Parnell",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "John Roemhildt",
+          "role": "bass"
+        },
+        {
+          "name": "Casey Kemi",
+          "role": "drums"
+        }
+      ],
+      "genre": "punk rock, lo-fi sludge-metal",
+      "description": "A three-piece punk rock band blending raw punk energy with pop hooks and a lo-fi sludge-metal/doom-rock edge.",
+      "established": null
     },
     {
       "name": "Casiosa",
@@ -1100,7 +1661,28 @@
         "confidence": null,
         "note": "deep search exhausted: experimental rock/shoegaze band from Duluth; debut EP 'Casiosa Garage' released Dec 2025 (6 tracks: Fall Apart, Longing, Friend of Thorns, Gone Again, Overtime, Garage); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org — no playable video or public streaming found beyond iTunes preview. First Homegrown appearance."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Joshua Sieger",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Callan Pfau",
+          "role": "guitar"
+        },
+        {
+          "name": "Thomas Thro",
+          "role": "drums"
+        },
+        {
+          "name": "John Grell",
+          "role": "bass"
+        }
+      ],
+      "genre": "experimental rock, shoegaze, indie pop",
+      "description": "Blending textured guitars, hazy atmospheres, and melodic pop sensibilities, Casiosa crafts immersive songs at the intersection of experimental rock, shoegaze, and indie pop.",
+      "established": 2024
     },
     {
       "name": "Chasm",
@@ -1137,7 +1719,28 @@
         "note": "removed — Genshin Impact game soundtrack"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/chasmofczar"
+      "facebook": "https://www.facebook.com/chasmofczar",
+      "members": [
+        {
+          "name": "Conor Glenn",
+          "role": null
+        },
+        {
+          "name": "Justin Baumgartner",
+          "role": null
+        },
+        {
+          "name": "Daniel Krause",
+          "role": null
+        },
+        {
+          "name": "Jake Alvar",
+          "role": null
+        }
+      ],
+      "genre": "instrumental hard rock",
+      "description": "A four-member group still defining its genre, delivering harder-hitting tracks that blend heaviness and melody with occasional vocals.",
+      "established": null
     },
     {
       "name": "Cigarette Picnic",
@@ -1176,7 +1779,24 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Cigarette Picnic - 'Molehill' Live Recorded Session by Cigarette Picnic - 00:30.mp3",
-      "facebook": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/"
+      "facebook": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/",
+      "members": [
+        {
+          "name": "Erica Francois",
+          "role": "vocals"
+        },
+        {
+          "name": "Madi Phyle",
+          "role": "vocals"
+        },
+        {
+          "name": "Elsa Krantz",
+          "role": "vocals, electric guitar"
+        }
+      ],
+      "genre": "soul, power trio",
+      "description": "A sultry, stripped-down female power trio rooted in rich three-part harmonies and minimal instrumentation performing bold, soulful original music.",
+      "established": 2025
     },
     {
       "name": "Climes",
@@ -1225,7 +1845,32 @@
       "website": "https://www.climesmusic.com/",
       "refrain_start": 97.1,
       "refrain_end": 112.1,
-      "clip_file": "clips/Climes - Climes  The Lighthouse Live Sessions - 01:37.mp3"
+      "clip_file": "clips/Climes - Climes  The Lighthouse Live Sessions - 01:37.mp3",
+      "members": [
+        {
+          "name": "Drew Anderson",
+          "role": "vocals, lute, dulcimer"
+        },
+        {
+          "name": "Clifton Nesseth",
+          "role": "fiddle, flute, guitar"
+        },
+        {
+          "name": "Rebecca Alsum",
+          "role": "cello"
+        },
+        {
+          "name": "Steve Dalager",
+          "role": "acoustic bass, vocals"
+        },
+        {
+          "name": "Zack Baltich",
+          "role": "percussion"
+        }
+      ],
+      "genre": "folk",
+      "description": "A Minnesota-based musical project blending folk sensibility with genre-jumping guitar and lute dulcimer, appealing to both dancers and contemplative listeners.",
+      "established": null
     },
     {
       "name": "Crimson Soul",
@@ -1262,7 +1907,24 @@
       "refrain_start": null,
       "refrain_end": null,
       "clip_file": null,
-      "soundcloud": "https://soundcloud.com/crimson-soul-205210146"
+      "soundcloud": "https://soundcloud.com/crimson-soul-205210146",
+      "members": [
+        {
+          "name": "Willow Sowada",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Logan Raczka",
+          "role": "bass"
+        },
+        {
+          "name": "Jordan Schmidt",
+          "role": "drums"
+        }
+      ],
+      "genre": "alternative punk, grunge",
+      "description": "A three-piece alternative punk band with 90s-inspired grunge influences, exploring themes of loss, addiction, coping, and longing.",
+      "established": 2023
     },
     {
       "name": "Cyr and the Cosmonauts",
@@ -1311,7 +1973,32 @@
       "website": "https://cyrandthecosmonauts.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Cyr and the Cosmonauts - Cyr and the Cosmonauts - Jerusalem live at Ursa Minor - 00:30.mp3"
+      "clip_file": "clips/Cyr and the Cosmonauts - Cyr and the Cosmonauts - Jerusalem live at Ursa Minor - 00:30.mp3",
+      "members": [
+        {
+          "name": "Eric Cyr",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Rachel Cyr",
+          "role": "vocals"
+        },
+        {
+          "name": "Brady Kamphenkel",
+          "role": "drums"
+        },
+        {
+          "name": "John Mcloughlin",
+          "role": "keyboards"
+        },
+        {
+          "name": "Tarek Makky",
+          "role": "bass"
+        }
+      ],
+      "genre": "americana",
+      "description": "A five-piece ensemble that began as a sibling duo, delivering original songs with tight vocal harmonies and dynamic musicality exploring themes of finding meaning in chaos.",
+      "established": null
     },
     {
       "name": "DJ ADUB",
@@ -1351,7 +2038,16 @@
       "refrain_start": 250.4,
       "refrain_end": 265.4,
       "clip_file": "clips/DJ ADUB - DJ ADUB Homegrown Set 2023 - 04:10.mp3",
-      "facebook": "https://www.facebook.com/p/DJ-ADUB-100087843823519/"
+      "facebook": "https://www.facebook.com/p/DJ-ADUB-100087843823519/",
+      "members": [
+        {
+          "name": "Andrew Watson",
+          "role": "DJ, producer"
+        }
+      ],
+      "genre": "EDM",
+      "description": "A DJ and producer from Superior who has produced for multiple Twin Ports artists and toured with national acts, actively supporting the local electronic music community.",
+      "established": null
     },
     {
       "name": "DJ Nola",
@@ -1392,7 +2088,16 @@
       "refrain_end": 45.0,
       "clip_file": "clips/DJ Nola - IN THE MIX with DJ NOLA (promo) - 00:30.mp3",
       "facebook": "https://www.facebook.com/djnolawick/",
-      "website": "https://djnola.com/"
+      "website": "https://djnola.com/",
+      "members": [
+        {
+          "name": "Nola Wick",
+          "role": "DJ"
+        }
+      ],
+      "genre": "house, disco, funk, techno",
+      "description": "Nola Wick has been spinning the funkiest, grooviest dance parties for years, recognized for her Freak of the Week parties and playing almost entirely on vinyl.",
+      "established": null
     },
     {
       "name": "Dan the Monkeyman",
@@ -1426,7 +2131,16 @@
       "refrain_start": 94.3,
       "refrain_end": 109.3,
       "clip_file": "clips/Dan the Monkeyman - Dan The Monkeyman Theme Song - 01:34.mp3",
-      "facebook": "https://www.facebook.com/p/Dan-the-Monkeyman-100063136965160/"
+      "facebook": "https://www.facebook.com/p/Dan-the-Monkeyman-100063136965160/",
+      "members": [
+        {
+          "name": "Dan Munthe",
+          "role": "guitar, vocals"
+        }
+      ],
+      "genre": "children's music",
+      "description": "A children's music performer who plays songs for kids using toy musical instruments and stuffed animals, engaging young audiences through interactive musical experiences.",
+      "established": 2009
     },
     {
       "name": "Danny Frank & the Smoky Gold",
@@ -1470,7 +2184,32 @@
       "facebook": "https://www.facebook.com/dfsmokygold/",
       "refrain_start": 113.8,
       "refrain_end": 128.8,
-      "clip_file": "clips/Danny Frank & the Smoky Gold - Danny Frank & the Smoky Gold hosts Duluth Songwriter Showcase 2023 - 01:53.mp3"
+      "clip_file": "clips/Danny Frank & the Smoky Gold - Danny Frank & the Smoky Gold hosts Duluth Songwriter Showcase 2023 - 01:53.mp3",
+      "members": [
+        {
+          "name": "Danny Frank",
+          "role": "vocals, songwriter"
+        },
+        {
+          "name": "Harrison Olk",
+          "role": "banjo"
+        },
+        {
+          "name": "Joe Scarpellino",
+          "role": "bass"
+        },
+        {
+          "name": "Ben Rohde",
+          "role": "drums"
+        },
+        {
+          "name": "Erin Aldridge",
+          "role": "fiddle"
+        }
+      ],
+      "genre": "americana",
+      "description": "Singer-songwriter Danny Frank leads a genre-blending, toe-tapping Americana sound featuring seasoned musicians performing originals from his debut album Live From The Heart.",
+      "established": null
     },
     {
       "name": "Darren Sipity",
@@ -1511,7 +2250,16 @@
       "facebook": "https://www.facebook.com/darrensipity/",
       "refrain_start": 39.2,
       "refrain_end": 54.2,
-      "clip_file": "clips/Darren Sipity - Darren Sipity - Live With That (Feat. Manny Phesto) - 00:39.mp3"
+      "clip_file": "clips/Darren Sipity - Darren Sipity - Live With That (Feat. Manny Phesto) - 00:39.mp3",
+      "members": [
+        {
+          "name": "Darren Sipity",
+          "role": "vocals, rapper"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "An Ojibwe rapper creating music exploring his Native American identity and things people don't like to talk about, with political and apocalyptic themes.",
+      "established": null
     },
     {
       "name": "Dead Guy in a Swamp",
@@ -1554,7 +2302,20 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Dead Guy in a Swamp - TCS Presents Dead Guy In A Swamp  101025 - 00:30.mp3"
+      "clip_file": "clips/Dead Guy in a Swamp - TCS Presents Dead Guy In A Swamp  101025 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Evan Arnold",
+          "role": "guitar"
+        },
+        {
+          "name": "William Guy",
+          "role": "drums"
+        }
+      ],
+      "genre": "stoner-doom",
+      "description": "A dual-member band performing both background music and cataclysmic riffs, drawing influence from Eyehategod, Bell Witch, and Boris.",
+      "established": null
     },
     {
       "name": "Death Valley Yacht Club",
@@ -1599,7 +2360,20 @@
       "refrain_start": 141.7,
       "refrain_end": 156.7,
       "clip_file": "clips/Death Valley Yacht Club - 'Broken Lies' by Death Valley Yacht Club - 02:21.mp3",
-      "facebook": "https://www.facebook.com/thedvyc/"
+      "facebook": "https://www.facebook.com/thedvyc/",
+      "members": [
+        {
+          "name": "Charlie Jacobs",
+          "role": "acoustic guitar, vocals"
+        },
+        {
+          "name": "Alex Oberton",
+          "role": "acoustic guitar, vocals"
+        }
+      ],
+      "genre": "bluegrass, modern folk",
+      "description": "A two-piece band featuring vocal harmonies and interplay between tightly arranged acoustic guitars, inspired by the Beatles, Neil Young, and the Avett Brothers.",
+      "established": null
     },
     {
       "name": "Dirt Magnet",
@@ -1626,7 +2400,20 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Shanna Willie",
+          "role": "drums, vocals"
+        },
+        {
+          "name": "Clancy Ward",
+          "role": "bass, vocals"
+        }
+      ],
+      "genre": "rock 'n' roll",
+      "description": "A rock duo emphasizing community building and inclusivity, addressing topics like transportation woes, healthcare, and mediocrity with humor.",
+      "established": 2025
     },
     {
       "name": "Dirtbike Boyfriend",
@@ -1671,7 +2458,16 @@
       "refrain_end": 91.5,
       "clip_file": "clips/Dirtbike Boyfriend - 'another song for blush' - Dirtbike Boyfriend @ Wussow's Concert Café, Duluth, M - 01:16.mp3",
       "facebook": "https://www.facebook.com/dirtbikeboyfriend/",
-      "website": "https://www.dirtbikeboyfriend.com/"
+      "website": "https://www.dirtbikeboyfriend.com/",
+      "members": [
+        {
+          "name": "Bret Holland",
+          "role": "vocals, guitar"
+        }
+      ],
+      "genre": "folk-punk",
+      "description": "A multimedia artist and folk-punk musician whose solo sets bring full-band energy while performing original compositions at local venues.",
+      "established": null
     },
     {
       "name": "Discord At Dawn",
@@ -1708,7 +2504,28 @@
       "website": "https://discordatdawn.neocities.org",
       "refrain_start": 109.3,
       "refrain_end": 124.3,
-      "clip_file": "clips/Discord At Dawn - Sanguine Way Discord at Dawn; LIVE - 01:49.mp3"
+      "clip_file": "clips/Discord At Dawn - Sanguine Way Discord at Dawn; LIVE - 01:49.mp3",
+      "members": [
+        {
+          "name": "Joel Conley",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Andy Morrow",
+          "role": "lead guitar"
+        },
+        {
+          "name": "David Anderson",
+          "role": "drums"
+        },
+        {
+          "name": "Robin Ryme",
+          "role": "bass"
+        }
+      ],
+      "genre": "hard rock",
+      "description": "A four-piece hard rock band that mixes big riffs with even bigger imagination, combining scientifically and fantastically-inspired lyrics.",
+      "established": null
     },
     {
       "name": "Ditchbird",
@@ -1753,7 +2570,16 @@
       "refrain_end": 45.0,
       "clip_file": "clips/Ditchbird - Ditchbird and the Minnesota Duck aka Ben Afquack - 00:30.mp3",
       "facebook": "https://www.facebook.com/Ditchbirdmusic/",
-      "website": "https://www.tonypetersenmusic.com/"
+      "website": "https://www.tonypetersenmusic.com/",
+      "members": [
+        {
+          "name": "Tony Petersen",
+          "role": "banjo, guitar, vocals"
+        }
+      ],
+      "genre": "rock 'n' roll, acoustic",
+      "description": "Tony Petersen performs solo as Ditchbird, featuring newly written material with scaled-back songwriting and acoustic foundations.",
+      "established": null
     },
     {
       "name": "Dog Talk",
@@ -1789,7 +2615,28 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Dog Talk - bandcamp - 00:30.mp3",
-      "facebook": "https://www.facebook.com/dogtalkband"
+      "facebook": "https://www.facebook.com/dogtalkband",
+      "members": [
+        {
+          "name": "Jim Hagstrom",
+          "role": "drums"
+        },
+        {
+          "name": "Bob Bursell",
+          "role": "guitar"
+        },
+        {
+          "name": "Mike Guello",
+          "role": "bass"
+        },
+        {
+          "name": "Kris Hagstrom",
+          "role": "vocals"
+        }
+      ],
+      "genre": "groove rock",
+      "description": "A local ensemble bringing energetic sets with original tunes, a special Homegrown song, and catchy covers; also performs as an Alanis Morissette tribute act.",
+      "established": null
     },
     {
       "name": "Dre AKA Jamaican",
@@ -1830,7 +2677,16 @@
       "soundcloud": "https://soundcloud.com/dremoneyflow",
       "refrain_start": 45.5,
       "refrain_end": 60.5,
-      "clip_file": "clips/Dre AKA Jamaican - Dre AKA Jamaican - Tidal wave (Official Music video) - 00:45.mp3"
+      "clip_file": "clips/Dre AKA Jamaican - Dre AKA Jamaican - Tidal wave (Official Music video) - 00:45.mp3",
+      "members": [
+        {
+          "name": "Andre Robinson",
+          "role": "vocals, rapper"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "Known for infectious beats and clever rhymes, Robinson creates music spanning fantastical themes to real-world issues, representing over 20 years in Duluth's hip-hop culture.",
+      "established": null
     },
     {
       "name": "Duluth Dolls",
@@ -1904,7 +2760,16 @@
       "type": "band_set",
       "refrain_start": 211.7,
       "refrain_end": 226.7,
-      "clip_file": "clips/EddieDition - One More Time (feat. Nonfic & EddieDition) - 03:31.mp3"
+      "clip_file": "clips/EddieDition - One More Time (feat. Nonfic & EddieDition) - 03:31.mp3",
+      "members": [
+        {
+          "name": "Eddie Higgins",
+          "role": "artist"
+        }
+      ],
+      "genre": "hip-hop",
+      "description": "Superior-based hip-hop artist performing for over 20 years with a focus on uplifting music and community fundraising.",
+      "established": null
     },
     {
       "name": "Eldri Snow",
@@ -1939,7 +2804,16 @@
       "type": "band_set",
       "refrain_start": 155.8,
       "refrain_end": 170.8,
-      "clip_file": "clips/Eldri Snow - Eldri Snow & The Wintry Mix - Thorns (Misisipi Mike original Live from Sacred He - 02:35.mp3"
+      "clip_file": "clips/Eldri Snow - Eldri Snow & The Wintry Mix - Thorns (Misisipi Mike original Live from Sacred He - 02:35.mp3",
+      "members": [
+        {
+          "name": "Eldri Snow",
+          "role": "vocals, songwriting"
+        }
+      ],
+      "genre": "country-folk, indie-folk",
+      "description": "Singer-songwriter creating soulful, down-to-earth folk inspired by Nanci Griffith and Gillian Welch, performing solo, as a duo, or with her band The Wintry Mix.",
+      "established": null
     },
     {
       "name": "Emily Haavik & the 35s",
@@ -2001,7 +2875,44 @@
       "website": "https://www.emilyandthe35s.com/",
       "refrain_start": 108.8,
       "refrain_end": 123.8,
-      "clip_file": "clips/Emily Haavik & the 35s - Ease Back by Emily Haavik & the 35s (official video) - 01:48.mp3"
+      "clip_file": "clips/Emily Haavik & the 35s - Ease Back by Emily Haavik & the 35s (official video) - 01:48.mp3",
+      "members": [
+        {
+          "name": "Emily Haavik",
+          "role": "lead vocals, songwriting"
+        },
+        {
+          "name": "Bryan Wentworth",
+          "role": "unknown"
+        },
+        {
+          "name": "Lisa Wentworth",
+          "role": "unknown"
+        },
+        {
+          "name": "Alyssa Swanson",
+          "role": "unknown"
+        },
+        {
+          "name": "Matt Prois",
+          "role": "unknown"
+        },
+        {
+          "name": "Alex Nelson",
+          "role": "unknown"
+        },
+        {
+          "name": "Nate Weiler",
+          "role": "unknown"
+        },
+        {
+          "name": "Luke Mirau",
+          "role": "unknown"
+        }
+      ],
+      "genre": "Americana",
+      "description": "Lyric-driven, harmony-rich, string-filled Americana with socially conscious songwriting. Their 2024 album Wingspan earned Midwest Country Music Award nominations.",
+      "established": null
     },
     {
       "name": "Entheos Enclave",
@@ -2040,7 +2951,36 @@
       "website": "https://entheosenclave.com/",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Inga Weis",
+          "role": "vocals, live painting"
+        },
+        {
+          "name": "Richard Weis",
+          "role": "guitar"
+        },
+        {
+          "name": "Ben Pichler",
+          "role": "piano"
+        },
+        {
+          "name": "Cambria Haen",
+          "role": "mandolin"
+        },
+        {
+          "name": "Saul Myhre",
+          "role": "drums"
+        },
+        {
+          "name": "Bella Hanson",
+          "role": "bass"
+        }
+      ],
+      "genre": "Nordic fusion of indie, crossover prog, and world music",
+      "description": "Formerly known as Inga Entheos, this ensemble creates music from deep love, grief, and healing with complex melodies. They released their debut album Eschaton in 2025.",
+      "established": null
     },
     {
       "name": "Father Hennepin",
@@ -2085,7 +3025,36 @@
       "facebook": "https://www.facebook.com/p/Father-Hennepin-100063525352648/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Father Hennepin - Father Hennepin I Like It in Duluth - 00:30.mp3"
+      "clip_file": "clips/Father Hennepin - Father Hennepin I Like It in Duluth - 00:30.mp3",
+      "members": [
+        {
+          "name": "Scott 'Starfire' Lunt",
+          "role": "guitar, founder"
+        },
+        {
+          "name": "Ted Anderson",
+          "role": "guitar"
+        },
+        {
+          "name": "Bob Olson",
+          "role": "bass"
+        },
+        {
+          "name": "Jimi Cooper",
+          "role": "guitar"
+        },
+        {
+          "name": "Susan Ludwig",
+          "role": "keyboard, accordion"
+        },
+        {
+          "name": "Jim Hagstrom",
+          "role": "drums"
+        }
+      ],
+      "genre": "honky-tonk",
+      "description": "Led by Homegrown Music Festival founder Starfire, this honky-tonk band holds the record for most festival performances and is known for reviving \"I Like It in Duluth.\"",
+      "established": 2001
     },
     {
       "name": "Flight of Stares",
@@ -2130,7 +3099,32 @@
       "refrain_start": 120.3,
       "refrain_end": 135.3,
       "clip_file": "clips/Flight of Stares - Flight of Stares  We Are Society - Live at Duluth Cider - 02:00.mp3",
-      "facebook": "https://www.facebook.com/flightofstares/"
+      "facebook": "https://www.facebook.com/flightofstares/",
+      "members": [
+        {
+          "name": "Ethan Gibbs",
+          "role": "guitar, keys, backing vocals"
+        },
+        {
+          "name": "Jack Kloster",
+          "role": "keys, guitar, vocals"
+        },
+        {
+          "name": "Phil Huss",
+          "role": "guitar"
+        },
+        {
+          "name": "Mac Nagy",
+          "role": "bass"
+        },
+        {
+          "name": "Jesse Burns",
+          "role": "drums"
+        }
+      ],
+      "genre": "piano-driven indie rock",
+      "description": "Brainerd Lakes area band now based in Duluth, blending influences from Pink Floyd, Supertramp, Ben Folds, Elliott Smith, and Wilco.",
+      "established": null
     },
     {
       "name": "Flip Arkulary",
@@ -2174,7 +3168,32 @@
       "website": "https://fliparkulary.com/",
       "refrain_start": 45.1,
       "refrain_end": 60.1,
-      "clip_file": "clips/Flip Arkulary - FLIP ARKULARY ~ Live from the TBD Ballroom - 00:45.mp3"
+      "clip_file": "clips/Flip Arkulary - FLIP ARKULARY ~ Live from the TBD Ballroom - 00:45.mp3",
+      "members": [
+        {
+          "name": "Flip Arkulary",
+          "role": "vocals, MPC, vocoder"
+        },
+        {
+          "name": "Jules Ostazeski",
+          "role": "vocals, mallet percussion, vocoder"
+        },
+        {
+          "name": "Kenneth Gregory Bressler",
+          "role": "lead synthesizer"
+        },
+        {
+          "name": "Kyle Gondik-Anderson",
+          "role": "bass guitar"
+        },
+        {
+          "name": "Justin Korhonen",
+          "role": "drums"
+        }
+      ],
+      "genre": "experimental electronic",
+      "description": "Experimental electronic project where synthesizers rule rock and Orwell dances with disco, delivering neo-Weimar, kinetic, and relentlessly danceable performances.",
+      "established": null
     },
     {
       "name": "Foosball Ruckus",
@@ -2207,7 +3226,32 @@
       "type": "band_set",
       "refrain_start": 62.0,
       "refrain_end": 77.0,
-      "clip_file": "clips/Foosball Ruckus - Foosball Ruckus does Sublime for IDES OF MARCH 2026 - 01:02.mp3"
+      "clip_file": "clips/Foosball Ruckus - Foosball Ruckus does Sublime for IDES OF MARCH 2026 - 01:02.mp3",
+      "members": [
+        {
+          "name": "Derek Ruport",
+          "role": "lead vocals"
+        },
+        {
+          "name": "Nathan Young",
+          "role": "guitar"
+        },
+        {
+          "name": "Luke Fornengo",
+          "role": "bass"
+        },
+        {
+          "name": "Hendrick Hicks",
+          "role": "drums"
+        },
+        {
+          "name": "Marcus Juusola",
+          "role": "rhythm guitar"
+        }
+      ],
+      "genre": "rock, blues, ska, funk, alternative, indie, jazz",
+      "description": "Five-piece band blending multiple genres with jazz-informed sharp musicality and improvisational qualities in their original material.",
+      "established": 2024
     },
     {
       "name": "Forseer",
@@ -2247,7 +3291,16 @@
       "soundcloud": "https://soundcloud.com/coleybear17",
       "refrain_start": 92.7,
       "refrain_end": 107.7,
-      "clip_file": "clips/Forseer - Forseer - 01:32.mp3"
+      "clip_file": "clips/Forseer - Forseer - 01:32.mp3",
+      "members": [
+        {
+          "name": "Cole Forcier",
+          "role": "vocals, guitar"
+        }
+      ],
+      "genre": "folk and rock",
+      "description": "Solo project featuring sultry rhythms and poetic lyrics, blending folk and rock influences with soothing, distinctive vocals.",
+      "established": null
     },
     {
       "name": "Founder's Reception",
@@ -2314,7 +3367,20 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Four Mile Portage - Four Mile Portage - Home - Unofficial Music Video  - Scoot Along Productions - 00:30.mp3",
-      "facebook": "https://www.facebook.com/p/Four-Mile-Portage-100063745936284/"
+      "facebook": "https://www.facebook.com/p/Four-Mile-Portage-100063745936284/",
+      "members": [
+        {
+          "name": "Brandy Forsman",
+          "role": "fiddle"
+        },
+        {
+          "name": "Tom Maloney",
+          "role": "banjo"
+        }
+      ],
+      "genre": "Appalachian fiddle/Americana",
+      "description": "Married duo performing banjo-fiddle vocal duets inspired by Appalachian traditions with driving rhythms, tight harmonies, and over 20 years of collaborative experience.",
+      "established": null
     },
     {
       "name": "Galleon",
@@ -2363,7 +3429,28 @@
       "refrain_start": null,
       "refrain_end": null,
       "clip_file": null,
-      "facebook": "https://www.facebook.com/GalleonBandOfficial/"
+      "facebook": "https://www.facebook.com/GalleonBandOfficial/",
+      "members": [
+        {
+          "name": "Alec Zell",
+          "role": "lead vocals, rhythm guitar"
+        },
+        {
+          "name": "Jack Zell",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Ethan Schechinger",
+          "role": "bass, backing vocals"
+        },
+        {
+          "name": "Will Bofenkamp",
+          "role": "drums"
+        }
+      ],
+      "genre": "progressive hard rock",
+      "description": "Progressive hard rock band known for electrifying performances. They released their self-titled EP in 2024 followed by the single \"The Sword.\"",
+      "established": null
     },
     {
       "name": "Gavin Glen",
@@ -2403,7 +3490,16 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Gavin Glen - Dolphin (original song by Gavin Glen) - 00:30.mp3",
-      "facebook": "https://www.facebook.com/gavin.glen.7/"
+      "facebook": "https://www.facebook.com/gavin.glen.7/",
+      "members": [
+        {
+          "name": "Gavin Glen",
+          "role": "singer-songwriter"
+        }
+      ],
+      "genre": "folk-rock",
+      "description": "Comedic singer-songwriter blending folk-rock parodies with original tunes using guitar, ukulele, harmonica, and looping pedals.",
+      "established": null
     },
     {
       "name": "Gavin St. Clair Quartet",
@@ -2451,7 +3547,28 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Gavin St. Clair Quartet - Coffee & Guitar featuring Gavin St. Clair, April 18, 2026 - 00:30.mp3",
-      "facebook": "https://www.facebook.com/gavin.s.clair/"
+      "facebook": "https://www.facebook.com/gavin.s.clair/",
+      "members": [
+        {
+          "name": "Gavin St. Clair",
+          "role": "vocals"
+        },
+        {
+          "name": "Alex Piazza",
+          "role": "bass"
+        },
+        {
+          "name": "Owen Mahon",
+          "role": "drums"
+        },
+        {
+          "name": "Alex Nelson",
+          "role": "keys"
+        }
+      ],
+      "genre": "Americana and pop",
+      "description": "Duluth-based group crafting nostalgic acoustic love songs with a blend of Americana and pop, featuring artful and luminous instrumentation.",
+      "established": null
     },
     {
       "name": "Gnarwals",
@@ -2491,7 +3608,24 @@
       "facebook": "https://www.facebook.com/Gnarwals.Duluth/",
       "refrain_start": 158.9,
       "refrain_end": 173.9,
-      "clip_file": "clips/Gnarwals - G'narwals - Prøve Gallery - 4302019 - 02:38.mp3"
+      "clip_file": "clips/Gnarwals - G'narwals - Prøve Gallery - 4302019 - 02:38.mp3",
+      "members": [
+        {
+          "name": "Sean Moria",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Austin Korkowski",
+          "role": "bass, vocals"
+        },
+        {
+          "name": "Jake Daire",
+          "role": "drums"
+        }
+      ],
+      "genre": "distorted indie rock",
+      "description": "Power-trio blending distorted indie rock with introspective songwriting layered in reverb, transforming personal reflection into impactful performances.",
+      "established": null
     },
     {
       "name": "Gochujang",
@@ -2518,7 +3652,44 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Beck Fulin",
+          "role": "trumpet"
+        },
+        {
+          "name": "Will Collins",
+          "role": "trombone"
+        },
+        {
+          "name": "Michael Schell",
+          "role": "alto sax"
+        },
+        {
+          "name": "Joseph Anderson",
+          "role": "tenor sax"
+        },
+        {
+          "name": "Taylor Shykes",
+          "role": "bass"
+        },
+        {
+          "name": "Ian Hopp",
+          "role": "drums"
+        },
+        {
+          "name": "Courtney Ellian",
+          "role": "keys"
+        },
+        {
+          "name": "Emanuel Eisele",
+          "role": "guitar"
+        }
+      ],
+      "genre": "jazz-influenced funk",
+      "description": "Eight-piece Duluth ensemble drawing influence from Lettuce and Ghost Note, blending jazz and funk with horn arrangements and energetic original compositions.",
+      "established": null
     },
     {
       "name": "Grand Holler",
@@ -2572,7 +3743,28 @@
       "website": "https://www.grandhollerband.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Grand Holler - Grand Holler – KTWH-LP Featured Focus Artist - 00:30.mp3"
+      "clip_file": "clips/Grand Holler - Grand Holler – KTWH-LP Featured Focus Artist - 00:30.mp3",
+      "members": [
+        {
+          "name": "Andy Spaeth",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Travis Farleigh",
+          "role": "keys"
+        },
+        {
+          "name": "Jesse Annala",
+          "role": "drums"
+        },
+        {
+          "name": "Mark Erickson",
+          "role": "bass"
+        }
+      ],
+      "genre": "dirt road rock / blues roots-rock",
+      "description": "Gritty, heartfelt bluesy roots-rock reminiscent of Bob Seger and Bruce Springsteen, with thundering vocals ideal for backroad journeys.",
+      "established": null
     },
     {
       "name": "Grant Glad & the Soo Line Loons",
@@ -2626,7 +3818,28 @@
       "refrain_start": 120.1,
       "refrain_end": 135.1,
       "clip_file": "clips/Grant Glad & the Soo Line Loons - Grant Glad & the Soo Line Loons - Oldsmobile - 02:00.mp3",
-      "facebook": "https://www.facebook.com/SooLineLoons/"
+      "facebook": "https://www.facebook.com/SooLineLoons/",
+      "members": [
+        {
+          "name": "Grant Glad",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Julian Edoff",
+          "role": "electric guitar"
+        },
+        {
+          "name": "Robin Hatterschide",
+          "role": "drums"
+        },
+        {
+          "name": "Jarah Sullivan",
+          "role": "bass"
+        }
+      ],
+      "genre": "Americana",
+      "description": "Americana band performing tunes packed with storytelling that draws attention to life details. Grant Glad also hosts a podcast featuring musical guests.",
+      "established": null
     },
     {
       "name": "Greg Cougar Conley",
@@ -2667,7 +3880,40 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Greg Cougar Conley - Greg Cougar Conley   Pizza Luce   Homegrown Music Festival 2009 - 00:30.mp3"
+      "clip_file": "clips/Greg Cougar Conley - Greg Cougar Conley   Pizza Luce   Homegrown Music Festival 2009 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Greg Cougar Conley",
+          "role": "lead vocals, guitar"
+        },
+        {
+          "name": "Brett Molitor",
+          "role": "guitar"
+        },
+        {
+          "name": "Jesse Luoma",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Dan Anderson",
+          "role": "keys"
+        },
+        {
+          "name": "Jake Larson",
+          "role": "pedal steel"
+        },
+        {
+          "name": "Bryon Gaynor",
+          "role": "bass"
+        },
+        {
+          "name": "Mat Milinkovich",
+          "role": "drums"
+        }
+      ],
+      "genre": "outlaw country",
+      "description": "Upper-Midwest country music with a loud, electric sound backed by an oversized band, exemplifying outlaw country.",
+      "established": null
     },
     {
       "name": "Halfsleeper",
@@ -2713,7 +3959,32 @@
       "facebook": "https://www.facebook.com/thehalfsleepers/",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Miss Fox",
+          "role": "vocals"
+        },
+        {
+          "name": "Tobin Dack",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Kridan Wenger",
+          "role": "rhythm guitar, synths"
+        },
+        {
+          "name": "Sheamus Cavanaugh",
+          "role": "bass"
+        },
+        {
+          "name": "Shay Bartley",
+          "role": "drums"
+        }
+      ],
+      "genre": "doom metal / swamp metal",
+      "description": "Five-piece doom metal band with slow, crushing music, thick feedback, and dark atmospherics addressing themes of death, abuse, and cosmic dread.",
+      "established": null
     },
     {
       "name": "Hardaybra",
@@ -2752,7 +4023,24 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Hardaybra - Dinner Music with Jen West and Hardaybra - 00:30.mp3"
+      "clip_file": "clips/Hardaybra - Dinner Music with Jen West and Hardaybra - 00:30.mp3",
+      "members": [
+        {
+          "name": "Mark Blom",
+          "role": "vocals, songwriting"
+        },
+        {
+          "name": "Jeremy Craig",
+          "role": "bass"
+        },
+        {
+          "name": "Tyler Dubla",
+          "role": "drums"
+        }
+      ],
+      "genre": "alternative rock with post-punk flair",
+      "description": "Relaxed yet energetic alternative rock trio with a post-punk aesthetic. Their EP Impetus (2018) features stream-of-consciousness, catchy songs.",
+      "established": null
     },
     {
       "name": "Haus of Queer",
@@ -2875,7 +4163,24 @@
       "refrain_end": null,
       "clip_file": null,
       "website": "https://saltandpinemusic.com/",
-      "facebook": "https://www.facebook.com/saltandpinemusic"
+      "facebook": "https://www.facebook.com/saltandpinemusic",
+      "members": [
+        {
+          "name": "Sonja Marin",
+          "role": "guitar"
+        },
+        {
+          "name": "Nate Hynum",
+          "role": "mandolin"
+        },
+        {
+          "name": "Harrison Olk",
+          "role": "banjo"
+        }
+      ],
+      "genre": "traditional folk",
+      "description": "Traditional folk trio bringing an honest approach to each performance with heartfelt melodies and tight harmonies.",
+      "established": null
     },
     {
       "name": "Horse Fzce",
@@ -2919,7 +4224,28 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Horse Fzce - Horse Fzce - Any Day Now (Official Video) - 00:30.mp3",
-      "facebook": "https://www.facebook.com/horsefzce/"
+      "facebook": "https://www.facebook.com/horsefzce/",
+      "members": [
+        {
+          "name": "Heather Surla",
+          "role": "lead vocals, guitar"
+        },
+        {
+          "name": "Eric Krenz",
+          "role": "vocals"
+        },
+        {
+          "name": "Tom Frichek",
+          "role": "bass, vocals, harmonies"
+        },
+        {
+          "name": "Liz Young",
+          "role": "cajon"
+        }
+      ],
+      "genre": "country-rock",
+      "description": "Earnest lyrics and uncomplicated instrumentals with folksy sensibilities, led by Heather Surla's storytelling vocals.",
+      "established": 2021
     },
     {
       "name": "Hot Tamale Cosmos",
@@ -2957,7 +4283,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Hot Tamale Cosmos - Spruce February - Hot Tamale Cosmos - 00:30.mp3",
-      "facebook": "https://www.facebook.com/bossmama.music/"
+      "facebook": "https://www.facebook.com/bossmama.music/",
+      "members": [
+        {
+          "name": "Sonja Martin",
+          "role": "guitar"
+        },
+        {
+          "name": "Colleen Myhre",
+          "role": "electric guitar"
+        },
+        {
+          "name": "Jen Krussow",
+          "role": "upright bass"
+        },
+        {
+          "name": "Erin Aldridge",
+          "role": "fiddle"
+        },
+        {
+          "name": "Jocelyn Mikkelson",
+          "role": "vocals"
+        }
+      ],
+      "genre": "folk, blues, country, bluegrass",
+      "description": "Women-led, vocal-forward quintet blending folk, blues, country, and bluegrass into cosmic gumbo with tight harmonies and original compositions.",
+      "established": null
     },
     {
       "name": "Hypochondriac",
@@ -2991,7 +4342,32 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Miles Rohrbaugh",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Chuck Grigal",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Dylan Jesperson",
+          "role": "guitar, vocals, keyboard"
+        },
+        {
+          "name": "Marcus Jussola",
+          "role": "bass"
+        },
+        {
+          "name": "Isaiah Lundholm",
+          "role": "drums"
+        }
+      ],
+      "genre": "soft and modern rock with 90s alternative influences",
+      "description": "Five-piece band performing originals and covers with lyrics centered on love and nonsensical poetry, oscillating between slow/moody and upbeat styles.",
+      "established": null
     },
     {
       "name": "INF3RNO",
@@ -3030,7 +4406,16 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/INF3RNO - INF3RNO - Neon Drifter (feat. SHYVEN x Nexus G-Swing) - 00:30.mp3"
+      "clip_file": "clips/INF3RNO - INF3RNO - Neon Drifter (feat. SHYVEN x Nexus G-Swing) - 00:30.mp3",
+      "members": [
+        {
+          "name": "Judy Billington",
+          "role": "DJ, producer, piano, vocals"
+        }
+      ],
+      "genre": "dubstep",
+      "description": "Duluth-based DJ and producer who has developed skills in piano accompaniment and singing. Her debut mix Fire and Ice released in early 2026.",
+      "established": null
     },
     {
       "name": "Idle Rose",
@@ -3073,7 +4458,20 @@
       "type": "band_set",
       "refrain_start": 27.8,
       "refrain_end": 42.8,
-      "clip_file": "clips/Idle Rose - Idle Rose at Oak Center November 8, 2025 - 00:27.mp3"
+      "clip_file": "clips/Idle Rose - Idle Rose at Oak Center November 8, 2025 - 00:27.mp3",
+      "members": [
+        {
+          "name": "Laura Idle",
+          "role": "vocals, acoustic guitar"
+        },
+        {
+          "name": "Rose Spieler-Sandberg",
+          "role": "vocals, baritone ukulele, washboard, stomp box"
+        }
+      ],
+      "genre": "folk",
+      "description": "Folk duo from Northern Wisconsin with soft and sweet harmonies featuring original acoustic arrangements with washboard and stomp box.",
+      "established": null
     },
     {
       "name": "Indecent Proposal",
@@ -3118,7 +4516,32 @@
       "website": "https://indyp218.com",
       "refrain_start": 58.4,
       "refrain_end": 73.4,
-      "clip_file": "clips/Indecent Proposal - Feeling Good – Indecent Proposal - 00:58.mp3"
+      "clip_file": "clips/Indecent Proposal - Feeling Good – Indecent Proposal - 00:58.mp3",
+      "members": [
+        {
+          "name": "Josh Brown",
+          "role": "lead vocals, guitar"
+        },
+        {
+          "name": "Terry Beckman",
+          "role": "bass"
+        },
+        {
+          "name": "Andy Fabian",
+          "role": "drums"
+        },
+        {
+          "name": "Sicilia 'Selie' Amborn",
+          "role": "vocals"
+        },
+        {
+          "name": "Jason Soderlund",
+          "role": "lead guitar, vocals"
+        }
+      ],
+      "genre": "alt-rock",
+      "description": "Duluth-based five-piece known for tight grooves, loud hearts, and melodies that blend reflective alt-rock with engaging sing-alongs.",
+      "established": null
     },
     {
       "name": "Innerstellar Overdrive",
@@ -3148,7 +4571,28 @@
         "note": "search exhausted across all known platforms (2026-04-15 final pass): 'mindfulness metal' trio formed 2023 — Erik Schnackenberg (guitar/vocals, Full Circle Yoga owner), Bryce Kastning (drums, sound healer), Erin Kathleen (bass); occasional feature: Austin Washenesky (trombone). Facebook page exists (facebook.com/p/Innerstellar-Overdrive-61553786158399/) but page body is blank with no music links. duluthhomegrown.org/bands/innerstellar-overdrive/ confirmed members and bio but provides zero external links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram — no recorded music found on any platform. Note: correct spelling is 'Innerstellar' not 'Interstellar'; multiple unrelated Interstellar Overdrive bands on Bandcamp/SoundCloud are Pink Floyd cover acts and not this band."
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/p/Innerstellar-Overdrive-61553786158399/"
+      "facebook": "https://www.facebook.com/p/Innerstellar-Overdrive-61553786158399/",
+      "members": [
+        {
+          "name": "Bryce Kastning",
+          "role": "drums"
+        },
+        {
+          "name": "Erin Kathleen",
+          "role": "bass"
+        },
+        {
+          "name": "Erik Schnackenberg",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Austin Washenesky",
+          "role": "trombone (occasional)"
+        }
+      ],
+      "genre": "heavy metal / thrashing rock",
+      "description": "Three-piece powerhouse blending uplifting messaging with old-school heavy metal, often referred to as a mindfulness metal group.",
+      "established": 2023
     },
     {
       "name": "Iron Range Outlaw Brigade",
@@ -3191,7 +4635,32 @@
       "refrain_start": 101.9,
       "refrain_end": 116.9,
       "clip_file": "clips/Iron Range Outlaw Brigade - Dead Deer Iron Range Outlaw Brigade - 01:41.mp3",
-      "facebook": "https://www.facebook.com/TheIronRangeOutlawBrigade/"
+      "facebook": "https://www.facebook.com/TheIronRangeOutlawBrigade/",
+      "members": [
+        {
+          "name": "Glen Mattson",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Kirk Kjenaas",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "John Peterson",
+          "role": "pedal steel"
+        },
+        {
+          "name": "Andy Bergstrom",
+          "role": "bass"
+        },
+        {
+          "name": "John Lamar",
+          "role": "drums"
+        }
+      ],
+      "genre": "cow-punk",
+      "description": "High-octane Northwoods troubadours creating boot-scooting, mosh-inducing country for over 15 years.",
+      "established": 2010
     },
     {
       "name": "Isa Morin",
@@ -3235,7 +4704,20 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Isa Morin - Isa Morin - Comment on fait - 00:30.mp3",
-      "facebook": "https://www.facebook.com/p/Isa-Morin-100081442824288/"
+      "facebook": "https://www.facebook.com/p/Isa-Morin-100081442824288/",
+      "members": [
+        {
+          "name": "Isa Morin",
+          "role": "singer-songwriter"
+        },
+        {
+          "name": "Mike Grenier",
+          "role": "performer"
+        }
+      ],
+      "genre": "country-pop",
+      "description": "Country-pop singer-songwriter from Quebec, Canada, now based in Superior, Wisconsin. She has released two French albums and is writing her third in English.",
+      "established": null
     },
     {
       "name": "Israel Malachi Orchestra",
@@ -3271,7 +4753,32 @@
       "facebook": "https://www.facebook.com/israelmalachimusic/",
       "refrain_start": 230.9,
       "refrain_end": 245.9,
-      "clip_file": "clips/Israel Malachi Orchestra - Long, Long Time (cover) by Israel Malachi Orchestra - 03:50.mp3"
+      "clip_file": "clips/Israel Malachi Orchestra - Long, Long Time (cover) by Israel Malachi Orchestra - 03:50.mp3",
+      "members": [
+        {
+          "name": "Israel Malachi",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Shawna Weaver",
+          "role": "musician"
+        },
+        {
+          "name": "Eric Bong",
+          "role": "musician"
+        },
+        {
+          "name": "Aaron Reichow",
+          "role": "musician"
+        },
+        {
+          "name": "Jack Seiler",
+          "role": "musician"
+        }
+      ],
+      "genre": "rock, blues, and early punk",
+      "description": "Led by Israel Malachi, this ensemble has performed in the Duluth-Superior area for two decades, blending rock, blues, and early punk with virtuosic guitar work.",
+      "established": 2000
     },
     {
       "name": "Janie and The Spokes",
@@ -3311,7 +4818,28 @@
       "facebook": "https://www.facebook.com/Janie.Spokes.1/",
       "refrain_start": 201.1,
       "refrain_end": 216.1,
-      "clip_file": "clips/Janie and The Spokes - Big Yellow Taxi by Janie and The Spokes - 03:21.mp3"
+      "clip_file": "clips/Janie and The Spokes - Big Yellow Taxi by Janie and The Spokes - 03:21.mp3",
+      "members": [
+        {
+          "name": "Jane Aas",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Peter Aas",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Garth Anderson",
+          "role": "drums"
+        },
+        {
+          "name": "Jordan Ash",
+          "role": "bass"
+        }
+      ],
+      "genre": "indie rock / Americana-meets-70s janglecore",
+      "description": "Upbeat indie rock band with an edgy Americana-meets-70s janglecore sound featuring extended jams and layered harmonies. Three recent albums released.",
+      "established": 2004
     },
     {
       "name": "Jen West",
@@ -3361,7 +4889,16 @@
       "facebook": "https://www.facebook.com/jenwestmusic/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Jen West - Scars- Jen West - 00:30.mp3"
+      "clip_file": "clips/Jen West - Scars- Jen West - 00:30.mp3",
+      "members": [
+        {
+          "name": "Jen West",
+          "role": "vocals, ukulele, guitar"
+        }
+      ],
+      "genre": "indie folk",
+      "description": "Performs lyric-driven songs ranging from joyful to introspective melodies, recently incorporating effects and looping into her ukulele and guitar work.",
+      "established": null
     },
     {
       "name": "Jesse Jaze",
@@ -3398,7 +4935,16 @@
       "soundcloud": "https://soundcloud.com/jazehiphop",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Jesse Jaze - jesse jaze in the flesh #djs #duluthmn #rave #edm #dance - 00:30.mp3"
+      "clip_file": "clips/Jesse Jaze - jesse jaze in the flesh #djs #duluthmn #rave #edm #dance - 00:30.mp3",
+      "members": [
+        {
+          "name": "Jesse Unger",
+          "role": "DJ"
+        }
+      ],
+      "genre": "EDM/bass music",
+      "description": "Pioneer of the Twin Ports hip-hop scene who evolved into electronic music, known for high-energy sets bridging hip-hop roots with bass music.",
+      "established": null
     },
     {
       "name": "John Agacki",
@@ -3439,7 +4985,16 @@
       "website": "https://johnagackimusic.com/",
       "refrain_start": 48.5,
       "refrain_end": 63.5,
-      "clip_file": "clips/John Agacki - You're Helping Me and I'm Helping You  by John Agacki - performed by John Agacki - 00:48.mp3"
+      "clip_file": "clips/John Agacki - You're Helping Me and I'm Helping You  by John Agacki - performed by John Agacki - 00:48.mp3",
+      "members": [
+        {
+          "name": "John Agacki",
+          "role": "guitar, vocals"
+        }
+      ],
+      "genre": "folk, Americana, Celtic, semi-classical",
+      "description": "Fingerpicking folk and Americana guitarist rooted in Celtic styles, having studied with Dublin guitarist John Doyl. Has released original and Celtic albums.",
+      "established": null
     },
     {
       "name": "John Louis",
@@ -3484,7 +5039,16 @@
       "refrain_end": 192.3,
       "clip_file": "clips/John Louis - John Louis - Spent (Lyric Video) - 02:57.mp3",
       "facebook": "https://www.facebook.com/johnlouissongs/",
-      "website": "https://johnlouissongs.com/"
+      "website": "https://johnlouissongs.com/",
+      "members": [
+        {
+          "name": "John Louis",
+          "role": "singer-songwriter"
+        }
+      ],
+      "genre": "country-folk",
+      "description": "Duluth transplant offering heartworn country-folk that turns small moments into shared Midwestern experiences. Award-winning songwriter honored at Kerrville Folk Festival and Rocky Mountain Folks Fest.",
+      "established": null
     },
     {
       "name": "Jon Edwards",
@@ -3526,7 +5090,16 @@
       "facebook": "https://www.facebook.com/p/Jon-Edwards-Music-61564616048098/",
       "refrain_start": 95.7,
       "refrain_end": 110.7,
-      "clip_file": "clips/Jon Edwards - Jon Edwards - In Dreams.mov - 01:35.mp3"
+      "clip_file": "clips/Jon Edwards - Jon Edwards - In Dreams.mov - 01:35.mp3",
+      "members": [
+        {
+          "name": "Jon Edwards",
+          "role": "vocals, guitar"
+        }
+      ],
+      "genre": "blues and neo-folk",
+      "description": "Blues and neo-folk musician from Duluth blending traditional influences with storytelling inspired by John Prine and Tom Waits, featuring haunting melodies and introspective lyrics.",
+      "established": null
     },
     {
       "name": "Joy and Melancholy",
@@ -3566,7 +5139,24 @@
       "facebook": "https://www.facebook.com/61582189614099",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Joy and Melancholy - Tiny Desk Submission - After Party - Joy and Melancholy - 00:30.mp3"
+      "clip_file": "clips/Joy and Melancholy - Tiny Desk Submission - After Party - Joy and Melancholy - 00:30.mp3",
+      "members": [
+        {
+          "name": "Anna Joy",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Lacey Osterlund",
+          "role": "bass, vocals"
+        },
+        {
+          "name": "Eli Stanley",
+          "role": "drums"
+        }
+      ],
+      "genre": "rock (90s grunge, 2000s pop-punk, modern indie)",
+      "description": "Youthful Duluth rock band known for strange, heartfelt takes on the human experience blending anger, sadness, and irony with energetic performances.",
+      "established": null
     },
     {
       "name": "Jumpsuit",
@@ -3605,7 +5195,40 @@
         "note": "removed — twenty one pilots song, not the Duluth band"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/p/Jumpsuit-Funk-61566392902886/"
+      "facebook": "https://www.facebook.com/p/Jumpsuit-Funk-61566392902886/",
+      "members": [
+        {
+          "name": "Erica \"Ricky\" Francois",
+          "role": "lead vocals"
+        },
+        {
+          "name": "Madison \"Madi\" Phyle",
+          "role": "lead vocals"
+        },
+        {
+          "name": "Courtney Ellian",
+          "role": "keys, backing vocals"
+        },
+        {
+          "name": "Marshall Dillon",
+          "role": "guitar"
+        },
+        {
+          "name": "Emanuel Eisele",
+          "role": "guitar"
+        },
+        {
+          "name": "Ian Hopp",
+          "role": "drums"
+        },
+        {
+          "name": "Calvin Lund",
+          "role": "bass"
+        }
+      ],
+      "genre": "funk",
+      "description": "Seven-piece funk ensemble that emerged in 2025 and quickly gained traction in the Twin Ports music scene with residencies at local breweries and an original EP.",
+      "established": 2025
     },
     {
       "name": "Kroma",
@@ -3643,7 +5266,24 @@
       },
       "type": "band_set",
       "soundcloud": "https://soundcloud.com/kromamusic",
-      "facebook": "https://www.facebook.com/KROMAandFriends/"
+      "facebook": "https://www.facebook.com/KROMAandFriends/",
+      "members": [
+        {
+          "name": "Joshua Tesch",
+          "role": "guitar"
+        },
+        {
+          "name": "Grant Carl",
+          "role": "bass"
+        },
+        {
+          "name": "Garth Anderson",
+          "role": "drums"
+        }
+      ],
+      "genre": "instrumental",
+      "description": "Instrumental trio crafting original music merging cinematic atmospheres with emotional depth, drawing from Angelo Badalamenti's haunting soundtracks.",
+      "established": 2021
     },
     {
       "name": "Lake Effect String Band",
@@ -3680,7 +5320,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Lake Effect String Band - Lost Highway- Lake Effect String Band - 00:30.mp3"
+      "clip_file": "clips/Lake Effect String Band - Lost Highway- Lake Effect String Band - 00:30.mp3",
+      "members": [
+        {
+          "name": "Will Robertson",
+          "role": "guitar"
+        },
+        {
+          "name": "Luke Rutten",
+          "role": "mandolin"
+        },
+        {
+          "name": "Bob Helland",
+          "role": "bass"
+        },
+        {
+          "name": "Michael P. Geraci",
+          "role": "banjo"
+        }
+      ],
+      "genre": "bluegrass",
+      "description": "Duluth-based bluegrass ensemble with songwriting exploring themes from Viking explorers to gentrification, gigging around the Twin Ports for over two years.",
+      "established": null
     },
     {
       "name": "Lee Clark Allen",
@@ -3730,7 +5391,16 @@
       "refrain_start": 214.2,
       "refrain_end": 229.2,
       "clip_file": "clips/Lee Clark Allen - Therapy - Lee Clark Allen - 03:34.mp3",
-      "facebook": "https://www.facebook.com/leeclarkallen/"
+      "facebook": "https://www.facebook.com/leeclarkallen/",
+      "members": [
+        {
+          "name": "Lee Clark Allen",
+          "role": "vocals, multi-instrumentalist"
+        }
+      ],
+      "genre": "soul, R&B, jazz, blues, rock, funk, gospel, pop, hip-hop",
+      "description": "Independent artist merging the warmth of classic soul with contemporary R&B edge, featuring live instrumentation and authentic storytelling.",
+      "established": null
     },
     {
       "name": "Life Parade",
@@ -3779,7 +5449,32 @@
       "facebook": "https://www.facebook.com/lifeparademusic/",
       "refrain_start": 166.5,
       "refrain_end": 181.5,
-      "clip_file": "clips/Life Parade - Elephant Man - Life Parade (Homegrown Music Video) - 02:46.mp3"
+      "clip_file": "clips/Life Parade - Elephant Man - Life Parade (Homegrown Music Video) - 02:46.mp3",
+      "members": [
+        {
+          "name": "Cameron Mathews",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Dan Munthe",
+          "role": "keys, guitar"
+        },
+        {
+          "name": "Cliff Lavigne",
+          "role": "bass"
+        },
+        {
+          "name": "Mike Bernier",
+          "role": "guitar"
+        },
+        {
+          "name": "Scott Kimball",
+          "role": "drums"
+        }
+      ],
+      "genre": "pop-rock",
+      "description": "Hook-heavy pop-rock blending late-90s indie rock energy with a modern, clean sound that feels like driving with the windows down.",
+      "established": 2014
     },
     {
       "name": "Lovehouse",
@@ -3821,7 +5516,28 @@
         "note": "removed — DJ mix compilation, not local act"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/lovehousetheband/"
+      "facebook": "https://www.facebook.com/lovehousetheband/",
+      "members": [
+        {
+          "name": "Henry Seymour",
+          "role": "vocals, rhythm guitar"
+        },
+        {
+          "name": "Parker Ruedy",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Kevin Fischer",
+          "role": "bass"
+        },
+        {
+          "name": "Santos Cisneros",
+          "role": "drums"
+        }
+      ],
+      "genre": "rock",
+      "description": "Minneapolis-based band delivering driving, fast-paced rock anthems to atmospheric soundscapes with dynamic live performances and raw energy.",
+      "established": 2019
     },
     {
       "name": "Lu Starr",
@@ -3854,7 +5570,16 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Lu Starr",
+          "role": "vocals, acoustic guitar"
+        }
+      ],
+      "genre": "indie-folk",
+      "description": "Northern Minnesota singer-songwriter exploring divine femininity, grief, and friendship with smoky vocals drawing comparisons to Norah Jones and Joni Mitchell.",
+      "established": null
     },
     {
       "name": "MINNESOTA VICE",
@@ -3893,7 +5618,20 @@
       "type": "band_set",
       "refrain_start": 111.2,
       "refrain_end": 126.2,
-      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - 'BURBERRY BONDS' (Official Lyric Video) - 01:51.mp3"
+      "clip_file": "clips/MINNESOTA VICE - MINNESOTA VICE - 'BURBERRY BONDS' (Official Lyric Video) - 01:51.mp3",
+      "members": [
+        {
+          "name": "Shane T. Mooney Jr.",
+          "role": "Junior the Jenius"
+        },
+        {
+          "name": "Eli Ethan Edholm",
+          "role": "Trip.e"
+        }
+      ],
+      "genre": "hip-hop",
+      "established": 2016,
+      "description": "A hip-hop duo that challenges Midwestern stereotypes by calling for working-class individuals to \"demand more so we can all survive in this cold world.\" The pair met at Denfeld High School and have performed across the country."
     },
     {
       "name": "Mae and Justine",
@@ -3922,7 +5660,20 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Mae Mallace",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Justine Fosle",
+          "role": "vocals, piano, flute, guitar"
+        }
+      ],
+      "genre": null,
+      "established": null,
+      "description": "Acoustic singer-songwriters with grit, this Duluth-based duo brings heartfelt harmonies and layered instrumentation to performances, mixing originals with unexpected covers."
     },
     {
       "name": "Mayor's Proclamation",
@@ -3986,7 +5737,36 @@
       "facebook": "https://www.facebook.com/p/Mid-Dream-61568971135097/",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Jenna Harting",
+          "role": "vocals"
+        },
+        {
+          "name": "Lisa Wentworth",
+          "role": "vocals"
+        },
+        {
+          "name": "Alex Nelson",
+          "role": "keyboard"
+        },
+        {
+          "name": "Bryan Wentworth",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Matt Prois",
+          "role": "bass"
+        },
+        {
+          "name": "Rachel Riefenberg",
+          "role": "drums"
+        }
+      ],
+      "genre": "synthy pop-punk",
+      "established": null,
+      "description": "Mid Dream fuses synthy pop-punk, cathartic ballads, and a smoky-bar spirit with powerful dual vocals. They are recording their debut album, Bodega Wine Glass, in 2026."
     },
     {
       "name": "Midnight Kissfight",
@@ -4026,7 +5806,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Midnight Kissfight - bandcamp - 00:30.mp3"
+      "clip_file": "clips/Midnight Kissfight - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Kaylee Matuszak",
+          "role": "vocals"
+        },
+        {
+          "name": "Jesse Hoheisel",
+          "role": "guitar"
+        },
+        {
+          "name": "Ryan Nelson",
+          "role": "drums"
+        },
+        {
+          "name": "Liana Sweezer",
+          "role": "bass"
+        }
+      ],
+      "genre": "post-neo-janglecore indie rock",
+      "established": 2026,
+      "description": "The band aims to emulate the aesthetics of popular college radio shows and the 2005 era of World Cafe, performing primarily original compositions alongside occasional covers."
     },
     {
       "name": "Misisipi Mike Wolf and The Plain High Drifters",
@@ -4072,7 +5873,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Misisipi Mike Wolf and The Plain High Drifters - Misisipi Mike - Duluth Songwriter Showcase 2023 - 00:30.mp3",
-      "facebook": "https://www.facebook.com/pages/Misisipi-Mike-Wolf/608089869245597"
+      "facebook": "https://www.facebook.com/pages/Misisipi-Mike-Wolf/608089869245597",
+      "members": [
+        {
+          "name": "Misisipi Mike Wolf",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Andy Lipke",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Andy Olmstead",
+          "role": "rhythm guitar"
+        },
+        {
+          "name": "Gordon Lewis",
+          "role": "bass"
+        },
+        {
+          "name": "Rick Bruner",
+          "role": "drums"
+        }
+      ],
+      "genre": "folk and country punk",
+      "established": null,
+      "description": "The group performs heart-on-your-sleeve, tongue-in-cheek, beer-drinkin' music with award-winning originals and covers ranging from John Prine and Willie Nelson to 1980s punk and New Orleans ya-ya."
     },
     {
       "name": "Mitchell Kane",
@@ -4107,7 +5933,16 @@
       "type": "band_set",
       "refrain_start": 202.5,
       "refrain_end": 217.5,
-      "clip_file": "clips/Mitchell Kane - Mitchell Kane @ The Tasting Room - 03:22.mp3"
+      "clip_file": "clips/Mitchell Kane - Mitchell Kane @ The Tasting Room - 03:22.mp3",
+      "members": [
+        {
+          "name": "Mitchell Kane",
+          "role": "guitarist, songwriter, folklorist, rural historian"
+        }
+      ],
+      "genre": "folk, bluegrass, gospel, jazz, punk, blues",
+      "established": null,
+      "description": "Mitchell Hancock performs as Mitchell Kane, delivering original compositions with impressive guitar work that tell stories about train rides and cherished places."
     },
     {
       "name": "Mr. Kickass",
@@ -4141,7 +5976,24 @@
       "facebook": "https://www.facebook.com/mrkickasstheband/",
       "refrain_start": 212.2,
       "refrain_end": 227.2,
-      "clip_file": "clips/Mr. Kickass - Mr. Kickass (Original Loop Instrumental) - 03:32.mp3"
+      "clip_file": "clips/Mr. Kickass - Mr. Kickass (Original Loop Instrumental) - 03:32.mp3",
+      "members": [
+        {
+          "name": "Mike Fradenburgh",
+          "role": "bass, vocals"
+        },
+        {
+          "name": "Jake Daire",
+          "role": "drums"
+        },
+        {
+          "name": "Jed Olsen",
+          "role": "guitar"
+        }
+      ],
+      "genre": "punk rock",
+      "established": 2006,
+      "description": "A trio producing loud, energetic music where the music is fast, loud, and fun with considerable revelry involved in their performances."
     },
     {
       "name": "Mud Puppies",
@@ -4178,7 +6030,11 @@
         "sourceType": null,
         "note": "deep search exhausted: Duluth folk grunge band confirmed via Apple Music album (self-titled, Feb 10 2026, 9 tracks including 'Lake Superior Blues'); described as blending folk storytelling with 90s alt rock (Townes Van Zandt, Nirvana, Jeff Buckley); checked YouTube, Bandcamp, SoundCloud, Spotify, perfectduluthday.com, duluthhomegrown.org — no playable video or public streaming found beyond iTunes preview."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [],
+      "genre": "folk grunge",
+      "established": null,
+      "description": "A rising Duluth band blending raw folk storytelling with 90s alternative electric edge, drawing from artists like Townes Van Zandt and Nirvana."
     },
     {
       "name": "Music Resource Center Students",
@@ -4248,7 +6104,16 @@
       "facebook": "https://www.facebook.com/natejmattson/",
       "refrain_start": 208.3,
       "refrain_end": 223.3,
-      "clip_file": "clips/Nate J Mattson - 2021 - Homegrown Live Performance - Nate J Mattson - 03:28.mp3"
+      "clip_file": "clips/Nate J Mattson - 2021 - Homegrown Live Performance - Nate J Mattson - 03:28.mp3",
+      "members": [
+        {
+          "name": "Nate J Mattson",
+          "role": "multi-instrumentalist, performer"
+        }
+      ],
+      "genre": "electronica",
+      "established": null,
+      "description": "Solo artist performing rhythmic electronic music with synthesizer-heavy compositions, samplers, sequences, modular synths, and layered vocals."
     },
     {
       "name": "Nevins",
@@ -4283,7 +6148,20 @@
         "note": "removed — Run DMC/Jason Nevins, not the Duluth act"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/p/Nevins-100066101610846/"
+      "facebook": "https://www.facebook.com/p/Nevins-100066101610846/",
+      "members": [
+        {
+          "name": "Daniel Haglund",
+          "role": "guitar"
+        },
+        {
+          "name": "Kevin Haglund",
+          "role": "drums"
+        }
+      ],
+      "genre": "instrumental 50s-style punk",
+      "established": null,
+      "description": "An instrumental punk duo from Duluth delivering surf-sleaze grooves with gritty swagger and relentless energy, combining nostalgic rock 'n' roll attitude with high-voltage stage presence."
     },
     {
       "name": "Nikki Lemire",
@@ -4338,7 +6216,24 @@
       "website": "https://nikkilemiremusic.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Nikki Lemire - Paris – Nikki Lemire - 00:30.mp3"
+      "clip_file": "clips/Nikki Lemire - Paris – Nikki Lemire - 00:30.mp3",
+      "members": [
+        {
+          "name": "Nikki Lemire",
+          "role": "vocals, harp"
+        },
+        {
+          "name": "Nyssa Krauss",
+          "role": "upright bass"
+        },
+        {
+          "name": "Haley E Rydell",
+          "role": "fiddle, guitar"
+        }
+      ],
+      "genre": "jazz, funk, folk",
+      "established": null,
+      "description": "A harpist who creates an ethereal modern folk experience by blending jazz, funk, and folk with hypnotic loops and unusual vocal phrasing."
     },
     {
       "name": "Obleek",
@@ -4383,7 +6278,24 @@
       },
       "type": "band_set",
       "linktree": "https://linktr.ee/obleek",
-      "facebook": "https://www.facebook.com/theobleeks/"
+      "facebook": "https://www.facebook.com/theobleeks/",
+      "members": [
+        {
+          "name": "Jon Marshall",
+          "role": "bass"
+        },
+        {
+          "name": "Jaxon Fjeldahl",
+          "role": "guitar"
+        },
+        {
+          "name": "Teddy Joddoloh",
+          "role": "drums"
+        }
+      ],
+      "genre": "punk, grunge, Midwest emo",
+      "established": null,
+      "description": "A rock trio that blends punk, grunge, and Midwest emo with a non-conforming attitude. Their emotional songwriting explores identity, addiction, and loss."
     },
     {
       "name": "Old Love",
@@ -4418,7 +6330,28 @@
       "facebook": "https://www.facebook.com/oldlovemusic/",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Nate Pollesch",
+          "role": "guitar"
+        },
+        {
+          "name": "Ben Cooper",
+          "role": "mandolin"
+        },
+        {
+          "name": "Cedar Corey-Flatau",
+          "role": "bass"
+        },
+        {
+          "name": "Mitch Ihlang",
+          "role": "drums"
+        }
+      ],
+      "genre": "indie folk",
+      "established": null,
+      "description": "A quartet creating music blending upbeat indie folk with emotional compositions, featuring finger-picked guitar storytelling and inventive mandolin work."
     },
     {
       "name": "Owls Club Big Band",
@@ -4454,7 +6387,80 @@
       "facebook": "https://www.facebook.com/p/Owls-Club-Big-Band-100063507219690/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Owls Club Big Band - JAM Concert Series  Owls Club Big Band - 00:30.mp3"
+      "clip_file": "clips/Owls Club Big Band - JAM Concert Series  Owls Club Big Band - 00:30.mp3",
+      "members": [
+        {
+          "name": "Ian Hopp",
+          "role": null
+        },
+        {
+          "name": "Charlotte Dike",
+          "role": null
+        },
+        {
+          "name": "Mark Glenn",
+          "role": null
+        },
+        {
+          "name": "Darin Bergsven",
+          "role": null
+        },
+        {
+          "name": "David Ralph Adams",
+          "role": null
+        },
+        {
+          "name": "David Rode",
+          "role": null
+        },
+        {
+          "name": "Beck Fulin",
+          "role": null
+        },
+        {
+          "name": "Eric Johnson",
+          "role": null
+        },
+        {
+          "name": "Matt Wasmund",
+          "role": null
+        },
+        {
+          "name": "Greg Kehl Moore",
+          "role": null
+        },
+        {
+          "name": "Trevor Spurbeck",
+          "role": null
+        },
+        {
+          "name": "Ian McNicholes",
+          "role": null
+        },
+        {
+          "name": "Joseph Anderson",
+          "role": null
+        },
+        {
+          "name": "David Leslie",
+          "role": null
+        },
+        {
+          "name": "Eric Cyr",
+          "role": null
+        },
+        {
+          "name": "Will Collins",
+          "role": null
+        },
+        {
+          "name": "Alex Nordehn",
+          "role": null
+        }
+      ],
+      "genre": "big band jazz",
+      "established": 2017,
+      "description": "A 17-piece ensemble delivering swinging, horn-driven dance music focused on exploring big band jazz with entertaining appeal."
     },
     {
       "name": "P.B&J",
@@ -4498,7 +6504,28 @@
       "website": "https://thepbjband.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/P.B&J - Into The Void - P B&J - 00:30.mp3"
+      "clip_file": "clips/P.B&J - Into The Void - P B&J - 00:30.mp3",
+      "members": [
+        {
+          "name": "Peter Anderson",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Jake Ericson",
+          "role": "bass"
+        },
+        {
+          "name": "Branden Taus",
+          "role": "drums"
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "synth"
+        }
+      ],
+      "genre": "heavy metal, garage grunge, psychedelic blues",
+      "established": null,
+      "description": "P.B&J combines heavy metal with garage grunge and psychedelic blues. Known for theatrical performances including sandwich costumes and audience engagement."
     },
     {
       "name": "Peat Boggs",
@@ -4542,7 +6569,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Peat Boggs - Peat Boggs - Got Away - 00:30.mp3",
-      "facebook": "https://www.facebook.com/peatboggs/"
+      "facebook": "https://www.facebook.com/peatboggs/",
+      "members": [
+        {
+          "name": "Charlie French",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Cole Webster",
+          "role": "guitar"
+        },
+        {
+          "name": "Ben Wagener",
+          "role": "bass"
+        },
+        {
+          "name": "Chris Shea",
+          "role": "drums"
+        },
+        {
+          "name": "Cavan Denning",
+          "role": "pedal steel"
+        }
+      ],
+      "genre": "groove, jazz, folk, doom, surf rock",
+      "established": 2024,
+      "description": "An eclectic group blending groove, jazz, and folk with genre-shifting arrangements ranging from smooth melodies to hints of doom and surf rock."
     },
     {
       "name": "Polari",
@@ -4578,7 +6630,16 @@
         "sourceType": null,
         "note": "removed — Olly Alexander song, not the Duluth band"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Tyler Scouton",
+          "role": "artist"
+        }
+      ],
+      "genre": "electronic, avant-garde",
+      "established": null,
+      "description": "An audio-visual project creating electronic music that echoes horror movie soundscapes rather than pop conventions, pairing experimental sounds with visuals."
     },
     {
       "name": "Portrait of a Drowned Man",
@@ -4614,7 +6675,32 @@
       "website": "https://poadm.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Portrait of a Drowned Man - Portrait of a Drowned Man - 00:30.mp3"
+      "clip_file": "clips/Portrait of a Drowned Man - Portrait of a Drowned Man - 00:30.mp3",
+      "members": [
+        {
+          "name": "Paul Connolly",
+          "role": null
+        },
+        {
+          "name": "CJ Keller",
+          "role": null
+        },
+        {
+          "name": "Justin Kervina",
+          "role": null
+        },
+        {
+          "name": "Ken Nyberg",
+          "role": null
+        },
+        {
+          "name": "Aaron Richner",
+          "role": null
+        }
+      ],
+      "genre": "instrumental post-rock",
+      "established": null,
+      "description": "An instrumental post-rock group recognized for powerful, expansive sound performances. The guitar-centric band frequently works with filmmakers and incorporates live improvisation."
     },
     {
       "name": "Possessed to Restored",
@@ -4653,7 +6739,24 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Possessed to Restored - TCS Presents Possessed to Restored  22026 - 00:30.mp3"
+      "clip_file": "clips/Possessed to Restored - TCS Presents Possessed to Restored  22026 - 00:30.mp3",
+      "members": [
+        {
+          "name": "David Leppke",
+          "role": "guitar"
+        },
+        {
+          "name": "Alyssa Lucas",
+          "role": "bass"
+        },
+        {
+          "name": "Matt Clark",
+          "role": "drums"
+        }
+      ],
+      "genre": "instrumental metal (sludge and hardcore)",
+      "established": null,
+      "description": "A three-piece instrumental ensemble creating heavy riffs with some light atmosphere blended in, without vocals."
     },
     {
       "name": "Pronoya",
@@ -4699,7 +6802,32 @@
       "refrain_end": 158.3,
       "clip_file": "clips/Pronoya - Pronoya - Pull Me Closer to the Flame (Live Music Video) - 02:23.mp3",
       "website": "https://pronoyamn.com/",
-      "facebook": "https://www.facebook.com/PronoyaMN/"
+      "facebook": "https://www.facebook.com/PronoyaMN/",
+      "members": [
+        {
+          "name": "Ryan Walker",
+          "role": "lead vocals"
+        },
+        {
+          "name": "Kyle Wolden",
+          "role": "guitar"
+        },
+        {
+          "name": "William Richardson",
+          "role": "guitar"
+        },
+        {
+          "name": "Loren Dawson",
+          "role": "drums"
+        },
+        {
+          "name": "Joey Langan",
+          "role": "bass, backing vocals"
+        }
+      ],
+      "genre": "metalcore",
+      "established": 2025,
+      "description": "A Midwest metalcore band that released their debut EP All For The Sun in late 2025, combining lyrical moments with heavy shredding and addressing mental health struggles."
     },
     {
       "name": "Remote Viewfinder",
@@ -4732,7 +6860,20 @@
       "type": "band_set",
       "refrain_start": 73.9,
       "refrain_end": 88.9,
-      "clip_file": "clips/Remote Viewfinder - Remote Viewfinder 1 - 01:13.mp3"
+      "clip_file": "clips/Remote Viewfinder - Remote Viewfinder 1 - 01:13.mp3",
+      "members": [
+        {
+          "name": "Tobin Dack",
+          "role": "synth"
+        },
+        {
+          "name": "Travis Hendershot",
+          "role": "synth"
+        }
+      ],
+      "genre": "experimental synth",
+      "established": null,
+      "description": "A duo creating moody experimental synth-symphonies featuring drones, electronic sounds, and spoken word elements spanning from unsettling electronica to ambient soundscapes."
     },
     {
       "name": "Rick McLean Band",
@@ -4786,7 +6927,24 @@
       "facebook": "https://www.facebook.com/RickMcLeanMusic/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Rick McLean Band - TCS Presents Rick McLean Band  51725 - 00:30.mp3"
+      "clip_file": "clips/Rick McLean Band - TCS Presents Rick McLean Band  51725 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Rick McLean",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Pete Biasi",
+          "role": "bass, backing vocals"
+        },
+        {
+          "name": "Mike McLean",
+          "role": "drums"
+        }
+      ],
+      "genre": "garage rock, punk, psych-rock",
+      "established": null,
+      "description": "A three-piece outfit delivering raw garage rock with detours into punk and psych-rock, featuring punchy riffs with an offbeat edge."
     },
     {
       "name": "Ricky Carl",
@@ -4828,7 +6986,28 @@
       "facebook": "https://www.facebook.com/rickysundstrommusic/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Ricky Carl - TCS Presents Ricky Carl  41026 - 00:30.mp3"
+      "clip_file": "clips/Ricky Carl - TCS Presents Ricky Carl  41026 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Ricky Carl",
+          "role": "vocals"
+        },
+        {
+          "name": "Dalton Hanson",
+          "role": "guitar"
+        },
+        {
+          "name": "Seth Anderson",
+          "role": "bass"
+        },
+        {
+          "name": "Nate Rendulich",
+          "role": "drums"
+        }
+      ],
+      "genre": "Texas-style country",
+      "established": null,
+      "description": "Ricky Carl delivers Texas-style country from the North, blending classic country roots with modern rock influence."
     },
     {
       "name": "Rocking Rodents",
@@ -4863,7 +7042,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Rocking Rodents - bandcamp - 00:30.mp3"
+      "clip_file": "clips/Rocking Rodents - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Calliope Opal",
+          "role": "vocals"
+        },
+        {
+          "name": "Corduroy Jompson",
+          "role": "guitar"
+        },
+        {
+          "name": "Xander Ripley-Jaakola",
+          "role": "bass"
+        },
+        {
+          "name": "Alec Williams",
+          "role": "drums"
+        }
+      ],
+      "genre": "rock",
+      "established": null,
+      "description": "A four-piece rock ensemble featuring a cool, casual rock sound with mostly original compositions. Their debut album is set for release shortly before the festival."
     },
     {
       "name": "Rory Van James",
@@ -4905,7 +7105,28 @@
       "refrain_start": 131.9,
       "refrain_end": 146.9,
       "clip_file": "clips/Rory Van James - Rory Van James  Tiny Desk Contest 2020 - 02:11.mp3",
-      "facebook": "https://www.facebook.com/roryjamesmuse/"
+      "facebook": "https://www.facebook.com/roryjamesmuse/",
+      "members": [
+        {
+          "name": "Rory Van James",
+          "role": "singer-songwriter"
+        },
+        {
+          "name": "Abe Curran",
+          "role": "guitars, vocals"
+        },
+        {
+          "name": "Dave Jorgenson",
+          "role": "trumpet, keys"
+        },
+        {
+          "name": "Jonny Castle",
+          "role": "percussion"
+        }
+      ],
+      "genre": "psychedelic country",
+      "established": null,
+      "description": "A Duluth-based artist blending psychedelic textures with country storytelling. The former professional baseball player crafts introspective music exploring themes of travel and personal discovery."
     },
     {
       "name": "Ross Thorn",
@@ -4967,7 +7188,24 @@
       "refrain_start": 131.4,
       "refrain_end": 146.4,
       "clip_file": "clips/Ross Thorn - Ross Thorn  The Lighthouse Live Sessions - 02:11.mp3",
-      "facebook": "https://www.facebook.com/RossThornMusic/"
+      "facebook": "https://www.facebook.com/RossThornMusic/",
+      "members": [
+        {
+          "name": "Ross Thorn",
+          "role": "vocals, songwriter"
+        },
+        {
+          "name": "Clifton Nesseth",
+          "role": null
+        },
+        {
+          "name": "Jennifer Krussow",
+          "role": null
+        }
+      ],
+      "genre": "folk and country",
+      "established": null,
+      "description": "A Duluth-based artist whose work celebrates Midwestern life and working-class resilience with songs blending warmth, humor, and soul."
     },
     {
       "name": "Ryan Van Slooten",
@@ -5012,7 +7250,28 @@
       "refrain_start": 193.4,
       "refrain_end": 208.4,
       "clip_file": "clips/Ryan Van Slooten - Ryan Van Slooten- Gone Homegrown Music Festival 2014 - 03:13.mp3",
-      "facebook": "https://www.facebook.com/ryanvanslootenmusic/"
+      "facebook": "https://www.facebook.com/ryanvanslootenmusic/",
+      "members": [
+        {
+          "name": "Ryan Van Slooten",
+          "role": "vocals"
+        },
+        {
+          "name": "Allen Cragin",
+          "role": "guitar"
+        },
+        {
+          "name": "Tom Berrigan",
+          "role": "bass"
+        },
+        {
+          "name": "Jake Willis",
+          "role": "drums"
+        }
+      ],
+      "genre": "hard rock, singer-songwriter",
+      "established": 2000,
+      "description": "Van Slooten's music fuses hard rock energy with singer-songwriter intimacy. A Homegrown veteran since 2000, he released his fifth album in 2023."
     },
     {
       "name": "Salt and Pine",
@@ -5052,7 +7311,20 @@
       },
       "website": "https://saltandpinemusic.com/",
       "facebook": "https://www.facebook.com/saltandpinemusic",
-      "spotify": "https://open.spotify.com/artist/7MxT8oEThyiUkW5PVO8Utw"
+      "spotify": "https://open.spotify.com/artist/7MxT8oEThyiUkW5PVO8Utw",
+      "members": [
+        {
+          "name": "Charity Huot Benedict",
+          "role": null
+        },
+        {
+          "name": "Nate Weiler",
+          "role": null
+        }
+      ],
+      "genre": "alt-folk, bluegrass, jazz",
+      "established": null,
+      "description": "An alt-folk duo from Duluth that delivers honest songs with soulful harmonies and a touch of jazz."
     },
     {
       "name": "Sea Smoke Aerial Arts",
@@ -5121,7 +7393,28 @@
       "facebook": "https://www.facebook.com/shadowsofmeband/",
       "refrain_start": 158.5,
       "refrain_end": 173.5,
-      "clip_file": "clips/Shadows of Me - Shadows of Me #metalcore   #music   #metal  #spotify     #breakdown   #newmusic  - 02:38.mp3"
+      "clip_file": "clips/Shadows of Me - Shadows of Me #metalcore   #music   #metal  #spotify     #breakdown   #newmusic  - 02:38.mp3",
+      "members": [
+        {
+          "name": "Rick Chida",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Cory Christofferson",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Matt Erickson",
+          "role": "bass"
+        },
+        {
+          "name": "Ryan Gundstrom",
+          "role": "drums"
+        }
+      ],
+      "genre": "hard rock and metal",
+      "established": 2004,
+      "description": "Band celebrating two decades of music, drawing from early 2000s post-grunge, nu-metal, and metalcore."
     },
     {
       "name": "Shakin' Not Stirred (SNS)",
@@ -5155,7 +7448,28 @@
       "facebook": "https://www.facebook.com/Shakinnotstirred4/",
       "refrain_start": 126.0,
       "refrain_end": 141.0,
-      "clip_file": "clips/Shakin' Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3"
+      "clip_file": "clips/Shakin' Not Stirred (SNS) - Hey You - SnS (Shakin' - Not Stirred) - 02:06.mp3",
+      "members": [
+        {
+          "name": "Scott Johnson",
+          "role": "vocals, lead guitar"
+        },
+        {
+          "name": "Tony Garland",
+          "role": "drums"
+        },
+        {
+          "name": "Mike Weinandt",
+          "role": "bass"
+        },
+        {
+          "name": "Kyle Melhem",
+          "role": "rhythm guitar"
+        }
+      ],
+      "genre": "rock and blues",
+      "established": 2018,
+      "description": "A four-piece ensemble deeply rooted in 12-bar blues that performs original compositions and reimagined classic standards with guitar improvisational freedom."
     },
     {
       "name": "Sidestreet Detour",
@@ -5199,7 +7513,24 @@
       "facebook": "https://www.facebook.com/p/Sidestreet-Detour-100084443725200/",
       "refrain_start": 175.8,
       "refrain_end": 190.8,
-      "clip_file": "clips/Sidestreet Detour - Sidestreet Detour I'll Be Around (orignal music), Rival House at Grand Casino-Hi - 02:55.mp3"
+      "clip_file": "clips/Sidestreet Detour - Sidestreet Detour I'll Be Around (orignal music), Rival House at Grand Casino-Hi - 02:55.mp3",
+      "members": [
+        {
+          "name": "Russ Sackett",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Stephanie Jago",
+          "role": "keyboards, bass"
+        },
+        {
+          "name": "Bart Porter",
+          "role": "drums"
+        }
+      ],
+      "genre": "Americana, heartland rock",
+      "established": 2022,
+      "description": "A three-piece ensemble performing dynamic rock and country covers alongside original compositions, active across the Upper Midwest since 2022."
     },
     {
       "name": "Sister Veery",
@@ -5242,7 +7573,36 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Sister Veery - bandcamp - 00:30.mp3"
+      "clip_file": "clips/Sister Veery - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Molly Hilgenberg",
+          "role": "vocals, keys"
+        },
+        {
+          "name": "Shanna Willie",
+          "role": "drums"
+        },
+        {
+          "name": "Michael Geraci",
+          "role": "bass"
+        },
+        {
+          "name": "Chad Hilgenberg",
+          "role": "banjo"
+        },
+        {
+          "name": "Chris Rourke",
+          "role": "guitar"
+        },
+        {
+          "name": "Adeline Wright",
+          "role": "vocals"
+        }
+      ],
+      "genre": "space folk, indie rock, pop, country",
+      "established": 2021,
+      "description": "Molly Hilgenberg's music project crafts songs exploring nature and inner life. The full band formed in 2025 to release Cosmic Relevance."
     },
     {
       "name": "Skarlett Woods",
@@ -5304,7 +7664,16 @@
       "refrain_start": 250.5,
       "refrain_end": 265.5,
       "clip_file": "clips/Skarlett Woods - Skarlett Woods  The Last Love Song (Live on PBS Backroads) - 04:10.mp3",
-      "facebook": "https://www.facebook.com/skarlettwoods/"
+      "facebook": "https://www.facebook.com/skarlettwoods/",
+      "members": [
+        {
+          "name": "Skarlett Woods",
+          "role": "vocals, seven-string guitar"
+        }
+      ],
+      "genre": "pop-folk, rock",
+      "established": null,
+      "description": "Soulful artist with an unusually wide breadth of tonal styles and inflections. Her 2023 album explores themes of love, adventure, and introspection."
     },
     {
       "name": "Slape",
@@ -5348,7 +7717,28 @@
       "refrain_end": null,
       "clip_file": null,
       "website": "https://slapemusic.com/",
-      "facebook": "https://www.facebook.com/slape.music/"
+      "facebook": "https://www.facebook.com/slape.music/",
+      "members": [
+        {
+          "name": "Evan Arnold",
+          "role": "guitar, lead vocals"
+        },
+        {
+          "name": "Mikey Merritt",
+          "role": "bass"
+        },
+        {
+          "name": "William Guy",
+          "role": "guitar"
+        },
+        {
+          "name": "Liam Feighny",
+          "role": "drums"
+        }
+      ],
+      "genre": "Midwest emo with pop influences",
+      "established": null,
+      "description": "Slape merges the emotional depth of Midwest emo with the infectious hooks of pop, creating a sound that's both haunting and anthemic."
     },
     {
       "name": "So What",
@@ -5386,7 +7776,28 @@
         "sourceType": null,
         "note": "removed — P!NK song with karaoke lyrics"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Nick Stenstrup",
+          "role": "guitar"
+        },
+        {
+          "name": "Kaleb Montgomery",
+          "role": "guitar"
+        },
+        {
+          "name": "John Zmyslony",
+          "role": "bass"
+        },
+        {
+          "name": "Brian Pfeifer",
+          "role": "drums"
+        }
+      ],
+      "genre": "blues rock",
+      "established": null,
+      "description": "A four-piece ensemble blending jazz and funk influences, delivering soulful originals with deep yet accessible lyrics."
     },
     {
       "name": "Sometime, Maybe",
@@ -5424,7 +7835,28 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Mary Hermanson",
+          "role": "keyboard, vocals"
+        },
+        {
+          "name": "Asa Harting",
+          "role": "electric guitar, vocals"
+        },
+        {
+          "name": "Erick Hermanson",
+          "role": "bass"
+        },
+        {
+          "name": "Luke Mirau",
+          "role": "drums"
+        }
+      ],
+      "genre": "indie alt-rock",
+      "established": null,
+      "description": "The band performs a mix of heartfelt originals and covers, with recorded tunes including Leave You Behind and Bittersweet."
     },
     {
       "name": "Sons of Fogtown",
@@ -5453,7 +7885,32 @@
         "confidence": null,
         "note": "search exhausted across all known platforms (2026-04-15 final pass): 5-piece Duluth band rooted in rock/blues/grunge (Tristan Beaster, Karl Beaster, Nate Stumme, Darin Steenerson, Ryan Bauers); perform originals plus covers (Tom Petty, Radiohead, RHCP, Pink Floyd, White Stripes, Weezer, Santana, Billie Eilish). perfectduluthday.com event listing links to a Facebook event (facebook.com/events/1378519316490975/) only. duluthhomegrown.org/bands/sons-of-fogtown/ confirms members and bio but provides zero external links. visitduluth.com event listing has no music links. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Instagram, Facebook — no recorded music found on any platform."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Tristan Beaster",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Karl Beaster",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Nate Stumme",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Darin Steenerson",
+          "role": "bass"
+        },
+        {
+          "name": "Ryan Bauers",
+          "role": "drums"
+        }
+      ],
+      "genre": "rock, blues, grunge",
+      "established": null,
+      "description": "A five-piece delivering sounds rooted in rock, blues, and grunge."
     },
     {
       "name": "Sorrows Never Die",
@@ -5487,7 +7944,24 @@
       "facebook": "https://www.facebook.com/profile.php?id=61551851477286",
       "refrain_start": 155.2,
       "refrain_end": 170.2,
-      "clip_file": "clips/Sorrows Never Die - TCS Presents Sorrows Never Die  5225 - 02:35.mp3"
+      "clip_file": "clips/Sorrows Never Die - TCS Presents Sorrows Never Die  5225 - 02:35.mp3",
+      "members": [
+        {
+          "name": "Nicholas Quinones",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Link Hunter",
+          "role": "bass"
+        },
+        {
+          "name": "Jevin Joki",
+          "role": "drums"
+        }
+      ],
+      "genre": "metalcore",
+      "established": null,
+      "description": "A metalcore band characterized by bold aesthetics and heavy instrumentation, with influences from Sleep Token and Korn."
     },
     {
       "name": "Southpaw",
@@ -5537,7 +8011,28 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Southpaw - bandcamp - 00:30.mp3",
-      "facebook": "https://www.facebook.com/southpawmn/"
+      "facebook": "https://www.facebook.com/southpawmn/",
+      "members": [
+        {
+          "name": "Nate Pykkonen",
+          "role": "electric guitar"
+        },
+        {
+          "name": "Isaac Smith",
+          "role": "electric guitar"
+        },
+        {
+          "name": "Nate Rendulich",
+          "role": "drums"
+        },
+        {
+          "name": "Dalton Hanson",
+          "role": "bass"
+        }
+      ],
+      "genre": "post-Midwest mathcore",
+      "established": null,
+      "description": "An instrumental four-piece known for energetic metal-adjacent sound featuring dynamic chord changes, rapid tempo changes, and riffs for days."
     },
     {
       "name": "Spin Collective",
@@ -5577,7 +8072,48 @@
       "facebook": "https://www.facebook.com/p/the-Spin-Collective-100046370025743/",
       "refrain_start": 22.8,
       "refrain_end": 37.8,
-      "clip_file": "clips/Spin Collective - The Spin Collective at Homegrown Music Festival - 00:22.mp3"
+      "clip_file": "clips/Spin Collective - The Spin Collective at Homegrown Music Festival - 00:22.mp3",
+      "members": [
+        {
+          "name": "Jillian Forte",
+          "role": "dancer"
+        },
+        {
+          "name": "Matt Lindberg",
+          "role": "dancer"
+        },
+        {
+          "name": "Denise Hooper",
+          "role": "dancer"
+        },
+        {
+          "name": "Aleasha Hladilek-Falter",
+          "role": "dancer"
+        },
+        {
+          "name": "Amethyst Leamuria Harle",
+          "role": "dancer"
+        },
+        {
+          "name": "Erin Filletoe",
+          "role": "dancer"
+        },
+        {
+          "name": "Hannah Albert",
+          "role": "dancer"
+        },
+        {
+          "name": "Jayme Hudson",
+          "role": "dancer"
+        },
+        {
+          "name": "Sherry Christensen",
+          "role": "dancer"
+        }
+      ],
+      "genre": "fire spinning, flow performance",
+      "established": 2010,
+      "description": "A fire spinning and flow troupe that choreographs pieces with flaming staff, poi, hula hoops, fans, and innovative props synced to various music genres."
     },
     {
       "name": "Squid City Slingers",
@@ -5622,7 +8158,24 @@
       "refrain_start": 121.8,
       "refrain_end": 136.8,
       "clip_file": "clips/Squid City Slingers - Squid City Slingers - 'Like A Dog' (Original) Live at Midway Saloon  St. Paul, M - 02:01.mp3",
-      "facebook": "https://www.facebook.com/squidcityslingers"
+      "facebook": "https://www.facebook.com/squidcityslingers",
+      "members": [
+        {
+          "name": "Sydney \"Squid\" Wojszysnki",
+          "role": "fiddle"
+        },
+        {
+          "name": "Riki Olson",
+          "role": "upright bass"
+        },
+        {
+          "name": "Christopher Cuellar",
+          "role": "guitar"
+        }
+      ],
+      "genre": "bluegrass, folk, country, gypsy jazz",
+      "established": null,
+      "description": "A high-energy acoustic trio performing a blend of bluegrass, folk, country, and gypsy jazz, featuring three-part vocal harmonies and appearances on NPR."
     },
     {
       "name": "Stardust Collective",
@@ -5662,7 +8215,28 @@
       "facebook": "https://www.facebook.com/stardustcollectiveband/",
       "refrain_start": 50.7,
       "refrain_end": 65.7,
-      "clip_file": "clips/Stardust Collective - The Slice  Live from Studio A with Stardust Collective - 00:50.mp3"
+      "clip_file": "clips/Stardust Collective - The Slice  Live from Studio A with Stardust Collective - 00:50.mp3",
+      "members": [
+        {
+          "name": "Aaron Tank",
+          "role": "guitar, bass"
+        },
+        {
+          "name": "Eric Bong",
+          "role": "guitar, bass"
+        },
+        {
+          "name": "Amy Ugstad",
+          "role": "drums"
+        },
+        {
+          "name": "Shawna Weaver",
+          "role": "violin, keyboards"
+        }
+      ],
+      "genre": "rock",
+      "established": null,
+      "description": "Four-piece ensemble performing original compositions that push rock boundaries through soaring harmonies and intricate melodies."
     },
     {
       "name": "Stel",
@@ -5703,7 +8277,16 @@
       "refrain_end": null,
       "clip_file": null,
       "facebook": "https://www.facebook.com/musicstel/",
-      "website": "https://www.stelmusic.com/"
+      "website": "https://www.stelmusic.com/",
+      "members": [
+        {
+          "name": "Brian Stelmaszewski",
+          "role": "guitar, vocals"
+        }
+      ],
+      "genre": "rock, blues, country",
+      "established": null,
+      "description": "Solo acoustic performer with nearly three decades of experience, blending rock, blues, and country with a laid-back singer-songwriter style."
     },
     {
       "name": "Steve Solkela",
@@ -5757,7 +8340,16 @@
       "website": "https://stevesolkela.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Steve Solkela - Steve Solkela - The Minnesota Massacre - 00:30.mp3"
+      "clip_file": "clips/Steve Solkela - Steve Solkela - The Minnesota Massacre - 00:30.mp3",
+      "members": [
+        {
+          "name": "Steve Solkela",
+          "role": "musician, vocalist"
+        }
+      ],
+      "genre": "comedic musical, multi-genre",
+      "established": null,
+      "description": "A one-man performer who plays numerous instruments while singing in multiple languages. His energetic shows blend music with humor and theatrical elements."
     },
     {
       "name": "Sugar on the Roof",
@@ -5802,7 +8394,28 @@
       "facebook": "https://www.facebook.com/sugarontheroof/",
       "refrain_start": 68.3,
       "refrain_end": 83.3,
-      "clip_file": "clips/Sugar on the Roof - Sugar On The Roof Homegrown 2019 - 01:08.mp3"
+      "clip_file": "clips/Sugar on the Roof - Sugar On The Roof Homegrown 2019 - 01:08.mp3",
+      "members": [
+        {
+          "name": "Megan Reynolds",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Jefferson Reynolds",
+          "role": "banjo, trombone"
+        },
+        {
+          "name": "Jen Krussow",
+          "role": "upright bass"
+        },
+        {
+          "name": "Clancy Ward",
+          "role": "fiddle, vocals"
+        }
+      ],
+      "genre": "1930s-1940s American roots, old-time string band, Western swing",
+      "established": null,
+      "description": "A quartet delivering sweet and swanky melodies with honeyed harmonies by blending historical roots music traditions with original compositions."
     },
     {
       "name": "Taylor James Donskey",
@@ -5846,7 +8459,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Taylor James Donskey - Funny Dogs by Taylor James Donskey Live at Suede Studio - 00:30.mp3",
-      "facebook": "https://www.facebook.com/taylorjamesdonskey/"
+      "facebook": "https://www.facebook.com/taylorjamesdonskey/",
+      "members": [
+        {
+          "name": "Taylor James Donskey",
+          "role": "vocals, bass"
+        },
+        {
+          "name": "Alex Young",
+          "role": "percussion"
+        },
+        {
+          "name": "Nikki Lemire",
+          "role": "harp, vocal harmonies"
+        },
+        {
+          "name": "Andrew Wozniak",
+          "role": "slide guitar"
+        },
+        {
+          "name": "Dave Mehling",
+          "role": "guitars, percussion, synths, keys"
+        }
+      ],
+      "genre": "folk, alt-country, rock, indie",
+      "established": null,
+      "description": "A songwriter crafting narratives centered on ordinary people, drawing inspiration from Los Lobos, Ry Cooder, and Daniel Lanois."
     },
     {
       "name": "Teague Alexy & The Common Thread",
@@ -5904,7 +8542,36 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/Teague Alexy & The Common Thread - Teague Alexy sololive Sacred Heart - Duluth, MN - 00:30.mp3",
-      "facebook": "https://www.facebook.com/teaguealexymusic/"
+      "facebook": "https://www.facebook.com/teaguealexymusic/",
+      "members": [
+        {
+          "name": "Teague Alexy",
+          "role": "vocals, guitar, harmonica"
+        },
+        {
+          "name": "Owen Mahon",
+          "role": "percussion"
+        },
+        {
+          "name": "Tyler Dubla",
+          "role": "percussion"
+        },
+        {
+          "name": "Rob Jones",
+          "role": "piano"
+        },
+        {
+          "name": "Brian Wells",
+          "role": "bass"
+        },
+        {
+          "name": "Jacob Mahon",
+          "role": "guitar"
+        }
+      ],
+      "genre": "roots-rock with blues, reggae, Irish, bluegrass, hip-hop, country, folk",
+      "established": null,
+      "description": "A six-piece ensemble led by award-winning Duluth musician and storyteller Teague Alexy, centered in roots-rock with highlights of blues, reggae, and folk."
     },
     {
       "name": "The Adjustments",
@@ -5944,7 +8611,28 @@
       "facebook": "https://www.facebook.com/adjustmentsmusic/",
       "refrain_start": 159.8,
       "refrain_end": 174.8,
-      "clip_file": "clips/The Adjustments - The Adjustments - Hollywood (Live @ 218 Taphouse) - 02:39.mp3"
+      "clip_file": "clips/The Adjustments - The Adjustments - Hollywood (Live @ 218 Taphouse) - 02:39.mp3",
+      "members": [
+        {
+          "name": "Justin Lofquist",
+          "role": "guitar"
+        },
+        {
+          "name": "Alex Nelson",
+          "role": "keys"
+        },
+        {
+          "name": "Tim Nelson",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Charles Lattimore",
+          "role": "drums"
+        }
+      ],
+      "genre": "blues-rock",
+      "established": null,
+      "description": "A four-piece ensemble that has performed in Northern Minnesota for over a decade, featuring driving rhythms and lyrical stories with harmonized vocals."
     },
     {
       "name": "The Body Electric Cabaret",
@@ -6027,7 +8715,20 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/The Brothers Burn Mountain - The Brothers Burn Mountain @ Smith Bros. Coffee House 1-14-17 - 00:30.mp3",
-      "facebook": "https://www.facebook.com/thebrothersburnmountain/"
+      "facebook": "https://www.facebook.com/thebrothersburnmountain/",
+      "members": [
+        {
+          "name": "Ryan Dermody",
+          "role": "vocals, instruments"
+        },
+        {
+          "name": "Jesse Dermody",
+          "role": "vocals, instruments"
+        }
+      ],
+      "genre": "blues, Americana, singer-songwriter",
+      "established": 1999,
+      "description": "Real-life brothers who blend Afro-Cuban rhythms with blues, Americana, and spontaneous musical exploration, with performances concluding in extended drum jam sessions."
     },
     {
       "name": "The Casualty Company",
@@ -6062,7 +8763,16 @@
         "confidence": null,
         "note": "removed — wrong video match"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Tanner Classon",
+          "role": "solo project"
+        }
+      ],
+      "genre": "pop punk, prog rock, alternative acoustic",
+      "established": 2023,
+      "description": "A solo project by Tanner Classon that creates a full band sound using guitar, vocals, and production software, drawing heavily from 2005-era emo and alternative music."
     },
     {
       "name": "The Crunchy Bunch",
@@ -6110,7 +8820,24 @@
       "website": "https://www.thecrunchybunch.info/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/The Crunchy Bunch - bandcamp - 00:30.mp3"
+      "clip_file": "clips/The Crunchy Bunch - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Christopher LeBlanc",
+          "role": "DJ"
+        },
+        {
+          "name": "Dan Branovan",
+          "role": "DJ"
+        },
+        {
+          "name": "Alexis LeBlanc",
+          "role": "DJ"
+        }
+      ],
+      "genre": "hip-hop, house, electro, dance",
+      "established": null,
+      "description": "A DJ collective performing for nearly a decade, known for their dance music sets. They host a residency at Bent Paddle Brewery and collaborate on quarterly mixes."
     },
     {
       "name": "The Draco Volans",
@@ -6155,7 +8882,28 @@
       "refrain_start": 152.5,
       "refrain_end": 167.5,
       "clip_file": "clips/The Draco Volans - The Draco Volans - The Sound of Yellow (Official Video) - 02:32.mp3",
-      "facebook": "https://www.facebook.com/draco.volans.9"
+      "facebook": "https://www.facebook.com/draco.volans.9",
+      "members": [
+        {
+          "name": "Chris Burgan",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Austin Korkowski",
+          "role": "bass, lead vocals"
+        },
+        {
+          "name": "Cale Henk",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Antonio Davis",
+          "role": "drums, percussion"
+        }
+      ],
+      "genre": "indie/surf rock",
+      "established": 2024,
+      "description": "A groovy indie/surf rock band creating catchy, danceable guitar-driven songs about escapism and building desired lives."
     },
     {
       "name": "The Gemstones",
@@ -6195,7 +8943,28 @@
       "facebook": "https://www.facebook.com/thegemstonesband/",
       "refrain_start": 103.7,
       "refrain_end": 118.7,
-      "clip_file": "clips/The Gemstones - The Gemstones LIVE at the Cedar Lounge 10012025 - 01:43.mp3"
+      "clip_file": "clips/The Gemstones - The Gemstones LIVE at the Cedar Lounge 10012025 - 01:43.mp3",
+      "members": [
+        {
+          "name": "Courtney Ellian",
+          "role": "keyboards"
+        },
+        {
+          "name": "Manny Eisele",
+          "role": "bass"
+        },
+        {
+          "name": "Josh Nickila",
+          "role": "guitar"
+        },
+        {
+          "name": "Ian Hopp",
+          "role": "drums"
+        }
+      ],
+      "genre": "soul, R&B, funk, jazz",
+      "established": null,
+      "description": "Duluth's most determined purveyors of soul, R&B, funk, and jazz, blending gritty grooves with shared vocal harmonies across all members."
     },
     {
       "name": "The Jambronies",
@@ -6240,7 +9009,28 @@
       "facebook": "https://www.facebook.com/61557618656163/",
       "refrain_start": 182.9,
       "refrain_end": 197.9,
-      "clip_file": "clips/The Jambronies - The Jambronies - Sir Ben's, Duluth MN - 122025 (Full Show) - 03:02.mp3"
+      "clip_file": "clips/The Jambronies - The Jambronies - Sir Ben's, Duluth MN - 122025 (Full Show) - 03:02.mp3",
+      "members": [
+        {
+          "name": "Col DiMeglio",
+          "role": "guitar, lead vocals"
+        },
+        {
+          "name": "Craig Steiskal",
+          "role": "keyboards"
+        },
+        {
+          "name": "Seth Anderson",
+          "role": "bass"
+        },
+        {
+          "name": "Pete Heitz",
+          "role": "drums"
+        }
+      ],
+      "genre": "jam band with surf-rock, blues, jazz, folk",
+      "established": null,
+      "description": "A four-piece jam band that never plays the same show twice, blending surf-rock energy with blues, rock, jazz, and folk styles for highly danceable original music."
     },
     {
       "name": "The Leave Alones",
@@ -6279,7 +9069,28 @@
       "type": "band_set",
       "refrain_start": 266.0,
       "refrain_end": 281.0,
-      "clip_file": "clips/The Leave Alones - TCS Presents The Leave Alones  3626 - 04:26.mp3"
+      "clip_file": "clips/The Leave Alones - TCS Presents The Leave Alones  3626 - 04:26.mp3",
+      "members": [
+        {
+          "name": "Cole Holstrom",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Erik Sather",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Dave Mold",
+          "role": "bass"
+        },
+        {
+          "name": "Mike Ballard",
+          "role": "drums"
+        }
+      ],
+      "genre": "alt-garage rock with punk edge",
+      "established": null,
+      "description": "The Leave Alones deliver energetic, loud compositions about fractured romances and small-town escape, blending pop-punk emotion with early Midwest alternative influences."
     },
     {
       "name": "The Lindula Brothers",
@@ -6322,7 +9133,20 @@
       "refrain_start": 69.2,
       "refrain_end": 84.2,
       "clip_file": "clips/The Lindula Brothers - My Brother Works for the CIA - Lindula Brothers at Carmody's Irish Pub - 01:09.mp3",
-      "facebook": "https://www.facebook.com/LindulaBrothers/"
+      "facebook": "https://www.facebook.com/LindulaBrothers/",
+      "members": [
+        {
+          "name": "John Lindula",
+          "role": "vocals, guitar, mandolin"
+        },
+        {
+          "name": "Brian Lindula",
+          "role": "banjo, backup vocals"
+        }
+      ],
+      "genre": "folk and bluegrass",
+      "established": null,
+      "description": "A brother duo from Taconite Country performing original compositions alongside modern and traditional covers spanning folk traditions from America, Finland, Ireland, and the UK."
     },
     {
       "name": "The Lonely Loons",
@@ -6365,7 +9189,28 @@
       "type": "band_set",
       "refrain_start": 132.6,
       "refrain_end": 147.6,
-      "clip_file": "clips/The Lonely Loons - The Lonely Loons  Indie-Rock - 02:12.mp3"
+      "clip_file": "clips/The Lonely Loons - The Lonely Loons  Indie-Rock - 02:12.mp3",
+      "members": [
+        {
+          "name": "Tanner Koetter",
+          "role": "vocals, piano, guitar"
+        },
+        {
+          "name": "Parker Warfield",
+          "role": "bass, guitar"
+        },
+        {
+          "name": "Matt Young",
+          "role": "guitar"
+        },
+        {
+          "name": "Tony Kuefler",
+          "role": "drums"
+        }
+      ],
+      "genre": "rock (indie, psych-blues, lounge-rock)",
+      "established": null,
+      "description": "A four-piece rock band with roots in Duluth, Bemidji, and the Twin Cities, blending indie, psych-blues, and lounge-rock influences reminiscent of Kings of Leon and The Strokes."
     },
     {
       "name": "The Mad Violin Scientist",
@@ -6400,7 +9245,16 @@
       "refrain_end": 179.1,
       "clip_file": "clips/The Mad Violin Scientist - Nick Hyde, the Mad Violin Scientist @ Duluth  Superior Film Fest Event (09 23 20 - 02:44.mp3",
       "facebook": "https://www.facebook.com/NickHydeViolin/",
-      "website": "https://www.nickhydeviolin.com/"
+      "website": "https://www.nickhydeviolin.com/",
+      "members": [
+        {
+          "name": "Nick Hyde",
+          "role": "violinist, DJ"
+        }
+      ],
+      "genre": "electronic, dance",
+      "established": null,
+      "description": "Nick Hyde experiments with new ways to fuse violin and technology through live performances featuring wild violin sound experiments, driving dance beats, and a fully synchronized light show."
     },
     {
       "name": "The Old Smugglers",
@@ -6445,7 +9299,32 @@
       "refrain_start": 30.0,
       "refrain_end": 45.0,
       "clip_file": "clips/The Old Smugglers - The Old Smugglers - Return to the Sea (Live at Green Room 10-26-2023) - 00:30.mp3",
-      "facebook": "https://www.facebook.com/theoldsmugglers/"
+      "facebook": "https://www.facebook.com/theoldsmugglers/",
+      "members": [
+        {
+          "name": "Erik Pearson",
+          "role": "vocals"
+        },
+        {
+          "name": "Nate Johnston",
+          "role": "bass"
+        },
+        {
+          "name": "Sage Ross",
+          "role": "saxophone"
+        },
+        {
+          "name": "Phil Reilly",
+          "role": "drums"
+        },
+        {
+          "name": "Eric Swanberg",
+          "role": "organ, bass"
+        }
+      ],
+      "genre": "shanty-rock, jazz-pirate, maritime folk",
+      "established": null,
+      "description": "A boisterous ensemble delivering shanty-rock, jazz-pirate sound with maritime-themed compositions and folk pieces about decadent misadventure."
     },
     {
       "name": "The Repairmen",
@@ -6484,7 +9363,32 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/The Repairmen - bandcamp - 00:30.mp3"
+      "clip_file": "clips/The Repairmen - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Garth Anderson",
+          "role": "vocals"
+        },
+        {
+          "name": "Joshua Tesch",
+          "role": "pedal steel guitar"
+        },
+        {
+          "name": "Timothy Rubin",
+          "role": "bass"
+        },
+        {
+          "name": "Jeremy Roseth",
+          "role": "drums"
+        },
+        {
+          "name": "Britt Johnson",
+          "role": "violin"
+        }
+      ],
+      "genre": "Americana",
+      "established": 2022,
+      "description": "The Repairmen deliver a rocking fix of Americana with road-worn songs rooted in grit, featuring pedal steel and fiddle elements."
     },
     {
       "name": "The Roadside Lupines",
@@ -6528,7 +9432,28 @@
       "refrain_start": 190.1,
       "refrain_end": 205.1,
       "clip_file": "clips/The Roadside Lupines - The Roadside Lupines- Terry (Back to Jail) - 03:10.mp3",
-      "facebook": "https://www.facebook.com/p/The-Roadside-Lupines-61567842652822/"
+      "facebook": "https://www.facebook.com/p/The-Roadside-Lupines-61567842652822/",
+      "members": [
+        {
+          "name": "Riley Altier",
+          "role": "guitar, vocals"
+        },
+        {
+          "name": "Kati Devitt",
+          "role": "bass, vocals"
+        },
+        {
+          "name": "Jason Coyle",
+          "role": "violin, mandolin, octave mandolin"
+        },
+        {
+          "name": "Jamie Sturlaugson",
+          "role": "banjo"
+        }
+      ],
+      "genre": "folk, country, bluegrass",
+      "established": null,
+      "description": "A four-piece Duluth-based ensemble that plays folk music as fresh and familiar as the North Shore itself, telling stories rooted in northern Minnesota culture."
     },
     {
       "name": "The Shane Nelson Band",
@@ -6563,7 +9488,32 @@
       "website": "https://www.shanenelsonmusic.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/The Shane Nelson Band - Shane Nelson - The Music Saved My Life - 00:30.mp3"
+      "clip_file": "clips/The Shane Nelson Band - Shane Nelson - The Music Saved My Life - 00:30.mp3",
+      "members": [
+        {
+          "name": "Shane Nelson",
+          "role": "songwriter, vocals"
+        },
+        {
+          "name": "Rokyyn Nelson",
+          "role": "harmonies, vocals"
+        },
+        {
+          "name": "Traxx Nelson",
+          "role": "drums"
+        },
+        {
+          "name": "Jessie Nelson",
+          "role": "bass"
+        },
+        {
+          "name": "Kristy Marie",
+          "role": "featured guest vocalist"
+        }
+      ],
+      "genre": "roots-driven rock and roll",
+      "established": null,
+      "description": "The band blends heartfelt songwriting with a soulful, roots-driven sound that transitions between intimate acoustic moments and upbeat rock."
     },
     {
       "name": "The Solicitors",
@@ -6605,7 +9555,40 @@
       "facebook": "https://www.facebook.com/TheSolicitors/",
       "refrain_start": 113.9,
       "refrain_end": 128.9,
-      "clip_file": "clips/The Solicitors - The Solicitors - Music For The Brothers (Metro Version, corrected volume) - 01:53.mp3"
+      "clip_file": "clips/The Solicitors - The Solicitors - Music For The Brothers (Metro Version, corrected volume) - 01:53.mp3",
+      "members": [
+        {
+          "name": "Tyler Railey",
+          "role": "vocals"
+        },
+        {
+          "name": "Riley Ramsey",
+          "role": "alto and tenor saxophone"
+        },
+        {
+          "name": "Beck Fulin",
+          "role": "trumpet"
+        },
+        {
+          "name": "Felix Hyde Owen",
+          "role": "guitar"
+        },
+        {
+          "name": "Haven Andersen",
+          "role": "keyboards"
+        },
+        {
+          "name": "Aaron O'Connor",
+          "role": "bass"
+        },
+        {
+          "name": "Luke Torrent",
+          "role": "drums"
+        }
+      ],
+      "genre": "pop and funk",
+      "established": null,
+      "description": "A seven-piece horn-infused ensemble delivering favorite pop and funk hits with covers from artists like Stevie Wonder and Earth Wind & Fire."
     },
     {
       "name": "The Trash Cats",
@@ -6651,7 +9634,20 @@
       "website": "https://trashcatsduluth.com/",
       "refrain_start": 152.2,
       "refrain_end": 167.2,
-      "clip_file": "clips/The Trash Cats - The Trash Cats – Full Show at the Superior Tavern (Duluth Homegrown 2024) - 02:32.mp3"
+      "clip_file": "clips/The Trash Cats - The Trash Cats – Full Show at the Superior Tavern (Duluth Homegrown 2024) - 02:32.mp3",
+      "members": [
+        {
+          "name": "Matt Sjelin",
+          "role": "keyboard"
+        },
+        {
+          "name": "Sean Mahoney",
+          "role": "guitar"
+        }
+      ],
+      "genre": "acoustic cat-rock",
+      "established": null,
+      "description": "A duo delivering a finely tuned mix of catchy originals and tender 90s alt-rock covers with tight harmonies."
     },
     {
       "name": "The Trinkets",
@@ -6690,7 +9686,20 @@
       "type": "band_set",
       "refrain_start": 118.0,
       "refrain_end": 133.0,
-      "clip_file": "clips/The Trinkets - Annabelle - The Trinkets - 01:58.mp3"
+      "clip_file": "clips/The Trinkets - Annabelle - The Trinkets - 01:58.mp3",
+      "members": [
+        {
+          "name": "Elsie Zimmerman",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "April Dressel",
+          "role": "drums"
+        }
+      ],
+      "genre": "indie-pop rock",
+      "established": null,
+      "description": "A Duluth-based band drawing inspiration from 90s acts like Green Day and Nirvana alongside contemporary artists such as Chapell Roan and Billie Eilish."
     },
     {
       "name": "Theory of Light",
@@ -6722,7 +9731,32 @@
         "sourceType": null,
         "note": "removed — Eternal Eclipse neoclassical, not the Duluth act"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Andrew Lipke",
+          "role": "guitar"
+        },
+        {
+          "name": "Joseph Anderson",
+          "role": "flute"
+        },
+        {
+          "name": "Aaron O'Connor",
+          "role": "trumpet"
+        },
+        {
+          "name": "Luke Busta",
+          "role": "bass"
+        },
+        {
+          "name": "Todd Garland",
+          "role": "drums"
+        }
+      ],
+      "genre": "jazz-rock fusion",
+      "established": null,
+      "description": "A funky electric ensemble blending instrumental prowess with a groovy rhythmic foundation, performing both classic jazz standards and original compositions."
     },
     {
       "name": "Thor & The Regulars",
@@ -6759,7 +9793,32 @@
         "note": "removed — The Regulars from Athens GA, not Duluth"
       },
       "type": "band_set",
-      "facebook": "https://www.facebook.com/ha.thor.n1998"
+      "facebook": "https://www.facebook.com/ha.thor.n1998",
+      "members": [
+        {
+          "name": "Thor Leseman",
+          "role": "singer-songwriter"
+        },
+        {
+          "name": "Austin Korkowski",
+          "role": "bass"
+        },
+        {
+          "name": "Mike Ballard",
+          "role": "drums"
+        },
+        {
+          "name": "Tessa Nicholas-Meade",
+          "role": "fiddle"
+        },
+        {
+          "name": "Al Oikari",
+          "role": "keys, organ, steel guitar"
+        }
+      ],
+      "genre": "psychobilly, Americana-roots rock",
+      "established": 2025,
+      "description": "A psychobilly, Americana-roots rock band fronted by singer-songwriter Thor Leseman, aiming to induce rosy retrospection and crack open listeners' craniums."
     },
     {
       "name": "Throw Me The Remote",
@@ -6802,7 +9861,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Throw Me The Remote - TCS Presents Throw Me The Remote  61325 - 00:30.mp3"
+      "clip_file": "clips/Throw Me The Remote - TCS Presents Throw Me The Remote  61325 - 00:30.mp3",
+      "members": [
+        {
+          "name": "Kevin Haglund",
+          "role": "vocals"
+        },
+        {
+          "name": "Daniel Haglund",
+          "role": "guitar"
+        },
+        {
+          "name": "John Leppke",
+          "role": "bass"
+        },
+        {
+          "name": "Aurora Grund",
+          "role": "drums"
+        }
+      ],
+      "genre": "metal",
+      "established": null,
+      "description": "A metal group featuring screaming, growling vocals layered with thrashing guitar and heavy basslines. They released an album titled God Will See That You Die Pig through Grim Tales Records."
     },
     {
       "name": "Tim Kaiser",
@@ -6845,7 +9925,16 @@
       "soundcloud": "https://soundcloud.com/timkaiser-1",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Tim Kaiser - Tim Kaiser - 00:30.mp3"
+      "clip_file": "clips/Tim Kaiser - Tim Kaiser - 00:30.mp3",
+      "members": [
+        {
+          "name": "Tim Kaiser",
+          "role": "experimental artist"
+        }
+      ],
+      "genre": "experimental, electronic",
+      "established": null,
+      "description": "Tim Kaiser performs atmospheric music using handmade instruments and found objects, creating soundscapes that are both visually and auditorily compelling."
     },
     {
       "name": "Two T's in a Pod",
@@ -6878,7 +9967,20 @@
       "type": "band_set",
       "refrain_start": 34.7,
       "refrain_end": 49.7,
-      "clip_file": "clips/Two T's in a Pod - Two T's in a Pod 'Joulu on Taas' - 00:34.mp3"
+      "clip_file": "clips/Two T's in a Pod - Two T's in a Pod 'Joulu on Taas' - 00:34.mp3",
+      "members": [
+        {
+          "name": "Breanne Tepler",
+          "role": "vocals, guitar, harmonica"
+        },
+        {
+          "name": "Anya Tepler",
+          "role": "vocals, guitar, harmonica"
+        }
+      ],
+      "genre": "children's, pop",
+      "established": null,
+      "description": "A mother-daughter duo performing charming children's songs, pop covers, and originals on guitar and harmonica."
     },
     {
       "name": "Underground 'til Sundown",
@@ -6919,7 +10021,28 @@
       "facebook": "https://www.facebook.com/Undergroundtilsundown/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Underground 'til Sundown - Underground 'Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3"
+      "clip_file": "clips/Underground 'til Sundown - Underground 'Til Sundown were added to this years Punk Rock Flea Market@undergro - 00:30.mp3",
+      "members": [
+        {
+          "name": "Mitch McCarroll",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Brad McCarroll",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Ryan Juntunen",
+          "role": "bass"
+        },
+        {
+          "name": "Teddy Dowling",
+          "role": "drums"
+        }
+      ],
+      "genre": "punk rock, melodic hardcore",
+      "established": null,
+      "description": "A four-piece band performing loud and fast melodic hardcore music. They released the album An Orchestrated Chaos in 2024."
     },
     {
       "name": "Vena Sera",
@@ -6956,7 +10079,28 @@
       "type": "band_set",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Vena Sera - Vena Sera - Instinct feat. Michael Blackmond (Official Lyric Video) - 00:30.mp3"
+      "clip_file": "clips/Vena Sera - Vena Sera - Instinct feat. Michael Blackmond (Official Lyric Video) - 00:30.mp3",
+      "members": [
+        {
+          "name": "Joel Kunze",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Ayden Berglind",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "John Roemhildt",
+          "role": "bass"
+        },
+        {
+          "name": "Casey Kemi",
+          "role": "drums"
+        }
+      ],
+      "genre": "easycore pop-punk rock",
+      "established": null,
+      "description": "A newly formed four-piece easycore pop-punk rock group featuring dual vocalists and guitarists alongside a solid rhythm section."
     },
     {
       "name": "Venus de Mars and All The Pretty Horses",
@@ -7007,7 +10151,40 @@
       "website": "https://venusdemars.com/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Venus de Mars and All The Pretty Horses - bandcamp - 00:30.mp3"
+      "clip_file": "clips/Venus de Mars and All The Pretty Horses - bandcamp - 00:30.mp3",
+      "members": [
+        {
+          "name": "Venus de Mars",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Jendeen Forberg",
+          "role": null
+        },
+        {
+          "name": "Tempest Crane",
+          "role": null
+        },
+        {
+          "name": "Kat Morgan",
+          "role": null
+        },
+        {
+          "name": "Natalie Adams",
+          "role": null
+        },
+        {
+          "name": "Raven Harris",
+          "role": null
+        },
+        {
+          "name": "Lauren Ribeiro",
+          "role": null
+        }
+      ],
+      "genre": "glam-punk",
+      "established": 1993,
+      "description": "A trans-centered and allied band featuring heavy guitar riffs and ballad-inspired vocals, blending life experiences and eclectic visual aesthetics into their music."
     },
     {
       "name": "WICKIE",
@@ -7046,7 +10223,16 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Reece Wickland",
+          "role": "DJ"
+        }
+      ],
+      "genre": "techno, electronic dance music",
+      "established": null,
+      "description": "A DJ and founder of UMD Techno Club performing styles ranging from peak dark dancefloor techno to melodic and progressive indie dance music."
     },
     {
       "name": "WILBUR",
@@ -7084,7 +10270,32 @@
         "sourceType": null,
         "note": "removed — Wilbur Soot (UK YouTuber), not the Duluth act"
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Kevin Swanberg",
+          "role": null
+        },
+        {
+          "name": "Lee Petersen",
+          "role": null
+        },
+        {
+          "name": "RJ White",
+          "role": null
+        },
+        {
+          "name": "Andy Lund",
+          "role": null
+        },
+        {
+          "name": "Carl Pearson",
+          "role": null
+        }
+      ],
+      "genre": "bummer metal (stoner, doom, sludge)",
+      "established": null,
+      "description": "From Duluth and Minneapolis, WILBUR blends stoner, doom, and sludge metal that plunges listeners into the depths of existential despair."
     },
     {
       "name": "Water Cat",
@@ -7128,7 +10339,20 @@
       "facebook": "https://www.facebook.com/watercatmusicduluth/",
       "refrain_start": 82.6,
       "refrain_end": 97.6,
-      "clip_file": "clips/Water Cat - Water Cat - 01:22.mp3"
+      "clip_file": "clips/Water Cat - Water Cat - 01:22.mp3",
+      "members": [
+        {
+          "name": "Henry Bullard Turnquist",
+          "role": "multi-instrumentalist"
+        },
+        {
+          "name": "Emma Musto",
+          "role": "vocalist"
+        }
+      ],
+      "genre": "world music",
+      "established": null,
+      "description": "A duo blending instruments and influences from French, Spanish, Portuguese, and English traditions with African and global elements."
     },
     {
       "name": "Wes Hadrich",
@@ -7157,7 +10381,16 @@
         "confidence": null,
         "note": "search exhausted across all known platforms (2026-04-15 final pass): alt-country storyteller in Duluth scene since ~2007; recorded 4 albums 2007-2014 including 'Naturally Blue' (2014, with Greg Tiburzi, Steve Isakson, Mike Randoph, recorded at Sparta Sounds by Rich Mattson); performs 'gritty heartfelt Americana-esque' songs influenced by Springsteen, Gram Parsons, Jayhawks, Dwight Yoakam; reviewed in Duluth Reader (duluthreader.com/articles/2014/10/16/103785, Oct 2014) but no streaming links in review; duluthhomegrown.org/bands/wes-hadrich/ confirmed bio and album details but provides zero external links. Checked YouTube ('Rich Mattson Wes Hadrich' search: no results), Bandcamp, SoundCloud, Spotify, Apple Music, Amazon Music (no hit), CDBaby, Discogs, TikTok, Reddit, Linktree, Tidal, Deezer, Eventbrite, Facebook, Instagram — no recorded music found on any platform. Albums appear to be physical/CD-only releases with no digital distribution."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Wes Hadrich",
+          "role": "vocals, guitar"
+        }
+      ],
+      "genre": "country-folk, Americana",
+      "established": 2007,
+      "description": "A singer-songwriter performing gritty, heartfelt Americana-esque songs influenced by Bruce Springsteen, Gram Parsons, the Jayhawks, and Dwight Yoakam."
     },
     {
       "name": "Wetland Willows",
@@ -7191,7 +10424,20 @@
         "sourceType": null,
         "note": "search exhausted across all known platforms (2026-04-15 final pass): wife-and-husband duo Brooke (née Chaffee) and Caleb Anderson from Duluth; 'fun Americana sound with gospel undertones and New Orleans influences'; performed at Bent Paddle Brewing (Aug 2025, opening for Saltydog), Wussow's Concert Cafe, Dovetail Cafe for Homegrown 2026. Instagram account @wetlandwillows confirmed to exist but bio/links not accessible via fetch. duluthhomegrown.org/bands/wetland-willows/ confirmed duo identity and bio but provides zero external links. visitduluth.com event listing (saltydog-with-wetland-willows) has no music links. SoundCloud account soundcloud.com/caleb-anderson-44 exists but returned error page — unconfirmed identity. Checked YouTube, Bandcamp, SoundCloud, Spotify, Apple Music, TikTok, Reddit, Linktree, Tidal, Deezer, Amazon Music, Discogs, Eventbrite, Facebook, gottabesuperior.com — no recorded music found on any platform."
       },
-      "type": "band_set"
+      "type": "band_set",
+      "members": [
+        {
+          "name": "Brooke Anderson",
+          "role": "vocals, guitar, stomp box, foot tambourine"
+        },
+        {
+          "name": "Caleb Anderson",
+          "role": "piano, bass, melodies, rhythms"
+        }
+      ],
+      "genre": "Americana",
+      "established": null,
+      "description": "A husband-and-wife duo creating a full sound with rich melodies, gospel undertones, and thoughtful lyrics, influenced by the sounds of New Orleans."
     },
     {
       "name": "Willem Dafoe Fan Club",
@@ -7229,7 +10475,28 @@
       "facebook": "https://www.facebook.com/groups/528240343893184/",
       "refrain_start": 109.9,
       "refrain_end": 124.9,
-      "clip_file": "clips/Willem Dafoe Fan Club - Just Like Christmas by Low, performed by Willem Dafoe Fan Club - 01:49.mp3"
+      "clip_file": "clips/Willem Dafoe Fan Club - Just Like Christmas by Low, performed by Willem Dafoe Fan Club - 01:49.mp3",
+      "members": [
+        {
+          "name": "Hollis Sparhawk",
+          "role": "vocals, drums, omnichord"
+        },
+        {
+          "name": "Noah Ruona",
+          "role": "vocals, guitar"
+        },
+        {
+          "name": "Jon Marshall",
+          "role": "bass"
+        },
+        {
+          "name": "Kenneth Bressler",
+          "role": "synth, field recordings"
+        }
+      ],
+      "genre": "slowcore, shoegaze",
+      "established": 2023,
+      "description": "A band known for its hypnotic and haunting sound that creates ambient, introspective, and comforting songs across diverse venue types."
     },
     {
       "name": "Winzige Hosen",
@@ -7263,7 +10530,40 @@
       "facebook": "https://www.facebook.com/WinzigeHosen/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/Winzige Hosen - Winzige Hosen DULUTH MN - 00:30.mp3"
+      "clip_file": "clips/Winzige Hosen - Winzige Hosen DULUTH MN - 00:30.mp3",
+      "members": [
+        {
+          "name": "Kala Moria",
+          "role": "tuba"
+        },
+        {
+          "name": "Eric Bong",
+          "role": "bass"
+        },
+        {
+          "name": "Leon Rohrbaugh",
+          "role": "drums"
+        },
+        {
+          "name": "Patrick Sunderland",
+          "role": "trumpet"
+        },
+        {
+          "name": "Luke Nyen",
+          "role": "guitar"
+        },
+        {
+          "name": "Abe Curran",
+          "role": "guitar"
+        },
+        {
+          "name": "Brian Schanzenbach",
+          "role": "vocals, accordion"
+        }
+      ],
+      "genre": "punk polka",
+      "established": null,
+      "description": "The band blends polka with 90s era-punk featuring fast tempos, heavy guitars, and three-part harmonies celebrating Germanic traditions with contemporary rock energy."
     },
     {
       "name": "Witchfarm",
@@ -7290,7 +10590,28 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Jeree Small",
+          "role": "vocals, keys"
+        },
+        {
+          "name": "Sean Elmquist",
+          "role": "drums"
+        },
+        {
+          "name": "Anton Jimenez",
+          "role": "keys"
+        },
+        {
+          "name": "Matt Mobely",
+          "role": "bass"
+        }
+      ],
+      "genre": "experimental, synth",
+      "established": null,
+      "description": "A reformed lo-fi cult classic band offering a groove forward, synthy exploration of new material and reimagined pieces from earlier work."
     },
     {
       "name": "Woodblind",
@@ -7340,7 +10661,52 @@
       "website": "https://www.woodblindska.com/",
       "refrain_start": 124.2,
       "refrain_end": 139.2,
-      "clip_file": "clips/Woodblind - Woodblind, River of Truth - 02:04.mp3"
+      "clip_file": "clips/Woodblind - Woodblind, River of Truth - 02:04.mp3",
+      "members": [
+        {
+          "name": "Jason Wussow",
+          "role": "guitar"
+        },
+        {
+          "name": "Veikko Lepisto",
+          "role": "stand-up bass"
+        },
+        {
+          "name": "Jimi Cooper",
+          "role": "lead guitar"
+        },
+        {
+          "name": "Eli Bissonett",
+          "role": "fiddle"
+        },
+        {
+          "name": "Eric Cyr",
+          "role": "trombone"
+        },
+        {
+          "name": "George Ellsworth",
+          "role": "organ"
+        },
+        {
+          "name": "Teague Alexy",
+          "role": "harmonica"
+        },
+        {
+          "name": "Jen West",
+          "role": "vocals"
+        },
+        {
+          "name": "Tyler Dubla",
+          "role": "drums"
+        },
+        {
+          "name": "Bryan Johnson",
+          "role": "percussion"
+        }
+      ],
+      "genre": "acoustic ska",
+      "established": 2013,
+      "description": "The duo has performed stripped-down, acoustic ska since late 2013, expanding into a larger ensemble called the Jubilee Super Big Band for festival performances."
     },
     {
       "name": "Zeb or Zeke and the Run Away Screamings",
@@ -7374,7 +10740,16 @@
       "facebook": "https://www.facebook.com/ZOZATRAS/",
       "refrain_start": 126.1,
       "refrain_end": 141.1,
-      "clip_file": "clips/Zeb or Zeke and the Run Away Screamings - Zeb or Zeke and the Run Away Screamings - 532019 - 02:06.mp3"
+      "clip_file": "clips/Zeb or Zeke and the Run Away Screamings - Zeb or Zeke and the Run Away Screamings - 532019 - 02:06.mp3",
+      "members": [
+        {
+          "name": "Luke Moravec",
+          "role": "guitar, keyboard, drums, vocals"
+        }
+      ],
+      "genre": "rock",
+      "established": null,
+      "description": "A one-man band inspired by the original Scooby-Doo television series. Luke Moravec simultaneously plays multiple instruments to create a family-friendly rock experience."
     },
     {
       "name": "Zenith City Dance Collective",
@@ -7442,7 +10817,16 @@
       "type": "band_set",
       "refrain_start": null,
       "refrain_end": null,
-      "clip_file": null
+      "clip_file": null,
+      "members": [
+        {
+          "name": "Joe Belsito",
+          "role": "DJ"
+        }
+      ],
+      "genre": "techno, EDM",
+      "established": null,
+      "description": "Joe Belsito, performing as porb, is a DJ who started with the UMD Techno Club and has built a reputation across the Twin Ports region's electronic music scene."
     },
     {
       "name": "¡Radical Fun Time!",
@@ -7483,7 +10867,24 @@
       "facebook": "https://www.facebook.com/radicalfuntime/",
       "refrain_start": 30.0,
       "refrain_end": 45.0,
-      "clip_file": "clips/¡Radical Fun Time! - Radical Fun Time - Water is Life  Together we will stop the pipeline - 00:30.mp3"
+      "clip_file": "clips/¡Radical Fun Time! - Radical Fun Time - Water is Life  Together we will stop the pipeline - 00:30.mp3",
+      "members": [
+        {
+          "name": "Ole Punker",
+          "role": null
+        },
+        {
+          "name": "Skeeter Swan",
+          "role": null
+        },
+        {
+          "name": "LUKEIFER Ox",
+          "role": null
+        }
+      ],
+      "genre": "anarcho political crust",
+      "established": null,
+      "description": "Radical Fun Time blends punk music with activism, delivering chaotic guitar riffs that address environmentalism, treaty rights, and climate change."
     }
   ]
 }
