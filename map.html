@@ -694,13 +694,11 @@
   .tooltip .t-day { font-family: "Bebas Neue", sans-serif; font-size: 22px; letter-spacing: 0.04em; color: var(--spring); margin-top: 12px; line-height: 1; }
   .tooltip .t-day:first-of-type { margin-top: 0; }
   .tooltip .t-set { display: flex; gap: 10px; align-items: baseline; padding: 4px 6px; margin: 0 -6px; }
-  .tooltip .t-set.now { color: var(--hotter); }
   .tooltip .t-set.hovered {
     color: var(--spring); background: rgba(111,168,98,0.15);
     margin: 0 -6px; padding: 4px 6px; border-radius: 3px;
   }
   .tooltip .t-set .t-time { font-family: "JetBrains Mono", monospace; font-size: 13px; min-width: 58px; color: var(--bone-dim); }
-  .tooltip .t-set.now .t-time { color: var(--hotter); }
   .tooltip .t-set.hovered .t-time { color: var(--spring); }
   .tooltip .t-set.hovered .t-act { color: var(--bone); font-weight: 700; }
   .tooltip .t-set .t-act { font-size: 15px; color: var(--bone); }
@@ -1298,6 +1296,7 @@ let playing = false;
 const CUBE_SIZE = DISC_RADIUS * 0.022;
 const CUBE_GAP = CUBE_SIZE * 0.08;
 const cubeGeo = new THREE.BoxGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
+const sphereGeo = new THREE.SphereGeometry(CUBE_SIZE * 0.6, 16, 12);
 // Day-of-week palette — week unfolds through the spectrum.
 const DAY_COLORS = {
   Sun: 0x9f7dc7, // lilac / crocus
@@ -1533,9 +1532,10 @@ const venueMeshes = venuePlacements.map(p => {
   const [gx, gz] = inverseWarpXZ(x, z);
   const y = elevAt(gx, gz);
   const group = new THREE.Group();
+  const useGeo = v.markerType === "sphere" ? sphereGeo : cubeGeo;
   const cubes = venueSets.map((set, i) => {
     const mats = dayMats[set.day_of_week] || defaultMats;
-    const c = new THREE.Mesh(cubeGeo, mats.future);
+    const c = new THREE.Mesh(useGeo, mats.future);
     c.position.set(x, y + CUBE_SIZE / 2 + i * (CUBE_SIZE + CUBE_GAP), z);
     c.userData = { set, mats };
     group.add(c);
@@ -1683,9 +1683,8 @@ canvas.addEventListener("pointermove", (ev) => {
       const dayHex = "#" + (DAY_COLORS[daySets[0].day_of_week] || 0x8fa088).toString(16).padStart(6,"0");
       parts.push(`<div class="t-day" style="color:${dayHex}">${fmtDay(daySets[0].dt)}</div>`);
       daySets.forEach(s => {
-        const isNow = Math.abs(s.dt - currentTime) <= WINDOW_MIN * 60000;
         const isHovered = hoveredSet && s.act === hoveredSet.act && s.date === hoveredSet.date;
-        const cls = isHovered ? " hovered" : (isNow ? " now" : "");
+        const cls = isHovered ? " hovered" : "";
         const rowDayHex = "#" + (DAY_COLORS[s.day_of_week] || 0x8fa088).toString(16).padStart(6,"0");
         const rowStyle = isHovered ? `background:${rowDayHex}22;` : "";
         parts.push(`<div class="t-set${cls}" style="${rowStyle}"><span class="t-time" ${isHovered ? `style="color:${rowDayHex}"` : ""}>${fmtSet(s.dt).toUpperCase()}</span><span class="t-act">${esc(s.act)}</span></div>`);
