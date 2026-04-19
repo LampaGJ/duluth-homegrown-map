@@ -546,12 +546,12 @@
       width: 100% !important; height: auto;
       border-radius: 0; border: 0;
     }
-    #yt-wrap .yt-header { font-size: 22px; min-height: 36px; padding: 6px 10px; position: relative; }
+    #yt-wrap .yt-header { font-size: 22px; min-height: 36px; padding: 6px 10px; }
     #yt-header-close {
-      position: absolute !important; top: 6px; right: 8px;
-      display: block; font-size: 26px; font-weight: 900;
-      color: var(--bone); padding: 4px 8px;
-      z-index: 5;
+      display: flex !important; align-items: center; align-self: center;
+      font-size: 24px; font-weight: 900;
+      color: var(--bone); padding: 0 2px 0 8px;
+      flex-shrink: 0;
     }
     #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
     #yt-resize { display: none; }
