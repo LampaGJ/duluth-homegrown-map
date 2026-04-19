@@ -238,14 +238,13 @@
     transition: left 80ms ease-out;
   }
   #yt-resize {
-    position: absolute; top: -18px; right: -18px;
-    width: 36px; height: 36px; cursor: nesw-resize;
+    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+    width: 36px; height: 28px; cursor: ns-resize;
     display: flex; align-items: center; justify-content: center;
-    font-size: 22px; font-weight: 700; color: var(--bone-dim); z-index: 14;
-    background: rgba(10,8,6,0.8); border-radius: 50%;
-    border: 1px solid rgba(111,168,98,0.3);
+    font-size: 16px; font-weight: 700; color: var(--bone-dim); z-index: 14;
+    background: rgba(10,8,6,0.8); border-radius: 0 0 6px 6px;
+    border: 1px solid rgba(111,168,98,0.3); border-top: 0;
     user-select: none; touch-action: none;
-    transform: rotate(90deg);
   }
   #yt-resize:hover { color: var(--spring); }
   /* Header: band name spans full width */
@@ -839,7 +838,7 @@
   <div id="mobile-schedule" style="display:none;"></div>
   <div id="scrubber">
     <div id="yt-wrap" style="display:none;">
-      <div id="yt-resize" title="Resize">⤡</div>
+      <div id="yt-resize" title="Resize">⋯</div>
       <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span></div>
       <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
@@ -2129,6 +2128,19 @@ const YT_CHROME_H = 134;
 function ytHeightForWidth(w) { return Math.round(w * 9 / 16 + YT_CHROME_H); }
 let ytSizeState = "normal"; // "small" | "normal" | "large"
 
+// Resize from bottom-center: player expands symmetrically unless at edge
+function ytApplyResize(newW) {
+  const stackW = document.getElementById("timeline-stack").offsetWidth;
+  const oldW = ytWrap.offsetWidth;
+  const oldLeft = parseFloat(ytWrap.style.left) || 0;
+  const dw = newW - oldW;
+  // Center of the player stays put, unless clamped by container edges
+  let newLeft = oldLeft - dw / 2;
+  newLeft = Math.max(0, Math.min(stackW - newW, newLeft));
+  ytWrap.style.width = newW + "px";
+  ytWrap.style.height = ytHeightForWidth(newW) + "px";
+  ytWrap.style.left = newLeft + "px";
+}
 ytResize.addEventListener("pointerdown", (e) => {
   ytResizing = true;
   ytResizeDragged = false;
@@ -2142,19 +2154,17 @@ document.addEventListener("pointermove", (e) => {
   if (ytResizeDragged) {
     const dx = (e.clientX - ytResizeStart.x) * 2;
     const newW = Math.max(YT_MIN.w, Math.min(YT_MAX.w, ytResizeStart.w + dx));
-    ytWrap.style.width = newW + "px";
-    ytWrap.style.height = ytHeightForWidth(newW) + "px";
+    ytApplyResize(newW);
     ytSizeState = "normal";
     updatePlayhead();
   }
 });
 document.addEventListener("pointerup", () => {
   if (ytResizing && !ytResizeDragged) {
-    // Click without drag → toggle between smallest and largest
     if (ytSizeState === "large") {
-      ytWrap.style.width = YT_MIN.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MIN.w) + "px"; ytSizeState = "small";
+      ytApplyResize(YT_MIN.w); ytSizeState = "small";
     } else {
-      ytWrap.style.width = YT_MAX.w + "px"; ytWrap.style.height = ytHeightForWidth(YT_MAX.w) + "px"; ytSizeState = "large";
+      ytApplyResize(YT_MAX.w); ytSizeState = "large";
     }
   }
   ytResizing = false;
