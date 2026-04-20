@@ -589,10 +589,7 @@
         #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
         transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
     border-radius: 4px;
-    box-shadow:
-      inset 0 1px 2px rgba(0,0,0,0.9),
-      inset 0 -1px 0 rgba(242,234,213,0.1),
-      0 1px 0 rgba(242,234,213,0.08);
+    box-shadow: none;
   }
   /* Brushed-aluminum stereo knob — conic gradient fakes spun metal,
      bevel via layered inset shadows, inner groove ring for the volume-knob vibe. */
@@ -625,7 +622,7 @@
       transparent 0%, transparent var(--track-pad-l, 0%),
       #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
       transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.9);
+    box-shadow: none;
   }
   #slider::-moz-range-thumb {
     width: 30px; height: 30px; border-radius: 50%; border: 0;
@@ -2960,10 +2957,10 @@ if (window.innerWidth <= 768) {
     requestAnimationFrame(() => {
       // Find which set row is at the top of the visible area
       const rows = mobileSchedule.querySelectorAll(".ms-set");
-      const scrollTop = mobileSchedule.scrollTop + mobileSchedule.offsetTop + 40;
-      let closest = null;
+      const scrollTop = mobileSchedule.scrollTop;
+      let closest = rows[0] || null;  // default to first act
       for (const row of rows) {
-        if (row.offsetTop >= scrollTop - 20) { closest = row; break; }
+        if (row.offsetTop >= scrollTop) { closest = row; break; }
       }
       if (closest) {
         const dt = new Date(+closest.dataset.dt);
