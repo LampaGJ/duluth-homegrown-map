@@ -2131,7 +2131,7 @@ function updateYtPlayer(t, forceIdx) {
 
   // Update video/audio if changed
   ytCurrentIdx = forceIdx != null ? forceIdx : ytPlaylist.indexOf(best);
-  const contentKey = best.vidUrl || (best.bcEmbed ? `bc:${best.bcEmbed.id}` : best.spEmbed ? `sp:${best.spEmbed.id}` : best.scEmbed ? `sc:${best.scEmbed.url}` : null);
+  const contentKey = best.vidUrl || (best.bcEmbed ? `bc:${best.bcEmbed.id}` : best.spEmbed ? `sp:${best.spEmbed.id}` : best.scEmbed ? `sc:${best.scEmbed.url}` : `bio:${best.act}`);
   if (contentKey !== ytCurrentVideoUrl) {
     ytCurrentVideoUrl = contentKey;
     // Dismiss bio overlay on act change
@@ -2281,7 +2281,7 @@ function updateYtPlayer(t, forceIdx) {
     ytLabelDate.textContent = ytFmtDate(best.dt);
     ytLabelTime.textContent = ytFmtTime(best.dt);
     ytLabelVenue.textContent = best.venue;
-    ytOpenLink.href = best.vidUrl;
+    ytOpenLink.href = best.vidUrl || "#";
     // Populate platform links bar
     const linksBar = document.getElementById("yt-links");
     linksBar.innerHTML = "";
