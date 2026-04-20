@@ -40,7 +40,7 @@ import urllib.request
 from pathlib import Path
 
 URL = "https://duluthhomegrown.org/schedule/"
-USER_AGENT = "homegrown-schedule-scraper/1.0 (+contact: graham@snapstream.com)"
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 DAY_HEADER_RE = re.compile(r"^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{1,2}$")
 TIME_RE = re.compile(r"^\d{1,2}:\d{2}(am|pm)$", re.IGNORECASE)
@@ -181,12 +181,13 @@ def main() -> int:
     ap.add_argument("--out", default="homegrown_2026_schedule.json")
     ap.add_argument("--prev", default=None, help="Previous JSON to diff against (defaults to --out)")
     ap.add_argument("--url", default=URL)
+    ap.add_argument("--html", default=None, help="Use local HTML file instead of fetching")
     args = ap.parse_args()
 
     out_path = Path(args.out)
     prev_path = Path(args.prev) if args.prev else out_path
 
-    raw = fetch(args.url)
+    raw = Path(args.html).read_text() if args.html else fetch(args.url)
     lines = strip_to_lines(raw)
     today = dt.date.today()
     records = parse(lines, today)
