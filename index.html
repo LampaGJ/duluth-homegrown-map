@@ -782,6 +782,42 @@
   }
 
 
+  /* ------- REPORT ISSUE ------- */
+  #report-btn {
+    position: fixed; bottom: 12px; right: 12px; z-index: 30;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(10,8,6,0.7); border: 1px solid rgba(242,234,213,0.2);
+    color: var(--bone-dim); font-size: 16px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 150ms;
+  }
+  #report-btn:hover { background: rgba(10,8,6,0.95); color: var(--hotter); }
+  #report-dialog {
+    position: fixed; inset: 0; z-index: 50;
+    background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center;
+  }
+  .report-box {
+    background: rgba(255,252,240,0.97); border-radius: 10px; padding: 20px; width: 320px; max-width: 90vw;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .report-box h3 {
+    font-family: "Permanent Marker", cursive; font-size: 22px; margin: 0 0 12px; color: #2a2420;
+  }
+  .report-box textarea {
+    width: 100%; box-sizing: border-box; border: 1px solid #ccc; border-radius: 6px;
+    padding: 10px; font-family: "Space Grotesk", sans-serif; font-size: 14px; resize: vertical;
+  }
+  .report-actions { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; }
+  .report-actions button {
+    padding: 8px 16px; border-radius: 6px; border: 0; cursor: pointer;
+    font-family: "Space Grotesk", sans-serif; font-size: 13px;
+  }
+  #report-send { background: var(--spring); color: #fff; font-weight: 600; }
+  #report-cancel { background: #eee; color: #666; }
+  @media (max-width: 768px) {
+    #report-btn { bottom: auto; top: 60px; right: 8px; width: 28px; height: 28px; font-size: 14px; }
+  }
+
   /* ------- TOOLTIP ------- */
   .tooltip {
     position: absolute; background: rgba(10,8,6,0.96); border: 1px solid var(--leaf);
@@ -804,6 +840,7 @@
   .tooltip .t-set.hovered .t-act { color: var(--bone); font-weight: 700; }
   .tooltip .t-set .t-act { font-size: 15px; color: var(--bone); }
 </style>
+<script src="notify.js" defer></script>
 </head>
 <body>
 <svg style="position:absolute;width:0;height:0;" aria-hidden="true">
@@ -944,6 +981,17 @@
     </div>
   </div>
   <div id="mobile-schedule" style="display:none;"></div>
+  <button id="report-btn" title="Report an issue">⚠</button>
+  <div id="report-dialog" style="display:none;">
+    <div class="report-box">
+      <h3>Report an Issue</h3>
+      <textarea id="report-text" placeholder="Describe the issue..." rows="4" maxlength="500"></textarea>
+      <div class="report-actions">
+        <button id="report-send">Send Report</button>
+        <button id="report-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
   <div id="scrubber">
     <div id="yt-wrap" style="display:none;">
       <div id="yt-resize" title="Resize">⤡</div>
@@ -2328,6 +2376,9 @@ function jumpToIdx(idx) {
 function playById(id) {
   const idx = ytPlaylist.findIndex(p => p.id === id);
   if (idx >= 0) {
+    const entry = ytPlaylist[idx];
+    const source = entry.vidUrl ? "YouTube" : entry.bcEmbed ? "Bandcamp" : entry.spEmbed ? "Spotify" : entry.scEmbed ? "SoundCloud" : "Bio";
+    if (typeof notifyVideoPlay === "function") notifyVideoPlay(entry.act, source);
     jumpToIdx(idx);
     ytWrap.style.display = "";
   }
@@ -2430,8 +2481,13 @@ function isInSetList(act, date) {
 }
 function toggleSetList(setData) {
   const idx = setList.findIndex(s => s.act === setData.act && s.date === setData.date);
-  if (idx >= 0) setList.splice(idx, 1);
-  else setList.push(setData);
+  if (idx >= 0) {
+    setList.splice(idx, 1);
+    if (typeof notifyFavorite === "function") notifyFavorite(setData.act, setData.venue, setData.date, "removed");
+  } else {
+    setList.push(setData);
+    if (typeof notifyFavorite === "function") notifyFavorite(setData.act, setData.venue, setData.date, "added");
+  }
   localStorage.setItem(SETLIST_KEY, JSON.stringify(setList));
   renderSetList();
   updateStarBtn();
@@ -2687,6 +2743,7 @@ document.getElementById("sl-share-native").addEventListener("click", async () =>
   if (navigator.share) {
     try {
       await navigator.share({ title: slTitleInput.value, text: buildShareText(), url: "https://homegrown.my" });
+      if (typeof notifyShare === "function") notifyShare("Native Share", setList);
     } catch {}
   } else { alert("Web Share not supported — use Copy instead."); }
   document.getElementById("sl-share-dialog").classList.remove("open");
@@ -2710,6 +2767,7 @@ function buildShareText() {
 
 document.getElementById("sl-share-copy").addEventListener("click", async () => {
   await navigator.clipboard.writeText(buildShareText());
+  if (typeof notifyShare === "function") notifyShare("Copy to Clipboard", setList);
   const btn = document.getElementById("sl-share-copy");
   btn.textContent = "✓ Copied!";
   setTimeout(() => btn.textContent = "📋 Copy", 1500);
@@ -2719,6 +2777,7 @@ document.getElementById("sl-share-email").addEventListener("click", (e) => {
   e.preventDefault();
   const text = buildShareText();
   const title = slTitleInput.value;
+  if (typeof notifyShare === "function") notifyShare("Email", setList);
   window.location.href = `mailto:?subject=${encodeURIComponent(title + " — Homegrown 2026")}&body=${encodeURIComponent(text)}`;
 });
 
@@ -2726,6 +2785,7 @@ document.getElementById("sl-share-email").addEventListener("click", (e) => {
 document.getElementById("sl-share-sms").addEventListener("click", (e) => {
   e.preventDefault();
   const text = buildShareText().slice(0, 500);
+  if (typeof notifyShare === "function") notifyShare("iMessage/SMS", setList);
   window.location.href = `sms:?&body=${encodeURIComponent(text)}`;
   document.getElementById("sl-share-dialog").classList.remove("open");
 });
@@ -2742,6 +2802,8 @@ document.getElementById("sl-share-sms").addEventListener("click", (e) => {
       "sl-share-ig": `https://www.instagram.com/`, // IG has no share URL scheme
     };
     e.preventDefault();
+    const platformNames = { "sl-share-bsky":"Bluesky", "sl-share-fb":"Facebook", "sl-share-threads":"Threads", "sl-share-tiktok":"TikTok", "sl-share-ig":"Instagram" };
+    if (typeof notifyShare === "function") notifyShare(platformNames[id] || id, setList);
     window.open(urls[id], "_blank", "width=600,height=500");
   });
 });
@@ -2794,6 +2856,7 @@ document.getElementById("sl-share-ics").addEventListener("click", () => {
   a.download = "homegrown-2026-setlist.ics";
   a.click();
   URL.revokeObjectURL(a.href);
+  if (typeof notifyICSDownload === "function") notifyICSDownload(setList);
   document.getElementById("sl-share-dialog").classList.remove("open");
 });
 
@@ -3036,6 +3099,26 @@ if (window.innerWidth <= 768) {
 }
 
 render(tMin);
+
+// ---- Pushover notifications ----
+if (typeof notifyVisit === "function") notifyVisit();
+// Report issue button
+document.getElementById("report-btn").addEventListener("click", () => {
+  document.getElementById("report-dialog").style.display = "";
+  document.getElementById("report-text").value = "";
+  document.getElementById("report-text").focus();
+});
+document.getElementById("report-cancel").addEventListener("click", () => {
+  document.getElementById("report-dialog").style.display = "none";
+});
+document.getElementById("report-send").addEventListener("click", () => {
+  const text = document.getElementById("report-text").value.trim();
+  if (text) {
+    notifyIssue(text);
+    document.getElementById("report-dialog").style.display = "none";
+    alert("Thanks! Your report has been sent.");
+  }
+});
 
 // ---- Animation loop ----
 // Tweakable globals — controlled from the admin panel

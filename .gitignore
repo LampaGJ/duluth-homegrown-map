@@ -11,3 +11,4 @@ __pycache__/
 .venv/
 duluth_skyline.jpg
 clips/
+notify_config.js
