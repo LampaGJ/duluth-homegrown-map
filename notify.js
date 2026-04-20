@@ -14,21 +14,29 @@ const _notifyTimestamps = {};
 let _geoCache = null;
 async function getGeo() {
   if (_geoCache) return _geoCache;
-  try {
-    const r = await fetch("https://ipapi.co/json/", { signal: AbortSignal.timeout(3000) });
-    const d = await r.json();
-    _geoCache = {
-      ip: d.ip || "unknown",
-      city: d.city || "unknown",
-      region: d.region || "",
-      country: d.country_name || "",
-      lat: d.latitude,
-      lon: d.longitude,
-      org: d.org || ""
-    };
-  } catch {
-    _geoCache = { ip: "unknown", city: "unknown", region: "", country: "" };
+  // Try multiple free geo APIs in order
+  const apis = [
+    { url: "https://api.ipify.org?format=json", parse: async (r) => {
+      const ip = (await r.json()).ip;
+      const g = await (await fetch(`https://ipwho.is/${ip}`)).json();
+      return { ip, city: g.city, region: g.region, country: g.country, lat: g.latitude, lon: g.longitude, org: g.connection?.org || "" };
+    }},
+    { url: "https://ipwho.is/", parse: async (r) => {
+      const d = await r.json();
+      return { ip: d.ip, city: d.city, region: d.region, country: d.country, lat: d.latitude, lon: d.longitude, org: d.connection?.org || "" };
+    }},
+    { url: "https://ipapi.co/json/", parse: async (r) => {
+      const d = await r.json();
+      return { ip: d.ip, city: d.city, region: d.region, country: d.country_name, lat: d.latitude, lon: d.longitude, org: d.org || "" };
+    }},
+  ];
+  for (const api of apis) {
+    try {
+      const r = await fetch(api.url, { signal: AbortSignal.timeout(4000) });
+      if (r.ok) { _geoCache = await api.parse(r); return _geoCache; }
+    } catch {}
   }
+  _geoCache = { ip: "unknown", city: "unknown", region: "", country: "" };
   return _geoCache;
 }
 
