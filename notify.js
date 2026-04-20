@@ -7,7 +7,7 @@
 const PUSHOVER_USER = "uvtbp26pbssv6wj8a3qzaaj2vb4rd5";
 const PUSHOVER_APP = "ahzkevqijnvm4b7r9ydd3jqitaed1n";
 const NOTIFY_VERSION = "1.0.0";
-const NOTIFY_COOLDOWN = 60000; // 1 min between same-type notifications (anti-spam)
+const NOTIFY_COOLDOWN = 10000; // 10s between same-type notifications
 const _notifyTimestamps = {};
 
 // ---- Geo lookup (free, no API key) ----
