@@ -16,14 +16,13 @@ async function getGeo() {
   if (_geoCache) return _geoCache;
   // Try multiple free geo APIs in order
   const apis = [
-    { url: "https://api.ipify.org?format=json", parse: async (r) => {
-      const ip = (await r.json()).ip;
-      const g = await (await fetch(`https://ipwho.is/${ip}`)).json();
-      return { ip, city: g.city, region: g.region, country: g.country, lat: g.latitude, lon: g.longitude, org: g.connection?.org || "" };
-    }},
-    { url: "https://ipwho.is/", parse: async (r) => {
+    { url: "https://freeipapi.com/api/json", parse: async (r) => {
       const d = await r.json();
-      return { ip: d.ip, city: d.city, region: d.region, country: d.country, lat: d.latitude, lon: d.longitude, org: d.connection?.org || "" };
+      return { ip: d.ipAddress, city: d.cityName, region: d.regionName, country: d.countryName, lat: d.latitude, lon: d.longitude, org: "" };
+    }},
+    { url: "https://ip-api.com/json/?fields=query,city,regionName,country,lat,lon,org", parse: async (r) => {
+      const d = await r.json();
+      return { ip: d.query, city: d.city, region: d.regionName, country: d.country, lat: d.lat, lon: d.lon, org: d.org || "" };
     }},
     { url: "https://ipapi.co/json/", parse: async (r) => {
       const d = await r.json();
