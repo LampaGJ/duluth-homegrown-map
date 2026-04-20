@@ -250,13 +250,14 @@
     transition: left 80ms ease-out;
   }
   #yt-resize {
-    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
-    width: 36px; height: 28px; cursor: ns-resize;
+    position: absolute; top: -18px; right: -18px;
+    width: 36px; height: 36px; cursor: nesw-resize;
     display: flex; align-items: center; justify-content: center;
-    font-size: 16px; font-weight: 700; color: var(--bone-dim); z-index: 14;
-    background: rgba(10,8,6,0.8); border-radius: 0 0 6px 6px;
-    border: 1px solid rgba(111,168,98,0.3); border-top: 0;
+    font-size: 22px; font-weight: 700; color: var(--bone-dim); z-index: 14;
+    background: rgba(10,8,6,0.8); border-radius: 50%;
+    border: 1px solid rgba(111,168,98,0.3);
     user-select: none; touch-action: none;
+    transform: rotate(90deg);
   }
   #yt-resize:hover { color: var(--spring); }
   /* Header: band name spans full width */
@@ -270,15 +271,15 @@
     flex-shrink: 0; min-height: 40px;
   }
   #yt-wrap .yt-header .yt-act {
-    display: flex; align-items: center;
-    line-height: 1; flex: 1; overflow: hidden;
+    display: inline; align-items: center;
+    line-height: 1; overflow: hidden; text-overflow: ellipsis;
   }
   #yt-info-btn {
     background: none; border: 1px solid rgba(242,234,213,0.25); color: var(--bone-dim);
-    font-size: 12px; font-family: serif; font-style: italic; font-weight: 700;
-    width: 18px; height: 18px; border-radius: 50%;
+    font-size: 11px; font-family: serif; font-style: italic; font-weight: 700;
+    width: 16px; height: 16px; border-radius: 50%;
     display: inline-flex; align-items: center; justify-content: center;
-    cursor: pointer; flex-shrink: 0; margin-left: 6px;
+    cursor: pointer; margin-left: 5px;
     line-height: 1; padding: 0; vertical-align: middle;
   }
   #yt-info-btn:hover { color: var(--spring); border-color: var(--spring); }
@@ -365,9 +366,8 @@
   #yt-star {
     background: none; border: 0; font-size: 22px; cursor: pointer;
     color: var(--bone-dim); transition: color 150ms, transform 150ms;
-    line-height: 1; padding: 0 6px 0 0; flex-shrink: 0;
-    margin: 0; vertical-align: middle;
-    display: flex; align-items: center; align-self: center;
+    line-height: 1; padding: 0 4px 0 0; flex-shrink: 0;
+    vertical-align: middle; display: inline;
   }
   #yt-star:hover { color: var(--hotter); transform: scale(1.2); }
   #yt-star.starred { color: var(--hotter); }
@@ -571,12 +571,11 @@
     /* Remove backdrop-filter from scrubber — it creates a containing block
        that breaks fixed positioning of #yt-wrap inside it */
     #scrubber { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; background: var(--ink); }
-    #yt-wrap .yt-header { font-size: 22px; min-height: 36px; padding: 6px 10px; }
+    #yt-wrap .yt-header { font-size: 22px; min-height: 36px; padding: 6px 36px 6px 10px; position: relative; }
     #yt-header-close {
-      display: flex !important; align-items: center; align-self: center;
-      font-size: 24px; font-weight: 900;
-      color: var(--bone); padding: 0 2px 0 8px;
-      flex-shrink: 0;
+      display: block !important; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+      font-size: 22px; font-weight: 900;
+      color: var(--bone); padding: 4px;
     }
     #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
     #yt-resize { display: none; }
@@ -947,7 +946,7 @@
   <div id="mobile-schedule" style="display:none;"></div>
   <div id="scrubber">
     <div id="yt-wrap" style="display:none;">
-      <div id="yt-resize" title="Resize">⋯</div>
+      <div id="yt-resize" title="Resize">⤡</div>
       <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span><button id="yt-info-btn" title="Band info">i</button><button id="yt-header-close" title="Close">✕</button></div>
       <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
