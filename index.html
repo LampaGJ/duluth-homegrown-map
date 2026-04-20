@@ -2259,15 +2259,10 @@ function updateYtPlayer(t, forceIdx) {
             events: {
               onStateChange: (e) => {
                 if (e.data === YT.PlayerState.ENDED && playing) {
-                  // Advance to next act in playlist + move timeline
-                  const nextIdx = ytCurrentIdx + 1;
-                  if (nextIdx < ytPlaylist.length) {
-                    const nextAct = ytPlaylist[nextIdx];
-                    const cTime = realToCompressed(nextAct.dt);
-                    slider.value = cTime;
-                    render(nextAct.dt);
-                    updatePlayhead();
-                    updateYtPlayer(nextAct.dt);
+                  // Advance to next playable act (skip community events)
+                  const nextIdx = findNextPlayable(ytCurrentIdx + 1, 1);
+                  if (nextIdx >= 0) {
+                    jumpToIdx(nextIdx);
                   } else {
                     playing = false;
                     playBtn.textContent = "▶";
@@ -2318,6 +2313,23 @@ slider.addEventListener("input", () => {
   updateYtPlayer(t);
 });
 
+// Is this playlist entry playable (has audio/video, not just bio)?
+function isPlayable(s) { return s && (s.vidUrl || s.bcEmbed || s.spEmbed || s.scEmbed); }
+// Find the next playable act from a given index (direction: +1 or -1)
+function findNextPlayable(fromIdx, direction = 1) {
+  for (let i = fromIdx; i >= 0 && i < ytPlaylist.length; i += direction) {
+    if (isPlayable(ytPlaylist[i])) return i;
+  }
+  return -1;
+}
+// Jump to a playlist index, update everything
+function jumpToIdx(idx) {
+  if (idx < 0 || idx >= ytPlaylist.length) return;
+  const act = ytPlaylist[idx];
+  slider.value = realToCompressed(act.dt);
+  render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, idx);
+}
+
 // Play/pause: controls the YouTube video. Timeline stays put — only advances
 // when the video ends (auto-advance) or user manually scrubs/clicks.
 function togglePlay() {
@@ -2328,17 +2340,12 @@ function togglePlay() {
   render(currentTime);
   if (playing) {
     ytEmpty.style.display = "none";
-    // If no video loaded yet, jump to first playable act (skip community events)
-    if (ytCurrentIdx < 0 && ytPlaylist.length) {
-      const first = ytPlaylist.find(s => s.vidUrl || s.bcEmbed || s.spEmbed || s.scEmbed) || ytPlaylist[0];
-      const firstIdx = ytPlaylist.indexOf(first);
-      const cTime = realToCompressed(first.dt);
-      slider.value = cTime;
-      render(first.dt);
-      updatePlayhead();
-      updateYtPlayer(first.dt, firstIdx);
+    // If no video loaded yet, jump to first playable act
+    if (ytCurrentIdx < 0 || !isPlayable(ytPlaylist[ytCurrentIdx])) {
+      const idx = findNextPlayable(Math.max(0, ytCurrentIdx), 1);
+      if (idx >= 0) jumpToIdx(idx);
     } else {
-      updateYtPlayer(currentTime);
+      updateYtPlayer(currentTime, ytCurrentIdx);
     }
     // Resume or start the YT video
     if (ytPlayer && ytPlayer.playVideo) ytPlayer.playVideo();
@@ -2868,22 +2875,14 @@ document.addEventListener("keydown", (e) => {
       break;
     case "ArrowRight": {
       e.preventDefault();
-      const nextIdx = Math.min(ytPlaylist.length - 1, ytCurrentIdx + 1);
-      if (nextIdx !== ytCurrentIdx && nextIdx >= 0) {
-        const act = ytPlaylist[nextIdx];
-        slider.value = realToCompressed(act.dt);
-        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
-      }
+      const nIdx = findNextPlayable(ytCurrentIdx + 1, 1);
+      if (nIdx >= 0) jumpToIdx(nIdx);
       break;
     }
     case "ArrowLeft": {
       e.preventDefault();
-      const prevIdx = Math.max(0, ytCurrentIdx - 1);
-      if (prevIdx !== ytCurrentIdx) {
-        const act = ytPlaylist[prevIdx];
-        slider.value = realToCompressed(act.dt);
-        render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
-      }
+      const pIdx = findNextPlayable(ytCurrentIdx - 1, -1);
+      if (pIdx >= 0) jumpToIdx(pIdx);
       break;
     }
   }
@@ -3017,22 +3016,14 @@ if (window.innerWidth <= 768) {
     mobileSchedule.style.display = "none";
   });
 
-  // Mobile nav: prev / close / next
+  // Mobile nav: prev / next — skip to next playable act
   document.getElementById("yt-prev").addEventListener("click", () => {
-    const prevIdx = Math.max(0, ytCurrentIdx - 1);
-    if (prevIdx !== ytCurrentIdx) {
-      const act = ytPlaylist[prevIdx];
-      slider.value = realToCompressed(act.dt);
-      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, prevIdx);
-    }
+    const idx = findNextPlayable(ytCurrentIdx - 1, -1);
+    if (idx >= 0) jumpToIdx(idx);
   });
   document.getElementById("yt-next").addEventListener("click", () => {
-    const nextIdx = Math.min(ytPlaylist.length - 1, ytCurrentIdx + 1);
-    if (nextIdx !== ytCurrentIdx) {
-      const act = ytPlaylist[nextIdx];
-      slider.value = realToCompressed(act.dt);
-      render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
-    }
+    const idx = findNextPlayable(ytCurrentIdx + 1, 1);
+    if (idx >= 0) jumpToIdx(idx);
   });
   // Footer prev/next (mobile)
   document.getElementById("yt-prev-foot").addEventListener("click", () => {
