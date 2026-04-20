@@ -2326,14 +2326,15 @@ function togglePlay() {
   render(currentTime);
   if (playing) {
     ytEmpty.style.display = "none";
-    // If no video loaded yet, jump to first act in playlist
+    // If no video loaded yet, jump to first playable act (skip community events)
     if (ytCurrentIdx < 0 && ytPlaylist.length) {
-      const first = ytPlaylist[0];
+      const first = ytPlaylist.find(s => s.vidUrl || s.bcEmbed || s.spEmbed || s.scEmbed) || ytPlaylist[0];
+      const firstIdx = ytPlaylist.indexOf(first);
       const cTime = realToCompressed(first.dt);
       slider.value = cTime;
       render(first.dt);
       updatePlayhead();
-      updateYtPlayer(first.dt, 0);
+      updateYtPlayer(first.dt, firstIdx);
     } else {
       updateYtPlayer(currentTime);
     }

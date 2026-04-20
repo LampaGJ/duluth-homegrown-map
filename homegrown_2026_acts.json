@@ -116,7 +116,8 @@
       },
       "type": "community_event",
       "facebook": "https://www.facebook.com/218danceproject/",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "A Duluth dance company performing at Lake Superior Zoo for the family-friendly opening day of Homegrown."
     },
     {
       "name": "500 Million Society",
@@ -2769,7 +2770,8 @@
         "note": "community event — no music video needed"
       },
       "type": "community_event",
-      "facebook": "https://www.facebook.com/duluthdolls/"
+      "facebook": "https://www.facebook.com/duluthdolls/",
+      "description": "Duluth roller derby league showcase at Studio Four during Homegrown Saturday night."
     },
     {
       "name": "EddieDition",
@@ -3390,7 +3392,8 @@
         "confidence": null,
         "note": "removed — wrong video match"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "description": "Official Homegrown Music Festival founders reception at Blacklist Brewing Company."
     },
     {
       "name": "Four Mile Portage",
@@ -4142,7 +4145,8 @@
         "note": "community event — no music video needed"
       },
       "type": "community_event",
-      "facebook": "https://www.facebook.com/p/Haus-of-Queer-61575633820059/"
+      "facebook": "https://www.facebook.com/p/Haus-of-Queer-61575633820059/",
+      "description": "LGBTQ+ variety show and drag performance at Studio Four during Homegrown Saturday."
     },
     {
       "name": "Homegrown Artists Merch Fair hosted by Twin Ports Artists Collective",
@@ -4172,7 +4176,8 @@
         "note": "non-musical act"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Local artist merchandise fair at the Duluth Depot Great Hall, featuring Twin Ports visual artists, makers, and craftspeople."
     },
     {
       "name": "Homegrown Kickball Classic",
@@ -4202,7 +4207,8 @@
         "note": "non-musical act"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Annual kickball tournament at Chester Bowl Park. A beloved Homegrown Saturday tradition — all ages welcome."
     },
     {
       "name": "Homegrown Tomatoes",
@@ -5804,7 +5810,8 @@
         "note": "non-musical act"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Official proclamation by the Mayor of Duluth recognizing the Homegrown Music Festival."
     },
     {
       "name": "Mid Dream",
@@ -6176,7 +6183,8 @@
         "note": "non-musical act"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Youth musicians from Duluth's Music Resource Center performing at Lake Superior Zoo."
     },
     {
       "name": "Nate J Mattson",
@@ -7491,7 +7499,8 @@
         "note": "community event — no music video needed"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Aerial arts and acrobatic performance troupe at Lake Superior Zoo during Homegrown opening day."
     },
     {
       "name": "Shadows of Me",
@@ -8824,7 +8833,8 @@
         "confidence": null,
         "note": "community event — no music video needed"
       },
-      "type": "community_event"
+      "type": "community_event",
+      "description": "Cabaret-style variety performance at Studio Four during Homegrown Saturday night."
     },
     {
       "name": "The Brothers Burn Mountain",
@@ -10979,7 +10989,8 @@
         "note": "community event — no music video needed"
       },
       "type": "community_event",
-      "family_friendly": true
+      "family_friendly": true,
+      "description": "Duluth dance collective performing at Studio Four during Homegrown Saturday evening."
     },
     {
       "name": "porb",
