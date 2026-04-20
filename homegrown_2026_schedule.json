@@ -26,7 +26,8 @@
       "time_start": "10:20am",
       "time_start_24h": "10:20",
       "venue": "Lake Superior Zoo",
-      "act": "218 Dance Project"
+      "act": "218 Dance Project",
+      "id": "2026-04-26_1020_218-dance-project"
     },
     {
       "date": "2026-04-26",
@@ -35,7 +36,8 @@
       "time_start": "10:45am",
       "time_start_24h": "10:45",
       "venue": "Lake Superior Zoo",
-      "act": "Dan the Monkeyman"
+      "act": "Dan the Monkeyman",
+      "id": "2026-04-26_1045_dan-the-monkeyman"
     },
     {
       "date": "2026-04-26",
@@ -44,7 +46,8 @@
       "time_start": "11:20am",
       "time_start_24h": "11:20",
       "venue": "Lake Superior Zoo",
-      "act": "The Trinkets"
+      "act": "The Trinkets",
+      "id": "2026-04-26_1120_the-trinkets"
     },
     {
       "date": "2026-04-26",
@@ -53,7 +56,8 @@
       "time_start": "12:20pm",
       "time_start_24h": "12:20",
       "venue": "Lake Superior Zoo",
-      "act": "Music Resource Center Students"
+      "act": "Music Resource Center Students",
+      "id": "2026-04-26_1220_music-resource-center-students"
     },
     {
       "date": "2026-04-26",
@@ -62,7 +66,8 @@
       "time_start": "12:30pm",
       "time_start_24h": "12:30",
       "venue": "Lake Superior Zoo",
-      "act": "Sea Smoke Aerial Arts"
+      "act": "Sea Smoke Aerial Arts",
+      "id": "2026-04-26_1230_sea-smoke-aerial-arts"
     },
     {
       "date": "2026-04-26",
@@ -71,7 +76,8 @@
       "time_start": "1:30pm",
       "time_start_24h": "13:30",
       "venue": "Lake Superior Zoo",
-      "act": "Brody & the Roadies"
+      "act": "Brody & the Roadies",
+      "id": "2026-04-26_1330_brody-the-roadies"
     },
     {
       "date": "2026-04-26",
@@ -80,7 +86,8 @@
       "time_start": "2:15pm",
       "time_start_24h": "14:15",
       "venue": "Lake Superior Zoo",
-      "act": "Two T's in a Pod"
+      "act": "Two T's in a Pod",
+      "id": "2026-04-26_1415_two-t-s-in-a-pod"
     },
     {
       "date": "2026-04-26",
@@ -89,7 +96,8 @@
       "time_start": "2:35pm",
       "time_start_24h": "14:35",
       "venue": "Lake Superior Zoo",
-      "act": "Steve Solkela"
+      "act": "Steve Solkela",
+      "id": "2026-04-26_1435_steve-solkela"
     },
     {
       "date": "2026-04-26",
@@ -98,7 +106,8 @@
       "time_start": "4:00pm",
       "time_start_24h": "16:00",
       "venue": "Blacklist Brewing Company",
-      "act": "Founder's Reception"
+      "act": "Founder's Reception",
+      "id": "2026-04-26_1600_founder-s-reception"
     },
     {
       "date": "2026-04-26",
@@ -107,7 +116,8 @@
       "time_start": "4:15pm",
       "time_start_24h": "16:15",
       "venue": "Blacklist Brewing Company",
-      "act": "Ryan Van Slooten"
+      "act": "Ryan Van Slooten",
+      "id": "2026-04-26_1615_ryan-van-slooten"
     },
     {
       "date": "2026-04-26",
@@ -116,7 +126,8 @@
       "time_start": "5:15pm",
       "time_start_24h": "17:15",
       "venue": "Blacklist Brewing Company",
-      "act": "The Gemstones"
+      "act": "The Gemstones",
+      "id": "2026-04-26_1715_the-gemstones"
     },
     {
       "date": "2026-04-26",
@@ -125,7 +136,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Sister Veery"
+      "act": "Sister Veery",
+      "id": "2026-04-26_1830_sister-veery"
     },
     {
       "date": "2026-04-26",
@@ -134,7 +146,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Blacklist Brewing Company",
-      "act": "The Solicitors"
+      "act": "The Solicitors",
+      "id": "2026-04-26_1900_the-solicitors"
     },
     {
       "date": "2026-04-26",
@@ -143,7 +156,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Thor & The Regulars"
+      "act": "Thor & The Regulars",
+      "id": "2026-04-26_1930_thor-the-regulars"
     },
     {
       "date": "2026-04-26",
@@ -152,7 +166,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Carmody Irish Pub",
-      "act": "Zeb or Zeke and the Run Away Screamings"
+      "act": "Zeb or Zeke and the Run Away Screamings",
+      "id": "2026-04-26_1945_zeb-or-zeke-and-the-run-away-s"
     },
     {
       "date": "2026-04-26",
@@ -161,7 +176,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Blacklist Brewing Company",
-      "act": "The Repairmen"
+      "act": "The Repairmen",
+      "id": "2026-04-26_2000_the-repairmen"
     },
     {
       "date": "2026-04-26",
@@ -170,7 +186,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Zeitgeist Teatro",
-      "act": "500 Million Society"
+      "act": "500 Million Society",
+      "id": "2026-04-26_2030_500-million-society"
     },
     {
       "date": "2026-04-26",
@@ -179,7 +196,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Carmody Irish Pub",
-      "act": "Tim Kaiser"
+      "act": "Tim Kaiser",
+      "id": "2026-04-26_2045_tim-kaiser"
     },
     {
       "date": "2026-04-26",
@@ -188,7 +206,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Pizza Luce",
-      "act": "Hypochondriac"
+      "act": "Hypochondriac",
+      "id": "2026-04-26_2100_hypochondriac"
     },
     {
       "date": "2026-04-26",
@@ -197,7 +216,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Blacklist Brewing Company",
-      "act": "WILBUR"
+      "act": "WILBUR",
+      "id": "2026-04-26_2100_wilbur"
     },
     {
       "date": "2026-04-26",
@@ -206,7 +226,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Carmody Irish Pub",
-      "act": "Bellerpuss"
+      "act": "Bellerpuss",
+      "id": "2026-04-26_2145_bellerpuss"
     },
     {
       "date": "2026-04-26",
@@ -215,7 +236,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Pizza Luce",
-      "act": "Vena Sera"
+      "act": "Vena Sera",
+      "id": "2026-04-26_2200_vena-sera"
     },
     {
       "date": "2026-04-26",
@@ -224,7 +246,8 @@
       "time_start": "11:00pm",
       "time_start_24h": "23:00",
       "venue": "Pizza Luce",
-      "act": "Obleek"
+      "act": "Obleek",
+      "id": "2026-04-26_2300_obleek"
     },
     {
       "date": "2026-04-27",
@@ -233,7 +256,8 @@
       "time_start": "5:30pm",
       "time_start_24h": "17:30",
       "venue": "Dovetail Cafe and Marketplace",
-      "act": "Salt and Pine"
+      "act": "Salt and Pine",
+      "id": "2026-04-27_1730_salt-and-pine"
     },
     {
       "date": "2026-04-27",
@@ -242,7 +266,8 @@
       "time_start": "5:45pm",
       "time_start_24h": "17:45",
       "venue": "Legacy Cannabis",
-      "act": "The Lindula Brothers"
+      "act": "The Lindula Brothers",
+      "id": "2026-04-27_1745_the-lindula-brothers"
     },
     {
       "date": "2026-04-27",
@@ -251,7 +276,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Wild State Cider",
-      "act": "The Trash Cats"
+      "act": "The Trash Cats",
+      "id": "2026-04-27_1800_the-trash-cats"
     },
     {
       "date": "2026-04-27",
@@ -260,7 +286,8 @@
       "time_start": "6:15pm",
       "time_start_24h": "18:15",
       "venue": "Ursa Minor Brewing",
-      "act": "John Louis"
+      "act": "John Louis",
+      "id": "2026-04-27_1815_john-louis"
     },
     {
       "date": "2026-04-27",
@@ -269,7 +296,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Duluth Cider",
-      "act": "Gnarwals"
+      "act": "Gnarwals",
+      "id": "2026-04-27_1830_gnarwals"
     },
     {
       "date": "2026-04-27",
@@ -278,7 +306,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Dovetail Cafe and Marketplace",
-      "act": "Wetland Willows"
+      "act": "Wetland Willows",
+      "id": "2026-04-27_1830_wetland-willows"
     },
     {
       "date": "2026-04-27",
@@ -287,7 +316,8 @@
       "time_start": "6:45pm",
       "time_start_24h": "18:45",
       "venue": "Legacy Cannabis",
-      "act": "Stel"
+      "act": "Stel",
+      "id": "2026-04-27_1845_stel"
     },
     {
       "date": "2026-04-27",
@@ -296,7 +326,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Wild State Cider",
-      "act": "Remote Viewfinder"
+      "act": "Remote Viewfinder",
+      "id": "2026-04-27_1900_remote-viewfinder"
     },
     {
       "date": "2026-04-27",
@@ -305,7 +336,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "All American Club",
-      "act": "Sugar on the Roof"
+      "act": "Sugar on the Roof",
+      "id": "2026-04-27_1900_sugar-on-the-roof"
     },
     {
       "date": "2026-04-27",
@@ -314,7 +346,8 @@
       "time_start": "7:15pm",
       "time_start_24h": "19:15",
       "venue": "Ursa Minor Brewing",
-      "act": "Horse Fzce"
+      "act": "Horse Fzce",
+      "id": "2026-04-27_1915_horse-fzce"
     },
     {
       "date": "2026-04-27",
@@ -323,7 +356,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Dovetail Cafe and Marketplace",
-      "act": "Jon Edwards"
+      "act": "Jon Edwards",
+      "id": "2026-04-27_1930_jon-edwards"
     },
     {
       "date": "2026-04-27",
@@ -332,7 +366,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Duluth Cider",
-      "act": "Lovehouse"
+      "act": "Lovehouse",
+      "id": "2026-04-27_1930_lovehouse"
     },
     {
       "date": "2026-04-27",
@@ -341,7 +376,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Legacy Cannabis",
-      "act": "EddieDition"
+      "act": "EddieDition",
+      "id": "2026-04-27_1945_eddiedition"
     },
     {
       "date": "2026-04-27",
@@ -350,7 +386,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Bent Paddle Brewing Company Taproom",
-      "act": "Winzige Hosen"
+      "act": "Winzige Hosen",
+      "id": "2026-04-27_1945_winzige-hosen"
     },
     {
       "date": "2026-04-27",
@@ -359,7 +396,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "All American Club",
-      "act": "The Jambronies"
+      "act": "The Jambronies",
+      "id": "2026-04-27_2000_the-jambronies"
     },
     {
       "date": "2026-04-27",
@@ -368,7 +406,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Wild State Cider",
-      "act": "WICKIE"
+      "act": "WICKIE",
+      "id": "2026-04-27_2000_wickie"
     },
     {
       "date": "2026-04-27",
@@ -377,7 +416,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Ursa Minor Brewing",
-      "act": "Casiosa"
+      "act": "Casiosa",
+      "id": "2026-04-27_2015_casiosa"
     },
     {
       "date": "2026-04-27",
@@ -386,7 +426,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Caddy Shack Indoor Golf & Pub",
-      "act": "Sidestreet Detour"
+      "act": "Sidestreet Detour",
+      "id": "2026-04-27_2015_sidestreet-detour"
     },
     {
       "date": "2026-04-27",
@@ -395,7 +436,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Duluth Cider",
-      "act": "Life Parade"
+      "act": "Life Parade",
+      "id": "2026-04-27_2030_life-parade"
     },
     {
       "date": "2026-04-27",
@@ -404,7 +446,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Bent Paddle Brewing Company Taproom",
-      "act": "Stardust Collective"
+      "act": "Stardust Collective",
+      "id": "2026-04-27_2045_stardust-collective"
     },
     {
       "date": "2026-04-27",
@@ -413,7 +456,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "All American Club",
-      "act": "Big Wave Dave and the Ripples"
+      "act": "Big Wave Dave and the Ripples",
+      "id": "2026-04-27_2100_big-wave-dave-and-the-ripples"
     },
     {
       "date": "2026-04-27",
@@ -422,7 +466,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Duluth Cider",
-      "act": "Spin Collective"
+      "act": "Spin Collective",
+      "id": "2026-04-27_2100_spin-collective"
     },
     {
       "date": "2026-04-27",
@@ -431,7 +476,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "Caddy Shack Indoor Golf & Pub",
-      "act": "C U Next Tuesday"
+      "act": "C U Next Tuesday",
+      "id": "2026-04-27_2115_c-u-next-tuesday"
     },
     {
       "date": "2026-04-27",
@@ -440,7 +486,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Bent Paddle Brewing Company Taproom",
-      "act": "So What"
+      "act": "So What",
+      "id": "2026-04-27_2145_so-what"
     },
     {
       "date": "2026-04-27",
@@ -449,7 +496,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "Caddy Shack Indoor Golf & Pub",
-      "act": "Boxcar"
+      "act": "Boxcar",
+      "id": "2026-04-27_2215_boxcar"
     },
     {
       "date": "2026-04-28",
@@ -458,7 +506,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Vikre Distillery",
-      "act": "Water Cat"
+      "act": "Water Cat",
+      "id": "2026-04-28_1830_water-cat"
     },
     {
       "date": "2026-04-28",
@@ -467,7 +516,8 @@
       "time_start": "6:45pm",
       "time_start_24h": "18:45",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Gavin Glen"
+      "act": "Gavin Glen",
+      "id": "2026-04-28_1845_gavin-glen"
     },
     {
       "date": "2026-04-28",
@@ -476,7 +526,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Amsoil Arena",
-      "act": "Dre AKA Jamaican"
+      "act": "Dre AKA Jamaican",
+      "id": "2026-04-28_1900_dre-aka-jamaican"
     },
     {
       "date": "2026-04-28",
@@ -485,7 +536,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Vikre Distillery",
-      "act": "Idle Rose"
+      "act": "Idle Rose",
+      "id": "2026-04-28_1930_idle-rose"
     },
     {
       "date": "2026-04-28",
@@ -494,7 +546,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Ashe Berton"
+      "act": "Ashe Berton",
+      "id": "2026-04-28_1945_ashe-berton"
     },
     {
       "date": "2026-04-28",
@@ -503,7 +556,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Amsoil Arena",
-      "act": "Berserk Blondes!"
+      "act": "Berserk Blondes!",
+      "id": "2026-04-28_2000_berserk-blondes"
     },
     {
       "date": "2026-04-28",
@@ -512,7 +566,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Vikre Distillery",
-      "act": "Lu Starr"
+      "act": "Lu Starr",
+      "id": "2026-04-28_2030_lu-starr"
     },
     {
       "date": "2026-04-28",
@@ -521,7 +576,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Dirtbike Boyfriend"
+      "act": "Dirtbike Boyfriend",
+      "id": "2026-04-28_2045_dirtbike-boyfriend"
     },
     {
       "date": "2026-04-28",
@@ -530,7 +586,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Dubh Linn Irish Pub",
-      "act": "John Agacki"
+      "act": "John Agacki",
+      "id": "2026-04-28_2100_john-agacki"
     },
     {
       "date": "2026-04-28",
@@ -539,7 +596,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Amsoil Arena",
-      "act": "The Leave Alones"
+      "act": "The Leave Alones",
+      "id": "2026-04-28_2100_the-leave-alones"
     },
     {
       "date": "2026-04-28",
@@ -548,7 +606,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Amsoil Arena",
-      "act": "Baharat"
+      "act": "Baharat",
+      "id": "2026-04-28_2200_baharat"
     },
     {
       "date": "2026-04-28",
@@ -557,7 +616,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Dubh Linn Irish Pub",
-      "act": "Mitchell Kane"
+      "act": "Mitchell Kane",
+      "id": "2026-04-28_2200_mitchell-kane"
     },
     {
       "date": "2026-04-28",
@@ -566,7 +626,8 @@
       "time_start": "11:00pm",
       "time_start_24h": "23:00",
       "venue": "Dubh Linn Irish Pub",
-      "act": "porb"
+      "act": "porb",
+      "id": "2026-04-28_2300_porb"
     },
     {
       "date": "2026-04-29",
@@ -575,7 +636,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Wussow's Concert Cafe",
-      "act": "Cigarette Picnic"
+      "act": "Cigarette Picnic",
+      "id": "2026-04-29_1830_cigarette-picnic"
     },
     {
       "date": "2026-04-29",
@@ -584,7 +646,8 @@
       "time_start": "7:15pm",
       "time_start_24h": "19:15",
       "venue": "West Theatre",
-      "act": "Owls Club Big Band"
+      "act": "Owls Club Big Band",
+      "id": "2026-04-29_1915_owls-club-big-band"
     },
     {
       "date": "2026-04-29",
@@ -593,7 +656,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Wussow's Concert Cafe",
-      "act": "¡Radical Fun Time!"
+      "act": "¡Radical Fun Time!",
+      "id": "2026-04-29_1930_radical-fun-time"
     },
     {
       "date": "2026-04-29",
@@ -602,7 +666,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Gopher Restaurant & Lounge",
-      "act": "Ricky Carl"
+      "act": "Ricky Carl",
+      "id": "2026-04-29_1945_ricky-carl"
     },
     {
       "date": "2026-04-29",
@@ -611,7 +676,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "West Theatre",
-      "act": "#theindianheadband"
+      "act": "#theindianheadband",
+      "id": "2026-04-29_2015_theindianheadband"
     },
     {
       "date": "2026-04-29",
@@ -620,7 +686,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Kom-on-Inn",
-      "act": "MINNESOTA VICE"
+      "act": "MINNESOTA VICE",
+      "id": "2026-04-29_2030_minnesota-vice"
     },
     {
       "date": "2026-04-29",
@@ -629,7 +696,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Wussow's Concert Cafe",
-      "act": "Theory of Light"
+      "act": "Theory of Light",
+      "id": "2026-04-29_2030_theory-of-light"
     },
     {
       "date": "2026-04-29",
@@ -638,7 +706,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Gopher Restaurant & Lounge",
-      "act": "Sometime, Maybe"
+      "act": "Sometime, Maybe",
+      "id": "2026-04-29_2045_sometime-maybe"
     },
     {
       "date": "2026-04-29",
@@ -647,7 +716,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Mr. D's Bar & Grill",
-      "act": "A Band Called Truman!"
+      "act": "A Band Called Truman!",
+      "id": "2026-04-29_2100_a-band-called-truman"
     },
     {
       "date": "2026-04-29",
@@ -656,7 +726,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "West Theatre",
-      "act": "Woodblind"
+      "act": "Woodblind",
+      "id": "2026-04-29_2115_woodblind"
     },
     {
       "date": "2026-04-29",
@@ -665,7 +736,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "Kom-on-Inn",
-      "act": "Dirt Magnet"
+      "act": "Dirt Magnet",
+      "id": "2026-04-29_2130_dirt-magnet"
     },
     {
       "date": "2026-04-29",
@@ -674,7 +746,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Gopher Restaurant & Lounge",
-      "act": "Willem Dafoe Fan Club"
+      "act": "Willem Dafoe Fan Club",
+      "id": "2026-04-29_2145_willem-dafoe-fan-club"
     },
     {
       "date": "2026-04-29",
@@ -683,7 +756,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Mr. D's Bar & Grill",
-      "act": "Chasm"
+      "act": "Chasm",
+      "id": "2026-04-29_2200_chasm"
     },
     {
       "date": "2026-04-29",
@@ -692,7 +766,8 @@
       "time_start": "10:30pm",
       "time_start_24h": "22:30",
       "venue": "Kom-on-Inn",
-      "act": "Midnight Kissfight"
+      "act": "Midnight Kissfight",
+      "id": "2026-04-29_2230_midnight-kissfight"
     },
     {
       "date": "2026-04-29",
@@ -701,7 +776,8 @@
       "time_start": "11:00pm",
       "time_start_24h": "23:00",
       "venue": "Mr. D's Bar & Grill",
-      "act": "Father Hennepin"
+      "act": "Father Hennepin",
+      "id": "2026-04-29_2300_father-hennepin"
     },
     {
       "date": "2026-04-30",
@@ -710,7 +786,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Superior Tavern",
-      "act": "Mayor's Proclamation"
+      "act": "Mayor's Proclamation",
+      "id": "2026-04-30_1800_mayor-s-proclamation"
     },
     {
       "date": "2026-04-30",
@@ -719,7 +796,8 @@
       "time_start": "6:15pm",
       "time_start_24h": "18:15",
       "venue": "Superior Tavern",
-      "act": "Gavin St. Clair Quartet"
+      "act": "Gavin St. Clair Quartet",
+      "id": "2026-04-30_1815_gavin-st-clair-quartet"
     },
     {
       "date": "2026-04-30",
@@ -728,7 +806,8 @@
       "time_start": "6:45pm",
       "time_start_24h": "18:45",
       "venue": "Ritual Marketplace",
-      "act": "Dead Guy in a Swamp"
+      "act": "Dead Guy in a Swamp",
+      "id": "2026-04-30_1845_dead-guy-in-a-swamp"
     },
     {
       "date": "2026-04-30",
@@ -737,7 +816,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Average Joe's Pub",
-      "act": "Nikki Lemire"
+      "act": "Nikki Lemire",
+      "id": "2026-04-30_1900_nikki-lemire"
     },
     {
       "date": "2026-04-30",
@@ -746,7 +826,8 @@
       "time_start": "7:15pm",
       "time_start_24h": "19:15",
       "venue": "Superior Tavern",
-      "act": "The Casualty Company"
+      "act": "The Casualty Company",
+      "id": "2026-04-30_1915_the-casualty-company"
     },
     {
       "date": "2026-04-30",
@@ -755,7 +836,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Havana's",
-      "act": "Israel Malachi Orchestra"
+      "act": "Israel Malachi Orchestra",
+      "id": "2026-04-30_1930_israel-malachi-orchestra"
     },
     {
       "date": "2026-04-30",
@@ -764,7 +846,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Ritual Marketplace",
-      "act": "C-Silence"
+      "act": "C-Silence",
+      "id": "2026-04-30_1945_c-silence"
     },
     {
       "date": "2026-04-30",
@@ -773,7 +856,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Average Joe's Pub",
-      "act": "Teague Alexy & The Common Thread"
+      "act": "Teague Alexy & The Common Thread",
+      "id": "2026-04-30_2000_teague-alexy-the-common-thread"
     },
     {
       "date": "2026-04-30",
@@ -782,7 +866,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Superior Tavern",
-      "act": "Darren Sipity"
+      "act": "Darren Sipity",
+      "id": "2026-04-30_2015_darren-sipity"
     },
     {
       "date": "2026-04-30",
@@ -791,7 +876,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Tower Avenue Tavern",
-      "act": "Rory Van James"
+      "act": "Rory Van James",
+      "id": "2026-04-30_2015_rory-van-james"
     },
     {
       "date": "2026-04-30",
@@ -800,7 +886,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Havana's",
-      "act": "The Crunchy Bunch"
+      "act": "The Crunchy Bunch",
+      "id": "2026-04-30_2030_the-crunchy-bunch"
     },
     {
       "date": "2026-04-30",
@@ -809,7 +896,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Ritual Marketplace",
-      "act": "Four Mile Portage"
+      "act": "Four Mile Portage",
+      "id": "2026-04-30_2045_four-mile-portage"
     },
     {
       "date": "2026-04-30",
@@ -818,7 +906,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "The Main Club",
-      "act": "The Lonely Loons"
+      "act": "The Lonely Loons",
+      "id": "2026-04-30_2045_the-lonely-loons"
     },
     {
       "date": "2026-04-30",
@@ -827,7 +916,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Average Joe's Pub",
-      "act": "Babie Eyes"
+      "act": "Babie Eyes",
+      "id": "2026-04-30_2100_babie-eyes"
     },
     {
       "date": "2026-04-30",
@@ -836,7 +926,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "Tower Avenue Tavern",
-      "act": "Joy and Melancholy"
+      "act": "Joy and Melancholy",
+      "id": "2026-04-30_2115_joy-and-melancholy"
     },
     {
       "date": "2026-04-30",
@@ -845,7 +936,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "Havana's",
-      "act": "Born too Late"
+      "act": "Born too Late",
+      "id": "2026-04-30_2130_born-too-late"
     },
     {
       "date": "2026-04-30",
@@ -854,7 +946,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "The Main Club",
-      "act": "Brinn Major"
+      "act": "Brinn Major",
+      "id": "2026-04-30_2145_brinn-major"
     },
     {
       "date": "2026-04-30",
@@ -863,7 +956,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "Tower Avenue Tavern",
-      "act": "Mr. Kickass"
+      "act": "Mr. Kickass",
+      "id": "2026-04-30_2215_mr-kickass"
     },
     {
       "date": "2026-04-30",
@@ -872,7 +966,8 @@
       "time_start": "10:45pm",
       "time_start_24h": "22:45",
       "venue": "The Main Club",
-      "act": "The Brothers Burn Mountain"
+      "act": "The Brothers Burn Mountain",
+      "id": "2026-04-30_2245_the-brothers-burn-mountain"
     },
     {
       "date": "2026-05-01",
@@ -881,7 +976,8 @@
       "time_start": "5:45pm",
       "time_start_24h": "17:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "Old Love"
+      "act": "Old Love",
+      "id": "2026-05-01_1745_old-love"
     },
     {
       "date": "2026-05-01",
@@ -890,7 +986,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Prøve Gallery",
-      "act": "BRAINWASHED"
+      "act": "BRAINWASHED",
+      "id": "2026-05-01_1800_brainwashed"
     },
     {
       "date": "2026-05-01",
@@ -899,7 +996,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "Foosball Ruckus"
+      "act": "Foosball Ruckus",
+      "id": "2026-05-01_1800_foosball-ruckus"
     },
     {
       "date": "2026-05-01",
@@ -908,7 +1006,8 @@
       "time_start": "6:15pm",
       "time_start_24h": "18:15",
       "venue": "Owls Club",
-      "act": "Bill Berguson Band"
+      "act": "Bill Berguson Band",
+      "id": "2026-05-01_1815_bill-berguson-band"
     },
     {
       "date": "2026-05-01",
@@ -917,7 +1016,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Indecent Proposal"
+      "act": "Indecent Proposal",
+      "id": "2026-05-01_1830_indecent-proposal"
     },
     {
       "date": "2026-05-01",
@@ -926,7 +1026,8 @@
       "time_start": "6:45pm",
       "time_start_24h": "18:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "Flight of Stares"
+      "act": "Flight of Stares",
+      "id": "2026-05-01_1845_flight-of-stares"
     },
     {
       "date": "2026-05-01",
@@ -935,7 +1036,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "BOOG3YM3N"
+      "act": "BOOG3YM3N",
+      "id": "2026-05-01_1900_boog3ym3n"
     },
     {
       "date": "2026-05-01",
@@ -944,7 +1046,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Prøve Gallery",
-      "act": "Peat Boggs"
+      "act": "Peat Boggs",
+      "id": "2026-05-01_1900_peat-boggs"
     },
     {
       "date": "2026-05-01",
@@ -953,7 +1056,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Taylor James Donskey"
+      "act": "Taylor James Donskey",
+      "id": "2026-05-01_1900_taylor-james-donskey"
     },
     {
       "date": "2026-05-01",
@@ -962,7 +1066,8 @@
       "time_start": "7:15pm",
       "time_start_24h": "19:15",
       "venue": "Owls Club",
-      "act": "Ditchbird"
+      "act": "Ditchbird",
+      "id": "2026-05-01_1915_ditchbird"
     },
     {
       "date": "2026-05-01",
@@ -971,7 +1076,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Hot Tamale Cosmos"
+      "act": "Hot Tamale Cosmos",
+      "id": "2026-05-01_1930_hot-tamale-cosmos"
     },
     {
       "date": "2026-05-01",
@@ -980,7 +1086,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "Lake Effect String Band"
+      "act": "Lake Effect String Band",
+      "id": "2026-05-01_1945_lake-effect-string-band"
     },
     {
       "date": "2026-05-01",
@@ -989,7 +1096,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Lee Clark Allen"
+      "act": "Lee Clark Allen",
+      "id": "2026-05-01_2000_lee-clark-allen"
     },
     {
       "date": "2026-05-01",
@@ -998,7 +1106,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Mae and Justine"
+      "act": "Mae and Justine",
+      "id": "2026-05-01_2000_mae-and-justine"
     },
     {
       "date": "2026-05-01",
@@ -1007,7 +1116,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Prøve Gallery",
-      "act": "Throw Me The Remote"
+      "act": "Throw Me The Remote",
+      "id": "2026-05-01_2000_throw-me-the-remote"
     },
     {
       "date": "2026-05-01",
@@ -1016,7 +1126,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "Underground 'til Sundown"
+      "act": "Underground 'til Sundown",
+      "id": "2026-05-01_2000_underground-til-sundown"
     },
     {
       "date": "2026-05-01",
@@ -1025,7 +1136,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Norway Hall Event Center",
-      "act": "Gochujang"
+      "act": "Gochujang",
+      "id": "2026-05-01_2015_gochujang"
     },
     {
       "date": "2026-05-01",
@@ -1034,7 +1146,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Owls Club",
-      "act": "Wes Hadrich"
+      "act": "Wes Hadrich",
+      "id": "2026-05-01_2015_wes-hadrich"
     },
     {
       "date": "2026-05-01",
@@ -1043,7 +1156,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Homegrown Tomatoes"
+      "act": "Homegrown Tomatoes",
+      "id": "2026-05-01_2030_homegrown-tomatoes"
     },
     {
       "date": "2026-05-01",
@@ -1052,7 +1166,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Carmody Irish Pub",
-      "act": "Hardaybra"
+      "act": "Hardaybra",
+      "id": "2026-05-01_2045_hardaybra"
     },
     {
       "date": "2026-05-01",
@@ -1061,7 +1176,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Alex Heil"
+      "act": "Alex Heil",
+      "id": "2026-05-01_2100_alex-heil"
     },
     {
       "date": "2026-05-01",
@@ -1070,7 +1186,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Ross Thorn"
+      "act": "Ross Thorn",
+      "id": "2026-05-01_2100_ross-thorn"
     },
     {
       "date": "2026-05-01",
@@ -1079,7 +1196,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Dog Talk"
+      "act": "Dog Talk",
+      "id": "2026-05-01_2115_dog-talk"
     },
     {
       "date": "2026-05-01",
@@ -1088,7 +1206,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "Norway Hall Event Center",
-      "act": "Entheos Enclave"
+      "act": "Entheos Enclave",
+      "id": "2026-05-01_2115_entheos-enclave"
     },
     {
       "date": "2026-05-01",
@@ -1097,7 +1216,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "The Moorish Room",
-      "act": "Breanne Marie & The Front Porch Sinners"
+      "act": "Breanne Marie & The Front Porch Sinners",
+      "id": "2026-05-01_2130_breanne-marie-the-front-porch-"
     },
     {
       "date": "2026-05-01",
@@ -1106,7 +1226,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "Dubh Linn Irish Pub",
-      "act": "Squid City Slingers"
+      "act": "Squid City Slingers",
+      "id": "2026-05-01_2130_squid-city-slingers"
     },
     {
       "date": "2026-05-01",
@@ -1115,7 +1236,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Carmody Irish Pub",
-      "act": "Jen West"
+      "act": "Jen West",
+      "id": "2026-05-01_2145_jen-west"
     },
     {
       "date": "2026-05-01",
@@ -1124,7 +1246,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Blacklist Brewing Company",
-      "act": "The Old Smugglers"
+      "act": "The Old Smugglers",
+      "id": "2026-05-01_2145_the-old-smugglers"
     },
     {
       "date": "2026-05-01",
@@ -1133,7 +1256,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Pizza Luce",
-      "act": "Grand Holler"
+      "act": "Grand Holler",
+      "id": "2026-05-01_2200_grand-holler"
     },
     {
       "date": "2026-05-01",
@@ -1142,7 +1266,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Nate J Mattson"
+      "act": "Nate J Mattson",
+      "id": "2026-05-01_2200_nate-j-mattson"
     },
     {
       "date": "2026-05-01",
@@ -1151,7 +1276,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Galleon"
+      "act": "Galleon",
+      "id": "2026-05-01_2215_galleon"
     },
     {
       "date": "2026-05-01",
@@ -1160,7 +1286,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "Norway Hall Event Center",
-      "act": "Rick McLean Band"
+      "act": "Rick McLean Band",
+      "id": "2026-05-01_2215_rick-mclean-band"
     },
     {
       "date": "2026-05-01",
@@ -1169,7 +1296,8 @@
       "time_start": "10:30pm",
       "time_start_24h": "22:30",
       "venue": "The Moorish Room",
-      "act": "Climes"
+      "act": "Climes",
+      "id": "2026-05-01_2230_climes"
     },
     {
       "date": "2026-05-01",
@@ -1178,7 +1306,8 @@
       "time_start": "10:30pm",
       "time_start_24h": "22:30",
       "venue": "Dubh Linn Irish Pub",
-      "act": "Polari"
+      "act": "Polari",
+      "id": "2026-05-01_2230_polari"
     },
     {
       "date": "2026-05-01",
@@ -1187,7 +1316,8 @@
       "time_start": "10:45pm",
       "time_start_24h": "22:45",
       "venue": "Carmody Irish Pub",
-      "act": "CEREBELLUM"
+      "act": "CEREBELLUM",
+      "id": "2026-05-01_2245_cerebellum"
     },
     {
       "date": "2026-05-01",
@@ -1196,7 +1326,8 @@
       "time_start": "10:45pm",
       "time_start_24h": "22:45",
       "venue": "Blacklist Brewing Company",
-      "act": "Discord At Dawn"
+      "act": "Discord At Dawn",
+      "id": "2026-05-01_2245_discord-at-dawn"
     },
     {
       "date": "2026-05-01",
@@ -1205,7 +1336,8 @@
       "time_start": "11:00pm",
       "time_start_24h": "23:00",
       "venue": "Pizza Luce",
-      "act": "Beauty Mountain Rd"
+      "act": "Beauty Mountain Rd",
+      "id": "2026-05-01_2300_beauty-mountain-rd"
     },
     {
       "date": "2026-05-01",
@@ -1214,7 +1346,8 @@
       "time_start": "11:15pm",
       "time_start_24h": "23:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Sorrows Never Die"
+      "act": "Sorrows Never Die",
+      "id": "2026-05-01_2315_sorrows-never-die"
     },
     {
       "date": "2026-05-01",
@@ -1223,7 +1356,8 @@
       "time_start": "11:30pm",
       "time_start_24h": "23:30",
       "venue": "The Moorish Room",
-      "act": "Grant Glad & the Soo Line Loons"
+      "act": "Grant Glad & the Soo Line Loons",
+      "id": "2026-05-01_2330_grant-glad-the-soo-line-loons"
     },
     {
       "date": "2026-05-01",
@@ -1232,7 +1366,8 @@
       "time_start": "11:30pm",
       "time_start_24h": "23:30",
       "venue": "Dubh Linn Irish Pub",
-      "act": "INF3RNO"
+      "act": "INF3RNO",
+      "id": "2026-05-01_2330_inf3rno"
     },
     {
       "date": "2026-05-01",
@@ -1241,7 +1376,8 @@
       "time_start": "11:45pm",
       "time_start_24h": "23:45",
       "venue": "Blacklist Brewing Company",
-      "act": "DJ ADUB"
+      "act": "DJ ADUB",
+      "id": "2026-05-01_2345_dj-adub"
     },
     {
       "date": "2026-05-01",
@@ -1250,7 +1386,8 @@
       "time_start": "12:00am",
       "time_start_24h": "00:00",
       "venue": "Pizza Luce",
-      "act": "Shadows of Me"
+      "act": "Shadows of Me",
+      "id": "2026-05-01_0000_shadows-of-me"
     },
     {
       "date": "2026-05-02",
@@ -1259,7 +1396,8 @@
       "time_start": "12:00pm",
       "time_start_24h": "12:00",
       "venue": "Chester Bowl Park",
-      "act": "Homegrown Kickball Classic"
+      "act": "Homegrown Kickball Classic",
+      "id": "2026-05-02_1200_homegrown-kickball-classic"
     },
     {
       "date": "2026-05-02",
@@ -1268,7 +1406,8 @@
       "time_start": "2:00pm",
       "time_start_24h": "14:00",
       "venue": "Duluth Depot: Great Hall",
-      "act": "Homegrown Artists Merch Fair hosted by Twin Ports Artists Collective"
+      "act": "Homegrown Artists Merch Fair hosted by Twin Ports Artists Collective",
+      "id": "2026-05-02_1400_homegrown-artists-merch-fair-h"
     },
     {
       "date": "2026-05-02",
@@ -1277,7 +1416,8 @@
       "time_start": "5:45pm",
       "time_start_24h": "17:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "Rocking Rodents"
+      "act": "Rocking Rodents",
+      "id": "2026-05-02_1745_rocking-rodents"
     },
     {
       "date": "2026-05-02",
@@ -1286,7 +1426,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Prøve Gallery",
-      "act": "Crimson Soul"
+      "act": "Crimson Soul",
+      "id": "2026-05-02_1800_crimson-soul"
     },
     {
       "date": "2026-05-02",
@@ -1295,7 +1436,8 @@
       "time_start": "6:00pm",
       "time_start_24h": "18:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "Sons of Fogtown"
+      "act": "Sons of Fogtown",
+      "id": "2026-05-02_1800_sons-of-fogtown"
     },
     {
       "date": "2026-05-02",
@@ -1304,7 +1446,8 @@
       "time_start": "6:15pm",
       "time_start_24h": "18:15",
       "venue": "Owls Club",
-      "act": "Forseer"
+      "act": "Forseer",
+      "id": "2026-05-02_1815_forseer"
     },
     {
       "date": "2026-05-02",
@@ -1313,7 +1456,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Janie and The Spokes"
+      "act": "Janie and The Spokes",
+      "id": "2026-05-02_1830_janie-and-the-spokes"
     },
     {
       "date": "2026-05-02",
@@ -1322,7 +1466,8 @@
       "time_start": "6:30pm",
       "time_start_24h": "18:30",
       "venue": "Studio Four",
-      "act": "Zenith City Dance Collective"
+      "act": "Zenith City Dance Collective",
+      "id": "2026-05-02_1830_zenith-city-dance-collective"
     },
     {
       "date": "2026-05-02",
@@ -1331,7 +1476,8 @@
       "time_start": "6:45pm",
       "time_start_24h": "18:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "Mud Puppies"
+      "act": "Mud Puppies",
+      "id": "2026-05-02_1845_mud-puppies"
     },
     {
       "date": "2026-05-02",
@@ -1340,7 +1486,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "All Sea Monsters Are Girls"
+      "act": "All Sea Monsters Are Girls",
+      "id": "2026-05-02_1900_all-sea-monsters-are-girls"
     },
     {
       "date": "2026-05-02",
@@ -1349,7 +1496,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Misisipi Mike Wolf and The Plain High Drifters"
+      "act": "Misisipi Mike Wolf and The Plain High Drifters",
+      "id": "2026-05-02_1900_misisipi-mike-wolf-and-the-pla"
     },
     {
       "date": "2026-05-02",
@@ -1358,7 +1506,8 @@
       "time_start": "7:00pm",
       "time_start_24h": "19:00",
       "venue": "Prøve Gallery",
-      "act": "Slape"
+      "act": "Slape",
+      "id": "2026-05-02_1900_slape"
     },
     {
       "date": "2026-05-02",
@@ -1367,7 +1516,8 @@
       "time_start": "7:15pm",
       "time_start_24h": "19:15",
       "venue": "Owls Club",
-      "act": "P.B&J"
+      "act": "P.B&J",
+      "id": "2026-05-02_1915_p-b-j"
     },
     {
       "date": "2026-05-02",
@@ -1376,7 +1526,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Studio Four",
-      "act": "Haus of Queer"
+      "act": "Haus of Queer",
+      "id": "2026-05-02_1930_haus-of-queer"
     },
     {
       "date": "2026-05-02",
@@ -1385,7 +1536,8 @@
       "time_start": "7:30pm",
       "time_start_24h": "19:30",
       "venue": "Zeitgeist Teatro",
-      "act": "The Roadside Lupines"
+      "act": "The Roadside Lupines",
+      "id": "2026-05-02_1930_the-roadside-lupines"
     },
     {
       "date": "2026-05-02",
@@ -1394,7 +1546,8 @@
       "time_start": "7:45pm",
       "time_start_24h": "19:45",
       "venue": "Spirit of the Lake Community Arts",
-      "act": "The Mad Violin Scientist"
+      "act": "The Mad Violin Scientist",
+      "id": "2026-05-02_1945_the-mad-violin-scientist"
     },
     {
       "date": "2026-05-02",
@@ -1403,7 +1556,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Cyr and the Cosmonauts"
+      "act": "Cyr and the Cosmonauts",
+      "id": "2026-05-02_2000_cyr-and-the-cosmonauts"
     },
     {
       "date": "2026-05-02",
@@ -1412,7 +1566,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Duluth Flame Nightclub",
-      "act": "DJ Nola"
+      "act": "DJ Nola",
+      "id": "2026-05-02_2000_dj-nola"
     },
     {
       "date": "2026-05-02",
@@ -1421,7 +1576,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Prøve Gallery",
-      "act": "The Draco Volans"
+      "act": "The Draco Volans",
+      "id": "2026-05-02_2000_the-draco-volans"
     },
     {
       "date": "2026-05-02",
@@ -1430,7 +1586,8 @@
       "time_start": "8:00pm",
       "time_start_24h": "20:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Isa Morin"
+      "act": "Isa Morin",
+      "id": "2026-05-02_2000_isa-morin"
     },
     {
       "date": "2026-05-02",
@@ -1439,7 +1596,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Owls Club",
-      "act": "Kroma"
+      "act": "Kroma",
+      "id": "2026-05-02_2015_kroma"
     },
     {
       "date": "2026-05-02",
@@ -1448,7 +1606,8 @@
       "time_start": "8:15pm",
       "time_start_24h": "20:15",
       "venue": "Norway Hall Event Center",
-      "act": "Southpaw"
+      "act": "Southpaw",
+      "id": "2026-05-02_2015_southpaw"
     },
     {
       "date": "2026-05-02",
@@ -1457,7 +1616,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Studio Four",
-      "act": "The Body Electric Cabaret"
+      "act": "The Body Electric Cabaret",
+      "id": "2026-05-02_2030_the-body-electric-cabaret"
     },
     {
       "date": "2026-05-02",
@@ -1466,7 +1626,8 @@
       "time_start": "8:30pm",
       "time_start_24h": "20:30",
       "venue": "Zeitgeist Teatro",
-      "act": "Nevins"
+      "act": "Nevins",
+      "id": "2026-05-02_2030_nevins"
     },
     {
       "date": "2026-05-02",
@@ -1475,7 +1636,8 @@
       "time_start": "8:45pm",
       "time_start_24h": "20:45",
       "venue": "Carmody Irish Pub",
-      "act": "The Adjustments"
+      "act": "The Adjustments",
+      "id": "2026-05-02_2045_the-adjustments"
     },
     {
       "date": "2026-05-02",
@@ -1484,7 +1646,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Death Valley Yacht Club"
+      "act": "Death Valley Yacht Club",
+      "id": "2026-05-02_2100_death-valley-yacht-club"
     },
     {
       "date": "2026-05-02",
@@ -1493,7 +1656,8 @@
       "time_start": "9:00pm",
       "time_start_24h": "21:00",
       "venue": "Sacred Heart Music Center",
-      "act": "Witchfarm"
+      "act": "Witchfarm",
+      "id": "2026-05-02_2100_witchfarm"
     },
     {
       "date": "2026-05-02",
@@ -1502,7 +1666,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "Norway Hall Event Center",
-      "act": "Flip Arkulary"
+      "act": "Flip Arkulary",
+      "id": "2026-05-02_2115_flip-arkulary"
     },
     {
       "date": "2026-05-02",
@@ -1511,7 +1676,8 @@
       "time_start": "9:15pm",
       "time_start_24h": "21:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Halfsleeper"
+      "act": "Halfsleeper",
+      "id": "2026-05-02_2115_halfsleeper"
     },
     {
       "date": "2026-05-02",
@@ -1520,7 +1686,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "Studio Four",
-      "act": "Duluth Dolls"
+      "act": "Duluth Dolls",
+      "id": "2026-05-02_2130_duluth-dolls"
     },
     {
       "date": "2026-05-02",
@@ -1529,7 +1696,8 @@
       "time_start": "9:30pm",
       "time_start_24h": "21:30",
       "venue": "The Moorish Room",
-      "act": "Greg Cougar Conley"
+      "act": "Greg Cougar Conley",
+      "id": "2026-05-02_2130_greg-cougar-conley"
     },
     {
       "date": "2026-05-02",
@@ -1538,7 +1706,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Carmody Irish Pub",
-      "act": "Possessed to Restored"
+      "act": "Possessed to Restored",
+      "id": "2026-05-02_2145_possessed-to-restored"
     },
     {
       "date": "2026-05-02",
@@ -1547,7 +1716,8 @@
       "time_start": "9:45pm",
       "time_start_24h": "21:45",
       "venue": "Blacklist Brewing Company",
-      "act": "Pronoya"
+      "act": "Pronoya",
+      "id": "2026-05-02_2145_pronoya"
     },
     {
       "date": "2026-05-02",
@@ -1556,7 +1726,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Sir Benedict's Tavern on the Lake",
-      "act": "Jesse Jaze"
+      "act": "Jesse Jaze",
+      "id": "2026-05-02_2200_jesse-jaze"
     },
     {
       "date": "2026-05-02",
@@ -1565,7 +1736,8 @@
       "time_start": "10:00pm",
       "time_start_24h": "22:00",
       "venue": "Pizza Luce",
-      "act": "Jumpsuit"
+      "act": "Jumpsuit",
+      "id": "2026-05-02_2200_jumpsuit"
     },
     {
       "date": "2026-05-02",
@@ -1574,7 +1746,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Danny Frank & the Smoky Gold"
+      "act": "Danny Frank & the Smoky Gold",
+      "id": "2026-05-02_2215_danny-frank-the-smoky-gold"
     },
     {
       "date": "2026-05-02",
@@ -1583,7 +1756,8 @@
       "time_start": "10:15pm",
       "time_start_24h": "22:15",
       "venue": "Norway Hall Event Center",
-      "act": "Emily Haavik & the 35s"
+      "act": "Emily Haavik & the 35s",
+      "id": "2026-05-02_2215_emily-haavik-the-35s"
     },
     {
       "date": "2026-05-02",
@@ -1592,7 +1766,8 @@
       "time_start": "10:30pm",
       "time_start_24h": "22:30",
       "venue": "The Moorish Room",
-      "act": "Eldri Snow"
+      "act": "Eldri Snow",
+      "id": "2026-05-02_2230_eldri-snow"
     },
     {
       "date": "2026-05-02",
@@ -1601,7 +1776,8 @@
       "time_start": "10:45pm",
       "time_start_24h": "22:45",
       "venue": "Carmody Irish Pub",
-      "act": "Iron Range Outlaw Brigade"
+      "act": "Iron Range Outlaw Brigade",
+      "id": "2026-05-02_2245_iron-range-outlaw-brigade"
     },
     {
       "date": "2026-05-02",
@@ -1610,7 +1786,8 @@
       "time_start": "10:45pm",
       "time_start_24h": "22:45",
       "venue": "Blacklist Brewing Company",
-      "act": "Portrait of a Drowned Man"
+      "act": "Portrait of a Drowned Man",
+      "id": "2026-05-02_2245_portrait-of-a-drowned-man"
     },
     {
       "date": "2026-05-02",
@@ -1619,7 +1796,8 @@
       "time_start": "11:00pm",
       "time_start_24h": "23:00",
       "venue": "Pizza Luce",
-      "act": "Innerstellar Overdrive"
+      "act": "Innerstellar Overdrive",
+      "id": "2026-05-02_2300_innerstellar-overdrive"
     },
     {
       "date": "2026-05-02",
@@ -1628,7 +1806,8 @@
       "time_start": "11:15pm",
       "time_start_24h": "23:15",
       "venue": "R.T. Quinlan's Saloon",
-      "act": "Bratwurst"
+      "act": "Bratwurst",
+      "id": "2026-05-02_2315_bratwurst"
     },
     {
       "date": "2026-05-02",
@@ -1637,7 +1816,8 @@
       "time_start": "11:30pm",
       "time_start_24h": "23:30",
       "venue": "The Moorish Room",
-      "act": "The Shane Nelson Band"
+      "act": "The Shane Nelson Band",
+      "id": "2026-05-02_2330_the-shane-nelson-band"
     },
     {
       "date": "2026-05-02",
@@ -1646,7 +1826,8 @@
       "time_start": "11:45pm",
       "time_start_24h": "23:45",
       "venue": "Blacklist Brewing Company",
-      "act": "Mid Dream"
+      "act": "Mid Dream",
+      "id": "2026-05-02_2345_mid-dream"
     },
     {
       "date": "2026-05-02",
@@ -1655,7 +1836,8 @@
       "time_start": "12:00am",
       "time_start_24h": "00:00",
       "venue": "Pizza Luce",
-      "act": "Venus de Mars and All The Pretty Horses"
+      "act": "Venus de Mars and All The Pretty Horses",
+      "id": "2026-05-02_0000_venus-de-mars-and-all-the-pret"
     },
     {
       "date": "2026-05-03",
@@ -1664,7 +1846,8 @@
       "time_start": "1:30pm",
       "time_start_24h": "13:30",
       "venue": "Canal Park Brewing Company",
-      "act": "Skarlett Woods"
+      "act": "Skarlett Woods",
+      "id": "2026-05-03_1330_skarlett-woods"
     },
     {
       "date": "2026-05-03",
@@ -1673,7 +1856,8 @@
       "time_start": "2:30pm",
       "time_start_24h": "14:30",
       "venue": "Canal Park Brewing Company",
-      "act": "Shakin' Not Stirred (SNS)"
+      "act": "Shakin' Not Stirred (SNS)",
+      "id": "2026-05-03_1430_shakin-not-stirred-sns"
     },
     {
       "date": "2026-05-03",
@@ -1682,7 +1866,8 @@
       "time_start": "3:30pm",
       "time_start_24h": "15:30",
       "venue": "Canal Park Brewing Company",
-      "act": "Austin Castle"
+      "act": "Austin Castle",
+      "id": "2026-05-03_1530_austin-castle"
     }
   ]
 }

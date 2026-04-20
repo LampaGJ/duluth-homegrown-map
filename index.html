@@ -1845,7 +1845,7 @@ canvas.addEventListener("click", (ev) => {
         }
       }
     }
-    playActByName(s.act, s.dt);
+    playById(s.id);
   }
 });
 
@@ -2021,7 +2021,7 @@ sparkCanvas.addEventListener("click", (ev) => {
   const k = Math.floor(fromBottom / sparkCubeH);
   if (k < 0 || k >= binSets.length) return;
   const s = binSets[k];
-  playActByName(s.act, s.dt);
+  playById(s.id);
 });
 
 // Load YouTube IFrame API for video-end detection
@@ -2320,9 +2320,9 @@ function jumpToIdx(idx) {
   slider.value = realToCompressed(act.dt);
   render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, idx);
 }
-// Play a specific act by name + datetime — finds exact playlist match
-function playActByName(actName, dt) {
-  const idx = ytPlaylist.findIndex(p => p.act === actName && +p.dt === +dt);
+// Play a specific schedule entry by its unique ID
+function playById(id) {
+  const idx = ytPlaylist.findIndex(p => p.id === id);
   if (idx >= 0) {
     jumpToIdx(idx);
     ytWrap.style.display = "";
@@ -2971,7 +2971,7 @@ if (window.innerWidth <= 768) {
       const ad = actsByName.get(s.act);
       const gc = ad?.genre_category || (ad?.type === "community_event" ? "Community" : "");
       const gcHtml = gc ? `<span class="ms-genre" data-g="${esc(gc)}">${esc(gc)}</span>` : "";
-      msHtml += `<div class="ms-set" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
+      msHtml += `<div class="ms-set" data-id="${s.id}" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
     });
   }
   mobileSchedule.innerHTML = msHtml;
@@ -3004,9 +3004,7 @@ if (window.innerWidth <= 768) {
   mobileSchedule.addEventListener("click", (e) => {
     const row = e.target.closest(".ms-set");
     if (!row) return;
-    const dt = new Date(+row.dataset.dt);
-    const actName = row.querySelector(".ms-act")?.textContent;
-    if (actName) playActByName(actName, dt);
+    playById(row.dataset.id);
     mobileSchedule.style.display = "none";
   });
 
