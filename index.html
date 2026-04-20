@@ -1845,13 +1845,7 @@ canvas.addEventListener("click", (ev) => {
         }
       }
     }
-    // Jump slider to this act's compressed time — find exact playlist index
-    const exactIdx = ytPlaylist.findIndex(p => p.act === s.act && +p.dt === +s.dt);
-    const cTime = realToCompressed(s.dt);
-    slider.value = cTime;
-    render(s.dt);
-    updatePlayhead();
-    updateYtPlayer(s.dt, exactIdx >= 0 ? exactIdx : undefined);
+    playActByName(s.act, s.dt);
   }
 });
 
@@ -2027,11 +2021,7 @@ sparkCanvas.addEventListener("click", (ev) => {
   const k = Math.floor(fromBottom / sparkCubeH);
   if (k < 0 || k >= binSets.length) return;
   const s = binSets[k];
-  const cTime = realToCompressed(s.dt);
-  slider.value = cTime;
-  render(s.dt);
-  updatePlayhead();
-  updateYtPlayer(s.dt);
+  playActByName(s.act, s.dt);
 });
 
 // Load YouTube IFrame API for video-end detection
@@ -2329,6 +2319,14 @@ function jumpToIdx(idx) {
   const act = ytPlaylist[idx];
   slider.value = realToCompressed(act.dt);
   render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, idx);
+}
+// Play a specific act by name + datetime — finds exact playlist match
+function playActByName(actName, dt) {
+  const idx = ytPlaylist.findIndex(p => p.act === actName && +p.dt === +dt);
+  if (idx >= 0) {
+    jumpToIdx(idx);
+    ytWrap.style.display = "";
+  }
 }
 
 // Play/pause: controls the YouTube video. Timeline stays put — only advances
@@ -3007,24 +3005,8 @@ if (window.innerWidth <= 768) {
     const row = e.target.closest(".ms-set");
     if (!row) return;
     const dt = new Date(+row.dataset.dt);
-    // Find exact act name from the row
-    const actEl = row.querySelector(".ms-act");
-    const actName = actEl ? actEl.textContent : null;
-    // Match by act name + time to handle same-timeslot acts
-    const exactIdx = actName
-      ? ytPlaylist.findIndex(s => s.act === actName && +s.dt === +dt)
-      : -1;
-    const cTime = realToCompressed(dt);
-    slider.value = cTime;
-    render(dt);
-    updatePlayhead();
-    if (exactIdx >= 0) {
-      updateYtPlayer(dt, exactIdx);
-    } else {
-      updateYtPlayer(dt);
-    }
-    // Show player over schedule on mobile
-    ytWrap.style.display = "";
+    const actName = row.querySelector(".ms-act")?.textContent;
+    if (actName) playActByName(actName, dt);
     mobileSchedule.style.display = "none";
   });
 
