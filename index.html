@@ -59,7 +59,7 @@
      SVG masks use luminance by default per the SVG spec (no CSS mask-mode needed). */
   #sky-overlay {
     position: fixed; inset: 0; z-index: 1; pointer-events: none;
-    width: 100%; height: 100%;
+    width: 100%; height: 100%; overflow: visible;
   }
   body::before {
     content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100; opacity: 0.06;
@@ -3315,8 +3315,8 @@ function esc(s) {
     // Mobile: gentle upward bow (negative = concave/cylinder inside)
     const curve = isMobileMask ? -30 : (T.txCurve || 0);
     const bearingFix = 6;
-    const textW = w - marginL - marginR + bearingFix * 2;
-    const startX = marginL - bearingFix;
+    const startX = Math.max(0, marginL - bearingFix);
+    const textW = w - startX - Math.max(0, marginR - bearingFix);
 
     ["mask", "shadow"].forEach(prefix => {
       const flatEl = document.getElementById(prefix + "-text-flat");
