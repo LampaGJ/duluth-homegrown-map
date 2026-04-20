@@ -580,16 +580,16 @@
   /* Chrome-fader slider, like a mixing-console volume knob */
   #slider {
     flex: 1; appearance: none; background: transparent; height: 34px; cursor: pointer;
+    --track-pad-l: 4.5%; --track-pad-r: 4.5%;
   }
   #slider::-webkit-slider-runnable-track {
     height: 8px;
     background:
       linear-gradient(to right,
-        transparent 0%, transparent var(--track-pad-l, 0%),
-        #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
-        transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
+        transparent 0%, transparent var(--track-pad-l),
+        #0a0d0b var(--track-pad-l), #101a15 50%, #1a2620 calc(100% - var(--track-pad-r)),
+        transparent calc(100% - var(--track-pad-r)), transparent 100%);
     border-radius: 4px;
-    box-shadow: none;
   }
   /* Brushed-aluminum stereo knob — conic gradient fakes spun metal,
      bevel via layered inset shadows, inner groove ring for the volume-knob vibe. */
@@ -619,10 +619,9 @@
   #slider::-moz-range-track {
     height: 8px; border-radius: 4px;
     background: linear-gradient(to right,
-      transparent 0%, transparent var(--track-pad-l, 0%),
-      #050908 var(--track-pad-l, 0%), #0f1a15 50%, #1a2620 calc(100% - var(--track-pad-r, 0%)),
-      transparent calc(100% - var(--track-pad-r, 0%)), transparent 100%);
-    box-shadow: none;
+      transparent 0%, transparent var(--track-pad-l),
+      #0a0d0b var(--track-pad-l), #101a15 50%, #1a2620 calc(100% - var(--track-pad-r)),
+      transparent calc(100% - var(--track-pad-r)), transparent 100%);
   }
   #slider::-moz-range-thumb {
     width: 30px; height: 30px; border-radius: 50%; border: 0;
@@ -987,7 +986,7 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fitty@2/dist/fitty.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/opentype.js@1/dist/opentype.min.js"></script>
+<!-- opentype.js loaded on demand (see lazy load below) -->
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script type="module">
 import * as THREE from 'three';
@@ -1160,7 +1159,7 @@ roadsFC.features.forEach(f => {
 const canvas = document.getElementById("scene");
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 renderer.setClearColor(0x000000, 0);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, window.innerWidth <= 768 ? 2 : 3));
 renderer.setSize(canvas.clientWidth || window.innerWidth, canvas.clientHeight || window.innerHeight, false);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
@@ -1208,7 +1207,10 @@ function elevAt(x, z) {
 }
 
 // Single high-res terrain mesh matching the DEM resolution — no patch seams
-const geo = new THREE.PlaneGeometry(PLANE_W, PLANE_H, HM_W, HM_H);
+const _mobileGrid = window.innerWidth <= 768;
+const gridW = _mobileGrid ? Math.floor(HM_W / 2) : HM_W;
+const gridH = _mobileGrid ? Math.floor(HM_H / 2) : HM_H;
+const geo = new THREE.PlaneGeometry(PLANE_W, PLANE_H, gridW, gridH);
 geo.rotateX(-Math.PI / 2);
 const mat = new THREE.MeshStandardMaterial({
   map: diffuse,
@@ -1759,8 +1761,12 @@ const mouse = new THREE.Vector2();
 const tip = document.getElementById("tip");
 let hoverVenue = null;
 const _isMobile = window.innerWidth <= 768;
+let _lastPointerMove = 0;
 canvas.addEventListener("pointermove", (ev) => {
   if (_isMobile) return; // no hover tooltips on mobile — use tap instead
+  const now = performance.now();
+  if (now - _lastPointerMove < 16) return;
+  _lastPointerMove = now;
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
@@ -2072,7 +2078,7 @@ let ytCurrentIdx = -1;    // current position in ytPlaylist
 const YT_PLAYER_W = 300;
 
 // Preload cache: hidden iframes for upcoming videos so they start instantly
-const YT_PRELOAD_COUNT = 3;
+const YT_PRELOAD_COUNT = window.innerWidth <= 768 ? 1 : 3;
 const ytPreloadCache = new Map(); // videoId → iframe element
 function ytPreloadUpcoming(currentIdx) {
   for (let i = 1; i <= YT_PRELOAD_COUNT; i++) {
@@ -2450,8 +2456,10 @@ function renderSetList() {
   }
   slContent.innerHTML = html;
   // Replace act text with stroke-animated SVG if font is loaded
-  if (pmFont) {
+  function _applyStrokeText() {
+    if (!pmFont) return;
     slContent.querySelectorAll(".sl-act").forEach(el => {
+      if (el.querySelector("svg")) return; // already applied
       const svg = createStrokeText(el.textContent, 22, "#1a1a1a");
       if (svg) {
         svg.style.display = "block";
@@ -2462,6 +2470,8 @@ function renderSetList() {
       }
     });
   }
+  if (pmFont) { _applyStrokeText(); }
+  else { loadPmFont().then(_applyStrokeText); }
   // Wire remove buttons
   slContent.querySelectorAll(".sl-remove").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -2479,12 +2489,26 @@ ytStarBtn.addEventListener("click", () => {
   });
 });
 
-// Load Permanent Marker font for stroke animation
+// Load Permanent Marker font for stroke animation — deferred until first set list open
 let pmFont = null;
+let _pmFontLoading = false;
 const PM_FONT_URL = "https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004HaqI.woff2";
-fetch(PM_FONT_URL).then(r => r.arrayBuffer()).then(buf => {
-  pmFont = opentype.parse(buf);
-}).catch(() => {});
+function loadPmFont() {
+  if (pmFont || _pmFontLoading) return Promise.resolve(pmFont);
+  _pmFontLoading = true;
+  return new Promise(resolve => {
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/opentype.js@1/dist/opentype.min.js";
+    s.onload = () => {
+      fetch(PM_FONT_URL).then(r => r.arrayBuffer()).then(buf => {
+        pmFont = opentype.parse(buf);
+        resolve(pmFont);
+      }).catch(() => { _pmFontLoading = false; resolve(null); });
+    };
+    s.onerror = () => { _pmFontLoading = false; resolve(null); };
+    document.head.appendChild(s);
+  });
+}
 
 // Convert text to animated SVG with per-character jitter
 function createStrokeText(text, fontSize, color) {
@@ -3172,9 +3196,12 @@ function tick() {
   }
   if (window.__updateTweakSliders) window.__updateTweakSliders();
   renderer.render(scene, camera);
-  requestAnimationFrame(tick);
+  if (!document.hidden) requestAnimationFrame(tick);
 }
 tick();
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) requestAnimationFrame(tick);
+});
 
 function esc(s) {
   return (s || "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
