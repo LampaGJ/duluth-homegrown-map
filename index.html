@@ -2878,8 +2878,22 @@ const dayFmt = window.innerWidth <= 768 ? dayFmtMobile : (window.innerWidth < 12
 // Build day pills sized proportionally to their compressed slot width,
 // with gaps matching the pad zones between days in the equalizer.
 // Slider track channel aligns to the first/last day label edges (no extra padding)
-slider.style.setProperty("--track-pad-l", "0%");
-slider.style.setProperty("--track-pad-r", "0%");
+// Align track channel to day label edges
+requestAnimationFrame(() => {
+  const sliderRect = slider.getBoundingClientRect();
+  const pills = document.querySelectorAll('.day-pill');
+  if (pills.length) {
+    const firstLeft = pills[0].getBoundingClientRect().left;
+    const lastRight = pills[pills.length - 1].getBoundingClientRect().right;
+    const padL = ((firstLeft - sliderRect.left) / sliderRect.width * 100).toFixed(2);
+    const padR = ((sliderRect.right - lastRight) / sliderRect.width * 100).toFixed(2);
+    slider.style.setProperty("--track-pad-l", padL + "%");
+    slider.style.setProperty("--track-pad-r", padR + "%");
+  } else {
+    slider.style.setProperty("--track-pad-l", "0%");
+    slider.style.setProperty("--track-pad-r", "0%");
+  }
+});
 
 const activeFrac = (b) => b.activeMin / minutesTotal;
 const padFrac = (b) => b.padMin / minutesTotal;
