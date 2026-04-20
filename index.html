@@ -1738,7 +1738,7 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
     : 0;
   camera.position.set(
     controls.target.x + r * Math.cos(elev) * Math.sin(zooAngle),
-    controls.target.y + r * Math.sin(elev) + (isMobile ? 12 : 8),    // push disc lower on mobile
+    controls.target.y + r * Math.sin(elev) + (isMobile ? 5 : 8),    // slight lift on mobile
     controls.target.z + r * Math.cos(elev) * Math.cos(zooAngle)
   );
   controls.update();
