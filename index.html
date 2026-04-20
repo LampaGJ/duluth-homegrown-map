@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <meta name="color-scheme" content="only light" />
+<meta name="darkreader-lock" />
+<meta name="supported-color-schemes" content="light" />
 <title>homegrown.my — Duluth Homegrown Music Festival 2026</title>
 <meta name="description" content="Interactive 3D map of the Duluth Homegrown Music Festival 2026. Explore 185 acts across 40 venues, build your set list, and discover local music." />
 <meta property="og:title" content="Duluth Homegrown Music Festival 2026" />
@@ -35,7 +37,7 @@
   }
   * { box-sizing: border-box; }
   html { background: var(--ink); }
-  html, body { margin: 0; padding: 0; height: 100%; color: var(--bone); font-family: "Space Grotesk", -apple-system, sans-serif; overflow: hidden; }
+  html, body { margin: 0; padding: 0; height: 100%; color: var(--bone); font-family: "Space Grotesk", -apple-system, sans-serif; overflow: hidden; background: var(--ink); color-scheme: only light; }
   /* Dimmed skyline covers the whole viewport; the HOMEGROWN text below will
      reveal the same image at full brightness inside its letterforms. */
   /* Skyline: low-res placeholder loads instantly, full-res lazy-swaps in */
@@ -712,8 +714,8 @@
       top: auto; right: auto;
       z-index: 26; margin: 0; padding: 0;
       box-shadow: none;
+      background: rgba(255,252,240,0.95);
       border-bottom: 1px solid rgba(111,168,98,0.25);
-      /* keep paper background from desktop styles */
     }
     #setlist-panel.open {
       max-height: 50vh; overflow-y: auto;
