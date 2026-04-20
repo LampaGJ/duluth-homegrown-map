@@ -1845,12 +1845,13 @@ canvas.addEventListener("click", (ev) => {
         }
       }
     }
-    // Jump slider to this act's compressed time
+    // Jump slider to this act's compressed time — find exact playlist index
+    const exactIdx = ytPlaylist.findIndex(p => p.act === s.act && +p.dt === +s.dt);
     const cTime = realToCompressed(s.dt);
     slider.value = cTime;
     render(s.dt);
     updatePlayhead();
-    updateYtPlayer(s.dt);
+    updateYtPlayer(s.dt, exactIdx >= 0 ? exactIdx : undefined);
   }
 });
 
@@ -3006,11 +3007,22 @@ if (window.innerWidth <= 768) {
     const row = e.target.closest(".ms-set");
     if (!row) return;
     const dt = new Date(+row.dataset.dt);
+    // Find exact act name from the row
+    const actEl = row.querySelector(".ms-act");
+    const actName = actEl ? actEl.textContent : null;
+    // Match by act name + time to handle same-timeslot acts
+    const exactIdx = actName
+      ? ytPlaylist.findIndex(s => s.act === actName && +s.dt === +dt)
+      : -1;
     const cTime = realToCompressed(dt);
     slider.value = cTime;
     render(dt);
     updatePlayhead();
-    updateYtPlayer(dt);
+    if (exactIdx >= 0) {
+      updateYtPlayer(dt, exactIdx);
+    } else {
+      updateYtPlayer(dt);
+    }
     // Show player over schedule on mobile
     ytWrap.style.display = "";
     mobileSchedule.style.display = "none";
