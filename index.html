@@ -53,7 +53,7 @@
   }
   #sky-bg.loaded {
     background-image: url("duluth_skyline_med.jpg");
-    filter: brightness(var(--bg-b, 0.9)) saturate(var(--bg-s, 0.95)) contrast(var(--bg-c, 1.0)) blur(0px);
+    filter: brightness(var(--bg-b, 0.9)) saturate(var(--bg-s, 0.95)) contrast(var(--bg-c, 1.0)) blur(1px);
   }
   /* Dim overlay is now an inline SVG with its own <mask> — cross-browser safe.
      SVG masks use luminance by default per the SVG spec (no CSS mask-mode needed). */
@@ -273,6 +273,15 @@
     display: flex; align-items: center;
     line-height: 1; flex: 1; overflow: hidden;
   }
+  #yt-info-btn {
+    background: none; border: 1px solid rgba(242,234,213,0.25); color: var(--bone-dim);
+    font-size: 12px; font-family: serif; font-style: italic; font-weight: 700;
+    width: 18px; height: 18px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; flex-shrink: 0; margin-left: 6px;
+    line-height: 1; padding: 0; vertical-align: middle;
+  }
+  #yt-info-btn:hover { color: var(--spring); border-color: var(--spring); }
   #yt-header-close {
     display: none; background: none; border: 0; color: var(--bone-dim);
     font-size: 20px; cursor: pointer; padding: 0 2px 0 8px; flex-shrink: 0;
@@ -312,13 +321,9 @@
   #yt-wrap .yt-footer .yt-date { text-align: left; }
   #yt-wrap .yt-footer .yt-time { text-align: center; color: var(--spring); font-family: "JetBrains Mono", monospace; font-size: 11px; }
   #yt-wrap .yt-footer .yt-venue { text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  /* Transparent overlay blocks YouTube's hover UI (title bar, pause icon, end-screen) */
-  #yt-overlay {
-    position: absolute; inset: 0; z-index: 2; cursor: default;
-  }
-  /* Bio overlay — shown on band name click, hides on second click */
+  /* Bio overlay — shown via (i) info button click */
   #bio-overlay {
-    position: absolute; inset: 0; z-index: 3;
+    position: absolute; inset: 0; z-index: 5;
     overflow-y: auto; padding: 20px 16px;
     font-family: "Space Grotesk", sans-serif; color: var(--bone);
     background: rgba(10,8,6,0.92); backdrop-filter: blur(6px);
@@ -549,7 +554,6 @@
   #yt-video-area iframe, #yt-video-area #yt-player-div {
     width: 100% !important; height: 100% !important; border: 0; display: block;
     position: absolute; top: 0; left: 0;
-    z-index: 1; pointer-events: none;
   }
   #yt-wrap .yt-empty {
     display: flex; align-items: center; justify-content: center;
@@ -819,15 +823,20 @@
 <div id="sky-bg"></div>
 <svg id="sky-overlay" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <filter id="mask-blur" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
     <mask id="txt-mask">
       <rect width="100%" height="100%" fill="white"/>
-      <path id="mask-arc" d="M 0,200 L 1580,200" fill="none" stroke="none" />
-      <!-- Flat text (default) -->
-      <text id="mask-text-flat" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900">HOMEGROWN</text>
-      <!-- Curved text (when curve > 0) -->
-      <text id="mask-text-curved" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900" style="display:none;">
-        <textPath id="mask-textpath" href="#mask-arc" startOffset="50%" text-anchor="middle">HOMEGROWN</textPath>
-      </text>
+      <g filter="url(#mask-blur)">
+        <path id="mask-arc" d="M 0,200 L 1580,200" fill="none" stroke="none" />
+        <!-- Flat text (default) -->
+        <text id="mask-text-flat" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900">HOMEGROWN</text>
+        <!-- Curved text (when curve > 0) -->
+        <text id="mask-text-curved" fill="black" font-family="Impact, 'Arial Narrow', sans-serif" font-weight="900" style="display:none;">
+          <textPath id="mask-textpath" href="#mask-arc" startOffset="50%" text-anchor="middle">HOMEGROWN</textPath>
+        </text>
+      </g>
     </mask>
     <!-- Inset shadow: blur a dark stroke around the MERGED letter outlines -->
     <filter id="inset-blur" x="-10%" y="-10%" width="120%" height="120%">
@@ -839,7 +848,7 @@
       <feComposite in="SourceGraphic" operator="over" />
     </filter>
   </defs>
-  <rect id="dim-rect" width="100%" height="100%" fill="rgba(10,8,6,0.88)" mask="url(#txt-mask)"/>
+  <rect id="dim-rect" width="100%" height="100%" fill="rgba(10,8,6,0.92)" mask="url(#txt-mask)"/>
   <!-- Visible shadow layer — unified outline around merged letter shapes.
        paint-order:stroke renders stroke BEHIND fill, so fill covers internal intersections
        where overlapping letters cross. Result: one clean outer outline, no visible internal edges. -->
@@ -939,11 +948,10 @@
   <div id="scrubber">
     <div id="yt-wrap" style="display:none;">
       <div id="yt-resize" title="Resize">⋯</div>
-      <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span><button id="yt-header-close" title="Close">✕</button></div>
+      <div class="yt-header"><button id="yt-star" title="Add to Set List">☆</button><span class="yt-act"></span><button id="yt-info-btn" title="Band info">i</button><button id="yt-header-close" title="Close">✕</button></div>
       <div class="yt-links" id="yt-links"></div>
       <div id="yt-video-area" style="position:relative;overflow:hidden;flex:1;min-height:100px;">
         <div class="yt-empty">Select a time</div>
-        <div id="yt-overlay"></div>
         <div id="bio-overlay"></div>
       </div>
       <div id="yt-controls">
@@ -2177,7 +2185,6 @@ function updateYtPlayer(t, forceIdx) {
       frame.allow = "autoplay; encrypted-media";
       frame.src = src;
       videoArea.appendChild(frame);
-      document.getElementById("yt-overlay").style.display = "none";
       document.getElementById("yt-controls").style.display = "none";
     }
 
@@ -2197,7 +2204,6 @@ function updateYtPlayer(t, forceIdx) {
       clearBioCard();
       const oldPlayer = document.getElementById("yt-player-div");
       if (oldPlayer) oldPlayer.style.display = "";
-      document.getElementById("yt-overlay").style.display = "";
       document.getElementById("yt-controls").style.display = "";
     } else {
       // No playable source — show band bio card
@@ -2205,7 +2211,6 @@ function updateYtPlayer(t, forceIdx) {
       if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
       const oldPlayer = document.getElementById("yt-player-div");
       if (oldPlayer) oldPlayer.style.display = "none";
-      document.getElementById("yt-overlay").style.display = "none";
       document.getElementById("yt-controls").style.display = "none";
       ytEmpty.style.display = "none";
       showBioCard(best.actData, videoArea);
@@ -2832,10 +2837,8 @@ function toggleBioOverlay() {
     bioOverlay.classList.add("visible");
   }
 }
-// Click overlay → first click shows bio, second hides it (also acts as play/pause area)
-document.getElementById("yt-overlay").addEventListener("click", toggleBioOverlay);
-// Click band name → toggle bio
-ytLabelAct.addEventListener("click", toggleBioOverlay);
+// (i) info button → toggle bio overlay
+document.getElementById("yt-info-btn").addEventListener("click", toggleBioOverlay);
 // Click bio overlay itself → dismiss it
 bioOverlay.addEventListener("click", () => bioOverlay.classList.remove("visible"));
 function syncMuteUI() {
