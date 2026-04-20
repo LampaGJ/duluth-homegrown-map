@@ -642,8 +642,9 @@
     .day-ticks .day-pill { white-space: normal; word-spacing: 100vw; font-size: 16px; line-height: 1.1; }
   }
   @media (max-width: 768px) {
-    .day-ticks { height: 26px; margin-top: 2px; }
-    .day-ticks .day-pill { font-size: 11px; padding: 2px 4px; }
+    .day-ticks { height: 26px; margin-top: 2px; margin-left: 15px; margin-right: 15px; }
+    .day-ticks .day-pill { font-size: 10px; padding: 2px 0; margin: 0; flex: 1; }
+    .day-ticks .day-gap { display: none; }
     #sparkline-wrap { height: 46px !important; }
     #slider { height: 26px !important; }
   }
@@ -739,6 +740,7 @@
     .ms-genre[data-g="Jazz"] { background: #282830; color: #aae; }
     .ms-genre[data-g="Blues"] { background: #282028; color: #c8c; }
     .ms-genre[data-g="Experimental"] { background: #282828; color: #aaa; }
+    .ms-genre[data-g="Community"] { background: #203028; color: #8cb8a0; }
     #mobile-schedule .ms-set.ms-live { background: rgba(111,168,98,0.12); margin: 0 -12px; padding: 8px 12px; border-radius: 4px; }
     #mobile-schedule .ms-time {
       font-family: "JetBrains Mono", monospace; font-size: 12px;
@@ -2907,7 +2909,7 @@ if (window.innerWidth <= 768) {
     msHtml += `<div class="ms-day" style="color:${hex}">${msDayFmt(daySets[0].dt)}</div>`;
     daySets.forEach(s => {
       const ad = actsByName.get(s.act);
-      const gc = ad?.genre_category || "";
+      const gc = ad?.genre_category || (ad?.type === "community_event" ? "Community" : "");
       const gcHtml = gc ? `<span class="ms-genre" data-g="${esc(gc)}">${esc(gc)}</span>` : "";
       msHtml += `<div class="ms-set" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
     });
