@@ -292,6 +292,11 @@
     color: var(--bone-dim); display: flex; justify-content: space-between; align-items: baseline;
     flex-shrink: 0; min-height: 24px;
   }
+  .yt-foot-nav {
+    display: none; background: none; border: 0; color: var(--bone);
+    font-size: 16px; cursor: pointer; padding: 0 6px; line-height: 1;
+  }
+  .yt-foot-nav:hover { color: var(--spring); }
   #yt-wrap .yt-footer .yt-date { text-align: left; }
   #yt-wrap .yt-footer .yt-time { text-align: center; color: var(--spring); font-family: "JetBrains Mono", monospace; font-size: 11px; }
   #yt-wrap .yt-footer .yt-venue { text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -559,7 +564,8 @@
     #yt-wrap .yt-label { font-size: 10px; padding: 4px 8px; }
     #yt-resize { display: none; }
     #yt-header-close { display: block; }
-    #yt-mobile-nav { display: flex; }
+    #yt-mobile-nav { display: none !important; }
+    .yt-foot-nav { display: inline-block !important; }
   }
   /* Chrome-fader slider, like a mixing-console volume knob */
   #slider {
@@ -944,7 +950,9 @@
       </div>
       <div class="yt-footer">
         <span class="yt-date"></span>
+        <button id="yt-prev-foot" class="yt-foot-nav" title="Previous">◀</button>
         <span class="yt-time"></span>
+        <button id="yt-next-foot" class="yt-foot-nav" title="Next">▶</button>
         <span class="yt-venue"></span>
       </div>
     </div>
@@ -2989,6 +2997,13 @@ if (window.innerWidth <= 768) {
       slider.value = realToCompressed(act.dt);
       render(act.dt); updatePlayhead(); updateYtPlayer(act.dt, nextIdx);
     }
+  });
+  // Footer prev/next (mobile)
+  document.getElementById("yt-prev-foot").addEventListener("click", () => {
+    document.getElementById("yt-prev").click();
+  });
+  document.getElementById("yt-next-foot").addEventListener("click", () => {
+    document.getElementById("yt-next").click();
   });
   function ytClosePlayer() {
     ytWrap.style.display = "none";
