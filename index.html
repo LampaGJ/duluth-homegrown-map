@@ -2225,6 +2225,7 @@ function updateYtPlayer(t, forceIdx) {
       // Use YT Player API if loaded, otherwise fallback to iframe
       if (ytPlayer) {
         ytPlayer.loadVideoById(videoId);
+        ytPlayer.playVideo();
         if (ytUserMuted) ytPlayer.mute(); else ytPlayer.unMute();
       } else {
         const videoArea = document.getElementById("yt-video-area");
