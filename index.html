@@ -667,6 +667,7 @@
     .day-ticks .day-pill { font-size: 10px; padding: 2px 0; margin: 0; flex: 1; }
     .day-ticks .day-gap { display: none; }
     #sparkline-wrap { height: 46px !important; }
+    #sparkline { cursor: default; }
     #slider { height: 26px !important; }
   }
 
@@ -779,7 +780,30 @@
       background: rgba(111,168,98,0.18); margin: 0 -12px; padding: 8px 12px;
       border-radius: 4px; border-left: 3px solid var(--spring);
     }
+    #mobile-schedule .ms-filter-banner {
+      position: sticky; top: -14px; z-index: 5;
+      margin: -14px -12px 8px;
+      padding: 8px 12px;
+      background: rgba(111,168,98,0.22);
+      border-bottom: 1px solid rgba(111,168,98,0.4);
+      display: flex; align-items: center; gap: 8px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 13px; color: var(--bone);
+    }
+    #mobile-schedule .ms-filter-banner .ms-filter-label {
+      flex: 1; min-width: 0;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    #mobile-schedule .ms-filter-banner .ms-filter-venue {
+      font-weight: 700; color: var(--spring);
+    }
+    #mobile-schedule .ms-filter-banner button {
+      background: none; border: 0; color: var(--bone);
+      font-size: 18px; line-height: 1; cursor: pointer;
+      padding: 2px 8px; flex-shrink: 0;
+    }
   }
+  .day-ticks .day-pill { cursor: pointer; }
 
 
   /* ------- REPORT ISSUE ------- */
@@ -859,7 +883,7 @@
 <div id="sky-bg"></div>
 <svg id="sky-overlay" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="mask-blur" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="mask-blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" />
     </filter>
     <mask id="txt-mask">
@@ -875,11 +899,11 @@
       </g>
     </mask>
     <!-- Inset shadow: blur a dark stroke around the MERGED letter outlines -->
-    <filter id="inset-blur" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="inset-blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="4" />
     </filter>
     <!-- Merge overlapping letter shapes into one unified outline (no internal intersections) -->
-    <filter id="merge-letters" x="-5%" y="-5%" width="110%" height="110%">
+    <filter id="merge-letters" x="-50%" y="-50%" width="200%" height="200%">
       <feMorphology operator="dilate" radius="0" />
       <feComposite in="SourceGraphic" operator="over" />
     </filter>
@@ -1879,17 +1903,17 @@ canvas.addEventListener("pointermove", (ev) => {
   }
 });
 
-// Click a cube → jump timeline to that act's time + play its video
+// Click a cube → jump timeline to that act's time + play its video.
+// Click a flag (mobile only) → filter the schedule to that venue.
 canvas.addEventListener("click", (ev) => {
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
   raycaster.setFromCamera(mouse, camera);
-  const meshes = venueMeshes.flatMap(g => g.userData.cubes);
-  const hit = raycaster.intersectObjects(meshes, false)[0];
-  if (hit && hit.object.userData.set) {
-    const s = hit.object.userData.set;
-    // On mobile, scroll schedule to this act and highlight it
+  const cubeMeshes = venueMeshes.flatMap(g => g.userData.cubes);
+  const cubeHit = raycaster.intersectObjects(cubeMeshes, false)[0];
+  if (cubeHit && cubeHit.object.userData.set) {
+    const s = cubeHit.object.userData.set;
     if (_isMobile && mobileSchedule) {
       const rows = mobileSchedule.querySelectorAll(".ms-set");
       for (const row of rows) {
@@ -1901,6 +1925,19 @@ canvas.addEventListener("click", (ev) => {
       }
     }
     playById(s.id);
+    return;
+  }
+  // Mobile: clicking a flag filters the schedule to that venue (toggle).
+  if (_isMobile) {
+    const flagMeshes = venueMeshes.map(g => g.userData.flag).filter(Boolean);
+    const flagHit = raycaster.intersectObjects(flagMeshes, false)[0];
+    if (flagHit) {
+      const venueGroup = venueMeshes.find(g => g.userData.flag === flagHit.object);
+      const venueName = venueGroup?.userData?.venue?.name;
+      if (venueName && typeof window.__setVenueFilter === "function") {
+        window.__setVenueFilter(venueName);
+      }
+    }
   }
 });
 
@@ -2066,7 +2103,9 @@ sparkCanvas.addEventListener("mousemove", (ev) => {
 });
 sparkCanvas.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
 // Click a sparkline cube → jump timeline to that act
+// Disabled on mobile: day labels (.day-pill) drive playhead navigation instead.
 sparkCanvas.addEventListener("click", (ev) => {
+  if (window.innerWidth <= 768) return;
   const rect = sparkCanvas.getBoundingClientRect();
   const mx = ev.clientX - rect.left;
   const i = Math.floor(mx / sparkBarW);
@@ -3017,8 +3056,27 @@ ticksEl.innerHTML = blocks.map((b, i) => {
   const gapW = (padFrac(b) * 100).toFixed(2);
   const gapBefore = i === 0 ? `<span class="day-gap" style="width:${gapW}%"></span>` : "";
   const gapAfter = `<span class="day-gap" style="width:${(i < blocks.length - 1 ? padFrac(b) + padFrac(blocks[i+1]) : padFrac(b)) * 100}%"></span>`;
-  return `${gapBefore}<span class="day-pill" style="background:${hex};width:${pillW}%">${label}</span>${gapAfter}`;
+  return `${gapBefore}<span class="day-pill" data-date="${b.date}" style="background:${hex};width:${pillW}%">${label}</span>${gapAfter}`;
 }).join("");
+
+// Click a day pill → jump playhead to start of that day; on mobile, also
+// scroll the schedule so the day's first act is at the top.
+ticksEl.addEventListener("click", (ev) => {
+  const pill = ev.target.closest(".day-pill");
+  if (!pill) return;
+  const date = pill.dataset.date;
+  const block = blocks.find(b => b.date === date);
+  if (!block) return;
+  const dt = block.start;
+  slider.value = realToCompressed(dt);
+  render(dt);
+  updatePlayhead();
+  if (window.innerWidth <= 768) {
+    const ms = document.getElementById("mobile-schedule");
+    const dayHeader = ms?.querySelector(`.ms-day[data-date="${date}"]`);
+    if (dayHeader) ms.scrollTop = Math.max(0, dayHeader.offsetTop - 8);
+  }
+});
 
 // ---- Mobile scrollable schedule ----
 const mobileSchedule = document.getElementById("mobile-schedule");
@@ -3027,19 +3085,65 @@ if (window.innerWidth <= 768) {
   const msFmt = d3.timeFormat("%-I:%M");
   const msDayFmt = d3.timeFormat("%A, %B %-d");
   const grouped = d3.group(sortedSets, s => s.date);
-  let msHtml = "";
+  let msHtml = `<div class="ms-filter-banner" id="ms-filter-banner" style="display:none">
+    <span class="ms-filter-label">Showing only <span class="ms-filter-venue" id="ms-filter-venue"></span></span>
+    <button id="ms-filter-clear" title="Clear filter">×</button>
+  </div>`;
   for (const [date, daySets] of [...grouped.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {
     const dow = daySets[0].day_of_week;
     const hex = "#" + (DAY_COLORS[dow] || 0x8fa088).toString(16).padStart(6, "0");
-    msHtml += `<div class="ms-day" style="color:${hex}">${msDayFmt(daySets[0].dt)}</div>`;
+    msHtml += `<div class="ms-day" data-date="${esc(date)}" style="color:${hex}">${msDayFmt(daySets[0].dt)}</div>`;
     daySets.forEach(s => {
       const ad = actsByName.get(s.act);
       const gc = ad?.genre_category || (ad?.type === "community_event" ? "Community" : "");
       const gcHtml = gc ? `<span class="ms-genre" data-g="${esc(gc)}">${esc(gc)}</span>` : "";
-      msHtml += `<div class="ms-set" data-id="${s.id}" data-dt="${+s.dt}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
+      msHtml += `<div class="ms-set" data-id="${s.id}" data-dt="${+s.dt}" data-venue="${esc(s.venue)}"><span class="ms-time">${msFmt(s.dt)}</span><div class="ms-info"><div class="ms-act">${esc(s.act)}</div><div class="ms-venue">${esc(s.venue)}</div></div>${gcHtml}</div>`;
     });
   }
   mobileSchedule.innerHTML = msHtml;
+
+  // Venue filter — set when user taps a flag in the 3D scene
+  let msVenueFilter = null;
+  function applyVenueFilter() {
+    const banner = document.getElementById("ms-filter-banner");
+    const venueLabel = document.getElementById("ms-filter-venue");
+    const allRows = mobileSchedule.querySelectorAll(".ms-set");
+    const allHeaders = mobileSchedule.querySelectorAll(".ms-day");
+    if (!msVenueFilter) {
+      banner.style.display = "none";
+      allRows.forEach(r => r.style.display = "");
+      allHeaders.forEach(h => h.style.display = "");
+      return;
+    }
+    banner.style.display = "";
+    venueLabel.textContent = msVenueFilter;
+    const liveDates = new Set();
+    allRows.forEach(r => {
+      const matches = r.dataset.venue === msVenueFilter;
+      r.style.display = matches ? "" : "none";
+      if (matches) {
+        // Find preceding .ms-day header
+        let prev = r.previousElementSibling;
+        while (prev && !prev.classList.contains("ms-day")) prev = prev.previousElementSibling;
+        if (prev) liveDates.add(prev.dataset.date);
+      }
+    });
+    allHeaders.forEach(h => h.style.display = liveDates.has(h.dataset.date) ? "" : "none");
+  }
+  document.getElementById("ms-filter-clear").addEventListener("click", () => {
+    msVenueFilter = null;
+    applyVenueFilter();
+  });
+  // Expose so the canvas click handler can set the filter
+  window.__setVenueFilter = (name) => {
+    msVenueFilter = (msVenueFilter === name) ? null : name;
+    applyVenueFilter();
+    if (msVenueFilter) {
+      // Scroll to first matching row
+      const first = mobileSchedule.querySelector(`.ms-set[data-venue="${(name || "").replace(/"/g, '\\"')}"]`);
+      if (first) mobileSchedule.scrollTop = Math.max(0, first.offsetTop - 60);
+    }
+  };
 
   // Scroll drives the timeline
   let msScrolling = false;
@@ -3048,10 +3152,13 @@ if (window.innerWidth <= 768) {
     msScrolling = true;
     requestAnimationFrame(() => {
       // Find which set row is at the top of the visible area
+      // (skip hidden rows when a venue filter is active)
       const rows = mobileSchedule.querySelectorAll(".ms-set");
       const scrollTop = mobileSchedule.scrollTop;
-      let closest = rows[0] || null;  // default to first act
+      let closest = null;
       for (const row of rows) {
+        if (row.offsetParent === null) continue;
+        if (!closest) closest = row;
         if (row.offsetTop >= scrollTop) { closest = row; break; }
       }
       if (closest) {
