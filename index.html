@@ -667,7 +667,6 @@
     .day-ticks .day-pill { font-size: 10px; padding: 2px 0; margin: 0; flex: 1; }
     .day-ticks .day-gap { display: none; }
     #sparkline-wrap { height: 46px !important; }
-    #sparkline { cursor: default; }
     #slider { height: 26px !important; }
   }
 
@@ -2102,13 +2101,20 @@ sparkCanvas.addEventListener("mousemove", (ev) => {
   tip.style.opacity = 1;
 });
 sparkCanvas.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
-// Click a sparkline cube → jump timeline to that act
-// Disabled on mobile: day labels (.day-pill) drive playhead navigation instead.
+// Click a sparkline cube — desktop: jump to that specific act.
+// Mobile: any tap maps to the day at that x-position (the whole equalizer
+// strip behaves like a wider day-pill row).
 sparkCanvas.addEventListener("click", (ev) => {
-  if (window.innerWidth <= 768) return;
   const rect = sparkCanvas.getBoundingClientRect();
   const mx = ev.clientX - rect.left;
   const i = Math.floor(mx / sparkBarW);
+  if (window.innerWidth <= 768) {
+    const m = i * BIN_MIN;
+    const block = blocks.find(b => m >= b.cumStart && m < b.cumStart + b.compressedMin)
+      || blocks[blocks.length - 1];
+    if (block && typeof window.__jumpToDay === "function") window.__jumpToDay(block.date);
+    return;
+  }
   const binSets = bins[i];
   if (!binSets || !binSets.length) return;
   const fromBottom = rect.height - (ev.clientY - rect.top) - 2;
@@ -3059,12 +3065,10 @@ ticksEl.innerHTML = blocks.map((b, i) => {
   return `${gapBefore}<span class="day-pill" data-date="${b.date}" style="background:${hex};width:${pillW}%">${label}</span>${gapAfter}`;
 }).join("");
 
-// Click a day pill → jump playhead to start of that day; on mobile, also
-// scroll the schedule so the day's first act is at the top.
-ticksEl.addEventListener("click", (ev) => {
-  const pill = ev.target.closest(".day-pill");
-  if (!pill) return;
-  const date = pill.dataset.date;
+// Jump playhead to start of a given day; on mobile, also scroll the
+// schedule so the day's first act is at the top. Shared by .day-pill clicks
+// and (on mobile) sparkline taps.
+window.__jumpToDay = (date) => {
   const block = blocks.find(b => b.date === date);
   if (!block) return;
   const dt = block.start;
@@ -3076,6 +3080,11 @@ ticksEl.addEventListener("click", (ev) => {
     const dayHeader = ms?.querySelector(`.ms-day[data-date="${date}"]`);
     if (dayHeader) ms.scrollTop = Math.max(0, dayHeader.offsetTop - 8);
   }
+};
+ticksEl.addEventListener("click", (ev) => {
+  const pill = ev.target.closest(".day-pill");
+  if (!pill) return;
+  window.__jumpToDay(pill.dataset.date);
 });
 
 // ---- Mobile scrollable schedule ----
