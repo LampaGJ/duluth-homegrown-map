@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-04-15T00:00:00Z",
   "companion_to": "homegrown_2026_schedule.json",
-  "venue_count": 40,
+  "venue_count": 41,
   "venues": [
     {
       "name": "All American Club",
@@ -1519,6 +1519,47 @@
       "logo_url": null,
       "logo_source": null,
       "markerType": "cube"
+    },
+    {
+      "name": "Wheeler Field 2",
+      "address": "3501 Grand Ave, Duluth, MN 55807",
+      "city": "Duluth",
+      "state": "MN",
+      "website": "https://duluthmn.gov/parks/parks-listing/wheeler-athletic-complex/",
+      "phone": null,
+      "established": null,
+      "type": "athletic field / public park",
+      "capacity": null,
+      "capacity_source": null,
+      "notable": "Wheeler Athletic Complex multi-use athletic field at 35th Ave W & Grand Ave in West Duluth; 2026 Homegrown Kickball Classic venue (relocated from Chester Bowl).",
+      "neighborhood": "West Duluth",
+      "sources": [
+        "https://duluthmn.gov/parks/parks-listing/wheeler-athletic-complex/"
+      ],
+      "licenses": {
+        "business": {
+          "url": null,
+          "license_number": null,
+          "last_renewal": null,
+          "status": "unknown",
+          "source": null,
+          "note": "City of Duluth public athletic complex; no commercial business license expected."
+        },
+        "liquor": {
+          "url": null,
+          "license_type": "n/a",
+          "license_number": null,
+          "last_renewal": null,
+          "status": "unknown",
+          "source": null,
+          "note": "City park / athletic field. Not on Duluth annual liquor licensee list."
+        }
+      },
+      "lat": 46.757175,
+      "lon": -92.150752,
+      "logo_url": null,
+      "logo_source": null,
+      "markerType": "sphere"
     },
     {
       "name": "Wild State Cider",

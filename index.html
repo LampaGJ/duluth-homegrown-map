@@ -837,6 +837,14 @@
   }
   #report-send { background: var(--spring); color: #fff; font-weight: 600; }
   #report-cancel { background: #eee; color: #666; }
+  .report-changelog {
+    margin: 0 0 12px; padding: 10px 12px; border-radius: 6px;
+    background: rgba(111,168,98,0.14); border-left: 3px solid var(--spring);
+    font-family: "Space Grotesk", sans-serif; font-size: 12px; color: #2a2420; line-height: 1.45;
+  }
+  .report-changelog strong { display: block; margin-bottom: 4px; color: #1a160f; }
+  .report-changelog ul { margin: 0; padding-left: 18px; }
+  .report-changelog li { margin: 2px 0; }
   @media (max-width: 768px) {
     #report-btn { bottom: auto; top: 60px; right: 6px; width: 28px; height: 28px; font-size: 14px; z-index: 20; }
   }
@@ -1008,6 +1016,13 @@
   <div id="report-dialog" style="display:none;">
     <div class="report-box">
       <h3>Report an Issue</h3>
+      <div class="report-changelog">
+        <strong>Recent updates from your reports:</strong>
+        <ul>
+          <li>Map no longer spins on its own — quick intro turn, then it stops. Tap to spin / stop, or flick it to set it spinning.</li>
+          <li>Mobile day labels and the equalizer strip are now tap-to-jump to that day.</li>
+        </ul>
+      </div>
       <textarea id="report-text" placeholder="Describe the issue..." rows="4" maxlength="500"></textarea>
       <div class="report-actions">
         <button id="report-send">Send Report</button>
@@ -1829,6 +1844,71 @@ controls.target.set(DISC_CENTER.x, 2, DISC_CENTER.y);
   controls.minDistance = 8;
 })();
 
+// ---- Disc spin (record-style) ----
+// Drag the disc to flick it; tap empty area to toggle a steady spin.
+// On load, the disc does a quarter-turn intro then settles.
+controls.enableRotate = false;
+const SPIN = {
+  mode: "coast",                                        // "idle" | "coast" | "steady"
+  vel: 0,                                               // radians per tick
+  steadyRate: -(Math.PI * 2) / (120 * 60),              // ~0.5 RPM
+  friction: 0.985,
+  minVel: 1e-5,
+};
+// Intro: quarter-turn with friction. Geometric series total = V0 / (1 - friction).
+SPIN.vel = -((Math.PI / 2) * (1 - SPIN.friction));
+
+let _spinDown = null;
+let _spinLastWasDrag = false;
+const _SPIN_DRAG_THRESH = 6;
+canvas.addEventListener("pointerdown", (ev) => {
+  if (ev.button !== undefined && ev.button !== 0) return;
+  _spinDown = {
+    x: ev.clientX, y: ev.clientY, t: performance.now(),
+    lastX: ev.clientX, moved: false,
+    samples: [{ t: performance.now(), x: ev.clientX }],
+    pid: ev.pointerId,
+  };
+  _spinLastWasDrag = false;
+});
+canvas.addEventListener("pointermove", (ev) => {
+  if (!_spinDown) return;
+  if (!_spinDown.moved) {
+    if (Math.hypot(ev.clientX - _spinDown.x, ev.clientY - _spinDown.y) > _SPIN_DRAG_THRESH) {
+      _spinDown.moved = true;
+      SPIN.mode = "idle";
+      SPIN.vel = 0;
+      try { canvas.setPointerCapture(_spinDown.pid); } catch {}
+    } else return;
+  }
+  const dx = ev.clientX - _spinDown.lastX;
+  const w = canvas.clientWidth || 800;
+  recordGroup.rotation.y += (dx / w) * Math.PI * 2;
+  _spinDown.lastX = ev.clientX;
+  const t = performance.now();
+  _spinDown.samples.push({ t, x: ev.clientX });
+  while (_spinDown.samples.length > 2 && t - _spinDown.samples[0].t > 120) _spinDown.samples.shift();
+});
+function _spinEndPointer(ev) {
+  if (!_spinDown) return;
+  if (_spinDown.moved) {
+    _spinLastWasDrag = true;
+    const s = _spinDown.samples;
+    if (s.length >= 2) {
+      const a = s[0], b = s[s.length - 1];
+      const dt = Math.max(1, b.t - a.t);
+      const w = canvas.clientWidth || 800;
+      const radPerMs = ((b.x - a.x) / dt) * (Math.PI * 2) / w;
+      SPIN.vel = radPerMs * 16;
+      SPIN.mode = Math.abs(SPIN.vel) > SPIN.minVel ? "coast" : "idle";
+    }
+  }
+  try { canvas.releasePointerCapture(_spinDown.pid); } catch {}
+  _spinDown = null;
+}
+canvas.addEventListener("pointerup", _spinEndPointer);
+canvas.addEventListener("pointercancel", _spinEndPointer);
+
 window.addEventListener("resize", () => {
   const w = canvas.clientWidth, h = canvas.clientHeight;
   renderer.setSize(w, h, false);
@@ -1904,7 +1984,9 @@ canvas.addEventListener("pointermove", (ev) => {
 
 // Click a cube → jump timeline to that act's time + play its video.
 // Click a flag (mobile only) → filter the schedule to that venue.
+// Click empty area → toggle steady spin (only if not a drag).
 canvas.addEventListener("click", (ev) => {
+  if (_spinLastWasDrag) { _spinLastWasDrag = false; return; }
   const rect = canvas.getBoundingClientRect();
   mouse.x = ((ev.clientX - rect.left) / rect.width) * 2 - 1;
   mouse.y = -((ev.clientY - rect.top) / rect.height) * 2 + 1;
@@ -1936,7 +2018,15 @@ canvas.addEventListener("click", (ev) => {
       if (venueName && typeof window.__setVenueFilter === "function") {
         window.__setVenueFilter(venueName);
       }
+      return;
     }
+  }
+  // Empty area → toggle spin
+  const spinning = SPIN.mode === "steady" || (SPIN.mode === "coast" && Math.abs(SPIN.vel) > SPIN.minVel);
+  if (spinning) {
+    SPIN.mode = "idle"; SPIN.vel = 0;
+  } else {
+    SPIN.mode = "steady";
   }
 });
 
@@ -3214,7 +3304,25 @@ if (window.innerWidth <= 768) {
   document.getElementById("yt-header-close").addEventListener("click", ytClosePlayer);
 }
 
-render(tMin);
+// Default playhead to the current/next act (Central time). If now is before the
+// festival, start at tMin; if after, start at the last set.
+(() => {
+  const now = Date.now();
+  let target = sortedSets.find(s => +s.dt >= now);
+  if (!target) target = sortedSets[sortedSets.length - 1];
+  const dt = target ? target.dt : tMin;
+  slider.value = realToCompressed(dt);
+  render(dt);
+  if (typeof updatePlayhead === "function") updatePlayhead();
+  // On mobile during the festival, scroll the schedule so the current/next set is at the top.
+  if (window.innerWidth <= 768 && target) {
+    const ms = document.getElementById("mobile-schedule");
+    if (ms) {
+      const row = ms.querySelector(`.ms-set[data-dt="${+target.dt}"]`);
+      if (row) ms.scrollTop = Math.max(0, row.offsetTop - 60);
+    }
+  }
+})();
 
 // ---- Pushover notifications ----
 if (typeof notifyVisit === "function") notifyVisit();
@@ -3238,7 +3346,6 @@ document.getElementById("report-send").addEventListener("click", () => {
 
 // ---- Animation loop ----
 // Tweakable globals — controlled from the admin panel
-let SPIN_RATE = -(Math.PI * 2) / (120 * 60);
 let WAVE_AMP = 0.35;
 let WAVE_SPEED = 3.8;
 let WAVE_FREQ = 5.5;
@@ -3246,11 +3353,17 @@ function tick() {
   controls.update();
   // Apply tweaked globals
   const TW = window.__tweak || {};
-  if (TW.spinRpm !== undefined) SPIN_RATE = -(TW.spinRpm * Math.PI * 2) / (60 * 60);
+  if (TW.spinRpm !== undefined) SPIN.steadyRate = -(TW.spinRpm * Math.PI * 2) / (60 * 60);
   if (TW.waveAmp !== undefined) WAVE_AMP = TW.waveAmp;
   if (TW.waveSpeed !== undefined) WAVE_SPEED = TW.waveSpeed;
   if (TW.waveFreq !== undefined) WAVE_FREQ = TW.waveFreq;
-  recordGroup.rotation.y += SPIN_RATE;
+  if (SPIN.mode === "steady") {
+    recordGroup.rotation.y += SPIN.steadyRate;
+  } else if (SPIN.mode === "coast") {
+    recordGroup.rotation.y += SPIN.vel;
+    SPIN.vel *= SPIN.friction;
+    if (Math.abs(SPIN.vel) < SPIN.minVel) { SPIN.vel = 0; SPIN.mode = "idle"; }
+  }
   // Global wind — all flags respond in unison, shifting over time
   const now = performance.now() * 0.001;
   const windDir = Math.sin(now * 0.08) * Math.PI;                          // slowly rotating direction
