@@ -1,0 +1,5605 @@
+{
+  "generated_at": "2026-04-30T03:28:51Z",
+  "stats": {
+    "ok": 609,
+    "missing": 0,
+    "mismatch": 0,
+    "error": 0,
+    "gated": 60
+  },
+  "results": [
+    {
+      "act": "#theindianheadband",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=100076814893996",
+          "final_url": "https://www.facebook.com/profile.php?id=100076814893996",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=WyB3iYWcdjE",
+          "final_url": "https://www.youtube.com/watch?v=WyB3iYWcdjE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "218 Dance Project",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/218danceproject/",
+          "final_url": "https://www.facebook.com/218danceproject/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "500 Million Society",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/44rGqzWnHmaaO2yWpurzc3",
+          "final_url": "https://open.spotify.com/artist/44rGqzWnHmaaO2yWpurzc3",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/500-million-society/368237231",
+          "final_url": "https://music.apple.com/us/artist/500-million-society/368237231",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/500millionsociety",
+          "final_url": "https://www.facebook.com/500millionsociety",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=6hK_3fi8vS0",
+          "final_url": "https://www.youtube.com/watch?v=6hK_3fi8vS0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "A Band Called Truman!",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/a-band-called-truman/1692496919",
+          "final_url": "https://music.apple.com/us/artist/a-band-called-truman/1692496919",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/abc.truman/",
+          "final_url": "https://www.facebook.com/abc.truman/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=ccWgVpliRVA",
+          "final_url": "https://www.youtube.com/watch?v=ccWgVpliRVA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Alex Heil",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/alex-heil/1782632271",
+          "final_url": "https://music.apple.com/us/artist/alex-heil/1782632271",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://alexheilmusic.bandcamp.com/",
+          "final_url": "https://alexheilmusic.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/alexheilmusic/",
+          "final_url": "https://www.instagram.com/alexheilmusic/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "All Sea Monsters Are Girls",
+      "findings": []
+    },
+    {
+      "act": "Ashe Berton",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0ffMbGMDzqDzP0dUfszOqW",
+          "final_url": "https://open.spotify.com/artist/0ffMbGMDzqDzP0dUfszOqW",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/ashe-berton/1721828275",
+          "final_url": "https://music.apple.com/us/artist/ashe-berton/1721828275",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://asheberton.bandcamp.com/",
+          "final_url": "https://asheberton.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/asheberton/",
+          "final_url": "https://www.instagram.com/asheberton/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Ashe-Berton-Music-61576720794488/",
+          "final_url": "https://www.facebook.com/p/Ashe-Berton-Music-61576720794488/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://asheberton.com/",
+          "final_url": "https://asheberton.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=YxiFLMsfKLg",
+          "final_url": "https://www.youtube.com/watch?v=YxiFLMsfKLg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Austin Castle",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/72IS7QVo3RgUZiGYvRWh02",
+          "final_url": "https://open.spotify.com/artist/72IS7QVo3RgUZiGYvRWh02",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/austin-castle/1327174055",
+          "final_url": "https://music.apple.com/us/artist/austin-castle/1327174055",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/austincastle/",
+          "final_url": "https://www.instagram.com/austincastle/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/austincastlemusic/",
+          "final_url": "https://www.facebook.com/austincastlemusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.austincastlemusic.com/",
+          "final_url": "https://www.austincastlemusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=G0-GlJLbDPg",
+          "final_url": "https://www.youtube.com/watch?v=G0-GlJLbDPg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "BOOG3YM3N",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/boog3ym3n/1538679617",
+          "final_url": "https://music.apple.com/us/artist/boog3ym3n/1538679617",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://boog3ym3n.bandcamp.com/",
+          "final_url": "https://boog3ym3n.bandcamp.com/album/graveyard-shift",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bxxg3ym3n/",
+          "final_url": "https://www.instagram.com/bxxg3ym3n/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/bxxg3ym3n/",
+          "final_url": "https://www.facebook.com/bxxg3ym3n/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=WmQS2rdpnqU",
+          "final_url": "https://www.youtube.com/watch?v=WmQS2rdpnqU",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "BRAINWASHED",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/brainwashed/1748782094",
+          "final_url": "https://music.apple.com/us/artist/brainwashed/1748782094",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Babie Eyes",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0iReoqvkQlNUw7VftnbgXQ",
+          "final_url": "https://open.spotify.com/artist/0iReoqvkQlNUw7VftnbgXQ",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/babie-eyes/1688407295",
+          "final_url": "https://music.apple.com/us/artist/babie-eyes/1688407295",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://babieeyes.bandcamp.com/",
+          "final_url": "https://babieeyes.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/babieeyesmusic/",
+          "final_url": "https://www.instagram.com/babieeyesmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/BabieEyesMusic/",
+          "final_url": "https://www.facebook.com/BabieEyesMusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCf4dvAdhL6UAhp8Z3GbVnIQ",
+          "final_url": "https://www.youtube.com/channel/UCf4dvAdhL6UAhp8Z3GbVnIQ",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=mDwLTtPa59I",
+          "final_url": "https://www.youtube.com/watch?v=mDwLTtPa59I",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Baharat",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/5Zuf2eP3crjLEdzUppUCpA",
+          "final_url": "https://open.spotify.com/artist/5Zuf2eP3crjLEdzUppUCpA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/baharat/1754389355",
+          "final_url": "https://music.apple.com/us/artist/baharat/1754389355",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://baharat-music.bandcamp.com/",
+          "final_url": "https://baharat-music.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/baharat.mn/",
+          "final_url": "https://www.instagram.com/baharat.mn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Baharat-61555593565703/",
+          "final_url": "https://www.facebook.com/p/Baharat-61555593565703/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=0-l2ZNM158U",
+          "final_url": "https://www.youtube.com/watch?v=0-l2ZNM158U",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Beauty Mountain Rd",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/58vUIzl5GjF44vdMkYDPpP",
+          "final_url": "https://open.spotify.com/artist/58vUIzl5GjF44vdMkYDPpP",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/beauty-mountain-rd/1624750887",
+          "final_url": "https://music.apple.com/us/artist/beauty-mountain-rd/1624750887",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://beautymountainrd.bandcamp.com/",
+          "final_url": "https://beautymountainrd.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/beautymountainrd/",
+          "final_url": "https://www.facebook.com/beautymountainrd/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=7w_31BkeMBs",
+          "final_url": "https://www.youtube.com/watch?v=7w_31BkeMBs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Bellerpuss",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2q7QpWJ2lLubm5PVt0K7E2",
+          "final_url": "https://open.spotify.com/artist/2q7QpWJ2lLubm5PVt0K7E2",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/bellerpuss/1661392294",
+          "final_url": "https://music.apple.com/us/artist/bellerpuss/1661392294",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://bellerpuss.bandcamp.com/",
+          "final_url": "https://bellerpuss.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bellerpuss/",
+          "final_url": "https://www.instagram.com/bellerpuss/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Bellerpuss-100088896853007/",
+          "final_url": "https://www.facebook.com/p/Bellerpuss-100088896853007/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=EDai_UAE77o",
+          "final_url": "https://www.youtube.com/watch?v=EDai_UAE77o",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Berserk Blondes!",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://berserkblondes.bandcamp.com/",
+          "final_url": "https://berserkblondes.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=WGNZc0W5zYg",
+          "final_url": "https://www.youtube.com/watch?v=WGNZc0W5zYg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Big Wave Dave and the Ripples",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bigwavedaveandtheripples/",
+          "final_url": "https://www.instagram.com/bigwavedaveandtheripples/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Big-Wave-Dave-and-the-Ripples-100063533648505/",
+          "final_url": "https://www.facebook.com/p/Big-Wave-Dave-and-the-Ripples-100063533648505/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.bigwavedaveandtheripples.com",
+          "final_url": "https://www.bigwavedaveandtheripples.com",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Wbg2VR9Brcs",
+          "final_url": "https://www.youtube.com/watch?v=Wbg2VR9Brcs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Bill Berguson Band",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/The-Bill-Berguson-Band-100062921964770/",
+          "final_url": "https://www.facebook.com/p/The-Bill-Berguson-Band-100062921964770/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.billbergusonband.com/",
+          "final_url": "https://www.billbergusonband.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=D8RH87Fj3Mo",
+          "final_url": "https://www.youtube.com/watch?v=D8RH87Fj3Mo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Born too Late",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1Skm2TN8UZdWuxIKl9OT5Q",
+          "final_url": "https://open.spotify.com/artist/1Skm2TN8UZdWuxIKl9OT5Q",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/born-too-late/1629758051",
+          "final_url": "https://music.apple.com/us/artist/born-too-late/1629758051",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://theborntoolate.bandcamp.com/",
+          "final_url": "https://theborntoolate.bandcamp.com/album/the-born-too-late",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/born_too_late_official/",
+          "final_url": "https://www.instagram.com/born_too_late_official/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/officialborntoolate/",
+          "final_url": "https://www.facebook.com/officialborntoolate/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Boxcar",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/boxcar/93318534",
+          "final_url": "https://music.apple.com/us/artist/boxcar/93318534",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://boxcarduluth.bandcamp.com/",
+          "final_url": "https://boxcarduluth.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/boxcarmusicduluth/",
+          "final_url": "https://www.instagram.com/boxcarmusicduluth/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/AllAboardDuluth/",
+          "final_url": "https://www.facebook.com/AllAboardDuluth/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        }
+      ]
+    },
+    {
+      "act": "Bratwurst",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://bratwurst.bandcamp.com/",
+          "final_url": "https://bratwurst.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/bratwurst69/",
+          "final_url": "https://www.facebook.com/bratwurst69/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=1jQhch6j5JM",
+          "final_url": "https://www.youtube.com/watch?v=1jQhch6j5JM",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Breanne Marie & The Front Porch Sinners",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0ZHhCh18J9mqZQu7ltQqow",
+          "final_url": "https://open.spotify.com/artist/0ZHhCh18J9mqZQu7ltQqow",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/breanne-marie-the-front-porch-sinners/1544917467",
+          "final_url": "https://music.apple.com/us/artist/breanne-marie-the-front-porch-sinners/1544917467",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://breannemarie.bandcamp.com/",
+          "final_url": "https://breannemarie.bandcamp.com/album/two-trees",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/thefrontporchsinners/",
+          "final_url": "https://www.instagram.com/thefrontporchsinners/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/FrontPorchSinners/",
+          "final_url": "https://www.facebook.com/FrontPorchSinners/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.breannemarie.com/",
+          "final_url": "https://www.breannemarie.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/user/BreanneMarieMusic",
+          "final_url": "https://www.youtube.com/user/BreanneMarieMusic",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://youtu.be/rpO6fpOuxTA",
+          "final_url": "https://youtu.be/rpO6fpOuxTA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Brinn Major",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2mUnX5Hkyo8eMzh0QlwBN1",
+          "final_url": "https://open.spotify.com/artist/2mUnX5Hkyo8eMzh0QlwBN1",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/brinn-major/1694024527",
+          "final_url": "https://music.apple.com/us/artist/brinn-major/1694024527",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=bL8wozDQ2pg",
+          "final_url": "https://www.youtube.com/watch?v=bL8wozDQ2pg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Brody & the Roadies",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Brody-The-Roadies-61563045035871/",
+          "final_url": "https://www.facebook.com/p/Brody-The-Roadies-61563045035871/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        }
+      ]
+    },
+    {
+      "act": "C U Next Tuesday",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-c-u-next-tuesdays/1327646120",
+          "final_url": "https://music.apple.com/us/artist/the-c-u-next-tuesdays/1327646120",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/c.u.nxt.ttuesday/",
+          "final_url": "https://www.instagram.com/c.u.nxt.ttuesday/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/CUNextTuesdaysBand/",
+          "final_url": "https://www.facebook.com/CUNextTuesdaysBand/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=u6ivYQKkqBY",
+          "final_url": "https://www.youtube.com/watch?v=u6ivYQKkqBY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "C-Silence",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/16JWtKUQMq4tsuau6J9QBV",
+          "final_url": "https://open.spotify.com/artist/16JWtKUQMq4tsuau6J9QBV",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/c-silence/1403201787",
+          "final_url": "https://music.apple.com/us/artist/c-silence/1403201787",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://c-silence.bandcamp.com/",
+          "final_url": "https://c-silence.bandcamp.com/album/vlad-aaron-brown",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/silence_rapper/",
+          "final_url": "https://www.instagram.com/silence_rapper/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=PVFsSu-27J0",
+          "final_url": "https://www.youtube.com/watch?v=PVFsSu-27J0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "CEREBELLUM",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/cerebellum/381545701",
+          "final_url": "https://music.apple.com/us/artist/cerebellum/381545701",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/CerebellumOfficial/",
+          "final_url": "https://www.facebook.com/CerebellumOfficial/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Casiosa",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/casiosa/1857081491",
+          "final_url": "https://music.apple.com/us/artist/casiosa/1857081491",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Chasm",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/chasm/4603431",
+          "final_url": "https://music.apple.com/us/artist/chasm/4603431",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://chasmofczar.bandcamp.com/",
+          "final_url": "https://chasmofczar.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/chasmofczar",
+          "final_url": "https://www.facebook.com/chasmofczar",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Cigarette Picnic",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/cigarettepicnic/",
+          "final_url": "https://www.instagram.com/cigarettepicnic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/",
+          "final_url": "https://www.facebook.com/p/Cigarette-Picnic-61577471653296/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=aBsoq1jq7B0",
+          "final_url": "https://www.youtube.com/watch?v=aBsoq1jq7B0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Climes",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2OIKgdntJMMrMzWAEczfVA",
+          "final_url": "https://open.spotify.com/artist/2OIKgdntJMMrMzWAEczfVA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/climes/1789386131",
+          "final_url": "https://music.apple.com/us/artist/climes/1789386131",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://climesmusic.bandcamp.com/",
+          "final_url": "https://climesmusic.bandcamp.com/track/sweet-dreams",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/climesmusic/",
+          "final_url": "https://www.instagram.com/climesmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Climes-Music-61555780814946/",
+          "final_url": "https://www.facebook.com/p/Climes-Music-61555780814946/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.climesmusic.com/",
+          "final_url": "https://www.climesmusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@climesmusic",
+          "final_url": "https://www.youtube.com/@climesmusic",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=bfmLe5xUZM4",
+          "final_url": "https://www.youtube.com/watch?v=bfmLe5xUZM4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Crimson Soul",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/crimson-soul/1875443474",
+          "final_url": "https://music.apple.com/us/artist/crimson-soul/1875443474",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/crimsonsoulofficial/",
+          "final_url": "https://www.instagram.com/crimsonsoulofficial/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Crimson-Soul-61568142261830/",
+          "final_url": "https://www.facebook.com/p/Crimson-Soul-61568142261830/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Cyr and the Cosmonauts",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/71Psb6BfMoM5h3JJHH2tBY",
+          "final_url": "https://open.spotify.com/artist/71Psb6BfMoM5h3JJHH2tBY",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/cyr-and-the-cosmonauts/1558704196",
+          "final_url": "https://music.apple.com/us/artist/cyr-and-the-cosmonauts/1558704196",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://cyrandthecosmonauts.bandcamp.com/",
+          "final_url": "https://cyrandthecosmonauts.bandcamp.com/album/songs-to-sing-before-were-dead",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/cyrandthecosmonauts/",
+          "final_url": "https://www.instagram.com/cyrandthecosmonauts/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/cyrandthecosmonauts/",
+          "final_url": "https://www.facebook.com/cyrandthecosmonauts/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://cyrandthecosmonauts.com/",
+          "final_url": "https://cyrandthecosmonauts.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@cyrandthecosmonauts",
+          "final_url": "https://www.youtube.com/@cyrandthecosmonauts",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=oPZDp6Kwd5Y",
+          "final_url": "https://www.youtube.com/watch?v=oPZDp6Kwd5Y",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "DJ ADUB",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/dj-adub/1751591269",
+          "final_url": "https://music.apple.com/us/artist/dj-adub/1751591269",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/DJ-ADUB-100087843823519/",
+          "final_url": "https://www.facebook.com/p/DJ-ADUB-100087843823519/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=j8884V55VqY",
+          "final_url": "https://www.youtube.com/watch?v=j8884V55VqY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "DJ Nola",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0z1dAoi1pwmVzU4mFtm05t",
+          "final_url": "https://open.spotify.com/artist/0z1dAoi1pwmVzU4mFtm05t",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/dj-nola/1805454910",
+          "final_url": "https://music.apple.com/us/artist/dj-nola/1805454910",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://djnola.bandcamp.com/",
+          "final_url": "https://djnola.bandcamp.com/album/the-rave-hag-ep",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/djnolawick/",
+          "final_url": "https://www.facebook.com/djnolawick/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://djnolacom.wordpress.com/",
+          "final_url": "https://djnolacom.wordpress.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=_-Y9UMiISH4",
+          "final_url": "https://www.youtube.com/watch?v=_-Y9UMiISH4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dan the Monkeyman",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Dan-the-Monkeyman-100063136965160/",
+          "final_url": "https://www.facebook.com/p/Dan-the-Monkeyman-100063136965160/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=XVdSp8o-KGg",
+          "final_url": "https://www.youtube.com/watch?v=XVdSp8o-KGg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Danny Frank & the Smoky Gold",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2yoEkGwJs8GKZvJG912hWl",
+          "final_url": "https://open.spotify.com/artist/2yoEkGwJs8GKZvJG912hWl",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/danny-frank-the-smoky-gold/1728204188",
+          "final_url": "https://music.apple.com/us/artist/danny-frank-the-smoky-gold/1728204188",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://dannyfrankmusic.bandcamp.com/",
+          "final_url": "https://dannyfrankmusic.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/dfsmokygold/",
+          "final_url": "https://www.instagram.com/dfsmokygold/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/dfsmokygold/",
+          "final_url": "https://www.facebook.com/dfsmokygold/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=7gHAX5Iops0",
+          "final_url": "https://www.youtube.com/watch?v=7gHAX5Iops0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Darren Sipity",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3cpu2g8dDz2kLZa6jBbpTB",
+          "final_url": "https://open.spotify.com/artist/3cpu2g8dDz2kLZa6jBbpTB",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/darren-sipity/1435914595",
+          "final_url": "https://music.apple.com/us/artist/darren-sipity/1435914595",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://darrensipity.bandcamp.com/",
+          "final_url": "https://darrensipity.bandcamp.com/track/lander-blue-prod-matt-fischer",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/darrensipity/",
+          "final_url": "https://www.facebook.com/darrensipity/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Koot33FDLlQ",
+          "final_url": "https://www.youtube.com/watch?v=Koot33FDLlQ",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dead Guy in a Swamp",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/dead-guy-in-a-swamp/1806610849",
+          "final_url": "https://music.apple.com/us/artist/dead-guy-in-a-swamp/1806610849",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/deadguyinaswamp/",
+          "final_url": "https://www.instagram.com/deadguyinaswamp/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=4kV-oGbs79c",
+          "final_url": "https://www.youtube.com/watch?v=4kV-oGbs79c",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Death Valley Yacht Club",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1nk0wJFoKfxgJwfdKWcSfB",
+          "final_url": "https://open.spotify.com/artist/1nk0wJFoKfxgJwfdKWcSfB",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/death-valley-yacht-club/1805943516",
+          "final_url": "https://music.apple.com/us/artist/death-valley-yacht-club/1805943516",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://dvyc.bandcamp.com/",
+          "final_url": "https://dvyc.bandcamp.com/track/running-out-of-time",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/deathvalleyyachtclubb/",
+          "final_url": "https://www.instagram.com/deathvalleyyachtclubb/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/thedvyc/",
+          "final_url": "https://www.facebook.com/thedvyc/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=cco4PCNAlRE",
+          "final_url": "https://www.youtube.com/watch?v=cco4PCNAlRE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dirt Magnet",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://dirtmagnet.bandcamp.com/",
+          "final_url": "https://dirtmagnet.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dirtbike Boyfriend",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/dirtbike-boyfriend/1619560773",
+          "final_url": "https://music.apple.com/us/artist/dirtbike-boyfriend/1619560773",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://dbbf.bandcamp.com/",
+          "final_url": "https://dbbf.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/dirtbikeboyfriend/",
+          "final_url": "https://www.instagram.com/dirtbikeboyfriend/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/dirtbikeboyfriend/",
+          "final_url": "https://www.facebook.com/dirtbikeboyfriend/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.dirtbikeboyfriend.com/",
+          "final_url": "https://www.dirtbikeboyfriend.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=InfbdTFgAEw",
+          "final_url": "https://www.youtube.com/watch?v=InfbdTFgAEw",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Discord At Dawn",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://discordatdawn.bandcamp.com/",
+          "final_url": "https://discordatdawn.bandcamp.com/track/sanguine-way",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/discord_at_dawn/",
+          "final_url": "https://www.instagram.com/discord_at_dawn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/DiscordAtDawn/",
+          "final_url": "https://www.facebook.com/DiscordAtDawn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://discordatdawn.neocities.org",
+          "final_url": "https://discordatdawn.neocities.org",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=kCnhVog67o8",
+          "final_url": "https://www.youtube.com/watch?v=kCnhVog67o8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Ditchbird",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3At5Q5Ro2OFmnGoPVeF07v",
+          "final_url": "https://open.spotify.com/artist/3At5Q5Ro2OFmnGoPVeF07v",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/ditchbird/1540106482",
+          "final_url": "https://music.apple.com/us/artist/ditchbird/1540106482",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://ditchbird.bandcamp.com/",
+          "final_url": "https://ditchbird.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ditchbirdmusic/",
+          "final_url": "https://www.instagram.com/ditchbirdmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Ditchbirdmusic/",
+          "final_url": "https://www.facebook.com/Ditchbirdmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.tonypetersenmusic.com/",
+          "final_url": "https://www.tonypetersenmusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=qa6HIznBa64",
+          "final_url": "https://www.youtube.com/watch?v=qa6HIznBa64",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dog Talk",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://dogtalk1.bandcamp.com/",
+          "final_url": "https://dogtalk1.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/dogtalkband",
+          "final_url": "https://www.facebook.com/dogtalkband",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Dre AKA Jamaican",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2yfKonaFickG8YhrBzfdkO",
+          "final_url": "https://open.spotify.com/artist/2yfKonaFickG8YhrBzfdkO",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/dre-aka-jamaican/1544810711",
+          "final_url": "https://music.apple.com/us/artist/dre-aka-jamaican/1544810711",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Dre-AKA-Jamaican-100063215949019/",
+          "final_url": "https://www.facebook.com/p/Dre-AKA-Jamaican-100063215949019/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=UPfQAdkJ1N8",
+          "final_url": "https://www.youtube.com/watch?v=UPfQAdkJ1N8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Duluth Dolls",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/duluth_dolls/",
+          "final_url": "https://www.instagram.com/duluth_dolls/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/duluthdolls/",
+          "final_url": "https://www.facebook.com/duluthdolls/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "EddieDition",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/eddiedition/1446913558",
+          "final_url": "https://music.apple.com/us/artist/eddiedition/1446913558",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Ar-Uq6xR_eY",
+          "final_url": "https://www.youtube.com/watch?v=Ar-Uq6xR_eY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Eldri Snow",
+      "findings": [
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=PlBZW0_D56c",
+          "final_url": "https://www.youtube.com/watch?v=PlBZW0_D56c",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Emily Haavik & the 35s",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/75iTYQUR5GVpRYIzGfwRgP",
+          "final_url": "https://open.spotify.com/artist/75iTYQUR5GVpRYIzGfwRgP",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/emily-haavik-the-35s/1445068771",
+          "final_url": "https://music.apple.com/us/artist/emily-haavik-the-35s/1445068771",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://emilyhaavik.bandcamp.com/",
+          "final_url": "https://emilyhaavik.bandcamp.com/track/if-i-were-a-ghost",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/emilyhaavik/",
+          "final_url": "https://www.instagram.com/emilyhaavik/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/emilyhaavikmusic/",
+          "final_url": "https://www.facebook.com/emilyhaavikmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.emilyandthe35s.com/",
+          "final_url": "https://www.emilyandthe35s.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCS8HVwytkHORMKFIGHq0zCA",
+          "final_url": "https://www.youtube.com/channel/UCS8HVwytkHORMKFIGHq0zCA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=42hO5EIqfes",
+          "final_url": "https://www.youtube.com/watch?v=42hO5EIqfes",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Entheos Enclave",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/entheos-enclave/1836126373",
+          "final_url": "https://music.apple.com/us/artist/entheos-enclave/1836126373",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://entheosenclave.bandcamp.com/",
+          "final_url": "https://entheosenclave.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/entheos.enclave/",
+          "final_url": "https://www.instagram.com/entheos.enclave/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/entheos.enclave/",
+          "final_url": "https://www.facebook.com/entheos.enclave/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://entheosenclave.com/",
+          "final_url": "https://entheosenclave.com/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Father Hennepin",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4uN8Ih5iUzu0aKWqUXRJuE",
+          "final_url": "https://open.spotify.com/artist/4uN8Ih5iUzu0aKWqUXRJuE",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/father-hennepin/291764494",
+          "final_url": "https://music.apple.com/us/artist/father-hennepin/291764494",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Father-Hennepin-100063525352648/",
+          "final_url": "https://www.facebook.com/p/Father-Hennepin-100063525352648/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=lXBLhz_Qtdo",
+          "final_url": "https://www.youtube.com/watch?v=lXBLhz_Qtdo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Flight of Stares",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4llbV2WkRWWeE5dXat7Iqx",
+          "final_url": "https://open.spotify.com/artist/4llbV2WkRWWeE5dXat7Iqx",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/flight-of-stares/928246759",
+          "final_url": "https://music.apple.com/us/artist/flight-of-stares/928246759",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/flightofstares/",
+          "final_url": "https://www.instagram.com/flightofstares/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/flightofstares/",
+          "final_url": "https://www.facebook.com/flightofstares/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=PuJHf4Ds7VQ",
+          "final_url": "https://www.youtube.com/watch?v=PuJHf4Ds7VQ",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Flip Arkulary",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/5kJG0AZatUKyWmt8Wbp2Q0",
+          "final_url": "https://open.spotify.com/artist/5kJG0AZatUKyWmt8Wbp2Q0",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/flip-arkulary/1645095380",
+          "final_url": "https://music.apple.com/us/artist/flip-arkulary/1645095380",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://fliparkulary.bandcamp.com/",
+          "final_url": "https://fliparkulary.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/fliparkulary/",
+          "final_url": "https://www.instagram.com/fliparkulary/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://fliparkulary.com/",
+          "final_url": "https://fliparkulary.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=uX6a4r36HYg",
+          "final_url": "https://www.youtube.com/watch?v=uX6a4r36HYg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Foosball Ruckus",
+      "findings": [
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=TbwEFcLBNOo",
+          "final_url": "https://www.youtube.com/watch?v=TbwEFcLBNOo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Forseer",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/forseer/1672785134",
+          "final_url": "https://music.apple.com/us/artist/forseer/1672785134",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://forseer1.bandcamp.com/",
+          "final_url": "https://forseer1.bandcamp.com/album/breathe",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Cq75EMNOiMI",
+          "final_url": "https://www.youtube.com/watch?v=Cq75EMNOiMI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Founder's Reception",
+      "findings": []
+    },
+    {
+      "act": "Four Mile Portage",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://fourmileportage.bandcamp.com/",
+          "final_url": "https://fourmileportage.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/fourmileportage/",
+          "final_url": "https://www.instagram.com/fourmileportage/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Four-Mile-Portage-100063745936284/",
+          "final_url": "https://www.facebook.com/p/Four-Mile-Portage-100063745936284/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=JsMI4MhdXuU",
+          "final_url": "https://www.youtube.com/watch?v=JsMI4MhdXuU",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Galleon",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1MaTfHHLLy94Wc9GymoZ2n",
+          "final_url": "https://open.spotify.com/artist/1MaTfHHLLy94Wc9GymoZ2n",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/galleon/1722156729",
+          "final_url": "https://music.apple.com/us/artist/galleon/1722156729",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/galleon.band/",
+          "final_url": "https://www.instagram.com/galleon.band/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/GalleonBandOfficial/",
+          "final_url": "https://www.facebook.com/GalleonBandOfficial/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://galleonband.com/",
+          "final_url": "https://galleonband.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCvya_TJHj2VS5Cff1VXxYrg",
+          "final_url": "https://www.youtube.com/channel/UCvya_TJHj2VS5Cff1VXxYrg",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=riQFT1p4zZM",
+          "final_url": "https://www.youtube.com/watch?v=riQFT1p4zZM",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Gavin Glen",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/gavin-glen/1802107533",
+          "final_url": "https://music.apple.com/us/artist/gavin-glen/1802107533",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://gavinglen.bandcamp.com/",
+          "final_url": "https://gavinglen.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/gavin.glen.7/",
+          "final_url": "https://www.facebook.com/gavin.glen.7/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=1tvIOAUlLZc",
+          "final_url": "https://www.youtube.com/watch?v=1tvIOAUlLZc",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Gavin St. Clair Quartet",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/17PKGYJ5hmhxPMgpz0f2Rm",
+          "final_url": "https://open.spotify.com/artist/17PKGYJ5hmhxPMgpz0f2Rm",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/gavin_st_clair/",
+          "final_url": "https://www.instagram.com/gavin_st_clair/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/gavin.s.clair/",
+          "final_url": "https://www.facebook.com/gavin.s.clair/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Z248XrqQ2VI",
+          "final_url": "https://www.youtube.com/watch?v=Z248XrqQ2VI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Gnarwals",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/gnarwhalsounds/",
+          "final_url": "https://www.instagram.com/gnarwhalsounds/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Gnarwals.Duluth/",
+          "final_url": "https://www.facebook.com/Gnarwals.Duluth/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=vye5IfWVnv4",
+          "final_url": "https://www.youtube.com/watch?v=vye5IfWVnv4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Gochujang",
+      "findings": []
+    },
+    {
+      "act": "Grand Holler",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7BqDeuUdcqxTTGcFG5DAcH",
+          "final_url": "https://open.spotify.com/artist/7BqDeuUdcqxTTGcFG5DAcH",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/grand-holler/1616103410",
+          "final_url": "https://music.apple.com/us/artist/grand-holler/1616103410",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://grandholler.bandcamp.com/",
+          "final_url": "https://grandholler.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/grandholler/",
+          "final_url": "https://www.instagram.com/grandholler/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/grandhollerband",
+          "final_url": "https://www.facebook.com/grandhollerband",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.grandhollerband.com/",
+          "final_url": "https://www.grandhollerband.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCGmmGuZwwIOVxNi_gb-KsAw",
+          "final_url": "https://www.youtube.com/channel/UCGmmGuZwwIOVxNi_gb-KsAw",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=M5dojLiCKeE",
+          "final_url": "https://www.youtube.com/watch?v=M5dojLiCKeE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Grant Glad & the Soo Line Loons",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7ymUzPtv6nQ8qDPSsFEJ1a",
+          "final_url": "https://open.spotify.com/artist/7ymUzPtv6nQ8qDPSsFEJ1a",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/grant-glad-the-soo-line-loons/1631156478",
+          "final_url": "https://music.apple.com/us/artist/grant-glad-the-soo-line-loons/1631156478",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/grant.glad.youre.here/",
+          "final_url": "https://www.instagram.com/grant.glad.youre.here/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://grantgladmusic.com/",
+          "final_url": "https://grantgladmusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@GrantGlad",
+          "final_url": "https://www.youtube.com/@GrantGlad",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=mII5_gsKyuo",
+          "final_url": "https://www.youtube.com/watch?v=mII5_gsKyuo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Greg Cougar Conley",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4N9S6xEF2H7RJy9RweeeR1",
+          "final_url": "https://open.spotify.com/artist/4N9S6xEF2H7RJy9RweeeR1",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/greg-cougar-conley/1762505679",
+          "final_url": "https://music.apple.com/us/artist/greg-cougar-conley/1762505679",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://gregcougarconley.bandcamp.com/",
+          "final_url": "https://gregcougarconley.bandcamp.com/album/cougar-country-2",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/cougarc/",
+          "final_url": "https://www.instagram.com/cougarc/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=eq84x97XX8M",
+          "final_url": "https://www.youtube.com/watch?v=eq84x97XX8M",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Halfsleeper",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0HolahI2HNiA76mlTsajkW",
+          "final_url": "https://open.spotify.com/artist/0HolahI2HNiA76mlTsajkW",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/halfsleeper/1625068113",
+          "final_url": "https://music.apple.com/us/artist/halfsleeper/1625068113",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://halfsleeperofficial.bandcamp.com/",
+          "final_url": "https://halfsleeperofficial.bandcamp.com/album/halfsleeper-2",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/therealhalfsleeper/",
+          "final_url": "https://www.instagram.com/therealhalfsleeper/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/thehalfsleepers/",
+          "final_url": "https://www.facebook.com/thehalfsleepers/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCcvWhFyujZea2FV3GEjGZCg",
+          "final_url": "https://www.youtube.com/channel/UCcvWhFyujZea2FV3GEjGZCg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Hardaybra",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/6yHTWGHobDZ5odcfiGTQ1Y",
+          "final_url": "https://open.spotify.com/artist/6yHTWGHobDZ5odcfiGTQ1Y",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/hardaybra/1440926551",
+          "final_url": "https://music.apple.com/us/artist/hardaybra/1440926551",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=MUIfqd1WXno",
+          "final_url": "https://www.youtube.com/watch?v=MUIfqd1WXno",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Haus of Queer",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Haus-of-Queer-61575633820059/",
+          "final_url": "https://www.facebook.com/p/Haus-of-Queer-61575633820059/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Homegrown Artists Merch Fair hosted by Twin Ports Artists Collective",
+      "findings": []
+    },
+    {
+      "act": "Homegrown Kickball Classic",
+      "findings": []
+    },
+    {
+      "act": "Homegrown Tomatoes",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/saltandpinemusic/",
+          "final_url": "https://www.instagram.com/saltandpinemusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/saltandpinemusic",
+          "final_url": "https://www.facebook.com/saltandpinemusic",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://saltandpinemusic.com/",
+          "final_url": "https://saltandpinemusic.com/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Horse Fzce",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1hr7V5uVwmbDZA5yLcLGPm",
+          "final_url": "https://open.spotify.com/artist/1hr7V5uVwmbDZA5yLcLGPm",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/horse-fzce/1744095272",
+          "final_url": "https://music.apple.com/us/artist/horse-fzce/1744095272",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://horsefzce.bandcamp.com/",
+          "final_url": "https://horsefzce.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/horsefzce/",
+          "final_url": "https://www.instagram.com/horsefzce/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/horsefzce/",
+          "final_url": "https://www.facebook.com/horsefzce/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=nOH4lHyORsI",
+          "final_url": "https://www.youtube.com/watch?v=nOH4lHyORsI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Hot Tamale Cosmos",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/bossmama.music/",
+          "final_url": "https://www.instagram.com/bossmama.music/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/bossmama.music/",
+          "final_url": "https://www.facebook.com/bossmama.music/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=5NNV0-6ne14",
+          "final_url": "https://www.youtube.com/watch?v=5NNV0-6ne14",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Hypochondriac",
+      "findings": []
+    },
+    {
+      "act": "INF3RNO",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3QRyhJfjqamXXK9exu3pMn",
+          "final_url": "https://open.spotify.com/artist/3QRyhJfjqamXXK9exu3pMn",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/inf3rno/1491894335",
+          "final_url": "https://music.apple.com/us/artist/inf3rno/1491894335",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=QpE-Bqxf-7A",
+          "final_url": "https://www.youtube.com/watch?v=QpE-Bqxf-7A",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Idle Rose",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/idle-rose/1692267049",
+          "final_url": "https://music.apple.com/us/artist/idle-rose/1692267049",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://idlerose.bandcamp.com/",
+          "final_url": "https://idlerose.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/idleroseband/",
+          "final_url": "https://www.instagram.com/idleroseband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=OnuOgfalH_E",
+          "final_url": "https://www.youtube.com/watch?v=OnuOgfalH_E",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Indecent Proposal",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0LBoy1dc7ng7xZtP8Z47RG",
+          "final_url": "https://open.spotify.com/artist/0LBoy1dc7ng7xZtP8Z47RG",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/indecent-proposal/1676340432",
+          "final_url": "https://music.apple.com/us/artist/indecent-proposal/1676340432",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/indyp218/",
+          "final_url": "https://www.instagram.com/indyp218/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/indecentproposal/",
+          "final_url": "https://www.facebook.com/indecentproposal/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://indyp218.com",
+          "final_url": "https://indyp218.com",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=7DW8VOYn97A",
+          "final_url": "https://www.youtube.com/watch?v=7DW8VOYn97A",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Innerstellar Overdrive",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Innerstellar-Overdrive-61553786158399/",
+          "final_url": "https://www.facebook.com/p/Innerstellar-Overdrive-61553786158399/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Iron Range Outlaw Brigade",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://ironrangeoutlawbrigade.bandcamp.com/",
+          "final_url": "https://ironrangeoutlawbrigade.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ironrangeoutlawbrigade/",
+          "final_url": "https://www.instagram.com/ironrangeoutlawbrigade/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TheIronRangeOutlawBrigade/",
+          "final_url": "https://www.facebook.com/TheIronRangeOutlawBrigade/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/user/Kjenaas218",
+          "final_url": "https://www.youtube.com/user/Kjenaas218",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=kNX_wnEm-hc",
+          "final_url": "https://www.youtube.com/watch?v=kNX_wnEm-hc",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Isa Morin",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/78qlDSuusWCBHhFUSTa4Cw",
+          "final_url": "https://open.spotify.com/artist/78qlDSuusWCBHhFUSTa4Cw",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/isa-morin/1648965197",
+          "final_url": "https://music.apple.com/us/artist/isa-morin/1648965197",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/isamorin_artiste/",
+          "final_url": "https://www.instagram.com/isamorin_artiste/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Isa-Morin-100081442824288/",
+          "final_url": "https://www.facebook.com/p/Isa-Morin-100081442824288/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=s7k0oL54U-c",
+          "final_url": "https://www.youtube.com/watch?v=s7k0oL54U-c",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Israel Malachi Orchestra",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/israelmalachi7/",
+          "final_url": "https://www.instagram.com/israelmalachi7/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/israelmalachimusic/",
+          "final_url": "https://www.facebook.com/israelmalachimusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=wcdPsoAWKn8",
+          "final_url": "https://www.youtube.com/watch?v=wcdPsoAWKn8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Janie and The Spokes",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/janie-and-the-spokes/1754271611",
+          "final_url": "https://music.apple.com/us/artist/janie-and-the-spokes/1754271611",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://janieandthespokes.bandcamp.com/",
+          "final_url": "https://janieandthespokes.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Janie.Spokes.1/",
+          "final_url": "https://www.facebook.com/Janie.Spokes.1/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=KTYQrBCcPz4",
+          "final_url": "https://www.youtube.com/watch?v=KTYQrBCcPz4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Jen West",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/6DaSJnsDXVDcrHzru4MHrx",
+          "final_url": "https://open.spotify.com/artist/6DaSJnsDXVDcrHzru4MHrx",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/jen-west/489869679",
+          "final_url": "https://music.apple.com/us/artist/jen-west/489869679",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/jenwestmusic/",
+          "final_url": "https://www.instagram.com/jenwestmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/jenwestmusic/",
+          "final_url": "https://www.facebook.com/jenwestmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=DF0yjZPvRhg",
+          "final_url": "https://www.youtube.com/watch?v=DF0yjZPvRhg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Jesse Jaze",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2FZ6fWdQkXUADp4yZWb4yT",
+          "final_url": "https://open.spotify.com/artist/2FZ6fWdQkXUADp4yZWb4yT",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://jazehiphop.bandcamp.com/",
+          "final_url": "https://jazehiphop.bandcamp.com/album/stfunlisten-vol-1",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/jazemnhiphop/",
+          "final_url": "https://www.facebook.com/jazemnhiphop/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=dtHlGDUignA",
+          "final_url": "https://www.youtube.com/watch?v=dtHlGDUignA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "John Agacki",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/54wfO0UEQiIxyxdGvxhHTP",
+          "final_url": "https://open.spotify.com/artist/54wfO0UEQiIxyxdGvxhHTP",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/john-agacki/992673179",
+          "final_url": "https://music.apple.com/us/artist/john-agacki/992673179",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/johnagackimusic/",
+          "final_url": "https://www.facebook.com/johnagackimusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://johnagackimusic.com/",
+          "final_url": "https://johnagackimusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=V6gWrLrQ9ng",
+          "final_url": "https://www.youtube.com/watch?v=V6gWrLrQ9ng",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "John Louis",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3wQFhoGQTCK3iCqPfYEMXa",
+          "final_url": "https://open.spotify.com/artist/3wQFhoGQTCK3iCqPfYEMXa",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/john-louis/1492600210",
+          "final_url": "https://music.apple.com/us/artist/john-louis/1492600210",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/johnlouissongs/",
+          "final_url": "https://www.instagram.com/johnlouissongs/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/johnlouissongs/",
+          "final_url": "https://www.facebook.com/johnlouissongs/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://johnlouissongs.com/",
+          "final_url": "https://johnlouissongs.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=n_Z7qoA31bI",
+          "final_url": "https://www.youtube.com/watch?v=n_Z7qoA31bI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Jon Edwards",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4iUBX2m6GjKEpdxY1qgviO",
+          "final_url": "https://open.spotify.com/artist/4iUBX2m6GjKEpdxY1qgviO",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/jon-edwards/1568792779",
+          "final_url": "https://music.apple.com/us/artist/jon-edwards/1568792779",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://jonedwards05.bandcamp.com/",
+          "final_url": "https://jonedwards05.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/therealjonedwards/",
+          "final_url": "https://www.instagram.com/therealjonedwards/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Jon-Edwards-Music-61564616048098/",
+          "final_url": "https://www.facebook.com/p/Jon-Edwards-Music-61564616048098/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=h1wTYoSdNfE",
+          "final_url": "https://www.youtube.com/watch?v=h1wTYoSdNfE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Joy and Melancholy",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/joy-and-melancholy/1809028686",
+          "final_url": "https://music.apple.com/us/artist/joy-and-melancholy/1809028686",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/61582189614099",
+          "final_url": "https://www.facebook.com/61582189614099",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=YnO2l4WPbEo",
+          "final_url": "https://www.youtube.com/watch?v=YnO2l4WPbEo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Jumpsuit",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/jumpsuit/220049898",
+          "final_url": "https://music.apple.com/us/artist/jumpsuit/220049898",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/jumpsuitfunk/",
+          "final_url": "https://www.instagram.com/jumpsuitfunk/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Jumpsuit-Funk-61566392902886/",
+          "final_url": "https://www.facebook.com/p/Jumpsuit-Funk-61566392902886/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Kroma",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/kroma/1468658343",
+          "final_url": "https://music.apple.com/us/artist/kroma/1468658343",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/KROMAandFriends/",
+          "final_url": "https://www.facebook.com/KROMAandFriends/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Lake Effect String Band",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/lake.effect.strings/",
+          "final_url": "https://www.instagram.com/lake.effect.strings/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=ifH276CvfcM",
+          "final_url": "https://www.youtube.com/watch?v=ifH276CvfcM",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Lee Clark Allen",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/53EDGKx11Wy9nm3EPnPbra",
+          "final_url": "https://open.spotify.com/artist/53EDGKx11Wy9nm3EPnPbra",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/lee-clark-allen/1356579077",
+          "final_url": "https://music.apple.com/us/artist/lee-clark-allen/1356579077",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://leeclarkallen.bandcamp.com/",
+          "final_url": "https://leeclarkallen.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/leeclarkallen/",
+          "final_url": "https://www.instagram.com/leeclarkallen/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/leeclarkallen/",
+          "final_url": "https://www.facebook.com/leeclarkallen/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.leeclarkallen.com/",
+          "final_url": "https://www.leeclarkallen.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCvrNDc1nUxl5UDoC3w2t8aw",
+          "final_url": "https://www.youtube.com/channel/UCvrNDc1nUxl5UDoC3w2t8aw",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=I0esaD1b8m0",
+          "final_url": "https://www.youtube.com/watch?v=I0esaD1b8m0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Life Parade",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2WMsGFTwkIxGzzLwvBjdht",
+          "final_url": "https://open.spotify.com/artist/2WMsGFTwkIxGzzLwvBjdht",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/life-parade/1474457083",
+          "final_url": "https://music.apple.com/us/artist/life-parade/1474457083",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://lifeparade.bandcamp.com/",
+          "final_url": "https://lifeparade.bandcamp.com/album/suburban-life",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lifeparademusic/",
+          "final_url": "https://www.facebook.com/lifeparademusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=dQ0d9h2uOuU",
+          "final_url": "https://www.youtube.com/watch?v=dQ0d9h2uOuU",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Lovehouse",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3IGinjqNXLvxHywGwzqiYX",
+          "final_url": "https://open.spotify.com/artist/3IGinjqNXLvxHywGwzqiYX",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/lovehouse/1631706899",
+          "final_url": "https://music.apple.com/us/artist/lovehouse/1631706899",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/lovehousetheband/",
+          "final_url": "https://www.instagram.com/lovehousetheband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/lovehousetheband/",
+          "final_url": "https://www.facebook.com/lovehousetheband/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Lu Starr",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/lu______starr/",
+          "final_url": "https://www.instagram.com/lu______starr/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "MINNESOTA VICE",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/minnesota-vice/1890627587",
+          "final_url": "https://music.apple.com/us/artist/minnesota-vice/1890627587",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=6wRQo-pJqIU",
+          "final_url": "https://www.youtube.com/watch?v=6wRQo-pJqIU",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Mae and Justine",
+      "findings": []
+    },
+    {
+      "act": "Mayor's Proclamation",
+      "findings": []
+    },
+    {
+      "act": "Mid Dream",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://middreammusic.bandcamp.com/",
+          "final_url": "https://middreammusic.bandcamp.com/album/demos",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Mid-Dream-61568971135097/",
+          "final_url": "https://www.facebook.com/p/Mid-Dream-61568971135097/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Midnight Kissfight",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://midnightkissfight.bandcamp.com/",
+          "final_url": "https://midnightkissfight.bandcamp.com/album/three-songs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Misisipi Mike Wolf and The Plain High Drifters",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/26ut1QAdDw9ksupn8NHgmT",
+          "final_url": "https://open.spotify.com/artist/26ut1QAdDw9ksupn8NHgmT",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/misisipi-mike-wolf/307653849",
+          "final_url": "https://music.apple.com/us/artist/misisipi-mike-wolf/307653849",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/misisipi_mike_wolf/",
+          "final_url": "https://www.instagram.com/misisipi_mike_wolf/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/pages/Misisipi-Mike-Wolf/608089869245597",
+          "final_url": "https://www.facebook.com/pages/Misisipi-Mike-Wolf/608089869245597",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Qkf6THOBLp0",
+          "final_url": "https://www.youtube.com/watch?v=Qkf6THOBLp0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Mitchell Kane",
+      "findings": [
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=5GmivjYFALw",
+          "final_url": "https://www.youtube.com/watch?v=5GmivjYFALw",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Mr. Kickass",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://mrkickass.bandcamp.com/",
+          "final_url": "https://mrkickass.bandcamp.com/album/demo",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/mrkickasstheband/",
+          "final_url": "https://www.facebook.com/mrkickasstheband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=OTX4cZ8KSd0",
+          "final_url": "https://www.youtube.com/watch?v=OTX4cZ8KSd0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Mud Puppies",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/mud-puppies/1873373950",
+          "final_url": "https://music.apple.com/us/artist/mud-puppies/1873373950",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Music Resource Center Students",
+      "findings": []
+    },
+    {
+      "act": "Nate J Mattson",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/nate-j-mattson/1084227689",
+          "final_url": "https://music.apple.com/us/artist/nate-j-mattson/1084227689",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/natejmattson/",
+          "final_url": "https://www.facebook.com/natejmattson/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=u4D982e7nXg",
+          "final_url": "https://www.youtube.com/watch?v=u4D982e7nXg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Nevins",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://nevinsduluth.bandcamp.com/",
+          "final_url": "https://nevinsduluth.bandcamp.com/album/dademo",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/nevins.69/",
+          "final_url": "https://www.instagram.com/nevins.69/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Nevins-100066101610846/",
+          "final_url": "https://www.facebook.com/p/Nevins-100066101610846/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Nikki Lemire",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1H4ri5j1oQ451XFVI8guzF",
+          "final_url": "https://open.spotify.com/artist/1H4ri5j1oQ451XFVI8guzF",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/nikki-lemire/1566701887",
+          "final_url": "https://music.apple.com/us/artist/nikki-lemire/1566701887",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://nikkilemire.bandcamp.com/",
+          "final_url": "https://nikkilemire.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/nikki.lemire/",
+          "final_url": "https://www.instagram.com/nikki.lemire/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/nikkilemiremusic/",
+          "final_url": "https://www.facebook.com/nikkilemiremusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://nikkilemiremusic.com/",
+          "final_url": "https://nikkilemiremusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCBiUIhYEAONozCPL2DwGFEA",
+          "final_url": "https://www.youtube.com/channel/UCBiUIhYEAONozCPL2DwGFEA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://youtu.be/uayGOsSJX6Y",
+          "final_url": "https://youtu.be/uayGOsSJX6Y",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Obleek",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7sq3TQos0vTvez6efJTd0F",
+          "final_url": "https://open.spotify.com/artist/7sq3TQos0vTvez6efJTd0F",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/obleek/1690673405",
+          "final_url": "https://music.apple.com/us/artist/obleek/1690673405",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://theobleeks.bandcamp.com/",
+          "final_url": "https://theobleeks.bandcamp.com/album/the-obleeks",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/obleekband/",
+          "final_url": "https://www.instagram.com/obleekband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/theobleeks/",
+          "final_url": "https://www.facebook.com/theobleeks/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Old Love",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://old-love.bandcamp.com/",
+          "final_url": "https://old-love.bandcamp.com/track/ww-something-demo",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/oldlovemusic/",
+          "final_url": "https://www.facebook.com/oldlovemusic/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Owls Club Big Band",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Owls-Club-Big-Band-100063507219690/",
+          "final_url": "https://www.facebook.com/p/Owls-Club-Big-Band-100063507219690/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=PmlCRgHSLkE",
+          "final_url": "https://www.youtube.com/watch?v=PmlCRgHSLkE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "P.B&J",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/p-b-j/1599758931",
+          "final_url": "https://music.apple.com/us/artist/p-b-j/1599758931",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://pbjmusic1.bandcamp.com/",
+          "final_url": "https://bandcamp.com/signup?new_domain=pbjmusic1",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/pbj_band/",
+          "final_url": "https://www.instagram.com/pbj_band/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/pbandjband/",
+          "final_url": "https://www.facebook.com/pbandjband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=nqDtftAQHuk",
+          "final_url": "https://www.youtube.com/watch?v=nqDtftAQHuk",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Peat Boggs",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/peat-boggs/1760152164",
+          "final_url": "https://music.apple.com/us/artist/peat-boggs/1760152164",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://peatboggs.bandcamp.com/",
+          "final_url": "https://peatboggs.bandcamp.com/album/the-unknown",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/peatboggs/",
+          "final_url": "https://www.instagram.com/peatboggs/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Ob_w1MOfY0w",
+          "final_url": "https://www.youtube.com/watch?v=Ob_w1MOfY0w",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Polari",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/polari/280743881",
+          "final_url": "https://music.apple.com/us/artist/polari/280743881",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Portrait of a Drowned Man",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://portraitofadrownedman.bandcamp.com/",
+          "final_url": "https://portraitofadrownedman.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/portraitofadrownedman/",
+          "final_url": "https://www.facebook.com/portraitofadrownedman/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://poadm.com/",
+          "final_url": "https://poadm.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Il7U0HUNaAc",
+          "final_url": "https://www.youtube.com/watch?v=Il7U0HUNaAc",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Possessed to Restored",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/possessed-to-restored/1885471199",
+          "final_url": "https://music.apple.com/us/artist/possessed-to-restored/1885471199",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=a-kDuJaNO0U",
+          "final_url": "https://www.youtube.com/watch?v=a-kDuJaNO0U",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Pronoya",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4dJZiXt0CPC7cLYMsgKZOw",
+          "final_url": "https://open.spotify.com/artist/4dJZiXt0CPC7cLYMsgKZOw",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/pronoya/1509448146",
+          "final_url": "https://music.apple.com/us/artist/pronoya/1509448146",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://pronoya.bandcamp.com/",
+          "final_url": "https://pronoya.bandcamp.com/album/all-for-the-sun",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/pronoyamn/",
+          "final_url": "https://www.instagram.com/pronoyamn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/PronoyaMN/",
+          "final_url": "https://www.facebook.com/PronoyaMN/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=r0exUH_vE8Y",
+          "final_url": "https://www.youtube.com/watch?v=r0exUH_vE8Y",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Remote Viewfinder",
+      "findings": [
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=MVi9J2jx54U",
+          "final_url": "https://www.youtube.com/watch?v=MVi9J2jx54U",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Rick McLean Band",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3903k1YtG6E8PSO70FJpaW",
+          "final_url": "https://open.spotify.com/artist/3903k1YtG6E8PSO70FJpaW",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://rickmclean.bandcamp.com/",
+          "final_url": "https://rickmclean.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/rick_e_mick/",
+          "final_url": "https://www.instagram.com/rick_e_mick/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/RickMcLeanMusic/",
+          "final_url": "https://www.facebook.com/RickMcLeanMusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=XXKWVS1SzV8",
+          "final_url": "https://www.youtube.com/watch?v=XXKWVS1SzV8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Ricky Carl",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/ricky-carl/1589873460",
+          "final_url": "https://music.apple.com/us/artist/ricky-carl/1589873460",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/rickycarlmusic/",
+          "final_url": "https://www.instagram.com/rickycarlmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/rickysundstrommusic/",
+          "final_url": "https://www.facebook.com/rickysundstrommusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=WonmMqzVm_Q",
+          "final_url": "https://www.youtube.com/watch?v=WonmMqzVm_Q",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Rocking Rodents",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/rocking.rodents/",
+          "final_url": "https://www.instagram.com/rocking.rodents/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Rory Van James",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0G79lzr7Y7MDsnaGRAPqoN",
+          "final_url": "https://open.spotify.com/artist/0G79lzr7Y7MDsnaGRAPqoN",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/rory-van-james/1343597646",
+          "final_url": "https://music.apple.com/us/artist/rory-van-james/1343597646",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/roryjamesmuse/",
+          "final_url": "https://www.facebook.com/roryjamesmuse/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "http://www.roryvanjames.org/",
+          "final_url": "http://www.roryvanjames.org/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=T6_z66-IzdE",
+          "final_url": "https://www.youtube.com/watch?v=T6_z66-IzdE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Ross Thorn",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/6yGOLiqIfDf1ZMjJK0LF0Q",
+          "final_url": "https://open.spotify.com/artist/6yGOLiqIfDf1ZMjJK0LF0Q",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/ross-thorn/1647956794",
+          "final_url": "https://music.apple.com/us/artist/ross-thorn/1647956794",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://rossthorn.bandcamp.com/",
+          "final_url": "https://rossthorn.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ross.thorn/",
+          "final_url": "https://www.instagram.com/ross.thorn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/RossThornMusic/",
+          "final_url": "https://www.facebook.com/RossThornMusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://rossthornmusic.com/",
+          "final_url": "https://rossthornmusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCxihF098T7FIKE6oWJ0MNpA",
+          "final_url": "https://www.youtube.com/channel/UCxihF098T7FIKE6oWJ0MNpA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=W86jNRY-5cs",
+          "final_url": "https://www.youtube.com/watch?v=W86jNRY-5cs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Ryan Van Slooten",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7bYvlsAoAHlmQgqIqebe6S",
+          "final_url": "https://open.spotify.com/artist/7bYvlsAoAHlmQgqIqebe6S",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/ryan-van-slooten/213705919",
+          "final_url": "https://music.apple.com/us/artist/ryan-van-slooten/213705919",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://ryanvanslooten.bandcamp.com/",
+          "final_url": "https://ryanvanslooten.bandcamp.com/album/about-time",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ryanvanslooten/",
+          "final_url": "https://www.instagram.com/ryanvanslooten/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/ryanvanslootenmusic/",
+          "final_url": "https://www.facebook.com/ryanvanslootenmusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.ryanvanslooten.com/",
+          "final_url": "https://www.ryanvanslooten.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=hEHqhbMEFdQ",
+          "final_url": "https://www.youtube.com/watch?v=hEHqhbMEFdQ",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Salt and Pine",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7MxT8oEThyiUkW5PVO8Utw",
+          "final_url": "https://open.spotify.com/artist/7MxT8oEThyiUkW5PVO8Utw",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/saltandpinemusic/",
+          "final_url": "https://www.instagram.com/saltandpinemusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/saltandpinemusic",
+          "final_url": "https://www.facebook.com/saltandpinemusic",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://saltandpinemusic.com/",
+          "final_url": "https://saltandpinemusic.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=-AjNsKgVK00",
+          "final_url": "https://www.youtube.com/watch?v=-AjNsKgVK00",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sea Smoke Aerial Arts",
+      "findings": []
+    },
+    {
+      "act": "Shadows of Me",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3eD7eF97VSoLHS9VIHGw2h",
+          "final_url": "https://open.spotify.com/artist/3eD7eF97VSoLHS9VIHGw2h",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/shadows-of-me/1437291252",
+          "final_url": "https://music.apple.com/us/artist/shadows-of-me/1437291252",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/shadowsofmeband/",
+          "final_url": "https://www.facebook.com/shadowsofmeband/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=7s7o13d-wCI",
+          "final_url": "https://www.youtube.com/watch?v=7s7o13d-wCI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Shakin' Not Stirred (SNS)",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://scottjwithshakinnotstirred.bandcamp.com/",
+          "final_url": "https://scottjwithshakinnotstirred.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Shakinnotstirred4/",
+          "final_url": "https://www.facebook.com/Shakinnotstirred4/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=r311lRD-Q44",
+          "final_url": "https://www.youtube.com/watch?v=r311lRD-Q44",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sidestreet Detour",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/sidestreet-detour/1758425740",
+          "final_url": "https://music.apple.com/us/artist/sidestreet-detour/1758425740",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/sidestreetdetour/",
+          "final_url": "https://www.instagram.com/sidestreetdetour/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/Sidestreet-Detour-100084443725200/",
+          "final_url": "https://www.facebook.com/p/Sidestreet-Detour-100084443725200/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=iDwQuOHJZaw",
+          "final_url": "https://www.youtube.com/watch?v=iDwQuOHJZaw",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sister Veery",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/sister-veery/1793567019",
+          "final_url": "https://music.apple.com/us/artist/sister-veery/1793567019",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://sisterveery.bandcamp.com/",
+          "final_url": "https://sisterveery.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/sisterveery/",
+          "final_url": "https://www.instagram.com/sisterveery/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Skarlett Woods",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7anPqDZBvpZev3Cps8I5JH",
+          "final_url": "https://open.spotify.com/artist/7anPqDZBvpZev3Cps8I5JH",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/skarlett-woods/257089909",
+          "final_url": "https://music.apple.com/us/artist/skarlett-woods/257089909",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://skarlettwoods.bandcamp.com/",
+          "final_url": "https://skarlettwoods.bandcamp.com/album/letters-to-the-west",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/skarlett_woods/",
+          "final_url": "https://www.instagram.com/skarlett_woods/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/skarlettwoods/",
+          "final_url": "https://www.facebook.com/skarlettwoods/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.skarlettwoods.com/",
+          "final_url": "https://www.skarlettwoods.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@skarlettwoods",
+          "final_url": "https://www.youtube.com/@skarlettwoods",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=X2503_uO4Eg",
+          "final_url": "https://www.youtube.com/watch?v=X2503_uO4Eg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Slape",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/24FXVRpoyRlaElFTOwjHAR",
+          "final_url": "https://open.spotify.com/artist/24FXVRpoyRlaElFTOwjHAR",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/slape/1811018072",
+          "final_url": "https://music.apple.com/us/artist/slape/1811018072",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/slapemn/",
+          "final_url": "https://www.instagram.com/slapemn/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/slape.music/",
+          "final_url": "https://www.facebook.com/slape.music/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        }
+      ]
+    },
+    {
+      "act": "So What",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/so-what/969696087",
+          "final_url": "https://music.apple.com/us/artist/so-what/969696087",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/so.what.band/",
+          "final_url": "https://www.instagram.com/so.what.band/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sometime, Maybe",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/sometime_maybe_music/",
+          "final_url": "https://www.instagram.com/sometime_maybe_music/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sons of Fogtown",
+      "findings": []
+    },
+    {
+      "act": "Sorrows Never Die",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=61551851477286",
+          "final_url": "https://www.facebook.com/profile.php?id=61551851477286",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=PdirNDpL9HA",
+          "final_url": "https://www.youtube.com/watch?v=PdirNDpL9HA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Southpaw",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/043TAL6f6NwSd5OLjz1KDd",
+          "final_url": "https://open.spotify.com/artist/043TAL6f6NwSd5OLjz1KDd",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/southpaw/1549965187",
+          "final_url": "https://music.apple.com/us/artist/southpaw/1549965187",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://southpawmn.bandcamp.com/",
+          "final_url": "https://southpawmn.bandcamp.com/album/basement-demo",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/southpawmn218/",
+          "final_url": "https://www.instagram.com/southpawmn218/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/southpawmn/",
+          "final_url": "https://www.facebook.com/southpawmn/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        }
+      ]
+    },
+    {
+      "act": "Spin Collective",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/spincollective/",
+          "final_url": "https://www.instagram.com/spincollective/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/the-Spin-Collective-100046370025743/",
+          "final_url": "https://www.facebook.com/p/the-Spin-Collective-100046370025743/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=YQ7fSrO7C5o",
+          "final_url": "https://www.youtube.com/watch?v=YQ7fSrO7C5o",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Squid City Slingers",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2kglI0o7rM52XzTs1nNIvY",
+          "final_url": "https://open.spotify.com/artist/2kglI0o7rM52XzTs1nNIvY",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/squid-city-slingers/1794240609",
+          "final_url": "https://music.apple.com/us/artist/squid-city-slingers/1794240609",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/squidcityslingers/",
+          "final_url": "https://www.instagram.com/squidcityslingers/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/squidcityslingers",
+          "final_url": "https://www.facebook.com/squidcityslingers",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=e9AcTQOGpWo",
+          "final_url": "https://www.youtube.com/watch?v=e9AcTQOGpWo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Stardust Collective",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/stardust-collective/1759246658",
+          "final_url": "https://music.apple.com/us/artist/stardust-collective/1759246658",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/stardustcollectiveband/",
+          "final_url": "https://www.facebook.com/stardustcollectiveband/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=hJJFED2apVA",
+          "final_url": "https://www.youtube.com/watch?v=hJJFED2apVA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Stel",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/stel/1560879138",
+          "final_url": "https://music.apple.com/us/artist/stel/1560879138",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://itsstel.bandcamp.com/",
+          "final_url": "https://itsstel.bandcamp.com/track/manusake",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=rvB1Jm-sa00",
+          "final_url": "https://www.youtube.com/watch?v=rvB1Jm-sa00",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Steve Solkela",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/5ezC9l9RWL3HUoJwmFLt2x",
+          "final_url": "https://open.spotify.com/artist/5ezC9l9RWL3HUoJwmFLt2x",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/steve-solkela/1458183456",
+          "final_url": "https://music.apple.com/us/artist/steve-solkela/1458183456",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/stevesolkela/",
+          "final_url": "https://www.instagram.com/stevesolkela/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/SteveSolkela",
+          "final_url": "https://www.facebook.com/SteveSolkela",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://stevesolkela.com/",
+          "final_url": "https://stevesolkela.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@stevesolkela",
+          "final_url": "https://www.youtube.com/@stevesolkela",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=nwoVonZlK5s",
+          "final_url": "https://www.youtube.com/watch?v=nwoVonZlK5s",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Sugar on the Roof",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/sugar-on-the-roof/1782032268",
+          "final_url": "https://music.apple.com/us/artist/sugar-on-the-roof/1782032268",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://sugarontheroof.bandcamp.com/",
+          "final_url": "https://sugarontheroof.bandcamp.com/album/hat-drop",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/sugarontheroof/",
+          "final_url": "https://www.facebook.com/sugarontheroof/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=wdeyTEVCLzg",
+          "final_url": "https://www.youtube.com/watch?v=wdeyTEVCLzg",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Taylor James Donskey",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4aPHAdwi832fFa79MlSXlk",
+          "final_url": "https://open.spotify.com/artist/4aPHAdwi832fFa79MlSXlk",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/taylor-james-donskey/1474919767",
+          "final_url": "https://music.apple.com/us/artist/taylor-james-donskey/1474919767",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://taylorjamesdonskey.bandcamp.com/",
+          "final_url": "https://taylorjamesdonskey.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/taylorjamesdonskey/",
+          "final_url": "https://www.instagram.com/taylorjamesdonskey/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/taylorjamesdonskey/",
+          "final_url": "https://www.facebook.com/taylorjamesdonskey/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=YKGmBAKt68g",
+          "final_url": "https://www.youtube.com/watch?v=YKGmBAKt68g",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Teague Alexy & The Common Thread",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0WlUDadhiyfOqUFhruXXGf",
+          "final_url": "https://open.spotify.com/artist/0WlUDadhiyfOqUFhruXXGf",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/teague-alexy/507480310",
+          "final_url": "https://music.apple.com/us/artist/teague-alexy/507480310",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://teaguealexy.bandcamp.com/",
+          "final_url": "https://teaguealexy.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/teaguealexy/",
+          "final_url": "https://www.instagram.com/teaguealexy/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/teaguealexymusic/",
+          "final_url": "https://www.facebook.com/teaguealexymusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=FDNS727atYw",
+          "final_url": "https://www.youtube.com/watch?v=FDNS727atYw",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Adjustments",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-adjustments/910333158",
+          "final_url": "https://music.apple.com/us/artist/the-adjustments/910333158",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://adjustmentsmusic.bandcamp.com/",
+          "final_url": "https://adjustmentsmusic.bandcamp.com/album/at-north-shore",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/adjustmentsmusic/",
+          "final_url": "https://www.facebook.com/adjustmentsmusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=-j0gxzcsfK4",
+          "final_url": "https://www.youtube.com/watch?v=-j0gxzcsfK4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Body Electric Cabaret",
+      "findings": []
+    },
+    {
+      "act": "The Brothers Burn Mountain",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0lUkPAyTyhtHdtzdMTTfR6",
+          "final_url": "https://open.spotify.com/artist/0lUkPAyTyhtHdtzdMTTfR6",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-brothers-burn-mountain/1528643141",
+          "final_url": "https://music.apple.com/us/artist/the-brothers-burn-mountain/1528643141",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://thebrothersburnmountain.bandcamp.com/",
+          "final_url": "https://thebrothersburnmountain.bandcamp.com/track/burn-em-back",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/thebrothersburnmountain/",
+          "final_url": "https://www.instagram.com/thebrothersburnmountain/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/thebrothersburnmountain/",
+          "final_url": "https://www.facebook.com/thebrothersburnmountain/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.thebrothersburnmountain.com/",
+          "final_url": "https://www.thebrothersburnmountain.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=NKShJmgQvb0",
+          "final_url": "https://www.youtube.com/watch?v=NKShJmgQvb0",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Casualty Company",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-casualty-company/1688600372",
+          "final_url": "https://music.apple.com/us/artist/the-casualty-company/1688600372",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Crunchy Bunch",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-crunchy-bunch/1604954389",
+          "final_url": "https://music.apple.com/us/artist/the-crunchy-bunch/1604954389",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://thecrunchybunch1.bandcamp.com/",
+          "final_url": "https://thecrunchybunch1.bandcamp.com/album/nah-imma-stay",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/crunchbunchofficial/",
+          "final_url": "https://www.instagram.com/crunchbunchofficial/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TheCrunchyBunch",
+          "final_url": "https://www.facebook.com/TheCrunchyBunch",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.thecrunchybunch.info/",
+          "final_url": "https://www.thecrunchybunch.info/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Draco Volans",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/0EavxubXnVdoKNxDQOGLbi",
+          "final_url": "https://open.spotify.com/artist/0EavxubXnVdoKNxDQOGLbi",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-draco-volans/1750256386",
+          "final_url": "https://music.apple.com/us/artist/the-draco-volans/1750256386",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://thedracovolans.bandcamp.com/",
+          "final_url": "https://thedracovolans.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/thedracovolans/",
+          "final_url": "https://www.instagram.com/thedracovolans/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/draco.volans.9",
+          "final_url": "https://www.facebook.com/draco.volans.9",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://thedracovolans.com/",
+          "final_url": "https://thedracovolans.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=b2C0seOcxg8",
+          "final_url": "https://www.youtube.com/watch?v=b2C0seOcxg8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Gemstones",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2OpXRV68ugAWR3OmsuCyVT",
+          "final_url": "https://open.spotify.com/artist/2OpXRV68ugAWR3OmsuCyVT",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-gemstones/1670540209",
+          "final_url": "https://music.apple.com/us/artist/the-gemstones/1670540209",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/thegemstonesband/",
+          "final_url": "https://www.facebook.com/thegemstonesband/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=RFn00bX5rMs",
+          "final_url": "https://www.youtube.com/watch?v=RFn00bX5rMs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Jambronies",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/the.jambronies/",
+          "final_url": "https://www.instagram.com/the.jambronies/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/61557618656163/",
+          "final_url": "https://www.facebook.com/61557618656163/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=B_xzXP_JNlU",
+          "final_url": "https://www.youtube.com/watch?v=B_xzXP_JNlU",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Leave Alones",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4GTczEjEe78uTdJnXVlRio",
+          "final_url": "https://open.spotify.com/artist/4GTczEjEe78uTdJnXVlRio",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-leave-alones/1722653230",
+          "final_url": "https://music.apple.com/us/artist/the-leave-alones/1722653230",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=hTn1Tb6Om6k",
+          "final_url": "https://www.youtube.com/watch?v=hTn1Tb6Om6k",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Lindula Brothers",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/1oTqIeJC2ojxbc2wyxffTN",
+          "final_url": "https://open.spotify.com/artist/1oTqIeJC2ojxbc2wyxffTN",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/lindula-brothers/1515193194",
+          "final_url": "https://music.apple.com/us/artist/lindula-brothers/1515193194",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/LindulaBrothers/",
+          "final_url": "https://www.facebook.com/LindulaBrothers/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.lindulabrothers.com/",
+          "final_url": "https://www.lindulabrothers.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=eE4C0wDhppA",
+          "final_url": "https://www.youtube.com/watch?v=eE4C0wDhppA",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Lonely Loons",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-lonely-loons/1773670025",
+          "final_url": "https://music.apple.com/us/artist/the-lonely-loons/1773670025",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://thelonelyloons.bandcamp.com/",
+          "final_url": "https://thelonelyloons.bandcamp.com/album/demos",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/loonsband/",
+          "final_url": "https://www.instagram.com/loonsband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=iXJpIlDalTk",
+          "final_url": "https://www.youtube.com/watch?v=iXJpIlDalTk",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Mad Violin Scientist",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/NickHydeViolin/",
+          "final_url": "https://www.facebook.com/NickHydeViolin/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.nickhydeviolin.com/",
+          "final_url": "https://www.nickhydeviolin.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=GF6Wn_LLw3Y",
+          "final_url": "https://www.youtube.com/watch?v=GF6Wn_LLw3Y",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Old Smugglers",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2f6jaqocxBKypsqEu0OCrG",
+          "final_url": "https://open.spotify.com/artist/2f6jaqocxBKypsqEu0OCrG",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-old-smugglers/1314236274",
+          "final_url": "https://music.apple.com/us/artist/the-old-smugglers/1314236274",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://theoldsmugglers.bandcamp.com/",
+          "final_url": "https://theoldsmugglers.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/theoldsmugglers/",
+          "final_url": "https://www.instagram.com/theoldsmugglers/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/theoldsmugglers/",
+          "final_url": "https://www.facebook.com/theoldsmugglers/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://theoldsmugglers.com/",
+          "final_url": "https://theoldsmugglers.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=NoEYLyhi3KY",
+          "final_url": "https://www.youtube.com/watch?v=NoEYLyhi3KY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Repairmen",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-repairmen/446921549",
+          "final_url": "https://music.apple.com/us/artist/the-repairmen/446921549",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://therepairmen.bandcamp.com/",
+          "final_url": "https://therepairmen.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=oXCkqyYyQvQ",
+          "final_url": "https://www.youtube.com/watch?v=oXCkqyYyQvQ",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Roadside Lupines",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-roadside-lupines/1856116792",
+          "final_url": "https://music.apple.com/us/artist/the-roadside-lupines/1856116792",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/theroadsidelupines/",
+          "final_url": "https://www.instagram.com/theroadsidelupines/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/p/The-Roadside-Lupines-61567842652822/",
+          "final_url": "https://www.facebook.com/p/The-Roadside-Lupines-61567842652822/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=uUHW8fdfrYs",
+          "final_url": "https://www.youtube.com/watch?v=uUHW8fdfrYs",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Shane Nelson Band",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/56q9iyjJTTUzadW4wSmIke",
+          "final_url": "https://open.spotify.com/artist/56q9iyjJTTUzadW4wSmIke",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://shanenelson.bandcamp.com/",
+          "final_url": "https://shanenelson.bandcamp.com/album/shane-nelson",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/shanenelsonmusic/",
+          "final_url": "https://www.facebook.com/shanenelsonmusic/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "website",
+          "url": "https://www.twinportsrocks.com/shane-nelson-music",
+          "final_url": "https://www.twinportsrocks.com/shane-nelson-music",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=u7STURuT890",
+          "final_url": "https://www.youtube.com/watch?v=u7STURuT890",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Solicitors",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/the-solicitors/433812871",
+          "final_url": "https://music.apple.com/us/artist/the-solicitors/433812871",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/thesolicitors.band/",
+          "final_url": "https://www.instagram.com/thesolicitors.band/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TheSolicitors/",
+          "final_url": "https://www.facebook.com/TheSolicitors/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=ZEQewq_2k78",
+          "final_url": "https://www.youtube.com/watch?v=ZEQewq_2k78",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Trash Cats",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/067xrXQE7o7eQ9JnwOgNdH",
+          "final_url": "https://open.spotify.com/artist/067xrXQE7o7eQ9JnwOgNdH",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/trash-cats/1408282587",
+          "final_url": "https://music.apple.com/us/artist/trash-cats/1408282587",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/thetrashcats/",
+          "final_url": "https://www.instagram.com/thetrashcats/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/thetrashcats/",
+          "final_url": "https://www.facebook.com/thetrashcats/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://trashcatsduluth.com/",
+          "final_url": "https://trashcatsduluth.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=t6SC_vaj5KM",
+          "final_url": "https://www.youtube.com/watch?v=t6SC_vaj5KM",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "The Trinkets",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/trinketsband/",
+          "final_url": "https://www.instagram.com/trinketsband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=U7DONrmLuSw",
+          "final_url": "https://www.youtube.com/watch?v=U7DONrmLuSw",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Theory of Light",
+      "findings": [
+        {
+          "platform": "bandcamp",
+          "url": "https://theoryoflight.bandcamp.com/",
+          "final_url": "https://theoryoflight.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Thor & The Regulars",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ha.thor.n/",
+          "final_url": "https://www.instagram.com/ha.thor.n/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/ha.thor.n1998",
+          "final_url": "https://www.facebook.com/ha.thor.n1998",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        }
+      ]
+    },
+    {
+      "act": "Throw Me The Remote",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/throw-me-the-remote/1845175326",
+          "final_url": "https://music.apple.com/us/artist/throw-me-the-remote/1845175326",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/throwmetheremote/",
+          "final_url": "https://www.instagram.com/throwmetheremote/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=h4oTg5uYQTc",
+          "final_url": "https://www.youtube.com/watch?v=h4oTg5uYQTc",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Tim Kaiser",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/4Uo2T4tJHyceGRh37LHSCL",
+          "final_url": "https://open.spotify.com/artist/4Uo2T4tJHyceGRh37LHSCL",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/tim-kaiser/257941945",
+          "final_url": "https://music.apple.com/us/artist/tim-kaiser/257941945",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://timkaiser.bandcamp.com/",
+          "final_url": "https://timkaiser.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/timkaiserduluth/",
+          "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftimkaiserduluth%2F&is_from_rle",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TimKaiserMusic/",
+          "final_url": "https://www.facebook.com/TimKaiserMusic/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=O0Lr1ZxyA84",
+          "final_url": "https://www.youtube.com/watch?v=O0Lr1ZxyA84",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Two T's in a Pod",
+      "findings": [
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=4XPWkl6SIoE",
+          "final_url": "https://www.youtube.com/watch?v=4XPWkl6SIoE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Underground 'til Sundown",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/underground-til-sundown/975351460",
+          "final_url": "https://music.apple.com/us/artist/underground-til-sundown/975351460",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://undergroundtilsundown.bandcamp.com/",
+          "final_url": "https://undergroundtilsundown.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Undergroundtilsundown/",
+          "final_url": "https://www.facebook.com/Undergroundtilsundown/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=qyzDhm_zBFE",
+          "final_url": "https://www.youtube.com/watch?v=qyzDhm_zBFE",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Vena Sera",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/venaseraband/",
+          "final_url": "https://www.instagram.com/venaseraband/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=G4Oy-V2okWI",
+          "final_url": "https://www.youtube.com/watch?v=G4Oy-V2okWI",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Venus de Mars and All The Pretty Horses",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/7Jq1KS1PJ8pBL8JMh8ICOz",
+          "final_url": "https://open.spotify.com/artist/7Jq1KS1PJ8pBL8JMh8ICOz",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/venus-de-mars-all-the-pretty-horses/375297780",
+          "final_url": "https://music.apple.com/us/artist/venus-de-mars-all-the-pretty-horses/375297780",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://venusdemars.bandcamp.com/",
+          "final_url": "https://venusdemars.bandcamp.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/venusdemars/",
+          "final_url": "https://www.instagram.com/venusdemars/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/",
+          "final_url": "https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://youtu.be/NEaXFAln9E4",
+          "final_url": "https://youtu.be/NEaXFAln9E4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "WICKIE",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/wickie/26247225",
+          "final_url": "https://music.apple.com/us/artist/wickie/26247225",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=30kBLtwOoXk",
+          "final_url": "https://www.youtube.com/watch?v=30kBLtwOoXk",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "WILBUR",
+      "findings": [
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/wilbur/1520127970",
+          "final_url": "https://music.apple.com/us/artist/wilbur/1520127970",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://wilburbummer.bandcamp.com/",
+          "final_url": "https://wilburbummer.bandcamp.com/album/joints-pains",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/wilbur.bummer/",
+          "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fwilbur.bummer%2F&is_from_rle",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Water Cat",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/2j6VhliZwH9pUaq4LkV4w5",
+          "final_url": "https://open.spotify.com/artist/2j6VhliZwH9pUaq4LkV4w5",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/watercatmusique/",
+          "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fwatercatmusique%2F&is_from_rle",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/watercatmusicduluth/",
+          "final_url": "https://www.facebook.com/watercatmusicduluth/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCA7lsV34xbfFYKUDLzHKAkA",
+          "final_url": "https://www.youtube.com/channel/UCA7lsV34xbfFYKUDLzHKAkA",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=Z3LZw4J5GR4",
+          "final_url": "https://www.youtube.com/watch?v=Z3LZw4J5GR4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Wes Hadrich",
+      "findings": []
+    },
+    {
+      "act": "Wetland Willows",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/wetlandwillows/",
+          "final_url": "https://www.instagram.com/wetlandwillows/",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Willem Dafoe Fan Club",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/willem_dafoe_fan_club/",
+          "final_url": "https://www.instagram.com/willem_dafoe_fan_club/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/groups/528240343893184/",
+          "final_url": "https://www.facebook.com/groups/528240343893184/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=9dGmWAf99_c",
+          "final_url": "https://www.youtube.com/watch?v=9dGmWAf99_c",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Winzige Hosen",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/WinzigeHosen/",
+          "final_url": "https://www.facebook.com/WinzigeHosen/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=3eXpfW8zUZo",
+          "final_url": "https://www.youtube.com/watch?v=3eXpfW8zUZo",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Witchfarm",
+      "findings": []
+    },
+    {
+      "act": "Woodblind",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/3V90WYDohHOI7xB3rfECse",
+          "final_url": "https://open.spotify.com/artist/3V90WYDohHOI7xB3rfECse",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/woodblind/958741128",
+          "final_url": "https://music.apple.com/us/artist/woodblind/958741128",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/woodblindska/",
+          "final_url": "https://www.instagram.com/woodblindska/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/woodblindska/",
+          "final_url": "https://www.facebook.com/woodblindska/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "website",
+          "url": "https://www.woodblindska.com/",
+          "final_url": "https://www.woodblindska.com/",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=3of6TIKiokY",
+          "final_url": "https://www.youtube.com/watch?v=3of6TIKiokY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Zeb or Zeke and the Run Away Screamings",
+      "findings": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/ZOZATRAS/",
+          "final_url": "https://www.facebook.com/ZOZATRAS/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=An19eWK9oL8",
+          "final_url": "https://www.youtube.com/watch?v=An19eWK9oL8",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "Zenith City Dance Collective",
+      "findings": []
+    },
+    {
+      "act": "porb",
+      "findings": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/itsporb/",
+          "final_url": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fitsporb%2F&is_from_rle",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=7fLLmA5F3AY",
+          "final_url": "https://www.youtube.com/watch?v=7fLLmA5F3AY",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    },
+    {
+      "act": "\u00a1Radical Fun Time!",
+      "findings": [
+        {
+          "platform": "spotify",
+          "url": "https://open.spotify.com/artist/6KFybrOWEcQMoHRMqQttRP",
+          "final_url": "https://open.spotify.com/artist/6KFybrOWEcQMoHRMqQttRP",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "apple_music",
+          "url": "https://music.apple.com/us/artist/radical-fun-time/1502584231",
+          "final_url": "https://music.apple.com/us/artist/radical-fun-time/1502584231",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "bandcamp",
+          "url": "https://radicalfuntime.bandcamp.com/",
+          "final_url": "https://radicalfuntime.bandcamp.com/album/risen-from-the-ashes",
+          "verdict": "ok",
+          "note": null
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/radicalfuntime/",
+          "final_url": "https://www.facebook.com/radicalfuntime/",
+          "verdict": "gated",
+          "note": "Facebook: anonymous probe sees login wall \u2014 page may exist, may not"
+        },
+        {
+          "platform": "youtube_video",
+          "url": "https://www.youtube.com/watch?v=AmHIfJmrBo4",
+          "final_url": "https://www.youtube.com/watch?v=AmHIfJmrBo4",
+          "verdict": "ok",
+          "note": null
+        }
+      ]
+    }
+  ]
+}
