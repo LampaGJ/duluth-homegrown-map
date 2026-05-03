@@ -2628,6 +2628,15 @@ const slCount = document.querySelector(".sl-count");
 function isInSetList(act, date) {
   return setList.some(s => s.act === act && s.date === date);
 }
+// Sort key for "HH:MM" 24h times that treats early-morning slots (0-5)
+// as belonging to the prior evening — so 12:00am sorts AFTER 11:45pm,
+// not before it.
+function timeSortKey(t) {
+  if (!t) return 0;
+  const [h, m] = t.split(":").map(Number);
+  const minutes = (h || 0) * 60 + (m || 0);
+  return h < 6 ? minutes + 24 * 60 : minutes;
+}
 function toggleSetList(setData) {
   const idx = setList.findIndex(s => s.act === setData.act && s.date === setData.date);
   if (idx >= 0) {
@@ -2656,7 +2665,7 @@ function renderSetList() {
     slContent.innerHTML = '<div class="sl-empty">Tap ☆ on any act to add it here!</div>';
     return;
   }
-  const sorted = [...setList].sort((a, b) => a.date.localeCompare(b.date) || a.time_start.localeCompare(b.time_start));
+  const sorted = [...setList].sort((a, b) => a.date.localeCompare(b.date) || timeSortKey(a.time_start) - timeSortKey(b.time_start));
   const grouped = d3.group(sorted, s => s.date);
   const slDayFmt = d3.timeFormat("%A, %B %-d");
   const slTimeFmt = d3.timeFormat("%-I:%M");
@@ -2906,7 +2915,7 @@ function buildShareText() {
   const dayFmt = d3.timeFormat("%A, %B %-d");
   for (const [date, entries] of [...byDay.entries()].sort()) {
     text += `📅 ${dayFmt(new Date(date + "T12:00:00"))}\n`;
-    entries.sort((a, b) => (a.time_start || "").localeCompare(b.time_start || ""));
+    entries.sort((a, b) => timeSortKey(a.time_start) - timeSortKey(b.time_start));
     entries.forEach(e => { text += `  ${e.time_start || ""} ${e.act} @ ${e.venue}\n`; });
     text += "\n";
   }
