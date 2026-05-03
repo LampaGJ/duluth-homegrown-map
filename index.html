@@ -350,12 +350,23 @@
   }
   #yt-controls button:hover { color: #fff; }
   #yt-controls .yt-scrub {
-    flex: 1; height: 5px; appearance: none; background: rgba(255,255,255,0.25);
-    border-radius: 3px; accent-color: var(--spring); cursor: pointer;
+    flex: 1; height: 32px; appearance: none; background: transparent;
+    accent-color: var(--spring); cursor: pointer;
+    padding: 0; margin: 0; touch-action: manipulation;
+  }
+  #yt-controls .yt-scrub::-webkit-slider-runnable-track {
+    height: 5px; background: rgba(255,255,255,0.25); border-radius: 3px;
+  }
+  #yt-controls .yt-scrub::-moz-range-track {
+    height: 5px; background: rgba(255,255,255,0.25); border-radius: 3px; border: 0;
   }
   #yt-controls .yt-scrub::-webkit-slider-thumb {
-    appearance: none; width: 14px; height: 14px; border-radius: 50%;
-    background: var(--spring); margin-top: -5px;
+    appearance: none; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--spring); margin-top: -5.5px; border: 0;
+  }
+  #yt-controls .yt-scrub::-moz-range-thumb {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--spring); border: 0;
   }
   #yt-controls a {
     color: var(--bone-dim); font-size: 11px; text-decoration: none; font-weight: 600;
@@ -2571,8 +2582,8 @@ const ytResize = document.getElementById("yt-resize");
 let ytResizing = false, ytResizeStart = null, ytResizeDragged = false;
 const YT_MIN = { w: 280 };
 const YT_MAX = { w: 700 };
-// Compute player height from width: 16:9 video + chrome (header ~46 + links ~20 + controls ~38 + footer ~30)
-const YT_CHROME_H = 134;
+// Compute player height from width: 16:9 video + chrome (header ~46 + links ~20 + controls ~48 + footer ~30)
+const YT_CHROME_H = 144;
 function ytHeightForWidth(w) { return Math.round(w * 9 / 16 + YT_CHROME_H); }
 let ytSizeState = "normal"; // "small" | "normal" | "large"
 
@@ -2942,7 +2953,7 @@ document.getElementById("sl-share-email").addEventListener("click", (e) => {
 // Social links — generate on click with current set list text
 document.getElementById("sl-share-sms").addEventListener("click", (e) => {
   e.preventDefault();
-  const text = buildShareText().slice(0, 500);
+  const text = buildShareText();
   if (typeof notifyShare === "function") notifyShare("iMessage/SMS", setList);
   window.location.href = `sms:?&body=${encodeURIComponent(text)}`;
   document.getElementById("sl-share-dialog").classList.remove("open");
